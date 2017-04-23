@@ -1,0 +1,2462 @@
+From: "Saved by Windows Internet Explorer 7"
+Subject: Series Solutions: Hermite's Equation
+Date: Sat, 24 Oct 2009 17:51:39 +0330
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_00DB_01CA54D2.A3665B20"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.0.6000.16386
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.sosmath.com/diffeq/series/series06/series06.html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)=0A=
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of =
+Leeds=0A=
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan=0A=
+* with significant contributions from:=0A=
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others =
+--><HTML><HEAD><TITLE>Series Solutions: Hermite's Equation</TITLE>
+<META content=3D"No Title" name=3Ddescription>
+<META content=3Dseries06 name=3Dkeywords>
+<META content=3Ddocument name=3Dresource-type>
+<META content=3Dglobal name=3Ddistribution>
+<META http-equiv=3DContent-Type content=3D"text/html; =
+charset=3Diso-8859-1"><LINK=20
+href=3D"http://www.sosmath.com/diffeq/series/series06/series06.css"=20
+rel=3DSTYLESHEET>
+<META content=3D"MSHTML 6.00.6000.16386" name=3DGENERATOR></HEAD>
+<BODY background=3Dhttp://www.sosmath.com/back001.gif>
+<CENTER>
+<TABLE cellSpacing=3D0 cellPadding=3D0 border=3D0>
+  <TBODY>
+  <TR>
+    <TD vAlign=3Dtop>
+      <SCRIPT language=3DJavaScript type=3Dtext/javascript>=0A=
+<!--=0A=
+   if (!document.phpAds_used) document.phpAds_used =3D ',';=0A=
+   phpAds_random =3D new String (Math.random()); phpAds_random =3D =
+phpAds_random.substring(2,11);=0A=
+   =0A=
+   document.write ("<" + "script language=3D'JavaScript' =
+type=3D'text/javascript' src=3D'");=0A=
+   document.write ("http://www.sosmath.com/ADV/adjs.php?n=3D" + =
+phpAds_random);=0A=
+   document.write ("&amp;what=3Dzone:3");=0A=
+   document.write ("&amp;exclude=3D" + document.phpAds_used);=0A=
+   if (document.referer)=0A=
+      document.write ("&amp;referer=3D" + escape(document.referer));=0A=
+   document.write ("'><" + "/script>");=0A=
+//-->=0A=
+</SCRIPT>
+      <NOSCRIPT><A =
+href=3D"http://www.sosmath.com/ADV/adclick.php?n=3Da03e54b3"=20
+      target=3D_blank><IMG alt=3D""=20
+      =
+src=3D"http://www.sosmath.com/ADV/adview.php?what=3Dzone:3&amp;n=3Da03e54=
+b3"=20
+      border=3D0></A></NOSCRIPT>=20
+    <TD width=3D12 height=3D60>
+    <TD vAlign=3Dtop>
+      <SCRIPT language=3DJavaScript type=3Dtext/javascript>=0A=
+<!--=0A=
+   if (!document.phpAds_used) document.phpAds_used =3D ',';=0A=
+   phpAds_random =3D new String (Math.random()); phpAds_random =3D =
+phpAds_random.substring(2,11);=0A=
+   =0A=
+   document.write ("<" + "script language=3D'JavaScript' =
+type=3D'text/javascript' src=3D'");=0A=
+   document.write ("http://www.sosmath.com/ADV/adjs.php?n=3D" + =
+phpAds_random);=0A=
+   document.write ("&amp;what=3Dzone:2");=0A=
+   document.write ("&amp;exclude=3D" + document.phpAds_used);=0A=
+   if (document.referer)=0A=
+      document.write ("&amp;referer=3D" + escape(document.referer));=0A=
+   document.write ("'><" + "/script>");=0A=
+//-->=0A=
+</SCRIPT>
+      <NOSCRIPT><A =
+href=3D"http://www.sosmath.com/ADV/adclick.php?n=3Da4bc4b80"=20
+      target=3D_blank><IMG alt=3D""=20
+      =
+src=3D"http://www.sosmath.com/ADV/adview.php?what=3Dzone:2&amp;n=3Da4bc4b=
+80"=20
+      border=3D0></A></NOSCRIPT> </TR></TBODY></TABLE></CENTER><A=20
+href=3D"http://www.sosmath.com/index.html"><IMG=20
+src=3D"http://www.sosmath.com/logos001.gif"></A>=20
+<P>
+<P>
+<P>
+<H2><A name=3DSECTION00010000000000000000>Series Solutions: Hermite's =
+Equation</A>=20
+</H2>
+<P>
+<CENTER>
+<CENTER><IMG =
+src=3D"http://www.sosmath.com/gif/bar.gif"></CENTER></CENTER>
+<P><B>Hermite's Equation</B> of order <I>k</I> has the form <BR>
+<P></P>
+<DIV align=3Dcenter><!-- MATH: \begin{displaymath}=0A=
+y''-2ty'+2ky=3D0,=0A=
+\end{displaymath} --><I>y</I>''-2<I>ty</I>'+2<I>ky</I>=3D0,=20
+</DIV><BR clear=3Dall>
+<P></P>where <I>k</I> is usually a non-negative integer.=20
+<P>
+<P>We know from the <A=20
+href=3D"http://www.sosmath.com/diffeq/series/series05/series05.html">prev=
+ious=20
+section</A> that this equation will have series solutions which both =
+converge=20
+and solve the differential equation everywhere.=20
+<P>
+<P>Hermite's Equation is our first example of a differential equation, =
+which has=20
+a polynomial solution.=20
+<P>
+<P>As usual, the generic form of a power series is <BR>
+<P></P>
+<DIV align=3Dcenter><!-- MATH: \begin{displaymath}=0A=
+y(t)=3D\sum_{n=3D0}^\infty a_n t^n.=0A=
+\end{displaymath} --><IMG=20
+height=3D55=20
+alt=3D"\begin{displaymath}y(t)=3D\sum_{n=3D0}^\infty a_n =
+t^n.\end{displaymath}"=20
+src=3D"http://www.sosmath.com/diffeq/series/series06/img1.gif" =
+width=3D124>=20
+</DIV><BR clear=3Dall>
+<P></P>We have to determine the right choice for the coefficients=20
+(<I>a</I><SUB><I>n</I></SUB>).=20
+<P>
+<P>As in other techniques for solving differential equations, once we =
+have a=20
+"guess" for the solutions, we plug it into the differential equation. =
+Recall=20
+that <BR>
+<P></P>
+<DIV align=3Dcenter><!-- MATH: \begin{displaymath}=0A=
+y'(t)=3D\sum_{n=3D1}^\infty  n a_n t^{n-1},=0A=
+\end{displaymath} --><IMG=20
+height=3D55=20
+alt=3D"\begin{displaymath}y'(t)=3D\sum_{n=3D1}^\infty n a_n t^{n-1}, =
+\end{displaymath}"=20
+src=3D"http://www.sosmath.com/diffeq/series/series06/img2.gif" =
+width=3D156>=20
+</DIV><BR clear=3Dall>
+<P></P>and <BR>
+<P></P>
+<DIV align=3Dcenter><!-- MATH: \begin{displaymath}=0A=
+y''(t)=3D\sum_{n=3D2}^\infty  n(n-1) a_n t^{n-2}.=0A=
+\end{displaymath} --><IMG=20
+height=3D55=20
+alt=3D"\begin{displaymath}y''(t)=3D\sum_{n=3D2}^\infty n(n-1) a_n =
+t^{n-2}.\end{displaymath}"=20
+src=3D"http://www.sosmath.com/diffeq/series/series06/img3.gif" =
+width=3D218>=20
+</DIV><BR clear=3Dall>
+<P></P>
+<P>
+<P>Plugging this information into the differential equation we obtain: =
+<BR>
+<P></P>
+<DIV align=3Dcenter><!-- MATH: \begin{displaymath}=0A=
+\sum_{n=3D2}^\infty n(n-1)a_n t^{n-2}-2t \sum_{n=3D1}^\infty n a_n =
+t^{n-1}+2k \sum_{n=3D0}^\infty a_n t^n=3D0,=0A=
+\end{displaymath} --><IMG=20
+height=3D55=20
+alt=3D"\begin{displaymath}\sum_{n=3D2}^\infty n(n-1)a_n t^{n-2}-2t =
+\sum_{n=3D1}^\infty n a_n t^{n-1}+2k \sum_{n=3D0}^\infty a_n =
+t^n=3D0,\end{displaymath}"=20
+src=3D"http://www.sosmath.com/diffeq/series/series06/img4.gif" =
+width=3D432>=20
+</DIV><BR clear=3Dall>
+<P></P>or after rewriting slightly: <BR>
+<P></P>
+<DIV align=3Dcenter><!-- MATH: \begin{displaymath}=0A=
+\sum_{n=3D2}^\infty n(n-1)a_n t^{n-2}- \sum_{n=3D1}^\infty 2n a_n t^{n}+ =
+\sum_{n=3D0}^\infty 2k a_n t^n=3D0.=0A=
+\end{displaymath} --><IMG=20
+height=3D55=20
+alt=3D"\begin{displaymath}\sum_{n=3D2}^\infty n(n-1)a_n t^{n-2}- =
+\sum_{n=3D1}^\infty 2n a_n t^{n}+ \sum_{n=3D0}^\infty 2k a_n =
+t^n=3D0.\end{displaymath}"=20
+src=3D"http://www.sosmath.com/diffeq/series/series06/img5.gif" =
+width=3D402>=20
+</DIV><BR clear=3Dall>
+<P></P>Next we shift the first summation up by two units: <BR>
+<P></P>
+<DIV align=3Dcenter><!-- MATH: \begin{displaymath}=0A=
+\sum_{n=3D0}^\infty (n+2)(n+1)a_{n+2} t^{n}- \sum_{n=3D1}^\infty 2n a_n =
+t^{n}+\sum_{n=3D0}^\infty 2k a_n t^n=3D0.=0A=
+\end{displaymath} --><IMG=20
+height=3D55=20
+alt=3D"\begin{displaymath}\sum_{n=3D0}^\infty (n+2)(n+1)a_{n+2} t^{n}- =
+\sum_{n=3D1}^\infty 2n a_n t^{n}+\sum_{n=3D0}^\infty 2k a_n =
+t^n=3D0.\end{displaymath}"=20
+src=3D"http://www.sosmath.com/diffeq/series/series06/img6.gif" =
+width=3D445>=20
+</DIV><BR clear=3Dall>
+<P></P>Before we can combine the terms into one sum, we have to overcome =
+another=20
+slight obstacle: the second summation starts at <I>n</I>=3D1, while the =
+other two=20
+start at <I>n</I>=3D0.=20
+<P>
+<P>Evaluate the 0th term for the second sum: <!-- MATH: $2\cdot 0\cdot =
+a_0\cdot t^0=3D0$ --><IMG height=3D38=20
+alt=3D"$2\cdot 0\cdot a_0\cdot t^0=3D0$"=20
+src=3D"http://www.sosmath.com/diffeq/series/series06/img7.gif" =
+width=3D131=20
+align=3Dmiddle border=3D0>. Consequently, we do not change the value of =
+the second=20
+summation, if we start at <I>n</I>=3D0 instead of <I>n</I>=3D1: <BR>
+<P></P>
+<DIV align=3Dcenter><!-- MATH: \begin{displaymath}=0A=
+\sum_{n=3D1}^\infty 2n a_n t^{n}=3D\sum_{n=3D0}^\infty 2n a_n t^{n}.=0A=
+\end{displaymath} --><IMG=20
+height=3D55=20
+alt=3D"\begin{displaymath}\sum_{n=3D1}^\infty 2n a_n =
+t^{n}=3D\sum_{n=3D0}^\infty 2n a_n t^{n}.\end{displaymath}"=20
+src=3D"http://www.sosmath.com/diffeq/series/series06/img8.gif" =
+width=3D196>=20
+</DIV><BR clear=3Dall>
+<P></P>Thus we can combine all three sums as follows: <BR>
+<P></P>
+<DIV align=3Dcenter><!-- MATH: \begin{displaymath}=0A=
+\sum_{n=3D0}^\infty \left(\phantom{\int}(n+2)(n+1)a_{n+2}-  2n a_n + 2k =
+a_n\phantom{\int}\right) t^n=3D0.=0A=
+\end{displaymath} --><IMG=20
+height=3D55=20
+alt=3D"\begin{displaymath}\sum_{n=3D0}^\infty =
+\left(\phantom{\int}(n+2)(n+1)a_{n+2}- 2n a_n + 2k =
+a_n\phantom{\int}\right) t^n=3D0.\end{displaymath}"=20
+src=3D"http://www.sosmath.com/diffeq/series/series06/img9.gif" =
+width=3D418>=20
+</DIV><BR clear=3Dall>
+<P></P>Therefore our recurrence relations become: <BR>
+<P></P>
+<DIV align=3Dcenter><!-- MATH: \begin{displaymath}=0A=
+(n+2)(n+1)a_{n+2}-  2n a_n + 2k a_n=3D0\mbox{ for all } =
+n=3D0,1,2,3,\ldots=0A=
+\end{displaymath} --><IMG=20
+height=3D33=20
+alt=3D"\begin{displaymath}(n+2)(n+1)a_{n+2}- 2n a_n + 2k a_n=3D0\mbox{ =
+for all } n=3D0,1,2,3,\ldots\end{displaymath}"=20
+src=3D"http://www.sosmath.com/diffeq/series/series06/img10.gif" =
+width=3D498>=20
+</DIV><BR clear=3Dall>
+<P></P>After simplification, this becomes <BR>
+<P></P>
+<DIV align=3Dcenter><!-- MATH: \begin{displaymath}=0A=
+a_{n+2}=3D  \frac{2(n-k)}{(n+2)(n+1)}a_n=3D0\mbox{ for all } =
+n=3D0,1,2,3,\ldots=0A=
+\end{displaymath} --><IMG=20
+height=3D52=20
+alt=3D"\begin{displaymath}a_{n+2}=3D =
+\frac{2(n-k)}{(n+2)(n+1)}a_n=3D0\mbox{ for all } =
+n=3D0,1,2,3,\ldots\end{displaymath}"=20
+src=3D"http://www.sosmath.com/diffeq/series/series06/img11.gif" =
+width=3D421>=20
+</DIV><BR clear=3Dall>
+<P>
+<HR>
+
+<P></P>Let us look at the special case, where <I>k</I>=3D5, and the =
+initial=20
+conditions are given as <!-- MATH: $y(0)=3Da_0=3D0,\  y'(0)=3Da_1=3D1$ =
+--><IMG height=3D37=20
+alt=3D"$y(0)=3Da_0=3D0,\ y'(0)=3Da_1=3D1$"=20
+src=3D"http://www.sosmath.com/diffeq/series/series06/img12.gif" =
+width=3D245=20
+align=3Dmiddle border=3D0>. In this case, all even coefficients will be =
+equal to=20
+zero, since <I>a</I><SUB>0</SUB>=3D0 and each coefficient is a multiple =
+of its=20
+second predecessor. <BR>
+<P></P>
+<DIV align=3Dcenter><!-- MATH: \begin{displaymath}=0A=
+a_0=3Da_2=3Da_4=3Da_6=3D\ldots=3D0.=0A=
+\end{displaymath} --><IMG=20
+height=3D31 =
+alt=3D\begin{displaymath}a_0=3Da_2=3Da_4=3Da_6=3D\ldots=3D0.\end{displaym=
+ath}=20
+src=3D"http://www.sosmath.com/diffeq/series/series06/img13.gif" =
+width=3D229>=20
+</DIV><BR clear=3Dall>
+<P></P>What about the odd coefficients? <I>a</I><SUB>1</SUB>=3D1, =
+consequently=20
+<BR>
+<P></P>
+<DIV align=3Dcenter><!-- MATH: \begin{displaymath}=0A=
+a_3=3D\frac{2(1-5)}{2\cdot 3}=3D-\frac{4}{3},=0A=
+\end{displaymath} --><IMG=20
+height=3D47=20
+alt=3D"\begin{displaymath}a_3=3D\frac{2(1-5)}{2\cdot =
+3}=3D-\frac{4}{3},\end{displaymath}"=20
+src=3D"http://www.sosmath.com/diffeq/series/series06/img14.gif" =
+width=3D169>=20
+</DIV><BR clear=3Dall>
+<P></P>and <BR>
+<P></P>
+<DIV align=3Dcenter><!-- MATH: \begin{displaymath}=0A=
+a_5=3D\frac{2(3-5)}{4\cdot 5} =
+a_3=3D(-\frac{1}{5})(-\frac{4}{3})=3D\frac{4}{15}.=0A=
+\end{displaymath} --><IMG=20
+height=3D47=20
+alt=3D"\begin{displaymath}a_5=3D\frac{2(3-5)}{4\cdot 5} =
+a_3=3D(-\frac{1}{5})(-\frac{4}{3})=3D\frac{4}{15}.\end{displaymath}"=20
+src=3D"http://www.sosmath.com/diffeq/series/series06/img15.gif" =
+width=3D291>=20
+</DIV><BR clear=3Dall>
+<P></P>What about <I>a</I><SUB>7</SUB>: <BR>
+<P></P>
+<DIV align=3Dcenter><!-- MATH: \begin{displaymath}=0A=
+a_7=3D\frac{2(5-5)}{6\cdot 7}a_5=3D0.=0A=
+\end{displaymath} --><IMG=20
+height=3D47=20
+alt=3D"\begin{displaymath}a_7=3D\frac{2(5-5)}{6\cdot =
+7}a_5=3D0.\end{displaymath}"=20
+src=3D"http://www.sosmath.com/diffeq/series/series06/img16.gif" =
+width=3D167>=20
+</DIV><BR clear=3Dall>
+<P></P>Since <I>a</I><SUB>7</SUB>=3D0, all odd coefficients from now on =
+will be=20
+equal to zero, since each coefficient is a multiple of its second =
+predecessor.=20
+<BR>
+<P></P>
+<DIV align=3Dcenter><!-- MATH: \begin{displaymath}=0A=
+a_7=3Da_9=3Da_{11}=3Da_{13}=3D\ldots=3D0.=0A=
+\end{displaymath} --><IMG=20
+height=3D31=20
+alt=3D\begin{displaymath}a_7=3Da_9=3Da_{11}=3Da_{13}=3D\ldots=3D0.\end{di=
+splaymath}=20
+src=3D"http://www.sosmath.com/diffeq/series/series06/img17.gif" =
+width=3D243>=20
+</DIV><BR clear=3Dall>
+<P></P>
+<P>
+<P>Consequently, the solution has only 3 non-zero coefficients, and =
+hence is a=20
+polynomial. This polynomial <BR>
+<P></P>
+<DIV align=3Dcenter><!-- MATH: \begin{displaymath}=0A=
+H_5(t)=3Dt-\frac{4}{3}t^3+\frac{4}{15}t^5=0A=
+\end{displaymath} --><IMG=20
+height=3D45=20
+alt=3D\begin{displaymath}H_5(t)=3Dt-\frac{4}{3}t^3+\frac{4}{15}t^5\end{di=
+splaymath}=20
+src=3D"http://www.sosmath.com/diffeq/series/series06/img18.gif" =
+width=3D186>=20
+</DIV><BR clear=3Dall>
+<P></P>(or a multiple of this polynomial) is called the <B>Hermite =
+Polynomial of=20
+order 5</B>.=20
+<P>
+<P>It turns out that the Hermite Equation of positive integer order =
+<I>k</I>=20
+always has a polynomial solution of order <I>k</I>. We can even be more =
+precise:=20
+If <I>k</I> is odd, the initial value problem <!-- MATH: $a_0=3D0,\ =
+a_1=3D1$ --><IMG=20
+height=3D33 alt=3D"$a_0=3D0,\ a_1=3D1$"=20
+src=3D"http://www.sosmath.com/diffeq/series/series06/img19.gif" =
+width=3D123=20
+align=3Dmiddle border=3D0> will have a polynomial solution, while for =
+<I>k</I> even,=20
+the initial value problem <!-- MATH: $a_0=3D1,\ a_1=3D0$ --><IMG =
+height=3D33=20
+alt=3D"$a_0=3D1,\ a_1=3D0$"=20
+src=3D"http://www.sosmath.com/diffeq/series/series06/img20.gif" =
+width=3D123=20
+align=3Dmiddle border=3D0> will have a polynomial solution.=20
+<P>
+<P>
+<H4><A name=3Dexercises>Exercise 1:</A> </H4>Find the Hermite =
+Polynomials of order=20
+1 and 3.=20
+<H4><A=20
+href=3D"http://www.sosmath.com/diffeq/series/series06/series06a1.html">An=
+swer.</A>=20
+</H4>
+<P>
+<P>
+<H4><A name=3DSECTION00010030000000000000>Exercise 2:</A> </H4>Find the =
+Hermite=20
+Polynomials of order 2, 4 and 6.=20
+<H4><A=20
+href=3D"http://www.sosmath.com/diffeq/series/series06/series06a2.html">An=
+swer.</A>=20
+</H4>
+<P>
+<P>
+<H4><A name=3DSECTION00010050000000000000>Exercise 3:</A> </H4>Consider =
+the=20
+Hermite Equation of order 5: <BR>
+<P></P>
+<DIV align=3Dcenter><!-- MATH: \begin{displaymath}=0A=
+y''-2ty'+10y=3D0.=0A=
+\end{displaymath} --><I>y</I>''-2<I>ty</I>'+10<I>y</I>=3D0.=20
+</DIV><BR clear=3Dall>
+<P></P>Find the solution satisfying the initial conditions=20
+<I>a</I><SUB>0</SUB>=3D1, <I>a</I><SUB>1</SUB>=3D0.=20
+<H4><A=20
+href=3D"http://www.sosmath.com/diffeq/series/series06/series06a3.html">An=
+swer.</A>=20
+</H4>
+<P>
+<P>
+<CENTER>
+<CENTER><IMG =
+src=3D"http://www.sosmath.com/gif/bar.gif"></CENTER></CENTER>
+<P>
+<CENTER><A=20
+href=3D"http://www.sosmath.com/diffeq/series/series05/series05.html">[Bac=
+k]</A> <A=20
+href=3D"http://www.sosmath.com/diffeq/series/series07/series07.html">[Nex=
+t]</A></CENTER>
+<CENTER><A =
+href=3D"http://www.sosmath.com/algebra/algebra.html">[Algebra]</A> <A=20
+href=3D"http://www.sosmath.com/trig/trig.html">[Trigonometry]</A> <A=20
+href=3D"http://www.sosmath.com/complex/complex.html">[Complex =
+Variables]</A>=20
+</CENTER>
+<CENTER><A =
+href=3D"http://www.sosmath.com/calculus/calculus.html">[Calculus]</A>=20
+<A href=3D"http://www.sosmath.com/diffeq/diffeq.html">[Differential =
+Equations]</A>=20
+<A href=3D"http://www.sosmath.com/matrix/matrix.html">[Matrix =
+Algebra]</A>=20
+</CENTER>
+<P>
+<CENTER><IMG src=3D"http://www.sosmath.com/gif/lighthouse.gif"> <A=20
+href=3D"http://www.sosmath.com/index.html">S.O.S MATHematics home =
+page</A>=20
+</CENTER>
+<UL></UL>
+<P>Do you need more help? Please post your question on our <A=20
+href=3D"http://www.sosmath.com/CBB">S.O.S. Mathematics CyberBoard</A>.=20
+<P>
+<CENTER><IMG src=3D"http://www.sosmath.com/gif/sailbar.gif"></CENTER>
+<P>
+<P>
+<ADDRESS><I><A href=3D"http://www.sosmath.com/mail.php">Helmut =
+Knaust</A>=20
+<BR><I>1998-07-08</I> </ADDRESS><!--BOTTOM AD2--><!--END BOTTOM =
+AD2--><!--BOTTOM AD-->
+<CENTER>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD>
+      <SCRIPT language=3DJavaScript type=3Dtext/javascript>=0A=
+<!--=0A=
+   if (!document.phpAds_used) document.phpAds_used =3D ',';=0A=
+   phpAds_random =3D new String (Math.random()); phpAds_random =3D =
+phpAds_random.substring(2,11);=0A=
+   =0A=
+   document.write ("<" + "script language=3D'JavaScript' =
+type=3D'text/javascript' src=3D'");=0A=
+   document.write ("http://www.sosmath.com/ADV/adjs.php?n=3D" + =
+phpAds_random);=0A=
+   document.write ("&amp;what=3Dzone:8");=0A=
+   document.write ("&amp;exclude=3D" + document.phpAds_used);=0A=
+   if (document.referer)=0A=
+      document.write ("&amp;referer=3D" + escape(document.referer));=0A=
+   document.write ("'><" + "/script>");=0A=
+//-->=0A=
+</SCRIPT>
+      <NOSCRIPT><A =
+href=3D"http://www.sosmath.com/ADV/adclick.php?n=3Da3e6c5d1"=20
+      target=3D_blank><IMG alt=3D""=20
+      =
+src=3D"http://www.sosmath.com/ADV/adview.php?what=3Dzone:8&amp;n=3Da3e6c5=
+d1"=20
+      border=3D0></A></NOSCRIPT> </TR></TBODY></TABLE></CENTER><!--END =
+BOTTOM AD--><!--COUNTER-->
+<P>
+<CENTER><FONT color=3Ddarkgray size=3D1>Copyright =A9 1999-2009 =
+MathMedics, LLC. All=20
+rights reserved. <BR><A href=3D"http://www.sosmath.com/mail.php">Contact =
+us</A>=20
+<BR>Math Medics, LLC. - P.O. Box 12395 - El Paso TX 79913 - USA <BR>
+<SCRIPT=20
+src=3D"http://www.sosmath.com/cgi-bin/suo.cgi?action=3Dindex&amp;e=3Djs">=
+</SCRIPT>
+users online during the last hour </FONT></CENTER><!--COUNTER END-->
+<SCRIPT src=3D"http://www.google-analytics.com/urchin.js"=20
+type=3Dtext/javascript>=0A=
+</SCRIPT>
+
+<SCRIPT type=3Dtext/javascript>=0A=
+_uacct =3D "UA-278468-1";=0A=
+urchinTracker();=0A=
+</SCRIPT>
+</I></BODY></HTML>
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/ADV/adview.php?what=zone:3&n=a03e54b3
+
+R0lGODlh1AE8APcAAAAACAgAxggIEBAICBAIEBAIzhAQEBAQGBgICBgIEBgQGBgQcxgQzhgYGBgY
+ISEYYyEYeyEYziEhKSEhMSEpKSEpMSkYcykhKSkhcykheykpKSkpMSkpOSkpeykxMTEhYzEhczEp
+MTEpczEpezEpzjExOTExYzE5MTE5OTFCOTFCSjkIGDkYITkpYzkpezkxOTkxezkx1jk5OTk5Qjk5
+ezlCQjlCSkIQKUIpWkIpY0Ipa0IxOUIxc0I5QkI5a0I5c0I5e0I51kJCQkJKOUJKQkJKY0JSOUoQ
+IUohKUoxSko5c0pCY0pCc0pCe0pKUkpK1kpSQkpSUkpaQkpaUkpac1IpOVIxOVI5SlJCUlJCc1JK
+SlJKc1JKe1JSQlJSUlJaSlJaWlJjSlJjUlJjY1oxSlpCUlpKWlpKc1pSSlpSUlpSWlpSc1pSe1pS
+3lpaQlpaY1pjSlpjY1pra1pzSmMxQmNa3mNra2Nre2NzUmN7a2tCUmtSSmtSY2tac2tjSmtrY2tr
+a2tr3mt7c3NjY3N7a3N7c3tSWntjWntrUntrY3trc3tzY3tz3nt7a3uEe4Rrc4RzY4Rza4Rze4R7
+Y4R7e4R754SEa4SEc4SEhISEjIxCQoxrWoxza4xzc4x7Y4x7a4yEhIyM55Rre5R7a5SEY5SEa5SM
+jJSUlJSU55yEa6WUjKWcnKWc762lpa2tta2t77WttbWtxrW1tbW17721vb21xr29zr3GxsZ7jMa1
+tca9xsa9zsa998bGxsbGzsbO1s4hKc6lpc6ttc69xs691s7Gvc7Gxs7Gzs7Ozs7O1s7O987W1tYI
+CNa1vdbOztbO1tbO3tbWztbW1tbW99be3t691t7O3t7Wzt7W1t7W3t7W597e597n7+e9vefWzufW
+3ufW5+fe3ufe5+fe9+fn5+fn7+/e3u/e5+/n3u/n5+/n7+/v7+/v//fn7/fv7/fv9/f37/f3////
+/////////////////////////////////////////////////////ywAAAAA1AE8AEAI/gDfqSNH
+kNxAdQLVHVRIUCHCdQ4ZGlQHcV1BgxcnSiQojlxHjuLCictGLVu2Y8bChRvoUVxHcSxbvnRJMN26
+dAVd6rSoc6ZHculsAu1JE2fPli0DKF3KtKnTp1CjSp1KtarVq1izat3KtavXr2DDLhUojhvDiAo7
+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
+4ETyCcFCJITkkjlKXe3JhvktYRM+4YwICAAAOw==
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/ADV/adview.php?what=zone:2&n=a4bc4b80
+
+R0lGODlheAA8ALMAAPr6+pioqDROTmSWlkVmZlyKilR9fdPZ2TI0NGyDg01ycnaMjGJ5eYWYmLbB
+wT5cXCH5BAAAAAAALAAAAAB4ADwAAAT/EMlJq7046827/4hijGRZDmiaGoXqvmhRsKoBowah77uN
+igagaVhSGEctWIG3kxCft4EsekMmcdEcc3cFCp/g3NW13DrDJAV1LJ3CRu0a7aVlqlMFLzqsYK+2
+BGd7dzdXAQ4HBws+eHMzBQ1SQUYJDZEyCjwJRmR6e2BZWwqCaIRKKQEAAAcMfY1jCwEHAUEjDYmI
+CzsMDLe0Y3kjX59FVi6ZdhJHpWt4DgAOBK4DcHGIqg3SCg2qCQyqDAIPsqoBIirBtcREbSUtyDyj
+CATCw0V+KyvP0QQzLDIAB5ADkOABAQYHAARAIGCfAAELEgJY8GCOFE/rTJCRUYeHAQkE/xoZWSYM
+nQsbMxTs02EkCUCOqQAwMLgAG0NuAAg8xEnRYjohXxLUMyHETYwfWz7OIyNMm4IFiBI1oIHIgbkR
+CaMJUBN1VolnMg3GXIDgAc5w21QtEOBTQQJZiMwZaVDVwSa3UO0ectCgANxfA+BxUeZSRoAAi0Y8
+O/B21YKIB8A2ELHvgdmEARBCAwJWgbiYCcTVnPhAwVi2VwyMbqA5AIFUB9xiewB2lUTbqgBMLcOk
+AOE2BaI6MEIutAKpCRU8yCqtMgGH46DRM9D54ekHCdSWHlvxSoGsD59ZUrtTlfKEBx4IOJ1dIT1A
+vkOgNCArkevnq3QeVH5IXFaDDrUXgP84BCSgg2LmfdaNODxtp51FODXAkDS0reKZAAI2BI0ACHAT
+mwCtlWZQPAMog9J3uDCgA3rqabNDROWEt+FqAjjFWYJmqVVWTDOZ9qBLPE1o2WLqYVcOAg4J4KFn
+rdU4IhclyieFL6yNKJFOXkAG44AVOoBhjNMhQR04NGGzVUyW+TjRVi0EMMBoCz25mE4PwInkhkqu
+MlMCmDnJQxJnGBaNZdrE5IBB9JHTgAAxdunfKgVt8wt95pU2ppcEgCcNTsYNsBif4NTYQGMyMahK
+IEl6qJNmixJ6YAoS5CFDA64ZBAQDYCUSGU6R5YZYbhSBatsBu8UETWIw0ppfabeoooj/ahLJpkpU
+BsLGQLIIfNNNhe7xOtOIpsTaRwFQsSREL1FlRsAtfCXggF20HpZNgfU5sEBL7x4WwFQj5GVVOPQc
+om9mBtAVgGVvVWUgTYdZFZqS+yLWi76VWIUYgaZEOUA/M1jFUhoEFDmiQQ+pR2DILWZiMqFAWMZy
+Uy4fCLOtQTBh8kPiWIYzzi7vbBDLKMf8ggQbcxQRYiQZYW4OWozktHIiKL2DEDaKOcky/jidxjJS
+K6eDyzHvADY9SdNjmR9EjxtEfYgtkIBQwpBA9j8vFeDNY3jnrffbCeittyV+/21JA3j3Dbjb3vCi
+eCvIkADQuPTAkDZAOQwUmcWDA27J/8Dvdt6Vrrrm5mxdoJdueumipy766Z0f5rY/LEyDj8ZwpFTg
+NarnrvvuvPfu++++z7IJPbPDioAk7WTi1kDAN+/887yD7vm7ieQWWSsWSX48NTHYLs21tH5+2/On
+ly/99NMPPHDmiPGtuNIKKN73IYncm70LRHPffVNTM9D3AoR7DK0ydzgCDi5wgeObAhO3uKcJBhB0
+CtvPwLaNdxlDe1hAB+ykxgOTXYBnYNPZkyAYDwea8IQmlNlIliYYXF1ldvkzSvc4UgSl7eyGOLNR
+yOyRkT3UrW4tqdvWuBa/4dzPeDH4xwt+SLkQrkxnQBkXE6dIxSrW7Si1e0kc9gc/I//CcHv7OyJw
+ABK00hSEgphgBBXGWDw8DCASdEsNRwrBBo7ELz3TGBoYOyHGFIitNp4xjVDOscYUPEOJa6wNLagT
+AEwAgY2F0SAk6LcVMeZviSH7mB+Q8Y1FReZLuogjE9HxjCOMEg/SKaUCFMK0IL5ElBqszypqZMk9
+MgUZNOuCDjqJAABq6ADNKUfBeuUARAYHGgpRyQHoc4A4yGAV2IkGj14zLRH0apmIxAOMHDMhfFwy
+CrZ7UuxQlhAJ3QQa0aELMLlhFZnQjVJ0yUkqGJAKEVCuMmUC5ioPA4BMrIIbL9Qgr7xUMm/aco15
++FoHlzNLiBAkOu4CQJ0Ikp177cX/R3l6wDciEg26OIAaKiETARTypfEUhKTuyaYM3oKYBzBEHAYt
+pBI6YjJ2TrQgxgLAl7xBkEyZJxV5EodCFBId3dSsJulh1IDaEyqUumZceEgJh3gWEgzKlA5fMxID
+EJAKI+FUpxrd6TcM5DSgckMc73qoUwxAVG6Eg6TZCcdMGCUh3ZRGhjLQCQirqserHqODq5QQIrL1
+0K4CNTvjUZEXUoEfy8REHF9AJ2MfQNSxxpWy0dANZNlgACdKI6pI9OtFtsCtiZRFFTWSyMGywyLi
+zQA2RCUAUmlJOWMdjLIPBcuhKCuRlcksr4AgRD9Ce1Xe2KxG4chhcreSyZp4w1av/8yEgaQx0oPZ
+M4mq8QxL7sWS6VY3ZCV70giT8oM8fnONHbHZzXB4w7RQRBo+GQpbZUI8dEzCRit0GlHDS0LykkAF
+543CA9XrxAJbaipAqGPdRgVfBauDKJQblXLC1l8upAPAB8XkeCFIYbGVRjDZVELWxMgRJsZRbhuu
+cDrUGOCTuCVogOhwB+HrtPoiFBKPwIes0lHiH1YYgl/AMBXUZFdXfa2rMkZUEBKhDTVGQZEhFohR
+c6C8CsrgkDNQ6I93eALiYnVDiMhZCIEq5rE5jckHoiIqo1FKUUJiIiJwCjUNQisrJLSMBg5TNVDQ
+4kekIjRQQauZ1qNTAaBnJrd4Df8wM5WeW5gGm2ABjBSg6S568MoWE8lUNmYxUpLeQizCpM411qKZ
+3X5hDAGewZRI8zVuRLQ8vSTIJw0r0eUcgNDReYpC2gwQfEpDKnB2NWUPRtJyEvohCmHscSYyS0Qg
+1lKOE3INgMRqShgoIefsEAB6uRagkjkRQWXsNxzgP9d2DBzScKpsH6pZTxf6sDL5RjgSYesK8SJN
+XsDfHo3yZl30wgiLKTQ3tC0B6+j0rIa+9cC5YRkPqeid64LmsOm6U4prFuFnlbe8G3JrcPuUS/AN
+gr5NggduUKSe8zxrdAjuS7MWGtwD72qBkCoNgLSVIEpVqlbpioCLv1unGi9VmMH/7T/x0Ezk0u5e
+I9DJ5K4+Q0HHBre3X65wiT7jpl2VomRrTVS7Zic0XV8UwoE60rdJlOP1prddQ56xb/KbUtg4iLMk
+OudOr6k9CXkI0eduENXW3DC+cqyzlFMTiqDH57cms271nh5646TWIXfyeYFhgGupyCksgx+GRKai
+8BapQMqpkREWoFgalEEXT+pbJrtGEVfxAoTYSW7KnHIt/ZBk5DXQ4NWaQpJaoGyhI6wH1IQ/hxGs
+3gtaE36Vo2YEV42tIkNQGdvZcN5auIGGdvzhP2qGX+VRThin/MepYSfKMJRhhSwJuRAjnzGNyUES
+dJv2Em+5whO9Eh80cLMVqThhTnM5Df7FBxRWtQKMgH04oGM6xjRV8AYtkEVqFlU/RA3jlQZONmJx
+M4A44GTJUzwlthFZsEQN2EZ+ZVwfc4GYlAY3AAIquIIs2IIuqAERAAA7
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/logos001.gif
+
+R0lGODlhbgBMAPcAABAACBgICBgQCCEICCEQCBAAEBgQECEQEAgIKRAYKRgIGBgIISEYECkIEBgQ
+GBsTIDEICCkQCCkUEDEYCDkYBDEYEEIEBEcFCCkQGCkYGDEYGC0UIzkAEDYNIDkYHFAMGDEhEDkh
+DDkpEEIhDDEhGCUhMUIpEDkhIDkpGEYpFEEpHkIpMUIxIUIxKUo9KUpgEiEhPR4rTzElPS8tTDkm
+Pz8zRUI5WkIxY0ohQkopSko5MUc/P0o5Sko5WkpCWkJCYxBKhBhKhBhKjBhSjCFKhCFKjCFKlCFS
+jCFSlClCcylCeylKjClSjClSlClalClanDFCazFKhDFKjDFSjDFSlDFalDFanDFjlDFjnDk5czlC
+czlCezlChDlKjDlShDlSjEJCa0JKa0JKc0hId0JKhEJSf0pKhEJaf0pWhEJKjEpajEpjjDlSlDla
+lEJalEJjlEpalEpjlEprlDlanDljnDlrnEJjnEJrnEprnEpznDljpTlrpUJrpUJzpUprpUpzpV8C
+C2sEDXcEDoYIBlsSGXgQEV8pF1xJG2kYKWQ2KFcrSnIzPl9HSHxQN1xKY3ZXXpAICJATEJ0TDa0Y
+EJErJaYuIr0lELk2IJFTO5FiQ5VXUpBvW61KNK5kTKB1R7h5WFZGd1pKc1pKe1JSc1JWe1RdhFJa
+jFJalFpjhFJjjFJjlFJrlFJrnFJznFJzpVJ7pWNSc2Bgg1pnlGNjjFprnFpznFpzpVp7pW1cdWli
+hmVwlWlzoHVkfnN1kXtrgZl5e3aJMbGETq+IWqyLdr2QUsSXXcCSccSfcc6Ma86lY86la8qle86l
+hM6tc86te86thFp7rWN7pWt7p4OElpSEjJKQo6GVo7iglsaljM6tjMallM6tlL2loL2tpcapoMa1
+rdyadNate9uygM61hNa1hNa1jN61jO+1lNa1nNa9lNa9nN69jN69lN69nOe9lOu9mN7GlM69rda9
+qd69pd7GnN7Gpd7OpefGlOfGnOfGpefOnOfOpefOrefWpe+9nO/GnCwAAAAAbgBMAAAI/gAtCRxI
+sKDBgwgTKlzIsKHDhxAjSpxIsaLFixgzatzIsaPHjyBDihxJsqTJkyhTqlzJsqXLjkKEBJFJM0iR
+mTdzFiFSpKcQnjx37vxJlEgQozVr2gzCtKnMpk2NQp1KtSpTijFjFqHZs+tWr0GFdg07tKvNoTyP
+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
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/gif/bar.gif
+
+R0lGODdhgAIFANUAAP///wD3/wD39wDv9wDn9wDe7wDW7wDO5wDG5wC93gC13gC11gCt1gCl1gCc
+zgCUzgCMxgCExgB7vQBzvQBrtQBjtQBarQBSrQBKrQBKpQBCpQA5nAAxnAAplAAhlAAYjAAQjAAI
+jAAIhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAAgAIFAAAG/0CRUAQiEkHI5Ae0
+/Difnk/UQ61WO56OdtvhdLucsDi84WzO6I1Grda43+6MJkOv1y+Zi36/t1wsgIGBFRYVhoeHFBUU
+jI2MExQTkpOTEhMSmJmZERKcEZ+gnxAREKWmpg8QqQ+srQ8Orw6ys7INDrYNuboNDL2+vwwKC8IK
+xcYKCcnKywkIzc0I0dIIB9XW1wcG2Qbc3QYF3wXi4+MEBQTo6ekD7O3uAgEDAfP08/IC7vkD6vzn
+5P/gwHnrlg2bwWnTnjljxuyYsWHDgEncpeuWRVq0XrlqparjqVOkQoXqRFKTpkuUUkZy5GgRopeF
+BMn8w6dmHjs458DZyWZNmv8zZsYI/eKFi5YsVpJKWfrECZOnSZIYKTJESAghRagWacKkKZSvS6Ng
+GZuFS9EvRDuUWWsGjc8zb9e8kUMXJwY6ePDm0eOnr0xCMQERMqRokSKWiFdSssTY5CZNECSMCjnq
+46lUpVLB0oixs61aDhjskghM2AKIDhkuW6jsQIID0wzKrlbgQMBv4QDq3sdPHzt8AuAFCD4An29+
+BAboXo47oO3ZsmO/ZsZatUOIpxWQ/jX6ovfOsjS+8kjeMmVRkjVxcowJpaVJKxO3ZETYUODAgAXR
+9KPnpt4Md+VE1xtswJXGW2ytlRZaDB5FVgdhORGFhF498dQHRkxlVVUZZoX/YRNENFFhhFRIgQUV
+YxmlhRcsglEGGT+5VeAcamSwgY1z1IUTXnhYkIGPPv7hl0yC2UeBBUe6ZBhikMAnAQVPvsceJut1
+Ehkp6ZFimUeYjQcLBLCEB95nvNzCQGihicaLRNoFQwwxCyRTDEOsRQPba85QA9ts2vSpDTjbLCeO
+OYSyU4ByybGTaD7xNNqoPMe1Y45yivpjjqDcZFNbpn3OpmeerlETjTLVyYlMAqi92UubwOTSC5qi
+hUYmeLGM52WXmW05Snq77krllFJCKSx8kCRWH5LIHkJkIEL2+OOz/e1IR45r2CjHjT7JFSMaYryY
+1llGIYXiFFMwVeFTIoC4/0SHHA6hVYghighWuR9ACGEW9Za1RVEtsrhBF/8meKCMclmbo4524JEX
+kD8KOaQggwWSpGGEsdRkfMNe0pjGv64HipWSaUmZrquAqRlnnoH22ZmuikaaMMFgJ0wCyMypmkKk
+TmeNngZpY01tz5GTGzmXiqPcOegguqg78QA3D3CQ6oPOoekYTbRuQz+ndTU+H2TNdHU+c/OcyMgc
+UUQT9ZILmhbN2hlnqjjQEWZbjozlrh+TVOXG7UHy5COKIVaxkYPcpx+zDPt4U14CTmtwTzKmEVTA
+XpTx7Yrh2itWvRROOKGFTqWbFVbtashEuiFeOOLn5OZbFlJGnVW5i22tFb/5jD25ga20OPXX4+/L
+/kX4kYcVn5iTwjLGsWNVXomerrliJrdmX4KHES62xKqmyxItEIybwxAj583JOBOqa3fuCd2fmn4T
+tKD+KH3oob79xk6jwT1aXP2Gyo8o/LUJIG6e07XonA9PYCMfzeQUvvB9z3tpc5WZboEL69EibtMD
+U/SgF5nJcCIyv5qSe5IXCUnIp3iLQNbE8hO8vuQhSHvhnR1oRCBtFeiGtmPL7GSXudfhq0SsGxFX
+1vWh0VElCAA7
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/diffeq/series/series06/img1.gif
+
+R0lGODlhfAA3AOMAAAAAAI+PjwwMDJubmxgYGKenpyQkJDAwMDw8PEhISFRUVLKysl9fX2tra3d3
+d4ODgyH5BAEAAAsALAAAAAB8ADcAQAT+cMlJq7046827/2Aogs8gFQeiTEMzvnAsz/TIDIe7PMDU
+Uw9FApBQmCSAR+0yAAAOrwGilBBsgsOiiWCSGjUNKyWh2zSgy4vCkJYo0AlGe06v2++ftyTOafwU
+CHiCg4SFhoeDCUcUOEcDCXUDBE8FHQFlM407AwIMBQ+BFwYrC34TehVNShUKpBYBD7GysyUfDk6L
+HUkStx2qcwWeGAqVdQUqHcFciMyCf67N0dLT1NXWMgwKDhMBrcXX4EzbbgydvKvh6eoxlxkN6G0M
+TpgYDQYAcusJ4xUJaLz/5ihwAi/RP1R8KjwocGuVAFKoKiCAxAoaHQQABBTkoEDMgof+HSaK0Lig
+AABoPyggYOMgAIVdeAzkA0GgUgGQK0p0+hRqwcoFLc3gC+PyzbdTGxVabBOAZIeZHZZ5ybXuhTwn
+WLNqxcqvqtcKsI5+HaTTE6gFA1qpVatkoJuAYwVJVUH1ggMyCMTG3cu3r9+/gAML5ujAwQFiDBoE
+SKt3MB5oTboudYynQaspO1aOosy5s2cRA+pKEF1DgJMDqFOrPmAaq8uqAeBaSPB6DkaYGxwso8Ng
+YavatmQvGPhtX51bJz10lUF8E4BKhjEsplDbQK4BsQwkWDj6ubEDGWU8AJ4B+wPt3HOUFNDNgpzD
+ElC78UjBbQUCkz9u1ZqflROoHxjTMI58HKWUxw+/DCccAfQM118NNwFQE02kJLgBgyLARGApBrrR
+QzAvATjBaiSq58EABiSlQUp6kNJbAb+d8qGIGrQCCm4LGEDeeQ1AFYB3dyAjwl2WNYBAAyaU4F10
+EvBIYwV+yEFAPviBxQYHCJDXhgNXtqHeTe3BgEUDjRWQQGMTnGlHAARoiUFiXxWAJpo1CJkBLAxM
+8uBnIqzl559r0cnnoISeYsRuhYrwYow70BJLJfZFlOgHSkInnH9vTSrCl+wp8ECJB+QjQCUJaWrq
+qYJEAAA7
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/diffeq/series/series06/img2.gif
+
+R0lGODlhnAA3AOMAAAAAAI+PjwwMDJubmxgYGKenpyQkJDAwMDw8PEhISFRUVLKysl9fX2tra3d3
+d4ODgyH5BAEAAAsALAAAAACcADcAQAT+cMlJq7046827/2AojmT3DFJxIMo0NGUsz3Rt33eAMcMB
+Lw/A4jcRUh6KBCChQEkADxxlAAAcRooHodEMCCoDxCnxzSCVTBQBFW5yAgyoE9MoXxJETeMqpSgM
+fRoKfAkMgRYth4qLjI2OfoSGJkaPlZaXmJmam5wWBnkJcy4HTgMJgQMEVgUdAXmKPSgnAgwFDwge
+QRkGiQ2UkBZUURUKiRYBD8nKyycfDlWiHbwTBKdFw88cwp0TBbUYCqyBBSwd3mvc6epHv+vu7/Dx
+8vP0FQwKDhMBxeL1/iUD8klQwICWBAfD/ilcuK5OBVcZGiTEEQfAqwsNDACQ9E8XiCT+FBIIrJCA
+z0GTUhRUmdip5IRBEgpJQMZsoscKDwo8GybA2EuUExBY8+OzDwIAAlhuyBlHXAAA/RTY6clB6KKk
+CwoAKFrEAgJADnRcY2SA4weV4v4sCCeBAKsCVLMMoGULl4SvC8Le8MWgjo5B/S5kWco1B9YOZmWg
+axOtj95/FatInky5ykiGmGOIzbxwVq1bCwYUGz064U3OChezaHwsTjPUsGPLnk27tu3buGvgc3Ag
+XN8AogPnrueTyuXCw+VxUSAGyNdpyaNLn357AOvQhwRUOcC9u/cD2iVvJq5EBF59QC0kGH/jKJQO
+DtBdYpCzGHsz7TpAncBb8P6Yl93+8MxWHgR4CFpAUMFKf0OQNho7GQBHgQ4IjGeAKAMkY0ACOUmg
+4DgHIFVCh0AoJcED9wWjIYes+JCVAPtMssMCvUnAHSJ2+JEfAciFV5lkyBFTRWImBDEUABYKdOMG
+Ki3SZGjvEZPeAlsgEmQNcAHgVgguDUQABTx6GKUGVSoS5ZIV+IKIEN5QsBEG38XpogcDGGDiBlEK
+k8wTP621AH0F2PcSm0TaUMwtY1ZgAHsPfGLWU8JJUY4IXYZ2AAMjOYCHAg0g0ECGHzIIhKM4+PIF
+AZKEiUEAgFSVog0OtFqJi3DFyEg+ZzQQaQUFJLDrBL4eEgABr1rQF2wXeVDAr78+1jBphA8woMqV
+1Fni4LXYslXtttx2kkR+3T4CqKAl1tTPaeE+csJ+oi4FbrqM0ApjFnJeOgG68Oar774VRAAAOw==
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/diffeq/series/series06/img3.gif
+
+R0lGODlh2gA3AOMAAAAAAI+PjwwMDJubmxgYGKenpyQkJDAwMDw8PEhISFRUVLKysl9fX2tra3d3
+d4ODgyH5BAEAAAsALAAAAADaADcAQAT+cMlJq7046827/2AojmRpntwzSMWBKNPQoHRt33iu73xP
+B4/ChTE4zBYPwOJ4pCgnD0UCkFCsJoAHbwAAHEaKB6FhDQiclvC4fLYltZYsZYBQJdqY6LS6Iqzo
+VhsDAl0AMBkNeBoJTRoNXz0KBjuMPh+PHQqQCQyWnp+goaKjpGmbnR0MnUKlra6vsLGys7S1tpYG
+M7kVCVcxB74DCTsDBF6sGwGNH72fDQkGcnPDKEUrKgIMBQ8IH1zLEgaHDU8ZmhVccBUKhxVAD/Dx
+8r4dDl30HeITBNQL5xb6JPC78eYCOyxw7HFId6uANgwKkOUo8KKDQz8kHEoUFfGWxx3+CgAE8Nft
+o8mTKFOqXMmypcsSDBQ4mBCA3caXOF0OmClBAYNsEhyoy0m0qNGjFhItUSRBGaKhNxh0AZc0GqoR
+Tls1gFoq5EgFJTMNk8KLJ4UEkCY4SJsjpLQcCcx+KlhhLQq0E/5xaiovHgVVCzYGsQdHQDuDbCUg
+6EfhYA8EAARw1RBEKqsAAFj9g+Iwc1PP6Pr2HZnnbeN2CvAY5rDYh+TAhjiUUzzJAWmEuK5+CKl5
+UscFs3uCluTvJgm6Fd4SEFJgdZhB2rhNQFD7Ng1yDBJ9PWDc4GQKUXqY+W5B927yoMJ3wAgIH9Ia
+UgvJnz9f7vv7KYF0x89fB7boJQ3+wM6AA6rzTX8I+sDeC+6hQ0gXhyUo4YQUVmjhhRhmqOGGHLbl
+wFoRZReAgPt1aKI5cwAgV4QntugIO3UgQV1ALtZo44041jhAgwvwSMODBwQp5JAHPNiFdSLs2IqP
+o1jBhX0bULeAlBQEkJgFCSBpA2SmZeAARiJYGUoBCiCZZQ4MBMGOlhaQuABeH3gGWlBX8nYWlDXY
+E1s9Itj1SQBAdPkmniHYqYJnfpJBoGN5sdgUPSMhECmSBgQDjwEJBBHDnDi0EFkJmiIBVaUWhAoP
+DshtetMDbIb2AKaaGhGYADVxQEZQ5S1wwCFBapBaGsEJ5KiR9EHogVvmdQAPFVj+kPZrBcv2I5Ib
+gi5AwGEG8NTrBiH50G2P1eZ15RgGOXpDcwAsFwKc/hAg7gXsKuAusMV2cSUU1TJ6rQQMbUBuD9Js
+i0hw3TqUXLK6EqkwVRkMYAB6GEiTzqnkXCBxFqfSkCoWV5VzDgxpkllmXkoYDFIYkEG8gAHWvdqA
+eZiVSENFIrBbBANmscxLWjcTGsIjxhAgK01zOsCIAg0g0MAAhwrhJxK5IGwCdtaisi8HAUzCWqt5
+aq1D1rJI2oGszdU6lxQNyExBAQmU2DYPARDAdQXZjcC22j68nWAB3eFdAs0ZAMGAMeZ6wHcrfufI
+waKMN/6b4pBHLnkmO6o4+YUoIa8JhWhBuMnu5RI2vcDTixcOOn5k0wrDAwoH2cmto58u++y0115B
+BAA7
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/diffeq/series/series06/img4.gif
+
+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
+AFrW4VgQu/jFMI6xjAMSAQA7
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/diffeq/series/series06/img5.gif
+
+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
+Ow==
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/diffeq/series/series06/img6.gif
+
+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
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/diffeq/series/series06/img7.gif
+
+R0lGODlhgwAmAOMAAAAAAI+PjwwMDJubmxgYGKenpyQkJDAwMDw8PEhISFRUVLKysl9fX2tra3d3
+d4ODgyH5BAEAAAsALAAAAACDACYAQAT+cMlJq7046827/x8SSAVggEcyJQfougpQxJLSvlm63lYz
+Sg2QQDFRCECAYotIW9hgyQLDc6har9WgZVg84r7gsHhMLpvP6LTarFAMCIO1hyF4fGJ2yQNA/Bgc
+ElVlTR4CAIeIiXwWeBN7fXJmAgULCVORmJmam5ydnp+goZEOCCl5IA8JCgmnooxJTjxlqautFAgI
+E4YfDQCne1qoP2MDDw8GrAWTlZdkvb8AwRUFBMOvkDW+josVMdgSBH0D2jVucBfeGATSao163BSG
+id8bAwdBDQdxHw4JDQoNEDSI0+QJKgMNmq2xh0+fq4cQI0qcSLGixYsYM2rcyCHAA0rPHENWgNXm
+k4MgM+qgWqbMlih7AwrKGvOApUoLhyYQgOWB3II9Elks6FUjlxmfQDWMM9rB3U94HQYgeDAggZcw
+D1YBUDWgX0CQZJw+yhDgpoUHBwBREAtVT1pGV7lM8Ai2Alq1FhCoiMSW3oICCX7UpfCxwjho++wO
+XkDOAU/G5TAUtnAYhEdjmDNTpYwUQOIJ/zIz7ZDghARkIAhQUsbECcmZHBCccGAtTekJqNVkdQmG
+qJPRFneLnOAVweLhyJMrX868ufPn0KNLn069usYIADs=
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/diffeq/series/series06/img8.gif
+
+R0lGODlhxAA3AOMAAAAAAI+PjwwMDJubmxgYGKenpyQkJDAwMDw8PEhISFRUVLKysl9fX2tra3d3
+d4ODgyH5BAEAAAsALAAAAADEADcAQAT+cMlJq7046827/2AojtwzSMWBKNPQkHAsayaqspI773zv
+/8CgUDQAAA6zIkKieBAaikFAQBkgTAkqTZEAJKILwskKDhaPScBy0XxGp9XrILt5cL1R8YJ82igM
+QyIKSAsJDIEgf4iJhIaLj5CRkj6DEo4dDwCTmxSVhYcbDZpsa5ymp6ipqqusrUIDBEcFHQEvFg4v
+BQoCD4EDBycmAgwFD6U9sLK0thW4C7q8vsDCxMYfDkZ9IAUJASgTBjhhCRMAvQvYHUXnIAEP7/Dx
+NR7YANof3N7P4OIE5BLmJKTjsE5EgRUdCjDQ42rRQXEaFDJsCCQTRVejFEC8yLGjx4/+IEO6YqDA
+wYQAGmeJXETSpASUClSu1DDAJRsGwwSym/mj5gQFOEE52MmzqNGZDIwwy9DAAABQR0ckBbAUQ9On
+UdkYIQrCyIRYgRIQYtMI6g8FW2F4lQB2iFgmZT0gABCNxJRzDxQCUBlgLxMtCwRsxIDgH6e5dUfc
+lZA3KV+/bAAL7lB4hgGzH6DEW4NWpaKYYWYVmMyCWrFSCAA50Lfp8gjN8DhD/jyLgGjSC0xbk5Aa
+HesLojAv7oBZiB4+qYZzKB7k+Ip7IqYamU69uhGbWUFIt879evZ23xG5kwlS95IBGtOnZ2cxfIkB
+w07vUa++F1q4K52X0RAg6Tz3Gej+B90FDiTQAALkAajgggw26OCDEEYoIUUlOXBATAw0EAB6CU54
+QYUXKqQhh+5BVAR2g3nYSRUAoAggFApckVtq4agYikYyGmNAjTb26OOPQHIggBEHFGnkkQcMOd1v
+EyqJ5JNKGsHkSnMFxIEDEzWDwAEJcBUIA3lpNOUMVXp5S5YUOLBll5GAqYsCY05QT4oEXoCAPgUA
+AMgQneVWxCwWBjEnPXbiqWcgnZngV6ARHUAXDAiUMuQEeTHm5QNxVjDAOwZ0OcsBuQiAUhApPEpC
+pBNMyphK71yAqTqcegrqM6LS2YkRzGlX1ztelMOaAS4V2cF9IUTZna23YhUDTnj+ZWIYAL8GO5YG
+xMIwGgC2jVAAAUy+xQQBX+FQEAdPnHJttgZxW4G3bIDLlrhWblCuDAMYYGYorDFj5TqtjkIWGxK4
+KeZPmigEwpNPVkWTva/lW845/PbibyU4CAwnwc/kShmyGhgLAA7s/sKASwVCcWADwfyJzlgPGNCA
+xoggNILHII8lMskGKnByyouy7DLMCwR3y56szDraqKk4QPQqRtc6QwDqEqewhFBnWkGGRsmcgTsL
+feyj1hhwHQvHHNFn9tmg2Yj22ikF6bbbd7ztRx4DdmSxPvLAI1N7E95tad6zEOtJeSozWoK/ESoK
+6LQYCM64R02j9ADCB0DFt4QRkTdBOSgCzHKJ3KCHLrpIEQAAOw==
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/diffeq/series/series06/img9.gif
+
+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
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/diffeq/series/series06/img10.gif
+
+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
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/diffeq/series/series06/img11.gif
+
+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
+XoC1Z3Ctame72nY+bgMbNINtabuhCAAAOw==
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/diffeq/series/series06/img12.gif
+
+R0lGODlh9QAlAOMAAAAAAI+PjwwMDJubmxgYGKenpyQkJDAwMDw8PEhISFRUVLKysl9fX2tra3d3
+d4ODgyH5BAEAAAsALAAAAAD1ACUAQAT+cMlJq7046827/2AojmRpXs5BHcmUqK5zzjPrwjRQUOna
+Si9KQkYrjgKBB+ChWUoOuAagIlBMFIIKgIGBer/exmUqUaisCrK5C26LqdZyNuRcQDFS+HU+2bLb
+X29aV2cTShmAYIIWSkwmBTsZkUaUlZYLkBqTl5ydnp+goaKjlQMDGqekqp+mqKuvE1wHcXcLWBRp
+jgtKcRIEvVQAwsPEAMAUBkS1HgLFzse5hsYgsrQ4uHy2dbvTE78Yzc7ExxPJT9cb4eLC5NK6FgRc
+C98UAQYfCAGjAjsJ8qFEMsTz1W6CPXz6Rh2CxbChw4cQI0qcSLGixYsYM84IcO1BAgX+Cd4lSKiR
+g0eQ72YguFev48eQQkiW3FBAgUwLAVJJIGlApxRdSgQN0HHpwc1LP6Ut6pCz3oJ8FXpOSCoh6ISh
+m4wYVbjtQhoJQx2tubKNF66CJOiFvaJgAAGdJ6JV7fbh64K1FsaWKUvXFtoRareBJFOpkQYFCh4g
+6GpA5oADYhocgBuAqBEHCRooaICgwSm7emc8jjx5KoBsGBAr7hrVMeQFkilbLoJZM2fP0ipJJgCA
+wGtGIBtklVAgwXALxmeaWHrhQfDjFYpDFzJdufXr2LNr3869u/fv4MOLH0++vPmGAZhXaJDy/HLU
+C9JvYO9eRAKdD/hhEqBrwI/u+e3+UAB/Rhiw1H2G6Ddgf/9x10ACBrD2wRAU8MUDOtlZSANIFVDY
+B1CELdDDd4ZhwMBoc/WBC1/ASHjCAAg84B98lMjFzV8WnPjbIcyFaKNZH5YS44yhlMhIAQ7UUUUZ
+1/zYF2I18rGkQQ9UF4KTOFJQZZKOTFlBaFieFeUEXu5UlIvlxJEHkxTgxQ1cUF6QxAN01mknXEGK
+GKIaBc1p5594uqkEnhwYoGaIuFwjKABw9vnno4QuUEeSFSwk56OAZmDkBQQW0BeiEJbToKTtmUCA
+gEuioQaGJYQqgQH/SfFPBp32NYgQLC0AqxallnDqfmjkZsmmGTSAWmbAtSeZKGtZKoBAYYl59YGx
+GiBbabTrsdqJpaMYq48Zw2G7gXOk1IaAlZcdRYG3thxgpbgakDtKAAwsEalDBTBQnQLo1ldCvvv2
+6+/ABBds8MEIJ6zwwgw37PDDEEe8cAQAOw==
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/diffeq/series/series06/img13.gif
+
+R0lGODlh5QAfAOMAAAAAAI+PjwwMDJubmxgYGKenpyQkJDAwMDw8PEhISFRUVLKysl9fX2tra3d3
+d4ODgyH5BAEAAAsALAAAAADlAB8AQAT+cMlJq7046827/2AojmRpnmiqrmzrvnAsz3QGPNMDVESx
+FALFQqjYDQ+r3i84pAwADZYSSJQwCgph0kdtFhsOQ4DVADAq5TPavEoYJoaEJF2r2+/4vH7P7+sV
+AhNMEwEPPiuAgloShYeIgRKDEwUDLImRi4yVfog3OQCZGg4JDQiOMQMCAKuhMgEJCWM0DgoNYpy4
+ubq7vL2+v8DBwsPExcbHdg8CXAI4FQMIDwMJkDLQ0tQ119PVqNHcyCFFzgs6mZ4LDkYSRlkYhQ/x
+8vObFOjqE0VjCgjv8//x6tlzho+CgwOtCAH8J5AdwXULDOAgoMYCvIUBXWGU13DBE3L+OjpeKCOB
+Xx0GZ07FaJDlAEKRLHSURBJOwwMF5Grq3Mmzp8+fQIMKHUq0qNGjSJMqXcq0qdOnLx4kUJAgJ9Sr
+dQ7IkZCApoUHsuqAxTM2WdijZUBCqWDAgQSXIFStmksX1IW2b712kFuXbsKIbhfA/cC3L6u7gQd7
+KGz4rwrGfVuN+5SJgJaP+RQMIABzhGUJmEsOeBJYxWeP6DJLuZz6gYEBtYBOlmDOXj4kRNrppeCy
+t+/eUSqsU4DbowIfXTH8Xn4guPDbTUq6U87ct/MJw4uHNJShunUZ3oFfkHRpwiiWpRpUKjJzxfla
+CNRTmO6eFHz5DnDQT/E+/XoAPlApRQYbFNCxRkUoDNDcAg0csImBGCyzQAIIrqRFaTXsJ4MSAmLl
+4Yc0RAAAOw==
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/diffeq/series/series06/img14.gif
+
+R0lGODlhqQAvAOMAAAAAAI+PjwwMDJubmxgYGKenpyQkJDAwMDw8PEhISFRUVLKysl9fX2tra3d3
+d4ODgyH5BAEAAAsALAAAAACpAC8AQAT+cMlJq7046827/2AojiSFBFIBGJNzVEHwAE95MYyCWolj
+/5QGQAEsWhq7RUMixMxqRsRSYmBVAAzjb6gZIB6DhEALLBTIoDN63RkozooXG+RAHBJQeuLum7Md
+ez0YRH5rBQRJFQpcGwc0hXOOeZBaAwOUGJeYm5gMAlAKYxdPZFkLA48VBIScihKMrTYBVrEWJ7Uj
+qQ4AFJ8LsDAPwsPEYLicMsXFmsfNGQgIEwK8I7uTznSp2CXTAN7AHHUND1XM2xvi5Abm5+3u7yF1
+d9cBchQFOmRSwgqTCYnYAkx5B00atQXrRmkrcq0CKjXN3oBzdyhRHCcLKSz6xtGbPQr+ASA6sqCA
+VawHDIYBwMMOW7dvrAwAbHCAAAACBwbaGJCzgQGTEgIAgHhMgQEAAnLC01AgAdFaTpcOErVAgEkZ
+T6VqzaSMGEAPBM4UsLqAVQAFCLJuXbtGiKkLXh74/Brr1gIVtDqMPAXg49q9qPwucECXraeGHBqg
+BcpWyeLGiZPo3LAowQRJjStfzgi5s+fPoEOLHt1OYLNxpDk5WILP14QE5hokOIq4BEegYdoVOMB4
+m7cJNl/3qUBKS20JLra5mfgOVbRXGI+PKFnyLQXOrZD86l3adVnBEopbGNB1WGEKB/JKKBlRDfNt
+TXeouahQeggBliXs1cid0gPqi/DnZl8sihHz3C/RaRHVXVhYgF0t72mVwGSFKNaSEuCl1ko/2PwH
+2gPn4VIAA2ph8sZnBvRxQIYYvNQRTBpu4OKLEaKxigSo5GEAGAAMZwSNQAYp5JBEBknGRkDaI6SD
+E1xk0gyFrSjllFJSGCN6VGZp5R8TKtCAFOzwduWYQSCVwSIoJJBfM6vdFcqAFPwHh3dsyVkWnS10
+9psEwX1QB44AHMjWn3wJyoRozo0wgAHWdbZoo6QFgGd4B/h4gQosboWphvGlMEpWcW3Wnzuh6lcj
+WwUOY2gXJzKonlZuqIEXmSQUGJqtGUQAADs=
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/diffeq/series/series06/img15.gif
+
+R0lGODlhIwEvAOMAAAAAAI+PjwwMDJubmxgYGKenpyQkJDAwMDw8PEhISFRUVLKysl9fX2tra3d3
+d4ODgyH5BAEAAAsALAAAAAAjAS8AQAT+cMlJq7046827/2AojmRpnmi6IYFUAMbkHNUBSANApwyj
+tJWEQ0UcBQIPwKPYaQAUTJETGi02gIuGxFlRABIT2/KE0EoMMQqAUW1rkmP35Sn30DsDxGOQENRB
+BQV/F4IZeXt9fzd1SmqKcYMmDwQSCjuRGwFmIGUPDwqQKgMKgpZFCZsjnZ+hWZcSqCYOCQdCFw2v
+RQU/FqugmEwPDJ5JCXtddxUBhQs2wM8Wy2GLmGKYcMrMztAmAwPc39zi4+TlGgwCYwp+twoIVDw4
+jRQE8OaS84NUydD79vcfAqQhxwJggnBR+Fw42EYhQDVjHFBb8O8CEmIYiSF8eGKeRAr+6Rbwm3Ax
+I8aNE0zVUQBPpRyWGEqa9ISSIyZSIzu0ssmhAANmIHZWAlrBJ9EQEiGRkoOtglCeHhQYACDgQKoN
+A6w2MFARKpGsDbZ2jeKgE5qabXARAEDA6gSwYr3KnUu3LtSytUIFyDWr1hAVvuIkwGJ3wy7CkTSZ
+UywXAYIJAqgZQCshqYqnOY4WdppP34uxkXCCfliAAGGXGKxR8AKgtWvXuSRIk7At5ejNTesII/bl
+GLDdnnpTNhf5NTwDiMs2eHA2BVyuygBo5sY4hFq2bicsz1BdhFSq2bM8jfK96tXCBRJMH6Te4N82
+M4K8rxLf5jrI8IAMWL9ZxX0JAtj+gwR/3sU2wEzEINYBTJXkciCCDyi44G3QECBIAQFSVMkDDiDX
+nxwWLoAhFPm5Q2AIE7XRWYpVdEaOE2xkoIADCrR3zxQi9MBLFYdsJaEJv5Cgo4SfXBCkCNvkkEuR
+URyR2wRDfmikBDlxEGMO40lppTxZEtGAOxQG4+ICV46pZZUalDEBGlqSoOYZA7XhBRi0mdnGkwu8
+uQCbbfbp55+ABirooIQWauihPHUHzHaINtqnA1rsEtIEDE3wSSmTomAcBQ792UACU3XJRAEHhCkH
+qaaK09oEa1E63wJlyfNYCk/VByiedYyCZiS6plpODrOKZIgBMabAEkvFTmDnh7j+unGFSL4y8eyu
+HAWQKWoWvGAghBFycECcFEXrVbNVLAWtOOZSe096QBSC7SHTiGuBAHQ2kyKDf5IbzLFelCpqEZ8c
+q8ORNn2JUbApjlLIC+CSYOMLyYr07yDekIDrcDhgzMFIGrco7z2xWGCwtArUhAtAe7UxmEWxqbCy
+o0UQDA2T5thahS0U2BwFzlB1S9pP3Jibgc9/TCZHZhQY7QbSNhnw1wEtZ1Dca1R/PJfTtEV9wdRU
+u9bVfyC2xE7YGHDdtbol1MPlNF9EcfbbcMct99xws0oFlmvuAcCrQMbG2tuXxN1FS7n8ffYrgq9m
+9Rx0U20BNaZQ8cMD60Ft+eXulp/3J+Q02JOEhJiHHh4FXDBSbOlyrJGa6JdrnsIsXzZQBko1wvwB
+7ArI3gBKpRbhoRsBSJf0jyoEf2IkMGbwJSyL69I7il6XC0ALCdSbgkAmbNoLYthbvNQ6rRQkLahj
+au9nryJMDFV6x18wno1FwQ9CrAsAG0T7I+CqPl3TistvxJsJxAj+VxTD4M8CAyBWAZkyJgL2KV1d
+ecAB+GaBb9kuNQ07lQ5+s6xmZNAuAWPJwFpBua3Vqza2o9c0cqWHeF3DRSqsU6DQdj8XqO6CC3jY
+DZdmLoZxMBQ6BCAOt1CyIZKuiJgY2UO+NJwIAAA7
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/diffeq/series/series06/img16.gif
+
+R0lGODlhpwAvAOMAAAAAAI+PjwwMDJubmxgYGKenpyQkJDAwMDw8PEhISFRUVLKysl9fX2tra3d3
+d4ODgyH5BAEAAAsALAAAAACnAC8AQAT+cMlJq7046827/2AojuSCBFIBGJRzVAyjoOUVz1bi1Hzv
+bw3aojFpACoIosTA8iUnzAqA8ateBojHICGw8goFryeMwWq54ooC8Jg8AIqPIp4WPRKHxACkQMz/
+SlUPBBIKL14PCm11jAtriwtvdBRrkxUqkI2am1YDe5wVn6CjdQwCkApdMBIDbFVUC62ZCwSWpLde
+AU24FCe8FQ8CYQWnUosOR4UTDKIVAQ/Q0dJav3WuC8iUHM/T082s15EA39UfcD4FtuXrtwkGiQbk
+HI/s9fb3+KQOCHmzCwGHJCSBpqjKwESQEgjJVw8BggkCki355u9HRXBkGNYrQGCho4D+EgJkPCCR
+EoCTKFOCnCByAkk16jTiipjSkoGFAw40aGAgJomcO3s6A5BRpswCCYq2U/or3Bs1qhYImNRAGlOj
+jFJBnERjwFUS9CRIokBg2FRHEwqsxLqp7AJicegocnDTijsoCSQYgZUBAd9qrT754aMmjQIHCpKy
+vbVmV60RAXwunqzhsdhwHoxcpMy5s+fPoEOLHt0oQKBbVUlrckAkXTEKeigAmH2uCu3arPKqtiaR
+QEkdwOpsdrFbU6uHE0oW+vO3xx8FzRdgLm4lwOtCaykc2EVhQDdpHi9sh0ndC1IaGQ1VEKB7wUsf
+7F0qn1O+SgNF0ZBLUK747ZQf/an40Nx09dWRwGl6KSAPD/eR00B2uNyR2Gb5FFRNIvXkMQEeGDwQ
+XjkFMPCVJgqMGMmHYmjmBgAIGrCDexBiQNNtNEoWmosSHBDjBTPSSJs6YYljiWWyQKHjAfr54OOS
+TDbp5JNQ0jYBkeGQBEB7PgQ5VnITqGfJAy+Kd+SYYyJImkReFvLMiGS2qROPk2jVwoEKNJCEKA5g
+CdqCI+R5n50NfJNYJ28++MleGxxg4yh27jHoBwn4uKgI90mQwKQFJspdCGFiw2em7KxxX2KYYlAq
+qL+s0d4b5DxwQKcVXIqqUUVeFtMDX71B4azrmGKkCEHyqhFCP53aWQQAOw==
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/diffeq/series/series06/img17.gif
+
+R0lGODlh8wAfAOMAAAAAAI+PjwwMDJubmxgYGKenpyQkJDAwMDw8PEhISFRUVLKysl9fX2tra3d3
+d4ODgyH5BAEAAAsALAAAAADzAB8AQAT+cMlJq7046827/2AojmRpnmiqrmzrvnAsz3TtAc/0ABVR
+LAWBYjGUFA4uH1BIXAwAvwNSpQwOi4tdRcuqMrHcSUCB+K0aAEYFraawWQnDxJCQvG34vH7P7/v/
+gIEcCgITTHYPiQ9mKYSGWAsBiyyOEodiFgEtlQuXEpoUkoyCJwo4OgCQGwhtNgkPCq0zAQw4A5+1
+D7c0tLZOCA8NBqCkxcbHyMnKy8zNzs/Q0dLT1M0PAj9BORUDwAMJhTTduuDi3uV749/h1SSm21mp
+FKcLDjwSWAy7mYr9/fvzttmbgAafLDH+EgKcQG8ghTASIPJL+M9Cw3uoKAjIIe+CJIr+iha2+AhS
+l4Un8HaIzKBA1Sx8LmFIlDgjzAAFPxRMaXcBFjyeQIMKHUq0qNGjSJMqXcq0qdOnUKNKnUq1qtUt
+CRS8usqV1IE6EhLs3ELMxoOyNM4CUksVTUoADSoYcCBBCggBAPLq3dvRwty6Yzfg5cs35oK/C+ya
+GExYb0zEikswbtz3xeTGLt+hgkSgCMo5Ug4g6OKZHhF9BFaS6CzhM74EGInAbsHaiWmtsQ3oAkB3
+qOaIlTHqbKKj94XQyJPHtThh+JV7wy0kn35geQXhSMDEjqeBunLm+LJn3AIA7QTvyK2/QB9a/aPm
+7CQ4SNBAQQMEDfbNdzG//v388mVBhUBgJvRnH377zLQdCgb+l+CCiRlGwh0EpbGGhSsMUN0CDRyw
+C4UYHCDhC+UVYFpN29EkQximaJIAWF3FKGMeEQAAOw==
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/diffeq/series/series06/img18.gif
+
+R0lGODlhugAtAOMAAAAAAI+PjwwMDJubmxgYGKenpyQkJDAwMDw8PEhISFRUVLKysl9fX2tra3d3
+d4ODgyH5BAEAAAsALAAAAAC6AC0AQAT+cMlJq7046827/2AojmRpnp9SAArqSirrFk9dF7T9DFrQ
+ZI3Ha8hRGACCw2/zAASIFiNSmQo8CpSAbBIQtLiSAXahOFwQieh3iMYMdPDHk9T+wBkGOI9YRykc
+CgljMEIaD2tQiQcAYQBmiRwBVgCFFAwMCnOQm5wmCgBpEouVnRdNpAsISwsGBqWvsB8+sbKrtLe4
+Cw8MNqA7uRS7vQm/JwOgFMehGQkOFwmPEg7RRNC41mROCwnLGQ/Um9gNXwlfTd3nFQoPDgaajBUI
+rg6aC5R88/Wd8gv0I9/78gEb6GIcAkS5Tllg0AgVwYcQI0qcSLGixYgNtkzMiPCixyL+EjRC/CLy
+o0kOJS/kOeasVMoNi5Cpgzfhk8MKCfYkO7BnQDciA3jeCqpTVMeBRNV1s0mBqQaaEg4lAKVA570X
+UqkW3ZS13NYOALkG0prBKYyrMKKAW3DMoYKjC6zE0fGVLVpYbUuE3ZQXxQMCMKIlsAVk7UcH0JpB
+2cuhQCYLqmqsA1aAwSB1l09WcHAXl8IKNzWLnjBq4GcugxaNPukgcqu6rxocIACAAJUwShoYgLu6
+t+/fwIML31TgAG/KxoefHPDpOC7mL5VLbPAkei7q9pxLB6YipHZY3bNvr3jo7SfjoblcEWve0WQP
+c8QAhQ1btPUJAoTcf7E/yoUAs9X+doAkAdpGWBaGUZCAPuNxoQACmU20Tjv6AOAKBRZGSME0F3wy
+iGKJeHiLiMxhUQYHjG0i4l+BbQgAQxNwBmMGBhT1xgMGEDPGMRqScGOO65Xyo44DIPCAbgxakCJQ
+NQBpIiCCYJjEAVQekMQGCgjQIVQSEACXAACEKeaY0X2Ci5kkLAkFmhpkZIubFMS0zIkWEHDgW1DY
+icEnZI6ZYJ9jTqDnB4CS2VGhiIZJwaAaqBYnl5kEuUBGUTBSGYYzVlDlppwemM0Cl4JnaaZ2JPiC
+maFWEBRttgVQHKsDRrGMO6AZ0ECmWvSYpq2kdoLjrWma6sKvvYowjgTlcHHhBghhJHnRISbmR0QA
+3zWQwBEOjfldIgVEyYyuFrXWCAIEnTZBerfggAG4Jg1gQLG0mAuDefA2mMsKwpYir6bL2juUkaT1
+x1VnAizjqL9DhbdCv5515u0K9SJcyjjoQjROfRlEAAA7
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/diffeq/series/series06/img19.gif
+
+R0lGODlhewAhAOMAAAAAAI+PjwwMDJubmxgYGKenpyQkJDAwMDw8PEhISFRUVLKysl9fX2tra3d3
+d4ODgyH5BAEAAAsALAAAAAB7ACEAQAT+cMlJq7046827/9oTgCTVAM/0AE25iG68ppiTNEqDNMOi
+ABLFIYYZHFqNQ29xEnBsOB1PsiJmkgQA4Wjter/gsHhMLpsfCUWCZhYXFCMMQSEZoCYKxYCw/P7Y
+K3Qfc3V3PglAZTNtYy2Mj5CRkpOUlZYfBwkTCUOXHwEBixkGDhIHnR4CAKusrQCCFH8qrySkpqgc
+qq6usBaiF4k+Q3Q/QbgUp8nKyY4VArAKTiDBQj5UwRfL2lwYvyACBQsJDJOlRFWe6err7O3u7/Dx
+8vP07w/gCwUCbPQNCQaG3AVEV+8aPwsDEDwYkEBaG1nXenVIuLBhJG8Vok14RiFUuDBxEF/Q+qBR
+AscJcchgpGDIAbZEeTCEekCzps0+E+wAAoCTQ0tsBC/MtEm0J4WVEwiE00fMB8xjXf5NMKCJCQBy
+G5Tm4ygoqBikG04EQaBSwUFr57C5g4LgIyQHKUsEYIDCaMG7ePPq3cu3r9+/gANjiAAAOw==
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/diffeq/series/series06/img20.gif
+
+R0lGODlhewAhAOMAAAAAAI+PjwwMDJubmxgYGKenpyQkJDAwMDw8PEhISFRUVLKysl9fX2tra3d3
+d4ODgyH5BAEAAAsALAAAAAB7ACEAQAT+cMlJq7046827/9oTgOT1AE9JiSrZoNPZWE7SKA3SDIsC
+SIpDC9M4EACEw2zxEnBqt9xOchpmBkrmgWfter/gsHhMLpsLipF5/EgoEqkLQSEZwICKAYErPsVJ
+c3V3bz9iPn8ndGtfS4uOj5CRkpOUlR4BAX6WJQcJEwlCFwYOEgehHgIAqqusAIomdyWjpaccqa2t
+rxOHMa4WhT1CdD5AtRSmyMnIjRaaJcBBPVTAF8rWWRYCrwpOIAIFCwkMkqRDVZvo6err7O3u7/Dx
+8vPuDQkGsfQLD98LBQJ/2DnTtyDWOQsDEDwYkKDbo4EkEi5suIjXNF1AHGqjkAkcGYhwH7hN2DhB
+TRiL+3xVuOOAWiEFGEs+mEmz5sIMID2wpHbwQiabNvlMsIMIgFAJBMD9G9bjpbEvEF+M25DU30ZF
+PcHcm2DA04cXQBBIigkia5gHCgJ+gILA4yMHJksEYIDiKMG7ePPq3cu3r9+/gP1GAAA7
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/gif/lighthouse.gif
+
+R0lGODlhIAAgALMAAAAAAIAAAACAAICAAAAAgIAAgACAgICAgMDAwP8AAAD/AP//AAAA/+b6+gD/
+/////yH5BAEAAA0ALAAAAAAgACAAQATNcMhJKwUYtM27/x9wHM+jgWjaiKSJZnDMjggmYAei14Ag
+LECgqiNyDY8cVumE/AQAj8Qh8KBGo5/caCTizXIz3TdXC5rPZxmzmVIa2e3WGw5yr+lqGX21LfmX
+eQaCMFtbhF04hTU+hQdhW2KNNY04CGiXaABAdx2YQXUxey9Fc6JJI0umIY5QnKZ2qh6wsactrqKz
+ok8AUgFTI1IJt215enAyPsk+GcqCzoNdkZCThmSLgzpcMyzSYFzWy2PWCN48YOLmiYZf1DTk1e4R
+AAA7
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/gif/sailbar.gif
+
+R0lGODlhAQABAPcAAO/v7wAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAEALAAAAAABAAEA
+QAgEAAMEBAA7
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/ADV/adview.php?what=zone:8&n=a3e6c5d1
+
+R0lGODlh1AE8APcAAAAACAgAxggIEBAICBAIEBAIzhAQEBAQGBgICBgIEBgQGBgQcxgQzhgYGBgY
+ISEYYyEYeyEYziEhKSEhMSEpKSEpMSkYcykhKSkhcykheykpKSkpMSkpOSkpeykxMTEhYzEhczEp
+MTEpczEpezEpzjExOTExYzE5MTE5OTFCOTFCSjkIGDkYITkpYzkpezkxOTkxezkx1jk5OTk5Qjk5
+ezlCQjlCSkIQKUIpWkIpY0Ipa0IxOUIxc0I5QkI5a0I5c0I5e0I51kJCQkJKOUJKQkJKY0JSOUoQ
+IUohKUoxSko5c0pCY0pCc0pCe0pKUkpK1kpSQkpSUkpaQkpaUkpac1IpOVIxOVI5SlJCUlJCc1JK
+SlJKc1JKe1JSQlJSUlJaSlJaWlJjSlJjUlJjY1oxSlpCUlpKWlpKc1pSSlpSUlpSWlpSc1pSe1pS
+3lpaQlpaY1pjSlpjY1pra1pzSmMxQmNa3mNra2Nre2NzUmN7a2tCUmtSSmtSY2tac2tjSmtrY2tr
+a2tr3mt7c3NjY3N7a3N7c3tSWntjWntrUntrY3trc3tzY3tz3nt7a3uEe4Rrc4RzY4Rza4Rze4R7
+Y4R7e4R754SEa4SEc4SEhISEjIxCQoxrWoxza4xzc4x7Y4x7a4yEhIyM55Rre5R7a5SEY5SEa5SM
+jJSUlJSU55yEa6WUjKWcnKWc762lpa2tta2t77WttbWtxrW1tbW17721vb21xr29zr3GxsZ7jMa1
+tca9xsa9zsa998bGxsbGzsbO1s4hKc6lpc6ttc69xs691s7Gvc7Gxs7Gzs7Ozs7O1s7O987W1tYI
+CNa1vdbOztbO1tbO3tbWztbW1tbW99be3t691t7O3t7Wzt7W1t7W3t7W597e597n7+e9vefWzufW
+3ufW5+fe3ufe5+fe9+fn5+fn7+/e3u/e5+/n3u/n5+/n7+/v7+/v//fn7/fv7/fv9/f37/f3////
+/////////////////////////////////////////////////////ywAAAAA1AE8AEAI/gDfqSNH
+kNxAdQLVHVRIUCHCdQ4ZGlQHcV1BgxcnSiQojlxHjuLCictGLVu2Y8bChRvoUVxHcSxbvnRJMN26
+dAVd6rSoc6ZHculsAu1JE2fPli0DKF3KtKnTp1CjSp1KtarVq1izat3KtavXr2DDLhUojhvDiAo7
+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
+4ETyCcFCJITkkjlKXe3JhvktYRM+4YwICAAAOw==
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sosmath.com/back001.gif
+
+R0lGODlhMgAyAPcAAO/v7///////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAMgAyAAAIUwABCBxI
+sKDBgwgTKlzIsKHDhxAjSpxIsaLFixgzatzIsaPHjyBDihxJsqTJkyhTqlzJsqXLlzBjypxJs6bN
+mzhz6tzJs6fPn0CDCh1KtKjRhwEBADs=
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+Content-Location: http://www.sosmath.com/diffeq/series/series06/series06.css
+
+.MATH {
+	FONT-FAMILY: "Century Schoolbook", serif
+}
+.MATH I {
+	FONT-WEIGHT: bold; FONT-FAMILY: "Century Schoolbook", serif
+}
+.BOLDMATH {
+	FONT-WEIGHT: bold; FONT-FAMILY: "Century Schoolbook", serif
+}
+SMALL.XTINY {
+	FONT-SIZE: xx-small
+}
+SMALL.TINY {
+	FONT-SIZE: x-small
+}
+SMALL.SCRIPTSIZE {
+	FONT-SIZE: smaller
+}
+SMALL.FOOTNOTESIZE {
+	FONT-SIZE: small
+}
+SMALL.SMALL {
+	
+}
+BIG.LARGE {
+	
+}
+BIG.XLARGE {
+	FONT-SIZE: large
+}
+BIG.XXLARGE {
+	FONT-SIZE: x-large
+}
+BIG.HUGE {
+	FONT-SIZE: larger
+}
+BIG.XHUGE {
+	FONT-SIZE: xx-large
+}
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: 7bit
+Content-Location: http://www.sosmath.com/cgi-bin/suo.cgi?action=index&e=js
+
+document.write('507');
+------=_NextPart_000_00DB_01CA54D2.A3665B20
+Content-Type: application/x-javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.google-analytics.com/urchin.js
+
+//-- Google Analytics Urchin Module=0A=
+//-- Copyright 2007 Google, All Rights Reserved.=0A=
+=0A=
+//-- Urchin On Demand Settings ONLY=0A=
+var _uacct=3D"";			// set up the Urchin Account=0A=
+var _userv=3D1;			// service mode (0=3Dlocal,1=3Dremote,2=3Dboth)=0A=
+=0A=
+//-- UTM User Settings=0A=
+var _ufsc=3D1;			// set client info flag (1=3Don|0=3Doff)=0A=
+var _udn=3D"auto";		// (auto|none|domain) set the domain name for cookies=0A=
+var _uhash=3D"on";		// (on|off) unique domain hash for cookies=0A=
+var _utimeout=3D"1800";   	// set the inactive session timeout in seconds=0A=
+var _ugifpath=3D"/__utm.gif";	// set the web path to the __utm.gif file=0A=
+var _utsp=3D"|";			// transaction field separator=0A=
+var _uflash=3D1;			// set flash version detect option (1=3Don|0=3Doff)=0A=
+var _utitle=3D1;			// set the document title detect option =
+(1=3Don|0=3Doff)=0A=
+var _ulink=3D0;			// enable linker functionality (1=3Don|0=3Doff)=0A=
+var _uanchor=3D0;			// enable use of anchors for campaign =
+(1=3Don|0=3Doff)=0A=
+var _utcp=3D"/";			// the cookie path for tracking=0A=
+var _usample=3D100;		// The sampling % of visitors to track (1-100).=0A=
+=0A=
+//-- UTM Campaign Tracking Settings=0A=
+var _uctm=3D1;			// set campaign tracking module (1=3Don|0=3Doff)=0A=
+var _ucto=3D"15768000";		// set timeout in seconds (6 month default)=0A=
+var _uccn=3D"utm_campaign";	// name=0A=
+var _ucmd=3D"utm_medium";		// medium (cpc|cpm|link|email|organic)=0A=
+var _ucsr=3D"utm_source";		// source=0A=
+var _uctr=3D"utm_term";		// term/keyword=0A=
+var _ucct=3D"utm_content";	// content=0A=
+var _ucid=3D"utm_id";		// id number=0A=
+var _ucno=3D"utm_nooverride";	// don't override=0A=
+=0A=
+//-- Auto/Organic Sources and Keywords=0A=
+var _uOsr=3Dnew Array();=0A=
+var _uOkw=3Dnew Array();=0A=
+_uOsr[0]=3D"google";	_uOkw[0]=3D"q";=0A=
+_uOsr[1]=3D"yahoo";	_uOkw[1]=3D"p";=0A=
+_uOsr[2]=3D"msn";		_uOkw[2]=3D"q";=0A=
+_uOsr[3]=3D"aol";		_uOkw[3]=3D"query";=0A=
+_uOsr[4]=3D"aol";		_uOkw[4]=3D"encquery";=0A=
+_uOsr[5]=3D"lycos";	_uOkw[5]=3D"query";=0A=
+_uOsr[6]=3D"ask";		_uOkw[6]=3D"q";=0A=
+_uOsr[7]=3D"altavista";	_uOkw[7]=3D"q";=0A=
+_uOsr[8]=3D"netscape";	_uOkw[8]=3D"query";=0A=
+_uOsr[9]=3D"cnn";	_uOkw[9]=3D"query";=0A=
+_uOsr[10]=3D"looksmart";	_uOkw[10]=3D"qt";=0A=
+_uOsr[11]=3D"about";	_uOkw[11]=3D"terms";=0A=
+_uOsr[12]=3D"mamma";	_uOkw[12]=3D"query";=0A=
+_uOsr[13]=3D"alltheweb";	_uOkw[13]=3D"q";=0A=
+_uOsr[14]=3D"gigablast";	_uOkw[14]=3D"q";=0A=
+_uOsr[15]=3D"voila";	_uOkw[15]=3D"rdata";=0A=
+_uOsr[16]=3D"virgilio";	_uOkw[16]=3D"qs";=0A=
+_uOsr[17]=3D"live";	_uOkw[17]=3D"q";=0A=
+_uOsr[18]=3D"baidu";	_uOkw[18]=3D"wd";=0A=
+_uOsr[19]=3D"alice";	_uOkw[19]=3D"qs";=0A=
+_uOsr[20]=3D"yandex";	_uOkw[20]=3D"text";=0A=
+_uOsr[21]=3D"najdi";	_uOkw[21]=3D"q";=0A=
+_uOsr[22]=3D"aol";	_uOkw[22]=3D"q";=0A=
+_uOsr[23]=3D"club-internet"; _uOkw[23]=3D"query";=0A=
+_uOsr[24]=3D"mama";	_uOkw[24]=3D"query";=0A=
+_uOsr[25]=3D"seznam";	_uOkw[25]=3D"q";=0A=
+_uOsr[26]=3D"search";	_uOkw[26]=3D"q";=0A=
+_uOsr[27]=3D"wp";	_uOkw[27]=3D"szukaj";=0A=
+_uOsr[28]=3D"onet";	_uOkw[28]=3D"qt";=0A=
+_uOsr[29]=3D"netsprint";	_uOkw[29]=3D"q";=0A=
+_uOsr[30]=3D"google.interia";	_uOkw[30]=3D"q";=0A=
+_uOsr[31]=3D"szukacz";	_uOkw[31]=3D"q";=0A=
+_uOsr[32]=3D"yam";	_uOkw[32]=3D"k";=0A=
+_uOsr[33]=3D"pchome";	_uOkw[33]=3D"q";=0A=
+_uOsr[34]=3D"kvasir";	_uOkw[34]=3D"searchExpr";=0A=
+_uOsr[35]=3D"sesam";	_uOkw[35]=3D"q";=0A=
+_uOsr[36]=3D"ozu"; _uOkw[36]=3D"q";=0A=
+_uOsr[37]=3D"terra"; _uOkw[37]=3D"query";=0A=
+_uOsr[38]=3D"nostrum"; _uOkw[38]=3D"query";=0A=
+_uOsr[39]=3D"mynet"; _uOkw[39]=3D"q";=0A=
+_uOsr[40]=3D"ekolay"; _uOkw[40]=3D"q";=0A=
+_uOsr[41]=3D"search.ilse"; _uOkw[41]=3D"search_for";=0A=
+_uOsr[42]=3D"bing"; _uOkw[42]=3D"q";=0A=
+=0A=
+//-- Auto/Organic Keywords to Ignore=0A=
+var _uOno=3Dnew Array();=0A=
+//_uOno[0]=3D"urchin";=0A=
+//_uOno[1]=3D"urchin.com";=0A=
+//_uOno[2]=3D"www.urchin.com";=0A=
+=0A=
+//-- Referral domains to Ignore=0A=
+var _uRno=3Dnew Array();=0A=
+//_uRno[0]=3D".urchin.com";=0A=
+=0A=
+//-- **** Don't modify below this point ***=0A=
+var =
+_uff,_udh,_udt,_ubl=3D0,_udo=3D"",_uu,_ufns=3D0,_uns=3D0,_ur=3D"-",_ufno=3D=
+0,_ust=3D0,_ubd=3Ddocument,_udl=3D_ubd.location,_udlh=3D"",_uwv=3D"1.3";=0A=
+var _ugifpath2=3D"http://www.google-analytics.com/__utm.gif";=0A=
+if (_udl.hash) _udlh=3D_udl.href.substring(_udl.href.indexOf('#'));=0A=
+if (_udl.protocol=3D=3D"https:") =
+_ugifpath2=3D"https://ssl.google-analytics.com/__utm.gif";=0A=
+if (!_utcp || _utcp=3D=3D"") _utcp=3D"/";=0A=
+function urchinTracker(page) {=0A=
+ if (_udl.protocol=3D=3D"file:") return;=0A=
+ if (_uff && (!page || page=3D=3D"")) return;=0A=
+ var a,b,c,xx,v,z,k,x=3D"",s=3D"",f=3D0,nv=3D0;=0A=
+ var nx=3D" expires=3D"+_uNx()+";";=0A=
+ var dc=3D_ubd.cookie;=0A=
+ _udh=3D_uDomain();=0A=
+ if (!_uVG()) return;=0A=
+ _uu=3DMath.round(Math.random()*2147483647);=0A=
+ _udt=3Dnew Date();=0A=
+ _ust=3DMath.round(_udt.getTime()/1000);=0A=
+ a=3Ddc.indexOf("__utma=3D"+_udh+".");=0A=
+ b=3Ddc.indexOf("__utmb=3D"+_udh);=0A=
+ c=3Ddc.indexOf("__utmc=3D"+_udh);=0A=
+ if (_udn && _udn!=3D"") { _udo=3D" domain=3D"+_udn+";"; }=0A=
+ if (_utimeout && _utimeout!=3D"") {=0A=
+  x=3Dnew Date(_udt.getTime()+(_utimeout*1000));=0A=
+  x=3D" expires=3D"+x.toGMTString()+";";=0A=
+ }=0A=
+ if (_ulink) {=0A=
+  if (_uanchor && _udlh && _udlh!=3D"") s=3D_udlh+"&";=0A=
+  s+=3D_udl.search;=0A=
+  if(s && s!=3D"" && s.indexOf("__utma=3D")>=3D0) {=0A=
+   if (!(_uIN(a=3D_uGC(s,"__utma=3D","&")))) a=3D"-";=0A=
+   if (!(_uIN(b=3D_uGC(s,"__utmb=3D","&")))) b=3D"-";=0A=
+   if (!(_uIN(c=3D_uGC(s,"__utmc=3D","&")))) c=3D"-";=0A=
+   v=3D_uGC(s,"__utmv=3D","&");=0A=
+   z=3D_uGC(s,"__utmz=3D","&");=0A=
+   k=3D_uGC(s,"__utmk=3D","&");=0A=
+   xx=3D_uGC(s,"__utmx=3D","&");=0A=
+   if ((k*1) !=3D ((_uHash(a+b+c+xx+z+v)*1)+(_udh*1))) =
+{_ubl=3D1;a=3D"-";b=3D"-";c=3D"-";xx=3D"-";z=3D"-";v=3D"-";}=0A=
+   if (a!=3D"-" && b!=3D"-" && c!=3D"-") f=3D1;=0A=
+   else if(a!=3D"-") f=3D2;=0A=
+  }=0A=
+ }=0A=
+ if(f=3D=3D1) {=0A=
+  _ubd.cookie=3D"__utma=3D"+a+"; path=3D"+_utcp+";"+nx+_udo;=0A=
+  _ubd.cookie=3D"__utmb=3D"+b+"; path=3D"+_utcp+";"+x+_udo;=0A=
+  _ubd.cookie=3D"__utmc=3D"+c+"; path=3D"+_utcp+";"+_udo;=0A=
+ } else if (f=3D=3D2) {=0A=
+  a=3D_uFixA(s,"&",_ust);=0A=
+  _ubd.cookie=3D"__utma=3D"+a+"; path=3D"+_utcp+";"+nx+_udo;=0A=
+  _ubd.cookie=3D"__utmb=3D"+_udh+"; path=3D"+_utcp+";"+x+_udo;=0A=
+  _ubd.cookie=3D"__utmc=3D"+_udh+"; path=3D"+_utcp+";"+_udo;=0A=
+  _ufns=3D1;=0A=
+ } else if (a>=3D0 && b>=3D0 && c>=3D0) {=0A=
+   b =3D _uGC(dc,"__utmb=3D"+_udh,";");=0A=
+   b =3D ("-" =3D=3D b) ? _udh : b;  =0A=
+  _ubd.cookie=3D"__utmb=3D"+b+"; path=3D"+_utcp+";"+x+_udo;=0A=
+ } else {=0A=
+  if (a>=3D0) a=3D_uFixA(_ubd.cookie,";",_ust);=0A=
+  else {=0A=
+   a=3D_udh+"."+_uu+"."+_ust+"."+_ust+"."+_ust+".1";=0A=
+   nv=3D1;=0A=
+  }=0A=
+  _ubd.cookie=3D"__utma=3D"+a+"; path=3D"+_utcp+";"+nx+_udo;=0A=
+  _ubd.cookie=3D"__utmb=3D"+_udh+"; path=3D"+_utcp+";"+x+_udo;=0A=
+  _ubd.cookie=3D"__utmc=3D"+_udh+"; path=3D"+_utcp+";"+_udo;=0A=
+  _ufns=3D1;=0A=
+ }=0A=
+ if (_ulink && xx && xx!=3D"" && xx!=3D"-") {=0A=
+   xx=3D_uUES(xx);=0A=
+   if (xx.indexOf(";")=3D=3D-1) _ubd.cookie=3D"__utmx=3D"+xx+"; =
+path=3D"+_utcp+";"+nx+_udo;=0A=
+ }=0A=
+ if (_ulink && v && v!=3D"" && v!=3D"-") {=0A=
+  v=3D_uUES(v);=0A=
+  if (v.indexOf(";")=3D=3D-1) _ubd.cookie=3D"__utmv=3D"+v+"; =
+path=3D"+_utcp+";"+nx+_udo;=0A=
+ }=0A=
+ var wc=3Dwindow;=0A=
+ var c=3D_ubd.cookie;=0A=
+ if(wc && wc.gaGlobal && wc.gaGlobal.dh=3D=3D_udh){=0A=
+  var g=3Dwc.gaGlobal;=0A=
+  var ua=3Dc.split("__utma=3D"+_udh+".")[1].split(";")[0].split(".");=0A=
+  if(g.sid)ua[3]=3Dg.sid;=0A=
+  if(nv>0){=0A=
+   ua[2]=3Dua[3];=0A=
+   if(g.vid){=0A=
+    var v=3Dg.vid.split(".");=0A=
+    ua[0]=3Dv[0];=0A=
+    ua[1]=3Dv[1];=0A=
+   }=0A=
+  }=0A=
+  _ubd.cookie=3D"__utma=3D"+_udh+"."+ua.join(".")+"; =
+path=3D"+_utcp+";"+nx+_udo;=0A=
+ }=0A=
+ _uInfo(page);=0A=
+ _ufns=3D0;=0A=
+ _ufno=3D0;=0A=
+ if (!page || page=3D=3D"") _uff=3D1;=0A=
+}=0A=
+function _uGH() {=0A=
+ var hid;=0A=
+ var wc=3Dwindow;=0A=
+ if (wc && wc.gaGlobal && wc.gaGlobal.hid) {=0A=
+  hid=3Dwc.gaGlobal.hid;=0A=
+ } else {=0A=
+  hid=3DMath.round(Math.random()*0x7fffffff);=0A=
+  if (!wc.gaGlobal) wc.gaGlobal=3D{};=0A=
+  wc.gaGlobal.hid=3Dhid;=0A=
+ }=0A=
+ return hid;=0A=
+}=0A=
+function _uInfo(page) {=0A=
+ var p,s=3D"",dm=3D"",pg=3D_udl.pathname+_udl.search;=0A=
+ if (page && page!=3D"") pg=3D_uES(page,1);=0A=
+ _ur=3D_ubd.referrer;=0A=
+ if (!_ur || _ur=3D=3D"") { _ur=3D"-"; }=0A=
+ else {=0A=
+  dm=3D_ubd.domain;=0A=
+  if(_utcp && _utcp!=3D"/") dm+=3D_utcp;=0A=
+  p=3D_ur.indexOf(dm);=0A=
+  if ((p>=3D0) && (p<=3D8)) { _ur=3D"0"; }=0A=
+  if (_ur.indexOf("[")=3D=3D0 && =
+_ur.lastIndexOf("]")=3D=3D(_ur.length-1)) { _ur=3D"-"; }=0A=
+ }=0A=
+ s+=3D"&utmn=3D"+_uu;=0A=
+ if (_ufsc) s+=3D_uBInfo();=0A=
+ if (_uctm) s+=3D_uCInfo();=0A=
+ if (_utitle && _ubd.title && _ubd.title!=3D"") =
+s+=3D"&utmdt=3D"+_uES(_ubd.title);=0A=
+ if (_udl.hostname && _udl.hostname!=3D"") =
+s+=3D"&utmhn=3D"+_uES(_udl.hostname);=0A=
+ if (_usample && _usample !=3D 100) s+=3D"&utmsp=3D"+_uES(_usample);=0A=
+ s+=3D"&utmhid=3D"+_uGH();=0A=
+ s+=3D"&utmr=3D"+_ur;=0A=
+ s+=3D"&utmp=3D"+pg;=0A=
+ if ((_userv=3D=3D0 || _userv=3D=3D2) && _uSP()) {=0A=
+  var i=3Dnew Image(1,1);=0A=
+  i.src=3D_ugifpath+"?"+"utmwv=3D"+_uwv+s;=0A=
+  i.onload=3Dfunction() { _uVoid(); }=0A=
+ }=0A=
+ if ((_userv=3D=3D1 || _userv=3D=3D2) && _uSP()) {=0A=
+  var i2=3Dnew Image(1,1);=0A=
+  =
+i2.src=3D_ugifpath2+"?"+"utmwv=3D"+_uwv+s+"&utmac=3D"+_uacct+"&utmcc=3D"+=
+_uGCS();=0A=
+  i2.onload=3Dfunction() { _uVoid(); }=0A=
+ }=0A=
+ return;=0A=
+}=0A=
+function _uVoid() { return; }=0A=
+function _uCInfo() {=0A=
+ if (!_ucto || _ucto=3D=3D"") { _ucto=3D"15768000"; }=0A=
+ if (!_uVG()) return;=0A=
+ var =
+c=3D"",t=3D"-",t2=3D"-",t3=3D"-",o=3D0,cs=3D0,cn=3D0,i=3D0,z=3D"-",s=3D""=
+;=0A=
+ if (_uanchor && _udlh && _udlh!=3D"") s=3D_udlh+"&";=0A=
+ s+=3D_udl.search;=0A=
+ var x=3Dnew Date(_udt.getTime()+(_ucto*1000));=0A=
+ var dc=3D_ubd.cookie;=0A=
+ x=3D" expires=3D"+x.toGMTString()+";";=0A=
+ if (_ulink && !_ubl) {=0A=
+  z=3D_uUES(_uGC(s,"__utmz=3D","&"));=0A=
+  if (z!=3D"-" && z.indexOf(";")=3D=3D-1) { =
+_ubd.cookie=3D"__utmz=3D"+z+"; path=3D"+_utcp+";"+x+_udo; return ""; }=0A=
+ }=0A=
+ z=3Ddc.indexOf("__utmz=3D"+_udh+".");=0A=
+ if (z>-1) { z=3D_uGC(dc,"__utmz=3D"+_udh+".",";"); }=0A=
+ else { z=3D"-"; }=0A=
+ t=3D_uGC(s,_ucid+"=3D","&");=0A=
+ t2=3D_uGC(s,_ucsr+"=3D","&");=0A=
+ t3=3D_uGC(s,"gclid=3D","&");=0A=
+ if ((t!=3D"-" && t!=3D"") || (t2!=3D"-" && t2!=3D"") || (t3!=3D"-" && =
+t3!=3D"")) {=0A=
+  if (t!=3D"-" && t!=3D"") c+=3D"utmcid=3D"+_uEC(t);=0A=
+  if (t2!=3D"-" && t2!=3D"") { if (c !=3D "") c+=3D"|"; =
+c+=3D"utmcsr=3D"+_uEC(t2); }=0A=
+  if (t3!=3D"-" && t3!=3D"") { if (c !=3D "") c+=3D"|"; =
+c+=3D"utmgclid=3D"+_uEC(t3); }=0A=
+  t=3D_uGC(s,_uccn+"=3D","&");=0A=
+  if (t!=3D"-" && t!=3D"") c+=3D"|utmccn=3D"+_uEC(t);=0A=
+  else c+=3D"|utmccn=3D(not+set)";=0A=
+  t=3D_uGC(s,_ucmd+"=3D","&");=0A=
+  if (t!=3D"-" && t!=3D"") c+=3D"|utmcmd=3D"+_uEC(t);=0A=
+  else  c+=3D"|utmcmd=3D(not+set)";=0A=
+  t=3D_uGC(s,_uctr+"=3D","&");=0A=
+  if (t!=3D"-" && t!=3D"") c+=3D"|utmctr=3D"+_uEC(t);=0A=
+  else { t=3D_uOrg(1); if (t!=3D"-" && t!=3D"") =
+c+=3D"|utmctr=3D"+_uEC(t); }=0A=
+  t=3D_uGC(s,_ucct+"=3D","&");=0A=
+  if (t!=3D"-" && t!=3D"") c+=3D"|utmcct=3D"+_uEC(t);=0A=
+  t=3D_uGC(s,_ucno+"=3D","&");=0A=
+  if (t=3D=3D"1") o=3D1;=0A=
+  if (z!=3D"-" && o=3D=3D1) return "";=0A=
+ }=0A=
+ if (c=3D=3D"-" || c=3D=3D"") { c=3D_uOrg(); if (z!=3D"-" && =
+_ufno=3D=3D1)  return ""; }=0A=
+ if (c=3D=3D"-" || c=3D=3D"") { if (_ufns=3D=3D1)  c=3D_uRef(); if =
+(z!=3D"-" && _ufno=3D=3D1)  return ""; }=0A=
+ if (c=3D=3D"-" || c=3D=3D"") {=0A=
+  if (z=3D=3D"-" && _ufns=3D=3D1) { =
+c=3D"utmccn=3D(direct)|utmcsr=3D(direct)|utmcmd=3D(none)"; }=0A=
+  if (c=3D=3D"-" || c=3D=3D"") return "";=0A=
+ }=0A=
+ if (z!=3D"-") {=0A=
+  i=3Dz.indexOf(".");=0A=
+  if (i>-1) i=3Dz.indexOf(".",i+1);=0A=
+  if (i>-1) i=3Dz.indexOf(".",i+1);=0A=
+  if (i>-1) i=3Dz.indexOf(".",i+1);=0A=
+  t=3Dz.substring(i+1,z.length);=0A=
+  if (t.toLowerCase()=3D=3Dc.toLowerCase()) cs=3D1;=0A=
+  t=3Dz.substring(0,i);=0A=
+  if ((i=3Dt.lastIndexOf(".")) > -1) {=0A=
+   t=3Dt.substring(i+1,t.length);=0A=
+   cn=3D(t*1);=0A=
+  }=0A=
+ }=0A=
+ if (cs=3D=3D0 || _ufns=3D=3D1) {=0A=
+  t=3D_uGC(dc,"__utma=3D"+_udh+".",";");=0A=
+  if ((i=3Dt.lastIndexOf(".")) > 9) {=0A=
+   _uns=3Dt.substring(i+1,t.length);=0A=
+   _uns=3D(_uns*1);=0A=
+  }=0A=
+  cn++;=0A=
+  if (_uns=3D=3D0) _uns=3D1;=0A=
+  _ubd.cookie=3D"__utmz=3D"+_udh+"."+_ust+"."+_uns+"."+cn+"."+c+"; =
+path=3D"+_utcp+"; "+x+_udo;=0A=
+ }=0A=
+ if (cs=3D=3D0 || _ufns=3D=3D1) return "&utmcn=3D1";=0A=
+ else return "&utmcr=3D1";=0A=
+}=0A=
+function _uRef() {=0A=
+ if (_ur=3D=3D"0" || _ur=3D=3D"" || _ur=3D=3D"-") return "";=0A=
+ var i=3D0,h,k,n;=0A=
+ if ((i=3D_ur.indexOf("://"))<0 || _uGCse()) return "";=0A=
+ h=3D_ur.substring(i+3,_ur.length);=0A=
+ if (h.indexOf("/") > -1) {=0A=
+  k=3Dh.substring(h.indexOf("/"),h.length);=0A=
+  if (k.indexOf("?") > -1) k=3Dk.substring(0,k.indexOf("?"));=0A=
+  h=3Dh.substring(0,h.indexOf("/"));=0A=
+ }=0A=
+ h=3Dh.toLowerCase();=0A=
+ n=3Dh;=0A=
+ if ((i=3Dn.indexOf(":")) > -1) n=3Dn.substring(0,i);=0A=
+ for (var ii=3D0;ii<_uRno.length;ii++) {=0A=
+  if ((i=3Dn.indexOf(_uRno[ii].toLowerCase())) > -1 && =
+n.length=3D=3D(i+_uRno[ii].length)) { _ufno=3D1; break; }=0A=
+ }=0A=
+ if (h.indexOf("www.")=3D=3D0) h=3Dh.substring(4,h.length);=0A=
+ return =
+"utmccn=3D(referral)|utmcsr=3D"+_uEC(h)+"|"+"utmcct=3D"+_uEC(k)+"|utmcmd=3D=
+referral";=0A=
+}=0A=
+function _uOrg(t) {=0A=
+ if (_ur=3D=3D"0" || _ur=3D=3D"" || _ur=3D=3D"-") return "";=0A=
+ var i=3D0,h,k;=0A=
+ if ((i=3D_ur.indexOf("://"))<0 || _uGCse()) return "";=0A=
+ h=3D_ur.substring(i+3,_ur.length);=0A=
+ if (h.indexOf("/") > -1) {=0A=
+  h=3Dh.substring(0,h.indexOf("/"));=0A=
+ }=0A=
+ for (var ii=3D0;ii<_uOsr.length;ii++) {=0A=
+  if (h.toLowerCase().indexOf(_uOsr[ii].toLowerCase()) > -1) {=0A=
+   if ((i=3D_ur.indexOf("?"+_uOkw[ii]+"=3D")) > -1 || =
+(i=3D_ur.indexOf("&"+_uOkw[ii]+"=3D")) > -1) {=0A=
+    k=3D_ur.substring(i+_uOkw[ii].length+2,_ur.length);=0A=
+    if ((i=3Dk.indexOf("&")) > -1) k=3Dk.substring(0,i);=0A=
+    for (var yy=3D0;yy<_uOno.length;yy++) {=0A=
+     if (_uOno[yy].toLowerCase()=3D=3Dk.toLowerCase()) { _ufno=3D1; =
+break; }=0A=
+    }=0A=
+    if (t) return _uEC(k);=0A=
+    else return =
+"utmccn=3D(organic)|utmcsr=3D"+_uEC(_uOsr[ii])+"|"+"utmctr=3D"+_uEC(k)+"|=
+utmcmd=3Dorganic";=0A=
+   }=0A=
+  }=0A=
+ }=0A=
+ return "";=0A=
+}=0A=
+function _uGCse() {=0A=
+ var h,p;=0A=
+ h=3Dp=3D_ur.split("://")[1];=0A=
+ if(h.indexOf("/")>-1) {=0A=
+  h=3Dh.split("/")[0];=0A=
+  p=3Dp.substring(p.indexOf("/")+1,p.length);=0A=
+ }=0A=
+ if(p.indexOf("?")>-1) {=0A=
+  p=3Dp.split("?")[0];=0A=
+ }=0A=
+ if(h.toLowerCase().indexOf("google")>-1) {=0A=
+  if(_ur.indexOf("?q=3D")>-1 || _ur.indexOf("&q=3D")>-1) {=0A=
+   if (p.toLowerCase().indexOf("cse")>-1) {=0A=
+    return true;=0A=
+   }=0A=
+  }=0A=
+ }=0A=
+}=0A=
+function _uBInfo() {=0A=
+ var sr=3D"-",sc=3D"-",ul=3D"-",fl=3D"-",cs=3D"-",je=3D1;=0A=
+ var n=3Dnavigator;=0A=
+ if (self.screen) {=0A=
+  sr=3Dscreen.width+"x"+screen.height;=0A=
+  sc=3Dscreen.colorDepth+"-bit";=0A=
+ } else if (self.java) {=0A=
+  var j=3Djava.awt.Toolkit.getDefaultToolkit();=0A=
+  var s=3Dj.getScreenSize();=0A=
+  sr=3Ds.width+"x"+s.height;=0A=
+ }=0A=
+ if (n.language) { ul=3Dn.language.toLowerCase(); }=0A=
+ else if (n.browserLanguage) { ul=3Dn.browserLanguage.toLowerCase(); }=0A=
+ je=3Dn.javaEnabled()?1:0;=0A=
+ if (_uflash) fl=3D_uFlash();=0A=
+ if (_ubd.characterSet) cs=3D_uES(_ubd.characterSet);=0A=
+ else if (_ubd.charset) cs=3D_uES(_ubd.charset);=0A=
+ return =
+"&utmcs=3D"+cs+"&utmsr=3D"+sr+"&utmsc=3D"+sc+"&utmul=3D"+ul+"&utmje=3D"+j=
+e+"&utmfl=3D"+fl;=0A=
+}=0A=
+function __utmSetTrans() {=0A=
+ var e;=0A=
+ if (_ubd.getElementById) e=3D_ubd.getElementById("utmtrans");=0A=
+ else if (_ubd.utmform && _ubd.utmform.utmtrans) =
+e=3D_ubd.utmform.utmtrans;=0A=
+ if (!e) return;=0A=
+ var l=3De.value.split("UTM:");=0A=
+ var i,i2,c;=0A=
+ if (_userv=3D=3D0 || _userv=3D=3D2) i=3Dnew Array();=0A=
+ if (_userv=3D=3D1 || _userv=3D=3D2) { i2=3Dnew Array(); c=3D_uGCS(); }=0A=
+=0A=
+ for (var ii=3D0;ii<l.length;ii++) {=0A=
+  l[ii]=3D_uTrim(l[ii]);=0A=
+  if (l[ii].charAt(0)!=3D'T' && l[ii].charAt(0)!=3D'I') continue;=0A=
+  var r=3DMath.round(Math.random()*2147483647);=0A=
+  if (!_utsp || _utsp=3D=3D"") _utsp=3D"|";=0A=
+  var f=3Dl[ii].split(_utsp),s=3D"";=0A=
+  if (f[0].charAt(0)=3D=3D'T') {=0A=
+   s=3D"&utmt=3Dtran"+"&utmn=3D"+r;=0A=
+   f[1]=3D_uTrim(f[1]); if(f[1]&&f[1]!=3D"") =
+s+=3D"&utmtid=3D"+_uES(f[1]);=0A=
+   f[2]=3D_uTrim(f[2]); if(f[2]&&f[2]!=3D"") =
+s+=3D"&utmtst=3D"+_uES(f[2]);=0A=
+   f[3]=3D_uTrim(f[3]); if(f[3]&&f[3]!=3D"") =
+s+=3D"&utmtto=3D"+_uES(f[3]);=0A=
+   f[4]=3D_uTrim(f[4]); if(f[4]&&f[4]!=3D"") =
+s+=3D"&utmttx=3D"+_uES(f[4]);=0A=
+   f[5]=3D_uTrim(f[5]); if(f[5]&&f[5]!=3D"") =
+s+=3D"&utmtsp=3D"+_uES(f[5]);=0A=
+   f[6]=3D_uTrim(f[6]); if(f[6]&&f[6]!=3D"") =
+s+=3D"&utmtci=3D"+_uES(f[6]);=0A=
+   f[7]=3D_uTrim(f[7]); if(f[7]&&f[7]!=3D"") =
+s+=3D"&utmtrg=3D"+_uES(f[7]);=0A=
+   f[8]=3D_uTrim(f[8]); if(f[8]&&f[8]!=3D"") =
+s+=3D"&utmtco=3D"+_uES(f[8]);=0A=
+  } else {=0A=
+   s=3D"&utmt=3Ditem"+"&utmn=3D"+r;=0A=
+   f[1]=3D_uTrim(f[1]); if(f[1]&&f[1]!=3D"") =
+s+=3D"&utmtid=3D"+_uES(f[1]);=0A=
+   f[2]=3D_uTrim(f[2]); if(f[2]&&f[2]!=3D"") =
+s+=3D"&utmipc=3D"+_uES(f[2]);=0A=
+   f[3]=3D_uTrim(f[3]); if(f[3]&&f[3]!=3D"") =
+s+=3D"&utmipn=3D"+_uES(f[3]);=0A=
+   f[4]=3D_uTrim(f[4]); if(f[4]&&f[4]!=3D"") =
+s+=3D"&utmiva=3D"+_uES(f[4]);=0A=
+   f[5]=3D_uTrim(f[5]); if(f[5]&&f[5]!=3D"") =
+s+=3D"&utmipr=3D"+_uES(f[5]);=0A=
+   f[6]=3D_uTrim(f[6]); if(f[6]&&f[6]!=3D"") =
+s+=3D"&utmiqt=3D"+_uES(f[6]);=0A=
+  }=0A=
+  if (_udl.hostname && _udl.hostname!=3D"") =
+s+=3D"&utmhn=3D"+_uES(_udl.hostname);=0A=
+  if (_usample && _usample !=3D 100) s+=3D"&utmsp=3D"+_uES(_usample);=0A=
+=0A=
+  if ((_userv=3D=3D0 || _userv=3D=3D2) && _uSP()) {=0A=
+   i[ii]=3Dnew Image(1,1);=0A=
+   i[ii].src=3D_ugifpath+"?"+"utmwv=3D"+_uwv+s;=0A=
+   i[ii].onload=3Dfunction() { _uVoid(); }=0A=
+  }=0A=
+  if ((_userv=3D=3D1 || _userv=3D=3D2) && _uSP()) {=0A=
+   i2[ii]=3Dnew Image(1,1);=0A=
+   =
+i2[ii].src=3D_ugifpath2+"?"+"utmwv=3D"+_uwv+s+"&utmac=3D"+_uacct+"&utmcc=3D=
+"+c;=0A=
+   i2[ii].onload=3Dfunction() { _uVoid(); }=0A=
+  }=0A=
+ }=0A=
+ return;=0A=
+}=0A=
+function _uFlash() {=0A=
+ var f=3D"-",n=3Dnavigator;=0A=
+ if (n.plugins && n.plugins.length) {=0A=
+  for (var ii=3D0;ii<n.plugins.length;ii++) {=0A=
+   if (n.plugins[ii].name.indexOf('Shockwave Flash')!=3D-1) {=0A=
+    f=3Dn.plugins[ii].description.split('Shockwave Flash ')[1];=0A=
+    break;=0A=
+   }=0A=
+  }=0A=
+ } else {=0A=
+  var fl;=0A=
+  try {=0A=
+   fl =3D new ActiveXObject("ShockwaveFlash.ShockwaveFlash.7");=0A=
+   f =3D fl.GetVariable("$version");=0A=
+  } catch(e) {}=0A=
+  if (f =3D=3D "-") {=0A=
+   try {=0A=
+    fl =3D new ActiveXObject("ShockwaveFlash.ShockwaveFlash.6");=0A=
+    f =3D "WIN 6,0,21,0";=0A=
+    fl.AllowScriptAccess =3D "always";=0A=
+    f =3D fl.GetVariable("$version");=0A=
+   } catch(e) {}=0A=
+  }=0A=
+  if (f =3D=3D "-") {=0A=
+   try {=0A=
+    fl =3D new ActiveXObject("ShockwaveFlash.ShockwaveFlash");=0A=
+    f =3D fl.GetVariable("$version");=0A=
+   } catch(e) {}=0A=
+  }=0A=
+  if (f !=3D "-") {=0A=
+   f =3D f.split(" ")[1].split(",");=0A=
+   f =3D f[0] + "." + f[1] + " r" + f[2];=0A=
+  }=0A=
+ }=0A=
+ return f;=0A=
+}=0A=
+function __utmLinkerUrl(l,h) {=0A=
+ var p,k,a=3D"-",b=3D"-",c=3D"-",x=3D"-",z=3D"-",v=3D"-";=0A=
+ var dc=3D_ubd.cookie;=0A=
+ var iq =3D l.indexOf("?");=0A=
+ var ih =3D l.indexOf("#");=0A=
+ var url=3Dl;=0A=
+ if (dc) {=0A=
+  a=3D_uES(_uGC(dc,"__utma=3D"+_udh+".",";"));=0A=
+  b=3D_uES(_uGC(dc,"__utmb=3D"+_udh,";"));=0A=
+  c=3D_uES(_uGC(dc,"__utmc=3D"+_udh,";"));=0A=
+  x=3D_uES(_uGC(dc,"__utmx=3D"+_udh,";"));=0A=
+  z=3D_uES(_uGC(dc,"__utmz=3D"+_udh+".",";"));=0A=
+  v=3D_uES(_uGC(dc,"__utmv=3D"+_udh+".",";"));=0A=
+  k=3D(_uHash(a+b+c+x+z+v)*1)+(_udh*1);=0A=
+  =
+p=3D"__utma=3D"+a+"&__utmb=3D"+b+"&__utmc=3D"+c+"&__utmx=3D"+x+"&__utmz=3D=
+"+z+"&__utmv=3D"+v+"&__utmk=3D"+k;=0A=
+ }=0A=
+ if (p) {=0A=
+  if (h && ih>-1) return;=0A=
+  if (h) { url=3Dl+"#"+p; }=0A=
+  else {=0A=
+   if (iq=3D=3D-1 && ih=3D=3D-1) url=3Dl+"?"+p;=0A=
+   else if (ih=3D=3D-1) url=3Dl+"&"+p;=0A=
+   else if (iq=3D=3D-1) url=3Dl.substring(0,ih-1)+"?"+p+l.substring(ih);=0A=
+   else url=3Dl.substring(0,ih-1)+"&"+p+l.substring(ih);=0A=
+  }=0A=
+ }=0A=
+ return url;=0A=
+}=0A=
+function __utmLinker(l,h) {=0A=
+ if (!_ulink || !l || l=3D=3D"") return;=0A=
+ _udl.href=3D__utmLinkerUrl(l,h);=0A=
+}=0A=
+function __utmLinkPost(f,h) {=0A=
+ if (!_ulink || !f || !f.action) return;=0A=
+ f.action=3D__utmLinkerUrl(f.action, h);=0A=
+ return;=0A=
+}=0A=
+function __utmSetVar(v) {=0A=
+ if (!v || v=3D=3D"") return;=0A=
+ if (!_udo || _udo =3D=3D "") {=0A=
+  _udh=3D_uDomain();=0A=
+  if (_udn && _udn!=3D"") { _udo=3D" domain=3D"+_udn+";"; }=0A=
+ }=0A=
+ if (!_uVG()) return;=0A=
+ var r=3DMath.round(Math.random() * 2147483647);=0A=
+ _ubd.cookie=3D"__utmv=3D"+_udh+"."+_uES(v)+"; path=3D"+_utcp+"; =
+expires=3D"+_uNx()+";"+_udo;=0A=
+ var s=3D"&utmt=3Dvar&utmn=3D"+r;=0A=
+ if (_usample && _usample !=3D 100) s+=3D"&utmsp=3D"+_uES(_usample);=0A=
+ if ((_userv=3D=3D0 || _userv=3D=3D2) && _uSP()) {=0A=
+  var i=3Dnew Image(1,1);=0A=
+  i.src=3D_ugifpath+"?"+"utmwv=3D"+_uwv+s;=0A=
+  i.onload=3Dfunction() { _uVoid(); }=0A=
+ }=0A=
+ if ((_userv=3D=3D1 || _userv=3D=3D2) && _uSP()) {=0A=
+  var i2=3Dnew Image(1,1);=0A=
+  =
+i2.src=3D_ugifpath2+"?"+"utmwv=3D"+_uwv+s+"&utmac=3D"+_uacct+"&utmcc=3D"+=
+_uGCS();=0A=
+  i2.onload=3Dfunction() { _uVoid(); }=0A=
+ }=0A=
+}=0A=
+function _uGCS() {=0A=
+ var t,c=3D"",dc=3D_ubd.cookie;=0A=
+ if ((t=3D_uGC(dc,"__utma=3D"+_udh+".",";"))!=3D"-") =
+c+=3D_uES("__utma=3D"+t+";+");=0A=
+ if ((t=3D_uGC(dc,"__utmx=3D"+_udh,";"))!=3D"-") =
+c+=3D_uES("__utmx=3D"+t+";+");=0A=
+ if ((t=3D_uGC(dc,"__utmz=3D"+_udh+".",";"))!=3D"-") =
+c+=3D_uES("__utmz=3D"+t+";+");=0A=
+ if ((t=3D_uGC(dc,"__utmv=3D"+_udh+".",";"))!=3D"-") =
+c+=3D_uES("__utmv=3D"+t+";");=0A=
+ if (c.charAt(c.length-1)=3D=3D"+") c=3Dc.substring(0,c.length-1);=0A=
+ return c;=0A=
+}=0A=
+function _uGC(l,n,s) {=0A=
+ if (!l || l=3D=3D"" || !n || n=3D=3D"" || !s || s=3D=3D"") return "-";=0A=
+ var i,i2,i3,c=3D"-";=0A=
+ i=3Dl.indexOf(n);=0A=
+ i3=3Dn.indexOf("=3D")+1;=0A=
+ if (i > -1) {=0A=
+  i2=3Dl.indexOf(s,i); if (i2 < 0) { i2=3Dl.length; }=0A=
+  c=3Dl.substring((i+i3),i2);=0A=
+ }=0A=
+ return c;=0A=
+}=0A=
+function _uDomain() {=0A=
+ if (!_udn || _udn=3D=3D"" || _udn=3D=3D"none") { _udn=3D""; return 1; }=0A=
+ if (_udn=3D=3D"auto") {=0A=
+  var d=3D_ubd.domain;=0A=
+  if (d.substring(0,4)=3D=3D"www.") {=0A=
+   d=3Dd.substring(4,d.length);=0A=
+  }=0A=
+  _udn=3Dd;=0A=
+ }=0A=
+ _udn =3D _udn.toLowerCase(); =0A=
+ if (_uhash=3D=3D"off") return 1;=0A=
+ return _uHash(_udn);=0A=
+}=0A=
+function _uHash(d) {=0A=
+ if (!d || d=3D=3D"") return 1;=0A=
+ var h=3D0,g=3D0;=0A=
+ for (var i=3Dd.length-1;i>=3D0;i--) {=0A=
+  var c=3DparseInt(d.charCodeAt(i));=0A=
+  h=3D((h << 6) & 0xfffffff) + c + (c << 14);=0A=
+  if ((g=3Dh & 0xfe00000)!=3D0) h=3D(h ^ (g >> 21));=0A=
+ }=0A=
+ return h;=0A=
+}=0A=
+function _uFixA(c,s,t) {=0A=
+ if (!c || c=3D=3D"" || !s || s=3D=3D"" || !t || t=3D=3D"") return "-";=0A=
+ var a=3D_uGC(c,"__utma=3D"+_udh+".",s);=0A=
+ var lt=3D0,i=3D0;=0A=
+ if ((i=3Da.lastIndexOf(".")) > 9) {=0A=
+  _uns=3Da.substring(i+1,a.length);=0A=
+  _uns=3D(_uns*1)+1;=0A=
+  a=3Da.substring(0,i);=0A=
+  if ((i=3Da.lastIndexOf(".")) > 7) {=0A=
+   lt=3Da.substring(i+1,a.length);=0A=
+   a=3Da.substring(0,i);=0A=
+  }=0A=
+  if ((i=3Da.lastIndexOf(".")) > 5) {=0A=
+   a=3Da.substring(0,i);=0A=
+  }=0A=
+  a+=3D"."+lt+"."+t+"."+_uns;=0A=
+ }=0A=
+ return a;=0A=
+}=0A=
+function _uTrim(s) {=0A=
+  if (!s || s=3D=3D"") return "";=0A=
+  while ((s.charAt(0)=3D=3D' ') || (s.charAt(0)=3D=3D'\n') || =
+(s.charAt(0,1)=3D=3D'\r')) s=3Ds.substring(1,s.length);=0A=
+  while ((s.charAt(s.length-1)=3D=3D' ') || =
+(s.charAt(s.length-1)=3D=3D'\n') || (s.charAt(s.length-1)=3D=3D'\r')) =
+s=3Ds.substring(0,s.length-1);=0A=
+  return s;=0A=
+}=0A=
+function _uEC(s) {=0A=
+  var n=3D"";=0A=
+  if (!s || s=3D=3D"") return "";=0A=
+  for (var i=3D0;i<s.length;i++) {if (s.charAt(i)=3D=3D" ") n+=3D"+"; =
+else n+=3Ds.charAt(i);}=0A=
+  return n;=0A=
+}=0A=
+function __utmVisitorCode(f) {=0A=
+ var r=3D0,t=3D0,i=3D0,i2=3D0,m=3D31;=0A=
+ var a=3D_uGC(_ubd.cookie,"__utma=3D"+_udh+".",";");=0A=
+ if ((i=3Da.indexOf(".",0))<0) return;=0A=
+ if ((i2=3Da.indexOf(".",i+1))>0) r=3Da.substring(i+1,i2); else return =
+"";  =0A=
+ if ((i=3Da.indexOf(".",i2+1))>0) t=3Da.substring(i2+1,i); else return =
+"";  =0A=
+ if (f) {=0A=
+  return r;=0A=
+ } else {=0A=
+  var c=3Dnew =
+Array('A','B','C','D','E','F','G','H','J','K','L','M','N','P','R','S','T'=
+,'U','V','W','X','Y','Z','1','2','3','4','5','6','7','8','9');=0A=
+  return =
+c[r>>28&m]+c[r>>23&m]+c[r>>18&m]+c[r>>13&m]+"-"+c[r>>8&m]+c[r>>3&m]+c[((r=
+&7)<<2)+(t>>30&3)]+c[t>>25&m]+c[t>>20&m]+"-"+c[t>>15&m]+c[t>>10&m]+c[t>>5=
+&m]+c[t&m];=0A=
+ }=0A=
+}=0A=
+function _uIN(n) {=0A=
+ if (!n) return false;=0A=
+ for (var i=3D0;i<n.length;i++) {=0A=
+  var c=3Dn.charAt(i);=0A=
+  if ((c<"0" || c>"9") && (c!=3D".")) return false;=0A=
+ }=0A=
+ return true;=0A=
+}=0A=
+function _uES(s,u) {=0A=
+ if (typeof(encodeURIComponent) =3D=3D 'function') {=0A=
+  if (u) return encodeURI(s);=0A=
+  else return encodeURIComponent(s);=0A=
+ } else {=0A=
+  return escape(s);=0A=
+ }=0A=
+}=0A=
+function _uUES(s) {=0A=
+ if (typeof(decodeURIComponent) =3D=3D 'function') {=0A=
+  return decodeURIComponent(s);=0A=
+ } else {=0A=
+  return unescape(s);=0A=
+ }=0A=
+}=0A=
+function _uVG() {=0A=
+ if((_udn.indexOf("www.google.") =3D=3D 0 || _udn.indexOf(".google.") =
+=3D=3D 0 || _udn.indexOf("google.") =3D=3D 0) && _utcp=3D=3D'/' && =
+_udn.indexOf("google.org")=3D=3D-1) {=0A=
+  return false;=0A=
+ }=0A=
+ return true;=0A=
+}=0A=
+function _uSP() {=0A=
+ var s=3D100;=0A=
+ if (_usample) s=3D_usample;=0A=
+ if(s>=3D100 || s<=3D0) return true;=0A=
+ return ((__utmVisitorCode(1)%10000)<(s*100));=0A=
+}=0A=
+function urchinPathCopy(p){=0A=
+ var d=3Ddocument,nx,tx,sx,i,c,cs,t,h,o;=0A=
+ cs=3Dnew Array("a","b","c","v","x","z");=0A=
+ h=3D_uDomain(); if (_udn && _udn!=3D"") o=3D" domain=3D"+_udn+";";=0A=
+ nx=3D_uNx()+";";=0A=
+ tx=3Dnew Date(); tx.setTime(tx.getTime()+(_utimeout*1000));=0A=
+ tx=3Dtx.toGMTString()+";";=0A=
+ sx=3Dnew Date(); sx.setTime(sx.getTime()+(_ucto*1000));=0A=
+ sx=3Dsx.toGMTString()+";";=0A=
+ for (i=3D0;i<6;i++){=0A=
+  t=3D" expires=3D";=0A=
+  if (i=3D=3D1) t+=3Dtx; else if (i=3D=3D2) t=3D""; else if (i=3D=3D5) =
+t+=3Dsx; else t+=3Dnx;=0A=
+  c=3D_uGC(d.cookie,"__utm"+cs[i]+"=3D"+h,";");=0A=
+  if (c!=3D"-") d.cookie=3D"__utm"+cs[i]+"=3D"+c+"; path=3D"+p+";"+t+o;=0A=
+ }=0A=
+}=0A=
+function _uCO() {=0A=
+ if (!_utk || _utk=3D=3D"" || _utk.length<10) return;=0A=
+ var d=3D'www.google.com';=0A=
+ if (_utk.charAt(0)=3D=3D'!') d=3D'analytics.corp.google.com';=0A=
+ _ubd.cookie=3D"GASO=3D"+_utk+"; path=3D"+_utcp+";"+_udo;=0A=
+ var sc=3Ddocument.createElement('script');=0A=
+ sc.type=3D'text/javascript';=0A=
+ sc.id=3D"_gasojs";=0A=
+ =
+sc.src=3D'https://'+d+'/analytics/reporting/overlay_js?gaso=3D'+_utk+'&'+=
+Math.random();=0A=
+ document.getElementsByTagName('head')[0].appendChild(sc);  =0A=
+}=0A=
+function _uGT() {=0A=
+ var h=3Dlocation.hash, a;=0A=
+ if (h && h!=3D"" && h.indexOf("#gaso=3D")=3D=3D0) {=0A=
+  a=3D_uGC(h,"gaso=3D","&");=0A=
+ } else {=0A=
+  a=3D_uGC(_ubd.cookie,"GASO=3D",";");=0A=
+ }=0A=
+ return a;=0A=
+}=0A=
+var _utk=3D_uGT();=0A=
+if (_utk && _utk!=3D"" && _utk.length>10 && _utk.indexOf("=3D")=3D=3D-1) =
+{=0A=
+ if (window.addEventListener) {=0A=
+  window.addEventListener('load', _uCO, false); =0A=
+ } else if (window.attachEvent) { =0A=
+  window.attachEvent('onload', _uCO);=0A=
+ }=0A=
+}=0A=
+=0A=
+function _uNx() {=0A=
+  return (new Date((new Date()).getTime()+63072000000)).toGMTString();=0A=
+}=0A=
+
+------=_NextPart_000_00DB_01CA54D2.A3665B20--

@@ -1,0 +1,691 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+
+<title>Hermite polynomials - Wikipedia, the free encyclopedia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="generator" content="MediaWiki 1.16alpha-wmf">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=edit">
+<link rel="edit" title="Edit this page" href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=edit">
+<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png">
+<link rel="shortcut icon" href="http://en.wikipedia.org/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://en.wikipedia.org/w/opensearch_desc.php" title="Wikipedia (en)">
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/rss+xml" title="Wikipedia RSS Feed" href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&amp;feed=rss">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom Feed" href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="Hermite_polynomials_files/shared.css" type="text/css" media="screen">
+<link rel="stylesheet" href="Hermite_polynomials_files/commonPrint.css" type="text/css" media="print">
+<link rel="stylesheet" href="Hermite_polynomials_files/main.css" type="text/css" media="screen">
+<link rel="stylesheet" href="Hermite_polynomials_files/main_002.css" type="text/css" media="handheld">
+<!--[if lt IE 5.5000]><link rel="stylesheet" href="/skins-1.5/monobook/IE50Fixes.css?243z2" type="text/css" media="screen" /><![endif]-->
+<!--[if IE 5.5000]><link rel="stylesheet" href="/skins-1.5/monobook/IE55Fixes.css?243z2" type="text/css" media="screen" /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" href="/skins-1.5/monobook/IE60Fixes.css?243z2" type="text/css" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/skins-1.5/monobook/IE70Fixes.css?243z2" type="text/css" media="screen" /><![endif]-->
+<link rel="stylesheet" href="Hermite_polynomials_files/index_004.css" type="text/css" media="all">
+<link rel="stylesheet" href="Hermite_polynomials_files/index_003.css" type="text/css" media="print">
+<link rel="stylesheet" href="Hermite_polynomials_files/index_002.css" type="text/css" media="handheld">
+<link rel="stylesheet" href="Hermite_polynomials_files/index_005.css" type="text/css" media="all">
+<link rel="stylesheet" href="Hermite_polynomials_files/index.css" type="text/css" media="all">
+<script type="text/javascript">
+var skin="monobook",
+stylepath="/skins-1.5",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://en.wikipedia.org",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="Hermite_polynomials",
+wgTitle="Hermite polynomials",
+wgAction="view",
+wgArticleId=195984,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=308579926,
+wgVersion="1.16alpha-wmf",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "Wikipedia", "5": "Wikipedia talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "100": "Portal", "101": "Portal talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "wikipedia": 4, "wikipedia_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "portal": 100, "portal_talk": 101, "wp": 4, "wt": 5, "image": 6, "image_talk": 7},
+wgMWSuggestTemplate="http://en.wikipedia.org/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}\x26suggest",
+wgDBname="enwiki",
+wgSearchNamespaces=[0],
+wgMWSuggestMessages=["with suggestions", "no suggestions"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[],
+wgNotice="",
+wgNoticeLocal="";
+</script>
+<script src="Hermite_polynomials_files/wikibits.js" type="text/javascript"></script>
+<script src="Hermite_polynomials_files/ajax.js" type="text/javascript"></script>
+<script src="Hermite_polynomials_files/mwsuggest.js" type="text/javascript"></script>
+<script type="text/javascript" src="Hermite_polynomials_files/centralnotice.js"></script><style type="text/css">
+#centralNotice .siteNoticeSmall{display:none;}
+#centralNotice .siteNoticeSmallAnon{display:none;}
+#centralNotice .siteNoticeSmallUser{display:none;}
+#centralNotice.collapsed .siteNoticeBig{display:none;}
+#centralNotice.collapsed .siteNoticeSmall{display:block;}
+#centralNotice.collapsed .siteNoticeSmallUser{display:block;}
+#centralNotice.collapsed .siteNoticeSmallAnon{display:block;}
+#centralNotice.anonnotice .siteNoticeSmallUser{display:none !important;}
+#centralNotice.usernotice .siteNoticeSmallAnon{display:none !important;}
+</style>
+
+
+<!--[if lt IE 7]><script type="text/javascript" src="/skins-1.5/common/IEFixes.js?243z2"></script>
+	<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+<script src="Hermite_polynomials_files/index.php" type="text/javascript"></script><script type="text/javascript" src="Hermite_polynomials_files/index_002.php"></script>
+
+</head><body class="mediawiki ltr ns-0 ns-subject page-Hermite_polynomials skin-monobook">
+	<div id="globalWrapper"><div style="position: absolute; z-index: 40; left: 155px; top: 1px; clear: both; float: left; font-size: 90%; font-style: italic; white-space: nowrap;" class="noprint" id="anon-banner"><a href="http://wikimediafoundation.org/wiki/Donate/Now/en?utm_source=enwiki_01&amp;utm_medium=anon_donation_banner&amp;utm_campaign=spontaneous_donation" class="extiw" title="foundation:Fundraising"><b>Make a donation</b></a> to Wikipedia and give the gift of knowledge!</div>
+		<div id="column-content">
+	<div id="content">
+		<a id="top"></a>
+		<div id="siteNotice"><script type="text/javascript">if (wgNotice != '') document.writeln(wgNotice);</script></div>		<h1 id="firstHeading" class="firstHeading">Hermite polynomials</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Wikipedia, the free encyclopedia</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<p>In <a href="http://en.wikipedia.org/wiki/Mathematics" title="Mathematics">mathematics</a>, the <b>Hermite polynomials</b> are a classical <a href="http://en.wikipedia.org/wiki/Orthogonal_polynomial" title="Orthogonal polynomial" class="mw-redirect">orthogonal</a> <a href="http://en.wikipedia.org/wiki/Polynomial_sequence" title="Polynomial sequence">polynomial sequence</a> that arise in <a href="http://en.wikipedia.org/wiki/Probability" title="Probability">probability</a>, such as the <a href="http://en.wikipedia.org/wiki/Edgeworth_series" title="Edgeworth series">Edgeworth series</a>; in <a href="http://en.wikipedia.org/wiki/Combinatorics" title="Combinatorics">combinatorics</a>, as an example of an <a href="http://en.wikipedia.org/wiki/Appell_sequence" title="Appell sequence">Appell sequence</a>, obeying the <a href="http://en.wikipedia.org/wiki/Umbral_calculus" title="Umbral calculus">umbral calculus</a>; and in <a href="http://en.wikipedia.org/wiki/Physics" title="Physics">physics</a>, where they give rise to the <a href="http://en.wikipedia.org/wiki/Eigenstate" title="Eigenstate" class="mw-redirect">eigenstates</a> of the <a href="http://en.wikipedia.org/wiki/Quantum_harmonic_oscillator" title="Quantum harmonic oscillator">quantum harmonic oscillator</a>. They are named in honor of <a href="http://en.wikipedia.org/wiki/Charles_Hermite" title="Charles Hermite">Charles Hermite</a>.</p>
+<table id="toc" class="toc">
+<tbody><tr>
+<td>
+<div id="toctitle">
+<h2>Contents</h2>
+ <span class="toctoggle">[<a href="javascript:toggleToc()" class="internal" id="togglelink">hide</a>]</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Definition"><span class="tocnumber">1</span> <span class="toctext">Definition</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Properties"><span class="tocnumber">2</span> <span class="toctext">Properties</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Orthogonality"><span class="tocnumber">2.1</span> <span class="toctext">Orthogonality</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Completeness"><span class="tocnumber">2.2</span> <span class="toctext">Completeness</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Hermite.27s_differential_equation"><span class="tocnumber">2.3</span> <span class="toctext">Hermite's differential equation</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Recursion_relation"><span class="tocnumber">2.4</span> <span class="toctext">Recursion relation</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Generating_function"><span class="tocnumber">2.5</span> <span class="toctext">Generating function</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Expected_value"><span class="tocnumber">2.6</span> <span class="toctext">Expected value</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Relations_to_other_functions"><span class="tocnumber">3</span> <span class="toctext">Relations to other functions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#Laguerre_polynomials"><span class="tocnumber">3.1</span> <span class="toctext">Laguerre polynomials</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Relation_to_confluent_hypergeometric_functions"><span class="tocnumber">3.2</span> <span class="toctext">Relation to confluent hypergeometric functions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Differential_operator_representation"><span class="tocnumber">4</span> <span class="toctext">Differential operator representation</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Contour_integral_representation"><span class="tocnumber">5</span> <span class="toctext">Contour integral representation</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Generalizations"><span class="tocnumber">6</span> <span class="toctext">Generalizations</span></a>
+<ul>
+<li class="toclevel-2 tocsection-15"><a href="#.22Negative_variance.22"><span class="tocnumber">6.1</span> <span class="toctext">"Negative variance"</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="#Applications"><span class="tocnumber">7</span> <span class="toctext">Applications</span></a>
+<ul>
+<li class="toclevel-2 tocsection-17"><a href="#Hermite_functions"><span class="tocnumber">7.1</span> <span class="toctext">Hermite functions</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Recursion_relation_2"><span class="tocnumber">7.2</span> <span class="toctext">Recursion relation</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Hermite_functions_as_eigenfunctions_of_the_Fourier_transform"><span class="tocnumber">7.3</span> <span class="toctext">Hermite functions as eigenfunctions of the Fourier transform</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#Combinatorial_interpretation_of_coefficients"><span class="tocnumber">7.4</span> <span class="toctext">Combinatorial interpretation of coefficients</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#Completeness_relation"><span class="tocnumber">7.5</span> <span class="toctext">Completeness relation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-22"><a href="#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+</td>
+</tr>
+</tbody></table>
+<script type="text/javascript">
+//<![CDATA[
+if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } 
+//]]>
+</script>
+<h2><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=edit&amp;section=1" title="Edit section: Definition">edit</a>]</span> <span class="mw-headline" id="Definition">Definition</span></h2>
+<p>The Hermite polynomials are defined either by</p>
+<dl>
+<dd><img class="tex" alt="H_n(x)=(-1)^n e^{x^2/2}\frac{d^n}{dx^n}e^{-x^2/2}\,\!" src="Hermite_polynomials_files/d9339c84e055106ee81fdbce6c9b311a.png"></dd>
+</dl>
+<p>(the <b>"probabilists' Hermite polynomials"</b>), or sometimes by</p>
+<dl>
+<dd><img class="tex" alt="H_n(x)=(-1)^n e^{x^2}\frac{d^n}{dx^n}e^{-x^2}\,\!" src="Hermite_polynomials_files/e76388b87371b9a6843b1eb077491f5b.png"></dd>
+</dl>
+<p>(the <b>"physicists' Hermite polynomials"</b>). These two definitions are <i>not</i> exactly equivalent; either is a rescaling of the other, to wit</p>
+<dl>
+<dd><img class="tex" alt="H_n^\mathrm{phys}(x) = 2^{n/2}H_n^\mathrm{prob}(\sqrt{2}\,x).\,\!" src="Hermite_polynomials_files/cfcf7bf375dd72528905475cd460a7ed.png"></dd>
+</dl>
+<p>These are Hermite polynomial sequences of different variances; see the material on variances below.</p>
+<p>Below, we usually follow the first convention. That convention is often preferred by probabilists because</p>
+<dl>
+<dd><img class="tex" alt="\frac{1}{\sqrt{2\pi}}e^{-x^2/2}" src="Hermite_polynomials_files/c7d0d4bfb43ec298e4b99ff88e818632.png"></dd>
+</dl>
+<p>is the <a href="http://en.wikipedia.org/wiki/Probability_density_function" title="Probability density function">probability density function</a> for the <a href="http://en.wikipedia.org/wiki/Normal_distribution" title="Normal distribution">normal distribution</a> with <a href="http://en.wikipedia.org/wiki/Expected_value" title="Expected value">expected value</a> 0 and <a href="http://en.wikipedia.org/wiki/Standard_deviation" title="Standard deviation">standard deviation</a> 1.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width: 452px;"><a href="http://en.wikipedia.org/wiki/File:Hermite_poly.svg" class="image"><img alt="" src="Hermite_polynomials_files/450px-Hermite_poly.png" class="thumbimage" width="450" height="360"></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="http://en.wikipedia.org/wiki/File:Hermite_poly.svg" class="internal" title="Enlarge"><img src="Hermite_polynomials_files/magnify-clip.png" alt="" width="15" height="11"></a></div>
+The first five (probabilists') Hermite polynomials.</div>
+</div>
+</div>
+<p>The first eleven probabilists' Hermite polynomials are:</p>
+<dl>
+<dd><img class="tex" alt="H_0(x)=1\," src="Hermite_polynomials_files/79c61e42c410b42b2fd404c413adffd4.png"></dd>
+<dd><img class="tex" alt="H_1(x)=x\," src="Hermite_polynomials_files/632f72303792102669e1c4df57ecf6ce.png"></dd>
+<dd><img class="tex" alt="H_2(x)=x^2-1\," src="Hermite_polynomials_files/7e32a4ba8de1b40733b95f51a6086b95.png"></dd>
+<dd><img class="tex" alt="H_3(x)=x^3-3x\," src="Hermite_polynomials_files/36e5be78d395da599dea5db981d04993.png"></dd>
+<dd><img class="tex" alt="H_4(x)=x^4-6x^2+3\," src="Hermite_polynomials_files/fe3316c954756714c6899cc8d5080e3e.png"></dd>
+<dd><img class="tex" alt="H_5(x)=x^5-10x^3+15x\," src="Hermite_polynomials_files/a0b6389b85bdfeda2bbf21a4e30e1e57.png"></dd>
+<dd><img class="tex" alt="H_6(x)=x^6-15x^4+45x^2-15\," src="Hermite_polynomials_files/fd3aaecd710b22f8bdfd3325fb953f59.png"></dd>
+<dd><img class="tex" alt="H_7(x)=x^7-21x^5+105x^3-105x\," src="Hermite_polynomials_files/22903c25930b7166ee4e9bd82d0b3917.png"></dd>
+<dd><img class="tex" alt="H_8(x)=x^8-28x^6+210x^4-420x^2+105\," src="Hermite_polynomials_files/0b52cb023022143f210e9c1f2579dbb5.png"></dd>
+<dd><img class="tex" alt="H_9(x)=x^9-36x^7+378x^5-1260x^3+945x\," src="Hermite_polynomials_files/cf867b790cee383e861a0691e8d88743.png"></dd>
+<dd><img class="tex" alt="H_{10}(x)=x^{10}-45x^8+630x^6-3150x^4+4725x^2-945\," src="Hermite_polynomials_files/6ff23e05688a0803eaad688cf5ee8b56.png"></dd>
+</dl>
+<div class="thumb tright">
+<div class="thumbinner" style="width: 452px;"><a href="http://en.wikipedia.org/wiki/File:Hermite_poly_phys.svg" class="image"><img alt="" src="Hermite_polynomials_files/450px-Hermite_poly_phys.png" class="thumbimage" width="450" height="360"></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="http://en.wikipedia.org/wiki/File:Hermite_poly_phys.svg" class="internal" title="Enlarge"><img src="Hermite_polynomials_files/magnify-clip.png" alt="" width="15" height="11"></a></div>
+The first five (physicists') Hermite polynomials.</div>
+</div>
+</div>
+<p>and the first eleven physicists' Hermite polynomials are:</p>
+<dl>
+<dd><img class="tex" alt="H_0(x)=1\," src="Hermite_polynomials_files/79c61e42c410b42b2fd404c413adffd4.png"></dd>
+<dd><img class="tex" alt="H_1(x)=2x\," src="Hermite_polynomials_files/43a691f0e4859df5b1c16c975dcbae8a.png"></dd>
+<dd><img class="tex" alt="H_2(x)=4x^2-2\," src="Hermite_polynomials_files/c1cab0ba52255a13537a575131b38807.png"></dd>
+<dd><img class="tex" alt="H_3(x)=8x^3-12x\," src="Hermite_polynomials_files/c220a3234b9e4da37b654b238a1fe404.png"></dd>
+<dd><img class="tex" alt="H_4(x)=16x^4-48x^2+12\," src="Hermite_polynomials_files/13f8cf82768a25904007a12110e8b07c.png"></dd>
+<dd><img class="tex" alt="H_5(x)=32x^5-160x^3+120x\," src="Hermite_polynomials_files/8b81cd5b71ca75709e9368b55fc0c595.png"></dd>
+<dd><img class="tex" alt="H_6(x)=64x^6-480x^4+720x^2-120\," src="Hermite_polynomials_files/4453873acb55e248e0c506393fc990e5.png"></dd>
+<dd><img class="tex" alt="H_7(x)=128x^7-1344x^5+3360x^3-1680x\," src="Hermite_polynomials_files/e4f92e96ef130a2a99c8dbc209a8caec.png"></dd>
+<dd><img class="tex" alt="H_8(x)=256x^8-3584x^6+13440x^4-13440x^2+1680\," src="Hermite_polynomials_files/11b3fa0ec8efafc213a6dced2467be7d.png"></dd>
+<dd><img class="tex" alt="H_9(x)=512x^9-9216x^7+48384x^5-80640x^3+30240x\," src="Hermite_polynomials_files/93ec6fb7586f06437e649a97e5ed870b.png"></dd>
+<dd><img class="tex" alt="H_{10}(x)=1024x^{10}-23040x^8+161280x^6-403200x^4+302400x^2-30240\," src="Hermite_polynomials_files/0b7a132e78f4a1503db57924984f3083.png"></dd>
+</dl>
+<h2><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=edit&amp;section=2" title="Edit section: Properties">edit</a>]</span> <span class="mw-headline" id="Properties">Properties</span></h2>
+<p><i>H<sub>n</sub></i> is a polynomial of degree <i>n</i>. The probabilists' version has leading coefficient 1, while the physicists' version has leading coefficient 2<sup><i>n</i></sup>.</p>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=edit&amp;section=3" title="Edit section: Orthogonality">edit</a>]</span> <span class="mw-headline" id="Orthogonality">Orthogonality</span></h3>
+<p><i>H</i><sub><i>n</i></sub>(<i>x</i>) is an <i>n</i>th-degree polynomial for <i>n</i>&nbsp;= 0, 1, 2, 3,&nbsp;.... These <a href="http://en.wikipedia.org/wiki/Orthogonal_polynomials" title="Orthogonal polynomials">polynomials are orthogonal</a> with respect to the <i>weight function</i> (<a href="http://en.wikipedia.org/wiki/Measure_%28mathematics%29" title="Measure (mathematics)">measure</a>)</p>
+<dl>
+<dd><img class="tex" alt="w(x) = \mathrm{e}^{-x^2/2}\,\!" src="Hermite_polynomials_files/7a4a6b58917fd0ddd805b402ab5cb4d0.png">&nbsp;&nbsp; (probabilist)</dd>
+</dl>
+<p>or</p>
+<dl>
+<dd><img class="tex" alt="w(x) = \mathrm{e}^{-x^2}\,\!" src="Hermite_polynomials_files/d960718ab96aa67e02fef7478526bd78.png">&nbsp;&nbsp; (physicist)</dd>
+</dl>
+<p>i.e., we have</p>
+<dl>
+<dd><img class="tex" alt="\int_{-\infty}^\infty H_m(x) H_n(x)\, w(x) \, \mathrm{d}x = 0" src="Hermite_polynomials_files/b6394d86166f7fdaab82aa7add6248a9.png"></dd>
+</dl>
+<p>when <i>m</i>&nbsp;≠ <i>n</i>. Furthermore,</p>
+<dl>
+<dd><img class="tex" alt="\int_{-\infty}^\infty H_n(x) H_n(x)\, \mathrm{e}^{-x^2/2} \, \mathrm{d}x = n! \, \sqrt{2 \pi}" src="Hermite_polynomials_files/61796a1c026e3dd17b15c1c37dd80282.png">&nbsp;&nbsp; (probabilist)</dd>
+</dl>
+<p>or</p>
+<dl>
+<dd><img class="tex" alt="\int_{-\infty}^\infty H_n(x) H_n(x)\, \mathrm{e}^{-x^2}\, \mathrm{d}x = n! \, 2^n \sqrt{\pi}" src="Hermite_polynomials_files/aacd42a32b99ebb87faea809311dc54e.png">&nbsp;&nbsp; (physicist).</dd>
+</dl>
+<p>The probabilist polynomials are thus orthogonal with respect to the standard normal probability density function.</p>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=edit&amp;section=4" title="Edit section: Completeness">edit</a>]</span> <span class="mw-headline" id="Completeness">Completeness</span></h3>
+<p>The Hermite polynomials (probabilist or physicist) form an <a href="http://en.wikipedia.org/wiki/Orthonormal_basis" title="Orthonormal basis">orthogonal basis</a> of the <a href="http://en.wikipedia.org/wiki/Hilbert_space" title="Hilbert space">Hilbert space</a> of functions satisfying</p>
+<dl>
+<dd><img class="tex" alt="\int_{-\infty}^\infty\left|f(x)\right|^2\, w(x) \, \mathrm{d}x &lt;\infty," src="Hermite_polynomials_files/7262523dc558e64a5a6eaa7087785bc9.png"></dd>
+</dl>
+<p>in which the inner product is given by the integral including the <a href="http://en.wikipedia.org/wiki/Gaussian_function" title="Gaussian function">Gaussian</a> weight function <i>w</i>(<i>x</i>) defined in the preceding section,</p>
+<dl>
+<dd><img class="tex" alt="\langle f,g\rangle=\int_{-\infty}^\infty f(x)\overline{g(x)}\, w(x) \, \mathrm{d}x." src="Hermite_polynomials_files/481a765e8cbcc33e068a35a6b393e453.png"></dd>
+</dl>
+<p>An orthogonal basis for <a href="http://en.wikipedia.org/wiki/Lp_space" title="Lp space"><i>L</i><sup>2</sup>(<b>R</b>,&nbsp;<i>w</i>(<i>x</i>)&nbsp;d<i>x</i>)</a> is a <a href="http://en.wikipedia.org/wiki/Hilbert_space#Orthonormal_bases" title="Hilbert space"><i>complete</i> orthogonal system</a>. For an orthogonal system, <i>completeness</i> is equivalent to the fact that the 0 function is the only function <i>ƒ</i>&nbsp;∈&nbsp;<i>L</i><sup>2</sup>(<b>R</b>,&nbsp;<i>w</i>(<i>x</i>)&nbsp;d<i>x</i>)
+orthogonal to all functions in the system. Since the linear span of
+Hermite polynomials is the space of all polynomials, one has to show
+(in physicist case) that if <i>ƒ</i> satisfies</p>
+<dl>
+<dd><img class="tex" alt="\int_{-\infty}^\infty f(x) x^n \mathrm{e}^{- x^2} \, \mathrm{d}x = 0" src="Hermite_polynomials_files/c285221b0c2566c1a1c1e4bd76dd0c49.png"></dd>
+</dl>
+<p>for every <i>n</i>&nbsp;≥&nbsp;0, then <i>ƒ</i>&nbsp;=&nbsp;0. One possible way to do it is to see that the <a href="http://en.wikipedia.org/wiki/Entire_function" title="Entire function">entire function</a></p>
+<dl>
+<dd><img class="tex" alt="F(z) = \int_{-\infty}^\infty f(x) \, \mathrm{e}^{z x - x^2} \, \mathrm{d}x = \sum_{n=0}^\infty \frac{z^n}{n!}\int f(x) x^n \mathrm{e}^{- x^2} \, \mathrm{d}x = 0" src="Hermite_polynomials_files/242c191a28c335af60c6089ff383b62d.png"></dd>
+</dl>
+<p>vanishes identically. The fact that <i>F</i>(i<i>t</i>)&nbsp;=&nbsp;0 for every <i>t</i> real means that the <a href="http://en.wikipedia.org/wiki/Fourier_transform" title="Fourier transform">Fourier transform</a> of <i>ƒ</i>(<i>x</i>)&nbsp;exp(−<i>x</i><sup>2</sup>) is 0, hence <i>ƒ</i>
+is 0 almost everywhere. Variants of the above completeness proof apply
+to other weights with exponential decay. In the Hermite case, it is
+also possible to prove an explicit identity that implies completeness
+(see "<i>Completeness relation</i>" below).</p>
+<p>An equivalent formulation of the fact that Hermite polynomials are an orthogonal basis for <i>L</i><sup>2</sup>(<b>R</b>,&nbsp;<i>w</i>(<i>x</i>)&nbsp;d<i>x</i>) consists in introducing Hermite <i>functions</i> (see below), and in saying that the Hermite functions are an orthonormal basis for <i>L</i><sup>2</sup>(<b>R</b>).</p>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=edit&amp;section=5" title="Edit section: Hermite's differential equation">edit</a>]</span> <span class="mw-headline" id="Hermite.27s_differential_equation">Hermite's differential equation</span></h3>
+<p>The probabilists' Hermite polynomials are solutions of the differential equation</p>
+<dl>
+<dd><img class="tex" alt="(e^{-x^2/2}u')' + \lambda e^{-x^2/2}u = 0" src="Hermite_polynomials_files/daf0957e505622dcf5732d3152d04bfb.png"></dd>
+</dl>
+<p>where λ is a constant, with the boundary conditions that <i>u</i>
+should be polynomially bounded at infinity. With these boundary
+conditions, the equation has solutions only if λ is a positive integer,
+and up to an overall scaling, the solution is uniquely given by <i>u</i>(<i>x</i>)&nbsp;=&nbsp;<i>H</i><sub>λ</sub>(<i>x</i>). Rewriting the differential equation as an <a href="http://en.wikipedia.org/wiki/Eigenvalue" title="Eigenvalue" class="mw-redirect">eigenvalue problem</a></p>
+<dl>
+<dd><span class="texhtml"><i>L</i>[<i>u</i>] = <i>u</i>'' − <i>x</i><i>u</i>' = − λ<i>u</i></span></dd>
+</dl>
+<p>solutions are the <a href="http://en.wikipedia.org/wiki/Eigenfunction" title="Eigenfunction">eigenfunctions</a> of the differential operator <i>L</i>. This eigenvalue problem is called the <b>Hermite equation</b>, although the term is also used for the closely related equation</p>
+<dl>
+<dd><span class="texhtml"><i>u</i>'' − 2<i>x</i><i>u</i>' = − 2λ<i>u</i></span></dd>
+</dl>
+<p>whose solutions are the physicists' Hermite polynomials.</p>
+<p>With more general boundary conditions, the Hermite polynomials can be generalized to obtain more general <a href="http://en.wikipedia.org/wiki/Analytic_function" title="Analytic function">analytic functions</a> <i>H</i><sub>λ</sub>(<i>z</i>) for λ a complex index. An explicit formula can be given in terms of a <a href="http://en.wikipedia.org/wiki/Contour_integral" title="Contour integral" class="mw-redirect">contour integral</a> (<a href="#CITEREFCourantHilbert1953">Courant &amp; Hilbert 1953</a>).</p>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=edit&amp;section=6" title="Edit section: Recursion relation">edit</a>]</span> <span class="mw-headline" id="Recursion_relation">Recursion relation</span></h3>
+<p>The sequence of Hermite polynomials also satisfies the <a href="http://en.wikipedia.org/wiki/Recursion" title="Recursion">recursion</a></p>
+<dl>
+<dd><img class="tex" alt="H_{n+1}(x)=xH_n(x)-H_n'(x).\,\!" src="Hermite_polynomials_files/c374fdf77b4efb7f1c29c3c1e1dddf29.png"> (probabilist)</dd>
+<dd><img class="tex" alt="H_{n+1}(x)=2 xH_n(x)-H_n'(x).\,\!" src="Hermite_polynomials_files/90f8b671bbd87594efdfe3710e4d72f7.png"> (physicist)</dd>
+</dl>
+<p>The Hermite polynomials constitute an <a href="http://en.wikipedia.org/wiki/Appell_sequence" title="Appell sequence">Appell sequence</a>, i.e., they are a polynomial sequence satisfying the identity</p>
+<dl>
+<dd><img class="tex" alt="H_n'(x)=nH_{n-1}(x),\,\!" src="Hermite_polynomials_files/e0be1feb86dd9369934150e7628fda76.png"> (probabilist)</dd>
+<dd><img class="tex" alt="H_n'(x)=2nH_{n-1}(x),\,\!" src="Hermite_polynomials_files/3ffbec0ad294e53b773b7078180b63f4.png"> (physicist)</dd>
+</dl>
+<p>or equivalently,</p>
+<dl>
+<dd><img class="tex" alt="H_n(x+y)=\sum_{k=0}^n{n \choose k}x^k H_{n-k}(y)" src="Hermite_polynomials_files/426c8bb7f3436a8885ee519563f455e1.png"> (probabilist)</dd>
+<dd><img class="tex" alt="H_n(x+y)=\sum_{k=0}^n{n \choose k}H_{k}(x) (2y)^{(n-k)}" src="Hermite_polynomials_files/7db6f9fb5ee8d6de264d0f01b3c9c8bb.png"> (physicist)</dd>
+</dl>
+<p>(the equivalence of these last two identities may not be obvious, but its proof is a routine exercise).</p>
+<p>It follows that the Hermite polynomials also satisfy the <a href="http://en.wikipedia.org/wiki/Recurrence_relation" title="Recurrence relation">recurrence relation</a></p>
+<dl>
+<dd><img class="tex" alt="H_{n+1}(x)=xH_n(x)-nH_{n-1}(x),\,\!" src="Hermite_polynomials_files/33be8daee729bf9399c6a8c4d023a687.png"> (probabilist)</dd>
+<dd><img class="tex" alt="H_{n+1}(x)=2xH_n(x)-2nH_{n-1}(x).\,\!" src="Hermite_polynomials_files/ae2311c375fe4ca599d3a7b51f988186.png"> (physicist)</dd>
+</dl>
+<p>These last relations, together with the initial polynomials <i>H</i><sub>0</sub>(<i>x</i>) and <i>H</i><sub>1</sub>(<i>x</i>), can be used in practice to compute the polynomials quickly.</p>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=edit&amp;section=7" title="Edit section: Generating function">edit</a>]</span> <span class="mw-headline" id="Generating_function">Generating function</span></h3>
+<p>The Hermite polynomials are given by the <a href="http://en.wikipedia.org/wiki/Exponential_generating_function" title="Exponential generating function" class="mw-redirect">exponential generating function</a></p>
+<dl>
+<dd><img class="tex" alt="\exp (xt-t^2/2) = \sum_{n=0}^\infty H_n(x) \frac {t^n}{n!}\,\!" src="Hermite_polynomials_files/545734b8ef5a69f8b05446e3509e8c24.png"> (probabilist)</dd>
+</dl>
+<p><br></p>
+<dl>
+<dd><img class="tex" alt="\exp (2xt-t^2) = \sum_{n=0}^\infty H_n(x) \frac {t^n}{n!}\,\!" src="Hermite_polynomials_files/bf28ce75edf9f0c6f2f301f2f30eacd6.png"> (physicist).</dd>
+</dl>
+<p>This equality is valid for all <i>x</i>, <i>t</i> complex, and can be obtained by writing the Taylor expansion at <i>x</i> of the entire function <i>z</i>&nbsp;→ exp(−<i>z</i><sup>2</sup>)
+(in physicist's case). One can also derive the (physicist's) generating
+function by using Cauchy's Integral Formula to write the Hermite
+polynomials as</p>
+<dl>
+<dd><img class="tex" alt="H_n(x)=(-1)^n e^{x^2}\frac{d^n}{dx^n}e^{-x^2}= (-1)^n e^{x^2}{n! \over 2\pi i} \oint_\gamma {e^{-z^2} \over (z-x)^{n+1}}\, dz.\,\!" src="Hermite_polynomials_files/639c33583df16bebba34a3918b870157.png"></dd>
+</dl>
+<p>Using this in the sum <img class="tex" alt="\sum_{n=0}^\infty H_n(x) \frac {t^n}{n!}\,\!" src="Hermite_polynomials_files/3f754a71a3b5d2881cb82bc6d43e124c.png">, one can evaluate the remaining integral using the calculus of residues and arrive at the desired generating function.</p>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=edit&amp;section=8" title="Edit section: Expected value">edit</a>]</span> <span class="mw-headline" id="Expected_value">Expected value</span></h3>
+<p>If <i>X</i> is a <a href="http://en.wikipedia.org/wiki/Random_variable" title="Random variable">random variable</a> with a <a href="http://en.wikipedia.org/wiki/Normal_distribution" title="Normal distribution">normal distribution</a> with standard deviation 1 and expected value μ then</p>
+<dl>
+<dd><img class="tex" alt="E(H_n(X))=\mu^n.\,\!" src="Hermite_polynomials_files/55d0ce17d56772a63b4831897805d68a.png"> (probabilist)</dd>
+</dl>
+<h2><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=edit&amp;section=9" title="Edit section: Relations to other functions">edit</a>]</span> <span class="mw-headline" id="Relations_to_other_functions">Relations to other functions</span></h2>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=edit&amp;section=10" title="Edit section: Laguerre polynomials">edit</a>]</span> <span class="mw-headline" id="Laguerre_polynomials">Laguerre polynomials</span></h3>
+<p>The Hermite polynomials can be expressed as a special case of the <a href="http://en.wikipedia.org/wiki/Laguerre_polynomials" title="Laguerre polynomials">Laguerre polynomials</a>.</p>
+<dl>
+<dd><img class="tex" alt="H_{2n}(x) = (-4)^{n}\,n!\,L_{n}^{(-1/2)}(x^2)=4^n\, n! \sum_{i=0}^n (-1)^{n-i} {n-\frac{1}{2} \choose n-i} \frac{x^{2i}}{i!}\,\!" src="Hermite_polynomials_files/7b6718e69af1fcbd53b1b8d7521b1e94.png"> (physicist)</dd>
+<dd><img class="tex" alt="H_{2n+1}(x) = 2(-4)^{n}\,n!\,x\,L_{n}^{(1/2)}(x^2)=2\cdot 4^n\, n! \sum_{i=0}^n (-1)^{n-i} {n+\frac{1}{2} \choose n-i} \frac{x^{2i+1}}{i!}\,\!" src="Hermite_polynomials_files/33f10f8201081a0f189007ec67de281a.png"> (physicist)</dd>
+</dl>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=edit&amp;section=11" title="Edit section: Relation to confluent hypergeometric functions">edit</a>]</span> <span class="mw-headline" id="Relation_to_confluent_hypergeometric_functions">Relation to confluent hypergeometric functions</span></h3>
+<p>The Hermite polynomials can be expressed as a special case of the <a href="http://en.wikipedia.org/wiki/Parabolic_cylinder_function" title="Parabolic cylinder function">parabolic cylinder functions</a>.</p>
+<dl>
+<dd><img class="tex" alt="H_{n}(x) = 
+2^{n}\,U\left(\frac{1-n}{2},\frac{3}{2};x^2\right)" src="Hermite_polynomials_files/f749c51c3bdc31b4f8ef9fc040d9d5d6.png"> (physicist)</dd>
+</dl>
+<p>where <span class="texhtml"><i>U</i>(<i>a</i>,<i>b</i>;<i>z</i>)</span> is <a href="http://en.wikipedia.org/wiki/Confluent_hypergeometric_function" title="Confluent hypergeometric function">Whittaker's confluent hypergeometric function</a>. Similarly,</p>
+<dl>
+<dd><img class="tex" alt="H_{2n}(x) = (-1)^{n}\,\frac{(2n)!}{n!}
+\,_1F_1\left(-n,\frac{1}{2};x^2\right)" src="Hermite_polynomials_files/4f2bb8887a3a56a9e2029180c610b9e3.png"> (physicist)</dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="H_{2n+1}(x) = (-1)^{n}\,\frac{(2n+1)!}{n!}\,2x
+\,_1F_1\left(-n,\frac{3}{2};x^2\right)" src="Hermite_polynomials_files/aaceb3e5051e1a0adf8f43892d7e6f27.png"> (physicist)</dd>
+</dl>
+<p>where <img class="tex" alt="\,_1F_1(a,b;z)=M(a,b;z)" src="Hermite_polynomials_files/68b63564c91d717d8a29f4c2c3e40715.png"> is <a href="http://en.wikipedia.org/wiki/Confluent_hypergeometric_function" title="Confluent hypergeometric function">Kummer's confluent hypergeometric function</a>.</p>
+<h2><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=edit&amp;section=12" title="Edit section: Differential operator representation">edit</a>]</span> <span class="mw-headline" id="Differential_operator_representation">Differential operator representation</span></h2>
+<p>The probabilists' Hermite polynomials satisfy the identity</p>
+<dl>
+<dd><img class="tex" alt="H_n(x)=e^{-D^2/2}x^n\,\!" src="Hermite_polynomials_files/66b9d6ac8e5589322894ebb25ed90c9d.png"></dd>
+</dl>
+<p>where <i>D</i> represents differentiation with respect to <i>x</i>, and the <a href="http://en.wikipedia.org/wiki/Exponential_function" title="Exponential function">exponential</a> is interpreted by expanding it as a <a href="http://en.wikipedia.org/wiki/Power_series" title="Power series">power series</a>.
+There are no delicate questions of convergence of this series when it
+operates on polynomials, since all but finitely many terms vanish.</p>
+<p>Since the power series coefficients of the exponential are well known, and higher order derivatives of the monomial <i>x</i><sup><i>n</i></sup>
+can be written down explicitly, this differential operator
+representation gives rise to a concrete formula for the coefficients of
+<i>H<sub>n</sub></i> that can be used to quickly compute these polynomials.</p>
+<p>Since the formal expression for the <a href="http://en.wikipedia.org/wiki/Weierstrass_transform" title="Weierstrass transform">Weierstrass transform</a> <i>W</i> is <i>e</i><sup><i>D</i><sup>2</sup></sup>, we see that the Weierstrass transform of (√2)<sup><i>n</i></sup><i>H<sub>n</sub></i>(<i>x</i>/√2) is <i>x</i><sup><i>n</i></sup>. Essentially the Weierstrass transform thus turns a series of Hermite polynomials into a corresponding <a href="http://en.wikipedia.org/wiki/Maclaurin_series" title="Maclaurin series" class="mw-redirect">Maclaurin series</a>.</p>
+<p>The existence of some formal power series <i>g</i>(<i>D</i>), with nonzero constant coefficient, such that <i>H<sub>n</sub></i>(<i>x</i>) = <i>g</i>(<i>D</i>)<i>x<sup>n</sup></i>,
+is another equivalent to the statement that these polynomials form an
+Appell sequence. Since they are an Appell sequence they are <i>a fortiori</i> a <a href="http://en.wikipedia.org/wiki/Sheffer_sequence" title="Sheffer sequence">Sheffer sequence</a>.</p>
+<h2><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=edit&amp;section=13" title="Edit section: Contour integral representation">edit</a>]</span> <span class="mw-headline" id="Contour_integral_representation">Contour integral representation</span></h2>
+<p>The Hermite polynomials have a representation in terms of a <a href="http://en.wikipedia.org/wiki/Contour_integral" title="Contour integral" class="mw-redirect">contour integral</a>, as</p>
+<dl>
+<dd><img class="tex" alt="H_n(x)=\frac{n!}{2\pi i}\oint\frac{e^{tx-t^2/2}}{t^{n+1}}\,dt" src="Hermite_polynomials_files/a8713f11cb9f222dc48d21a1e0a77f52.png"> (probabilist)</dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="H_n(x)=\frac{n!}{2\pi i}\oint\frac{e^{2tx-t^2}}{t^{n+1}}\,dt" src="Hermite_polynomials_files/c292e222aef7252ceb0d248e7298443f.png"> (physicist)</dd>
+</dl>
+<p>with the contour encircling the origin.</p>
+<h2><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=edit&amp;section=14" title="Edit section: Generalizations">edit</a>]</span> <span class="mw-headline" id="Generalizations">Generalizations</span></h2>
+<p>The (probabilists') Hermite polynomials defined above are orthogonal
+with respect to the standard normal probability distribution, whose
+density function is</p>
+<dl>
+<dd><img class="tex" alt="\frac{1}{\sqrt{2\pi}}e^{-x^2/2}\,\!" src="Hermite_polynomials_files/33547d954991189bf815556cbde853a4.png"></dd>
+</dl>
+<p>which has expected value 0 and variance 1. One may speak of Hermite polynomials</p>
+<dl>
+<dd><img class="tex" alt="H_n^{[\alpha]}(x)\,\!" src="Hermite_polynomials_files/54ff051e4228c8f97312abc47110f280.png"></dd>
+</dl>
+<p>of variance α, where α is any positive number. These are orthogonal
+with respect to the normal probability distribution whose density
+function is</p>
+<dl>
+<dd><img class="tex" alt="(2\pi\alpha)^{-1/2}e^{-x^2/(2\alpha)}.\,\!" src="Hermite_polynomials_files/5ee21c35c60c11e4b7116425a121f9e5.png"></dd>
+</dl>
+<p>They are given by</p>
+<dl>
+<dd><img class="tex" alt="H_n^{[\alpha]}(x) = \alpha^{-n/2}H_n^{[1]}\left(\frac{x}{\sqrt{\alpha}}\right)=e^{-\alpha D^2/2}x^n.\,\!" src="Hermite_polynomials_files/5cbc07a131f7d2da5c20d216132fa205.png"></dd>
+</dl>
+<p>In particular, the physicists' Hermite polynomials are</p>
+<dl>
+<dd><img class="tex" alt="H_n^{[1/2]}(x).\,\!" src="Hermite_polynomials_files/c9ff9a32ae04e658d6505e7759502264.png"></dd>
+</dl>
+<p>If</p>
+<dl>
+<dd><img class="tex" alt="H_n^{[\alpha]}(x)=\sum_{k=0}^n h^{[\alpha]}_{n,k}x^k\,\!" src="Hermite_polynomials_files/07cad81b12bb0a61d255e4c164c6a2ae.png"></dd>
+</dl>
+<p>then the polynomial sequence whose <i>n</i>th term is</p>
+<dl>
+<dd><img class="tex" alt="\left(H_n^{[\alpha]}\circ H^{[\beta]}\right)(x)=\sum_{k=0}^n h^{[\alpha]}_{n,k}\,H_k^{[\beta]}(x)\,\!" src="Hermite_polynomials_files/a659a966896aa109f922765f5efe900c.png"></dd>
+</dl>
+<p>is the <b>umbral composition</b> of the two polynomial sequences, and it can be shown to satisfy the identities</p>
+<dl>
+<dd><img class="tex" alt="\left(H_n^{[\alpha]}\circ H^{[\beta]}\right)(x)=H_n^{[\alpha+\beta]}(x)\,\!" src="Hermite_polynomials_files/e99b5183c932c69e750d74090413d786.png"></dd>
+</dl>
+<p>and</p>
+<dl>
+<dd><img class="tex" alt="H_n^{[\alpha+\beta]}(x+y)=\sum_{k=0}^n{n\choose k}H_k^{[\alpha]}(x) H_{n-k}^{[\beta]}(y).\,\!" src="Hermite_polynomials_files/54982d091852fe0bb94345c92f632bc6.png"></dd>
+</dl>
+<p>The last identity is expressed by saying that this <a href="http://en.wikipedia.org/wiki/Parameterized_family" title="Parameterized family" class="mw-redirect">parameterized family</a> of polynomial sequences is a <b><a href="http://en.wikipedia.org/w/index.php?title=Cross-sequence&amp;action=edit&amp;redlink=1" class="new" title="Cross-sequence (page does not exist)">cross-sequence</a></b>.</p>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=edit&amp;section=15" title="Edit section: &quot;Negative variance&quot;">edit</a>]</span> <span class="mw-headline" id=".22Negative_variance.22">"Negative variance"</span></h3>
+<p>Since polynomial sequences form a <a href="http://en.wikipedia.org/wiki/Group_%28mathematics%29" title="Group (mathematics)">group</a> under the operation of umbral composition, one may denote by</p>
+<dl>
+<dd><img class="tex" alt="H_n^{[-\alpha]}(x)\,\!" src="Hermite_polynomials_files/7f0ef813f67d49c39a3ce32826263adc.png"></dd>
+</dl>
+<p>the sequence that is inverse to the one similarly denoted but
+without the minus sign, and thus speak of Hermite polynomials of
+negative variance. For α &gt; 0, the coefficients of <i>H</i><sub><i>n</i></sub><sup>[−α]</sup>(<i>x</i>) are just the absolute values of the corresponding coefficients of <i>H</i><sub><i>n</i></sub><sup>[α]</sup>(<i>x</i>).</p>
+<p>These arise as moments of normal probability distributions: The <i>n</i>th moment of the normal distribution with expected value μ and variance σ<sup>2</sup> is</p>
+<dl>
+<dd><img class="tex" alt="E(X^n)=H_n^{[-\sigma^2]}(\mu)\,\!" src="Hermite_polynomials_files/879686a5cb42ebfdce97d7270ad6aa5f.png"></dd>
+</dl>
+<p>where <i>X</i> is a random variable with the specified normal distribution. A special case of the cross-sequence identity then says that</p>
+<dl>
+<dd><img class="tex" alt="\sum_{k=0}^n {n\choose k}H_k^{[\alpha]}(x) H_{n-k}^{[-\alpha]}(y)=H_n^{[0]}(x+y)=(x+y)^n.\,\!" src="Hermite_polynomials_files/1c80a3ce13d5abf14195f83241216c62.png"></dd>
+</dl>
+<h2><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=edit&amp;section=16" title="Edit section: Applications">edit</a>]</span> <span class="mw-headline" id="Applications">Applications</span></h2>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=edit&amp;section=17" title="Edit section: Hermite functions">edit</a>]</span> <span class="mw-headline" id="Hermite_functions">Hermite functions</span></h3>
+<p>One can define the <b>Hermite functions</b> from the physicists' polynomials:</p>
+<dl>
+<dd><img class="tex" alt="{\psi}_n(x) = \frac{1}{\sqrt{n! \, 2^n\sqrt{\pi}}}\, \mathrm{e}^{-x^2/2}H_n(x).\,\!" src="Hermite_polynomials_files/aa3d28a21dd60a6908b44763f67e7737.png"></dd>
+</dl>
+<p>Since these functions contain the square root of the weight function, and have been scaled appropriately, they are orthonormal:</p>
+<dl>
+<dd><img class="tex" alt="\int_{-\infty}^\infty \psi_n(x)\psi_m(x)\, \mathrm{d}x = \delta_{\mathit{nm}}\,\!" src="Hermite_polynomials_files/1cf1f08fa0f848178d4faf9510ce99d9.png"></dd>
+</dl>
+<p>and form an orthonormal basis of <i>L</i><sup>2</sup>(<b>R</b>). This fact is equivalent to the corresponding statement for Hermite polynomials (see above).</p>
+<p>The Hermite functions are closely related to the <a href="http://en.wikipedia.org/wiki/Whittaker_function" title="Whittaker function" class="mw-redirect">Whittaker function</a> (Whittaker and Watson, 1962) <span class="texhtml"><i>D</i><sub><i>n</i></sub>(<i>z</i>)</span>:</p>
+<dl>
+<dd><img class="tex" alt="D_n(z)=(n!\sqrt{\pi})^{1/2}\psi_n(z/\sqrt{2})" src="Hermite_polynomials_files/ffa6aa3915e3b3e36cc8372770fea62c.png"></dd>
+</dl>
+<p>and thereby to other <a href="http://en.wikipedia.org/wiki/Parabolic_cylinder_function" title="Parabolic cylinder function">parabolic cylinder functions</a>. The Hermite functions satisfy the differential equation:</p>
+<dl>
+<dd><img class="tex" alt="\psi_n''(x)+(2n+1-x^2)\psi_n(x)=0.\,\!" src="Hermite_polynomials_files/0b200fc3c2cc9921bbdbdd2386f3f900.png"></dd>
+</dl>
+<p>This equation is equivalent to the <a href="http://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation" title="Schrödinger equation">Schrödinger equation</a> for a harmonic oscillator in quantum mechanics, so these functions are the eigenfunctions.</p>
+<div class="center">
+<div class="thumb tnone">
+<div class="thumbinner" style="width: 452px;"><a href="http://en.wikipedia.org/wiki/File:Herm5.svg" class="image"><img alt="" src="Hermite_polynomials_files/450px-Herm5.png" class="thumbimage" width="450" height="185"></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="http://en.wikipedia.org/wiki/File:Herm5.svg" class="internal" title="Enlarge"><img src="Hermite_polynomials_files/magnify-clip.png" alt="" width="15" height="11"></a></div>
+Hermite functions 0 (black), 1 (red), 2 (blue), 3 (yellow), 4 (green), and 5 (magenta).</div>
+</div>
+</div>
+</div>
+<div class="center">
+<div class="thumb tnone">
+<div class="thumbinner" style="width: 682px;"><a href="http://en.wikipedia.org/wiki/File:Herm50.svg" class="image"><img alt="" src="Hermite_polynomials_files/680px-Herm50.png" class="thumbimage" width="680" height="178"></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="http://en.wikipedia.org/wiki/File:Herm50.svg" class="internal" title="Enlarge"><img src="Hermite_polynomials_files/magnify-clip.png" alt="" width="15" height="11"></a></div>
+Hermite functions 0 (black), 2 (blue), 4 (green), and 50 (magenta).</div>
+</div>
+</div>
+</div>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=edit&amp;section=18" title="Edit section: Recursion relation">edit</a>]</span> <span class="mw-headline" id="Recursion_relation_2">Recursion relation</span></h3>
+<p>Following recursion relations of Hermite polynomials, the Hermite functions obey</p>
+<p><img class="tex" alt="\psi_n'(x) = \sqrt{\frac{n}{2}}\psi_{n-1}(x) - \sqrt{\frac{n+1}{2}}\psi_{n+1}(x)" src="Hermite_polynomials_files/17a381acf81d1b7cd9a81fa6ccb54db4.png"></p>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=edit&amp;section=19" title="Edit section: Hermite functions as eigenfunctions of the Fourier transform">edit</a>]</span> <span class="mw-headline" id="Hermite_functions_as_eigenfunctions_of_the_Fourier_transform">Hermite functions as eigenfunctions of the Fourier transform</span></h3>
+<p>The Hermite functions <span class="texhtml">ψ<sub><i>n</i></sub>(<i>x</i>)</span> are a set of eigenfunctions of the <a href="http://en.wikipedia.org/wiki/Continuous_Fourier_transform" title="Continuous Fourier transform" class="mw-redirect">continuous Fourier transform</a>. To see this, take the physicist's version of the generating function and multiply by exp(−<i>x</i><sup>&nbsp;2</sup>/2). This gives</p>
+<dl>
+<dd><img class="tex" alt="\exp (-x^2/2 + 2xt-t^2) = \sum_{n=0}^\infty \exp (-x^2/2) H_n(x) \frac {t^n}{n!}.\,\!" src="Hermite_polynomials_files/9ae833065d37358a60b029a307db2732.png"></dd>
+</dl>
+<p>Choosing the unitary representation of the Fourier transform, the Fourier transform of the left hand side is given by</p>
+<dl>
+<dd><img class="tex" alt="\begin{align}
+\mathcal{F} \{ \exp (-x^2/2 + 2xt-t^2)\}(k) &amp; {} =
+\frac{1}{\sqrt{2 \pi}}\int_{-\infty}^\infty \exp (-ixk)\exp (-x^2/2 + 2xt-t^2)\, \mathrm{d}x \\
+&amp; {} = \exp (-k^2/2 - 2kit+t^2) \\
+&amp; {} = \sum_{n=0}^\infty \exp (-k^2/2) H_n(k) \frac {(-it)^n}{n!}.
+\end{align}" src="Hermite_polynomials_files/1a61fed14bfdfb34af718b8e05d7684e.png"></dd>
+</dl>
+<p>The Fourier transform of the right hand side is given by</p>
+<dl>
+<dd><img class="tex" alt="\mathcal{F} \left\{ \sum_{n=0}^\infty \exp (-x^2/2) H_n(x) \frac {t^n}{n!} \right\} = \sum_{n=0}^\infty \mathcal{F} \left \{ \exp(-x^2/2) H_n(x) \right\} \frac{t^n}{n!}. \," src="Hermite_polynomials_files/9ed02ee0f05a728d6f93e0208ac29dbe.png"></dd>
+</dl>
+<p>Equating like powers of <i>t</i> in the transformed versions of the left- and right-hand sides gives</p>
+<dl>
+<dd><img class="tex" alt=" \mathcal{F} \left\{ \exp (-x^2/2) H_n(x) \right\} = (-i)^n \exp (-k^2/2) H_n(k). \,\!" src="Hermite_polynomials_files/6d70eeed122f9fe368071ec05f537dab.png"></dd>
+</dl>
+<p>The Hermite functions <span class="texhtml">ψ<sub><i>n</i></sub>(<i>x</i>)</span> are therefore an orthonormal basis of <i>L</i><sup>2</sup>(<b>R</b>)
+which diagonalizes the Fourier transform operator. In this case, we
+chose the unitary version of the Fourier transform, so the <a href="http://en.wikipedia.org/wiki/Eigenvalue" title="Eigenvalue" class="mw-redirect">eigenvalues</a> are&nbsp;(−<i>i</i>)<sup>&nbsp;<i>n</i></sup>.</p>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=edit&amp;section=20" title="Edit section: Combinatorial interpretation of coefficients">edit</a>]</span> <span class="mw-headline" id="Combinatorial_interpretation_of_coefficients">Combinatorial interpretation of coefficients</span></h3>
+<p>In the Hermite polynomial <i>H</i><sub><i>n</i></sub>(<i>x</i>) of variance 1, the absolute value of the coefficient of <i>x</i><sup><i>k</i></sup> is the number of (unordered) partitions of an <i>n</i>-member set into <i>k</i> singletons and (<i>n</i> − <i>k</i>)/2 (unordered) pairs.</p>
+<h3><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=edit&amp;section=21" title="Edit section: Completeness relation">edit</a>]</span> <span class="mw-headline" id="Completeness_relation">Completeness relation</span></h3>
+<p>The following identity holds in the sense of <a href="http://en.wikipedia.org/wiki/Distribution_%28mathematics%29" title="Distribution (mathematics)">distributions</a><sup class="noprint Template-Fact" title="This claim needs references to reliable sources from December 2008" style="white-space: nowrap;">[<i><a href="http://en.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">citation needed</a></i>]</sup></p>
+<dl>
+<dd><img class="tex" alt="\sum_{n=0}^\infty \psi_n (x) \psi_n (y)= \delta(x-y)," src="Hermite_polynomials_files/e061ac7420daa0d672af985d11d391de.png"></dd>
+</dl>
+<p>where <i>δ</i> is the <a href="http://en.wikipedia.org/wiki/Dirac_delta_function" title="Dirac delta function">Dirac delta function</a>, (<i>ψ</i><sub><i>n</i></sub>) the Hermite functions, and <i>δ</i>(<i>x</i>&nbsp;−&nbsp;<i>y</i>) represents the <a href="http://en.wikipedia.org/wiki/Lebesgue_measure" title="Lebesgue measure">Lebesgue measure</a> on the line <i>y</i>&nbsp;=&nbsp;<i>x</i> in <b>R</b><sup>2</sup>,
+normalized so that its projection on the horizontal axis is the usual
+Lebesgue measure. This distributional identity follows by letting <i>u</i>&nbsp;→&nbsp;1 in the next pointwise identity, valid when −1&nbsp;&lt;&nbsp;<i>u</i>&nbsp;&lt;&nbsp;1</p>
+<dl>
+<dd><img class="tex" alt="E(x, y; u)&nbsp;:= \sum_{n=0}^\infty u^n \, \psi_n (x) \, \psi_n (y) = \frac 1 {\sqrt{\pi (1 - u^2)}} \, \mathrm{exp} \Bigl( - \frac{1 - u}{1 + u} \, \frac{(x + y)^2}{4} \,-\, \frac{1 + u}{1 - u} \, \frac{(x - y)^2}{4}\Bigr)." src="Hermite_polynomials_files/4159824e5070f269f6c56ab045d46abf.png"></dd>
+</dl>
+<p>The function (<i>x</i>,&nbsp;<i>y</i>)&nbsp;→ <i>E</i>(<i>x</i>,&nbsp;<i>y</i>;&nbsp;<i>u</i>) is the density for a Gaussian measure on <b>R</b><sup>2</sup> which is, when <i>u</i> is close to 1, very concentrated around the line <i>y</i>&nbsp;= <i>x</i>, and very spread out on that line. It follows that</p>
+<dl>
+<dd><img class="tex" alt=" \bigl\langle \bigl( \sum_{n=0}^\infty u^n \langle f, \psi_n \rangle \psi_n\bigr), g \bigr\rangle = \int\!\!\int E(x, y; u) f(x) \overline{g(y)} \, \mathrm{d}x \, \mathrm{d}y \rightarrow \int f(x) \overline{g(x)} \, \mathrm{d} x = \langle f, g \rangle," src="Hermite_polynomials_files/ff834dd6ea9eeb6839d5f742e7b36d1e.png"></dd>
+</dl>
+<p>when <i>ƒ</i>, <i>g</i> are continuous and compactly supported. This yields that <i>ƒ</i> can be expressed from the Hermite functions, as sum of a series of vectors in <i>L</i><sup>2</sup>(<b>R</b>), namely</p>
+<dl>
+<dd><img class="tex" alt=" f = \sum_{n=0}^\infty \langle f, \psi_n \rangle \psi_n." src="Hermite_polynomials_files/2f5f6d36469d3ad6f0a8f34c6b687b87.png"></dd>
+</dl>
+<p>In order to prove the equality above for <i>E</i>(<i>x</i>,&nbsp;<i>y</i>;&nbsp;<i>u</i>), the <a href="http://en.wikipedia.org/wiki/Fourier_transform" title="Fourier transform">Fourier transform</a> of <a href="http://en.wikipedia.org/wiki/Gaussian_function" title="Gaussian function">Gaussian functions</a> will be used several times,</p>
+<dl>
+<dd><img class="tex" alt=" \rho \sqrt{\pi} \, \mathrm{e}^{-\rho^2 x^2 / 4} = \int \mathrm{e}^{isx- s^2/\rho^2}\, \mathrm{d}s, \quad \rho &gt; 0. " src="Hermite_polynomials_files/05ae61e5030f0d356303dc0e86fd72fc.png"></dd>
+</dl>
+<p>The Hermite polynomial is then represented as</p>
+<dl>
+<dd><img class="tex" alt=" H_n(x) = (-1)^{n} \mathrm{e}^{x^2} \frac {\mathrm{d}^n}{\mathrm{d}x^n} \Bigl( \frac {1}{2\sqrt{\pi}} \int \mathrm{e}^{isx - s^2/4}\, \mathrm{d}s \Bigr) = (-1)^n \mathrm{e}^{x^2}\frac {1}{2\sqrt{\pi}}\int (is)^n \, \mathrm{e}^{isx-  s^2/4}\, \mathrm{d}s. " src="Hermite_polynomials_files/71f181e50fcb11f48d8b48373dc871eb.png"></dd>
+</dl>
+<p>With this representation for <i>H<sub>n</sub></i>(<i>x</i>) and <i>H<sub>n</sub></i>(<i>y</i>), one sees that</p>
+<dl>
+<dd><img class="tex" alt="\begin{align}E(x, y; u) &amp;= \sum_{n=0}^\infty \frac{u^n}{2^n n! \sqrt{\pi}} \, H_n(x) H_n(y) \, \mathrm{e}^{ - (x^2+y^2)/2} \\
+&amp; =\frac{\mathrm{e}^{(x^2+y^2)/2}}{4\pi\sqrt{\pi}}\int \!\! \int \Bigl( \sum_{n=0}^\infty \frac{1}{2^n n! } (-ust)^n \Bigr) \,  \mathrm{e}^{isx+ity - s^2/4 - t^2/4}\, \mathrm{d}s\,\mathrm{d}t \\
+&amp; =\frac{\mathrm{e}^{(x^2+y^2)/2} }{4\pi\sqrt{\pi}}\int \!\! \int \mathrm{e}^{-ust/2} \, \mathrm{e}^{isx+ity - s^2/4 - t^2/4}\, \mathrm{d}s\,\mathrm{d}t,\end{align}" src="Hermite_polynomials_files/e70ece7b6deb72a9b1a28c79241b362e.png"></dd>
+</dl>
+<p>and this implies the desired result, using again the Fourier transform of Gaussian kernels after performing the substitution</p>
+<dl>
+<dd><img class="tex" alt="s = \frac{\sigma + \tau}{\sqrt 2},\qquad\qquad t = \frac{\sigma - \tau}{\sqrt 2}." src="Hermite_polynomials_files/618223027f09c58b1cff67aaf7e0066c.png"></dd>
+</dl>
+<h2><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=edit&amp;section=22" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h2>
+<ul>
+<li>Arfken, Mathematical Method for physist ^^</li>
+<li><span class="citation" id="CITEREFAbramowitzStegun1965">Abramowitz, Milton; Stegun, Irene A., eds. (1965), "<a href="http://www.math.sfu.ca/%7Ecbm/aands/page_773.htm" class="external text" rel="nofollow">Chapter 22</a>", <i><a href="http://en.wikipedia.org/wiki/Handbook_of_Mathematical_Functions" title="Handbook of Mathematical Functions" class="mw-redirect">Handbook of Mathematical Functions</a> with Formulas, Graphs, and Mathematical Tables</i>, New York: Dover, <a href="http://en.wikipedia.org/wiki/Special:BookSources/0486612724" class="internal mw-magiclink-isbn">ISBN 0-486-61272-4</a></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Chapter+22&amp;rft.atitle=%5B%5BHandbook+of+Mathematical+Functions%5D%5D+with+Formulas%2C+Graphs%2C+and+Mathematical+Tables&amp;rft.date=1965&amp;rft.place=New+York&amp;rft.pub=Dover&amp;rft.isbn=0-486-61272-4&amp;rfr_id=info:sid/en.wikipedia.org:Hermite_polynomials"><span style="display: none;">&nbsp;</span></span>.</li>
+<li>B Spain, M G Smith, <i>Functions of mathematical physics</i>, Van Nostrand Reinhold Company, London, 1970. Chapter 11 deals with Hermite polynomials.</li>
+<li>Bayin, S.S. (2006) <i>Mathematical Methods in Science and Engineering</i>, Wiley, Chapter 4.</li>
+<li><span class="citation" id="CITEREFCourantHilbert1953"><a href="http://en.wikipedia.org/wiki/Richard_Courant" title="Richard Courant">Courant, Richard</a>; <a href="http://en.wikipedia.org/wiki/David_Hilbert" title="David Hilbert">Hilbert, David</a> (1953), <i>Methods of Mathematical Physics, Volume I</i>, Wiley-Interscience</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Methods+of+Mathematical+Physics%2C+Volume+I&amp;rft.aulast=Courant&amp;rft.aufirst=Richard&amp;rft.au=Courant%2C%26%2332%3BRichard&amp;rft.au=Hilbert%2C%26%2332%3BDavid&amp;rft.date=1953&amp;rft.pub=Wiley-Interscience&amp;rfr_id=info:sid/en.wikipedia.org:Hermite_polynomials"><span style="display: none;">&nbsp;</span></span>.</li>
+<li><span class="citation" id="CITEREFFedoryuk2001">Fedoryuk, M.V. (2001), "<a href="http://eom.springer.de/H/h046980.htm" class="external text" rel="nofollow">Hermite polynomials</a>", in Hazewinkel, Michiel, <i><a href="http://en.wikipedia.org/wiki/Encyclopaedia_of_Mathematics" title="Encyclopaedia of Mathematics">Encyclopaedia of Mathematics</a></i>, Kluwer Academic Publishers, <a href="http://en.wikipedia.org/wiki/Special:BookSources/9781556080104" class="internal mw-magiclink-isbn">ISBN 978-1556080104</a></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Hermite+polynomials&amp;rft.atitle=%5B%5BEncyclopaedia+of+Mathematics%5D%5D&amp;rft.aulast=Fedoryuk&amp;rft.aufirst=M.V.&amp;rft.au=Fedoryuk%2C%26%2332%3BM.V.&amp;rft.date=2001&amp;rft.pub=Kluwer+Academic+Publishers&amp;rft.isbn=978-1556080104&amp;rfr_id=info:sid/en.wikipedia.org:Hermite_polynomials"><span style="display: none;">&nbsp;</span></span>.</li>
+<li><span class="citation book"><a href="http://en.wikipedia.org/wiki/Norbert_Wiener" title="Norbert Wiener">Wiener, Norbert</a> (1958). <i>The Fourier Integral and Certain of its Applications</i>. New York: Dover Publications. <a href="http://en.wikipedia.org/wiki/Special:BookSources/0486602729" class="internal mw-magiclink-isbn">ISBN 0-486-60272-9</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Fourier+Integral+and+Certain+of+its+Applications&amp;rft.aulast=Wiener&amp;rft.aufirst=Norbert&amp;rft.au=Wiener%2C%26%2332%3BNorbert&amp;rft.date=1958&amp;rft.place=New+York&amp;rft.pub=Dover+Publications&amp;rft.isbn=0-486-60272-9&amp;rfr_id=info:sid/en.wikipedia.org:Hermite_polynomials"><span style="display: none;">&nbsp;</span></span></li>
+<li><span class="citation book"><a href="http://en.wikipedia.org/wiki/E._T._Whittaker" title="E. T. Whittaker">Whittaker, E. T.</a>; Watson, G. N. (1962). <i>A Course of Modern Analysis</i>. London: Cambridge University Press.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=A+Course+of+Modern+Analysis&amp;rft.aulast=Whittaker&amp;rft.aufirst=E.+T.&amp;rft.au=Whittaker%2C%26%2332%3BE.+T.&amp;rft.au=Watson%2C+G.+N.&amp;rft.date=1962&amp;rft.place=London&amp;rft.pub=Cambridge+University+Press&amp;rfr_id=info:sid/en.wikipedia.org:Hermite_polynomials"><span style="display: none;">&nbsp;</span></span></li>
+<li>Temme, Nico, <i>Special Functions: An Introduction to the Classical Functions of Mathematical Physics</i>, Wiley, New York, 1996</li>
+</ul>
+<h2><span class="editsection">[<a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=edit&amp;section=23" title="Edit section: External links">edit</a>]</span> <span class="mw-headline" id="External_links">External links</span></h2>
+<ul>
+<li><span class="citation mathworld" id="Reference-Mathworld-Hermite_Polynomial"><a href="http://en.wikipedia.org/wiki/Eric_W._Weisstein" title="Eric W. Weisstein">Weisstein, Eric W.</a>, "<a href="http://mathworld.wolfram.com/HermitePolynomial.html" class="external text" rel="nofollow">Hermite Polynomial</a>" from <a href="http://en.wikipedia.org/wiki/MathWorld" title="MathWorld">MathWorld</a>.</span></li>
+<li><a href="http://math.fullerton.edu/mathews/n2003/HermitePolyMod.html" class="external text" rel="nofollow">Module for Hermite Polynomial Interpolation by John H. Mathews</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 4053/1000000
+Post-expand include size: 21179/2048000 bytes
+Template argument size: 4689/2048000 bytes
+Expensive parser function count: 1/500
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:195984-0!1!0!default!!en!2 and timestamp 20091020110954 -->
+<div class="printfooter">
+Retrieved from "<a href="http://en.wikipedia.org/wiki/Hermite_polynomials">http://en.wikipedia.org/wiki/Hermite_polynomials</a>"</div>
+			<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks"><a href="http://en.wikipedia.org/wiki/Special:Categories" title="Special:Categories">Categories</a>: <span dir="ltr"><a href="http://en.wikipedia.org/wiki/Category:Special_hypergeometric_functions" title="Category:Special hypergeometric functions">Special hypergeometric functions</a></span> | <span dir="ltr"><a href="http://en.wikipedia.org/wiki/Category:Polynomials" title="Category:Polynomials">Polynomials</a></span> | <span dir="ltr"><a href="http://en.wikipedia.org/wiki/Category:Orthogonal_polynomials" title="Category:Orthogonal polynomials">Orthogonal polynomials</a></span></div><div id="mw-hidden-catlinks" class="mw-hidden-cats-hidden">Hidden categories: <span dir="ltr"><a href="http://en.wikipedia.org/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></span> | <span dir="ltr"><a href="http://en.wikipedia.org/wiki/Category:Articles_with_unsourced_statements_from_December_2008" title="Category:Articles with unsourced statements from December 2008">Articles with unsourced statements from December 2008</a></span></div></div>			<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul xml:lang="en" lang="en">
+	
+				 <li id="ca-nstab-main" class="selected"><a href="http://en.wikipedia.org/wiki/Hermite_polynomials" title="View the content page [alt-shift-c]" accesskey="c">Article</a></li>
+				 <li id="ca-talk"><a href="http://en.wikipedia.org/wiki/Talk:Hermite_polynomials" title="Discussion about the content page [alt-shift-t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-edit"><a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=edit" title="You can edit this page. 
+Please use the preview button before saving. [alt-shift-e]" accesskey="e">Edit this page</a></li>
+				 <li id="ca-history"><a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;action=history" title="Past versions of this page [alt-shift-h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul xml:lang="en" lang="en">
+				<li id="pt-optin-try"><a href="http://en.wikipedia.org/w/index.php?title=Special:UsabilityInitiativeOptIn&amp;from=Hermite_polynomials" title="Try out new features" class="no-text-transform">Try Beta</a></li>
+				<li id="pt-login"><a href="http://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Hermite_polynomials" title="You are encouraged to log in; however, it is not mandatory. [alt-shift-o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(http://upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png);" href="http://en.wikipedia.org/wiki/Main_Page" title="Visit the main page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class="generated-sidebar portlet" id="p-navigation">
+		<h5 xml:lang="en" lang="en">Navigation</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-mainpage-description"><a href="http://en.wikipedia.org/wiki/Main_Page" title="Visit the main page [alt-shift-z]" accesskey="z">Main page</a></li>
+				<li id="n-contents"><a href="http://en.wikipedia.org/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+				<li id="n-featuredcontent"><a href="http://en.wikipedia.org/wiki/Portal:Featured_content" title="Featured content — the best of Wikipedia">Featured content</a></li>
+				<li id="n-currentevents"><a href="http://en.wikipedia.org/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+				<li id="n-randompage"><a href="http://en.wikipedia.org/wiki/Special:Random" title="Load a random article [alt-shift-x]" accesskey="x">Random article</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5 xml:lang="en" lang="en"><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/w/index.php" id="searchform">
+				<input name="title" value="Special:Search" type="hidden">
+				<input autocomplete="off" id="searchInput" title="Search Wikipedia" accesskey="f" value="" name="search">
+				<input name="go" class="searchButton" id="searchGoButton" value="Go" title="Go to a page with this exact name if one exists" type="submit">&nbsp;
+				<input name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search Wikipedia for this text" type="submit">
+			</form>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-interaction">
+		<h5 xml:lang="en" lang="en">Interaction</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-aboutsite"><a href="http://en.wikipedia.org/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+				<li id="n-portal"><a href="http://en.wikipedia.org/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+				<li id="n-recentchanges"><a href="http://en.wikipedia.org/wiki/Special:RecentChanges" title="The list of recent changes in the wiki [alt-shift-r]" accesskey="r">Recent changes</a></li>
+				<li id="n-contact"><a href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact Wikipedia</a></li>
+				<li id="n-sitesupport"><a href="http://wikimediafoundation.org/wiki/Donate/Now/en?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=spontaneous_donation" title="Support us">Donate to Wikipedia</a></li>
+				<li id="n-help"><a href="http://en.wikipedia.org/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5 xml:lang="en" lang="en">Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="http://en.wikipedia.org/wiki/Special:WhatLinksHere/Hermite_polynomials" title="List of all English Wikipedia pages containing links to this page [alt-shift-j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="http://en.wikipedia.org/wiki/Special:RecentChangesLinked/Hermite_polynomials" title="Recent changes in pages linked from this page [alt-shift-k]" accesskey="k">Related changes</a></li>
+<li id="t-upload"><a href="http://en.wikipedia.org/wiki/Wikipedia:Upload" title="Upload files [alt-shift-u]" accesskey="u">Upload file</a></li>
+<li id="t-specialpages"><a href="http://en.wikipedia.org/wiki/Special:SpecialPages" title="List of all special pages [alt-shift-q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;printable=yes" rel="alternate" title="Printable version of this page [alt-shift-p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="http://en.wikipedia.org/w/index.php?title=Hermite_polynomials&amp;oldid=308579926" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-cite"><a href="http://en.wikipedia.org/w/index.php?title=Special:Cite&amp;page=Hermite_polynomials&amp;id=308579926" title="Information on how to cite this page">Cite this page</a></li>			</ul>
+		</div>
+	</div>
+	<div id="p-lang" class="portlet">
+		<h5 xml:lang="en" lang="en">Languages</h5>
+		<div class="pBody">
+			<ul>
+				<li class="interwiki-bg"><a href="http://bg.wikipedia.org/wiki/%D0%95%D1%80%D0%BC%D0%B8%D1%82%D0%BE%D0%B2_%D0%BF%D0%BE%D0%BB%D0%B8%D0%BD%D0%BE%D0%BC">Български</a></li>
+				<li class="interwiki-cs"><a href="http://cs.wikipedia.org/wiki/Hermitovy_polynomy">Česky</a></li>
+				<li class="interwiki-de"><a href="http://de.wikipedia.org/wiki/Hermitesches_Polynom">Deutsch</a></li>
+				<li class="interwiki-es"><a href="http://es.wikipedia.org/wiki/Polinomios_de_Hermite">Español</a></li>
+				<li class="interwiki-eo"><a href="http://eo.wikipedia.org/wiki/Polinomo_de_Hermite">Esperanto</a></li>
+				<li class="interwiki-fr"><a href="http://fr.wikipedia.org/wiki/Polyn%C3%B4me_d%27Hermite">Français</a></li>
+				<li class="interwiki-it"><a href="http://it.wikipedia.org/wiki/Polinomi_di_Hermite">Italiano</a></li>
+				<li class="interwiki-he"><a href="http://he.wikipedia.org/wiki/%D7%A4%D7%95%D7%9C%D7%99%D7%A0%D7%95%D7%9E%D7%99_%D7%94%D7%A8%D7%9E%D7%99%D7%98">עברית</a></li>
+				<li class="interwiki-lt"><a href="http://lt.wikipedia.org/wiki/Ermito_polinomas">Lietuvių</a></li>
+				<li class="interwiki-hu"><a href="http://hu.wikipedia.org/wiki/Hermite-polinomok">Magyar</a></li>
+				<li class="interwiki-nl"><a href="http://nl.wikipedia.org/wiki/Hermite-polynoom">Nederlands</a></li>
+				<li class="interwiki-ja"><a href="http://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E5%A4%9A%E9%A0%85%E5%BC%8F">日本語</a></li>
+				<li class="interwiki-pms"><a href="http://pms.wikipedia.org/wiki/Polin%C3%B2mi_d%27Hermite">Piemontèis</a></li>
+				<li class="interwiki-pl"><a href="http://pl.wikipedia.org/wiki/Wielomiany_Hermite%27a">Polski</a></li>
+				<li class="interwiki-ro"><a href="http://ro.wikipedia.org/wiki/Polinoame_Hermite">Română</a></li>
+				<li class="interwiki-ru"><a href="http://ru.wikipedia.org/wiki/%D0%9C%D0%BD%D0%BE%D0%B3%D0%BE%D1%87%D0%BB%D0%B5%D0%BD%D1%8B_%D0%AD%D1%80%D0%BC%D0%B8%D1%82%D0%B0">Русский</a></li>
+				<li class="interwiki-fi"><a href="http://fi.wikipedia.org/wiki/Hermiten_polynomi">Suomi</a></li>
+				<li class="interwiki-sv"><a href="http://sv.wikipedia.org/wiki/Hermitepolynom">Svenska</a></li>
+				<li class="interwiki-uk"><a href="http://uk.wikipedia.org/wiki/%D0%9F%D0%BE%D0%BB%D1%96%D0%BD%D0%BE%D0%BC%D0%B8_%D0%95%D1%80%D0%BC%D1%96%D1%82%D0%B0">Українська</a></li>
+			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="Hermite_polynomials_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31"></a></div>
+				<div id="f-copyrightico"><a href="http://wikimediafoundation.org/"><img src="Hermite_polynomials_files/wikimedia-button.png" alt="Wikimedia Foundation" width="88" height="31"></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 18 August 2009 at 00:11.</li>
+					<li id="copyright">Text is available under the <a rel="license" href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" style="display: none;"></a>;
+additional terms may apply.
+See <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> for details.<br>
+Wikipedia® is a registered trademark of the <a href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+					<li id="privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="http://en.wikipedia.org/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+					<li id="disclaimer"><a href="http://en.wikipedia.org/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served by srv237 in 0.040 secs. --></body></html>

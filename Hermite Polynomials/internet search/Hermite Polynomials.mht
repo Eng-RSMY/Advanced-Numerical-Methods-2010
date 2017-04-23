@@ -1,0 +1,322 @@
+From: "Saved by Windows Internet Explorer 7"
+Subject: Hermite Polynomials
+Date: Sat, 24 Oct 2009 18:14:06 +0330
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_01B2_01CA54D5.C6280840"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.0.6000.16386
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_01B2_01CA54D5.C6280840
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://mysite.du.edu/~jcalvert/math/hermite.htm
+
+=EF=BB=BF<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Hermite Polynomials</TITLE>
+<META http-equiv=3DContent-Type content=3D"text/html; charset=3Dutf-8">
+<META=20
+content=3D"mathematics, polynomials, orthogonal, Hermite, quantum, =
+oscillator"=20
+name=3DKEYWORDS><LINK =
+href=3D"http://mysite.du.edu/~jcalvert/homstyl.css"=20
+type=3Dtext/css rel=3DSTYLESHEET>
+<META content=3D"MSHTML 6.00.6000.16386" name=3DGENERATOR></HEAD>
+<BODY>
+<H2>Hermite Polynomials</H2>
+<P id=3DForeword>Charles Hermite (1822-1901) gave us these polynomials, =
+famous in=20
+the quantum mechanics of the harmonic oscillator
+<HR>
+
+<P></P>
+<P>A polynomial is a finite sum of terms like =
+a<SUB>k</SUB>x<SUP>k</SUP>, where=20
+k is a positive integer or zero. There are sets of polynomials such that =
+the=20
+product of any two different ones, multiplied by a function w(x) called =
+a=20
+<I>weight function</I> and integrated over a certain interval, vanishes. =
+Such a=20
+set is called a set of orthogonal polynomials. Among other things, this =
+makes it=20
+possible to expand an arbitrary function f(x) as a sum of the =
+polynomials, each=20
+multiplied by a coefficient c(k), which is easily and uniquely =
+determined by=20
+integration. A Fourier series is similar, but the orthogonal functions =
+are not=20
+polynomials. These functions can also be used to specify basis states in =
+quantum=20
+mechanics, which must be orthogonal.</P>
+<P>The Hermite polynomials H<SUB>n</SUB>(x) are orthogonal on the =
+interval from=20
+-=E2=88=9E to +=E2=88=9E with respect to the weight function w(x) =3D =
+exp(x<SUP>2</SUP>). [exp (x)=20
+=3D e<SUP>x</SUP>] Surprisingly, this is sufficient to determine the =
+polynomials=20
+up to a multiplicative factor. Let's start with the expression =
+H<SUB>n</SUB> =3D=20
+exp(x<SUP>2</SUP>)(d<SUP>n</SUP>/dx<SUP>n</SUP>)exp(-x<SUP>2</SUP>). We =
+notice=20
+that each differentiation will bring down a factor -2x, and that the =
+exponential=20
+will survive in each term. Each term will contain the factor =
+exp(-x<SUP>2</SUP>)=20
+that will be cancelled by the exponential in front. Therefore, the =
+result will=20
+be a polynomial of degree n, and the leading term will be =
+(-2x)<SUP>n</SUP>. The=20
+powers of x will either be all even or all odd, as well. Moreover, the =
+form of=20
+this definition will guarantee that the polynomials belonging to =
+different=20
+values of n are orthogonal. It is, in fact, a Rodrigues' formula, like =
+those=20
+used to define other kinds of orthogonal polynomials.</P>
+<P>An alternative definition uses the weight function w(x) =3D=20
+exp(x<SUP>2</SUP>/2) instead. Then, He<SUB>n</SUB> =3D=20
+exp(x<SUP>2</SUP>/2)(d<SUP>n</SUP>/dx<SUP>n</SUP>)exp(-x<SUP>2</SUP>/2), =
+where=20
+the notation He is used instead of H to make the different weight =
+function=20
+clear. Of course, the corresponding polynomials will be very similar, =
+and one=20
+could be used as well as the other, with appropriate changes of =
+variable. In=20
+this case, each differentiation brings down the simpler factor (-x), so =
+that the=20
+coefficient of x<SUP>n</SUP> is (-1)<SUP>n</SUP>. In fact, the usual =
+definitions=20
+include the (-1)<SUP>n</SUP> factor, so that the coefficient of =
+x<SUP>n</SUP> is=20
+always positive. Of three classic references (see References), Jackson =
+uses He,=20
+Pauling and Wilson H, and both are given in Abramowitz and Stegun. The=20
+possibilities of confusion are not as great as in the case of Laguerre=20
+polynomials.</P>
+<P>The H polynomials are H<SUB>0</SUB> =3D 1, H<SUB>1</SUB> =3D 2x, with =
+the=20
+recursion relation H<SUB>n+1</SUB>(x) =3D 2xH<SUB>n</SUB>(x) -=20
+2nH<SUB>n-1</SUB>(x), and they satisfy the differential equation =
+H"<SUB>n</SUB>=20
+-2xH'<SUB>n</SUB> + 2nH<SUB>n</SUB> =3D 0.</P>
+<P>The He polynomials are He<SUB>0</SUB> =3D 1, He<SUB>1</SUB> =3D x, =
+with the=20
+recursion relation He<SUB>n+1</SUB> =3D xHe<SUB>n</SUB> - =
+nHe<SUB>n-1</SUB>, and=20
+they satisfy the differential equation He"<SUB>n</SUB> - =
+xHe'<SUB>n</SUB> +=20
+nHe<SUB>n</SUB> =3D 0.</P>
+<P>It is of interest that y(x) =3D exp(-x<SUP>2</SUP>/2)H<SUB>n</SUB>(x) =
+is a=20
+solution of the differential equation y" + (2n + 1 - x<SUP>2</SUP>)y =3D =
+0. This=20
+equation arises in the quantum mechanics of the harmonic oscillator. =
+These=20
+solutions are called Hermite functions, and each includes the square =
+root of the=20
+weight function w(x), so that the wave functions y(x) are orthogonal =
+when=20
+integrated from -=E2=88=9E to +=E2=88=9E, which is required by the =
+theory.</P>
+<P>The orthogonality of the Hermite polynomials is expressed by <IMG=20
+src=3D"http://mysite.du.edu/~jcalvert/math/herm1.gif" =
+align=3DabsMiddle>, where the=20
+Kronecker delta is zero if m is not equal to n, and unity if m equals n. =
+To=20
+prove this, simply express the exponential times the Hermite polynomial =
+of=20
+larger order as an nth derivative using the Rodrigues formula, then =
+integrate by=20
+parts until the polynomial of smaller order is differentiated to zero. =
+If the=20
+orders are equal, the final integral is simply the integral of=20
+exp(-x<SUP>2</SUP>) times a constant, and the result is established. The =
+
+normalization constant becomes sqrt(2=CF=80)n! for He.</P>
+<P>The orthogonality can be used to expand an arbitrary function f(x) in =
+a=20
+series of Hermite polynomials, in exactly the same way that a Fourier =
+series is=20
+formed. If the expansion functions are =
+exp(-x<SUP>2</SUP>/2)H<SUB>n</SUB>(x),=20
+the series is called a Gram-Charlier series, and is useful in =
+mathematical=20
+statistics.</P>
+<P>Surely the most famous use of Hermite polynomials is in the =
+Schr=C3=B6dinger=20
+theory of the harmonic oscillator. I will sketch the development here. =
+For more=20
+information, see Pauling and Wilson or Dirac, or indeed any introductory =
+quantum=20
+mechanics text. A model of a harmonic oscillator is a point mass m =
+moving along=20
+the x-axis under a restoring force -kx. The natural frequency =CE=BD is =
+given by 2=CF=80=CE=BD=20
+=3D =CF=89 =3D =E2=88=9A(k/m). In terms of the momentum p =3D mv the =
+kinetic energy T =3D=20
+p<SUP>2</SUP>/2m, and the potential energy V =3D =
+m=CF=89<SUP>2</SUP>x<SUP>2</SUP>/2.=20
+The Hamiltonian H(p,q) =3D T + V.</P>
+<P>In quantum mechanics, the state of the oscillator is described by an=20
+amplitude =CE=A8 that obeys the equation of motion =
+(ih/2=CF=80)d=CE=A8/dt =3D H=CE=A8, where H is an=20
+operator formed from the operators p and x. In the Schr=C3=B6dinger =
+picture, the=20
+state is described by the generalized coordinate x, and the momentum is =
+the=20
+operator p =3D -(ih/2=CF=80)d/dx. A state of definite energy E satisfies =
+the relation=20
+H=CE=A8 =3D E=CE=A8, and is called an <I>energy eigenstate</I>. Since H =
+does not contain the=20
+time, =CE=A8 can be expressed as the product of a time factor and a =
+space factor =CF=88.=20
+The equation of motion shows that the time factor is exp(i2=CF=80Et/h) =
+for a state of=20
+this kind, which represents a steady change of phase at frequency E/h. =
+It is the=20
+complex nature of =CE=A8 that allows it to express the complete behavior =
+of the=20
+oscillator with the x coordinate alone, instead of the position and =
+momentum=20
+separately. The operators for p and x satisfy xp - px =3D ih/2=CF=80; =
+that is, they do=20
+not commute, which is a fundamental property.</P>
+<P>Since the time function factors out, =CF=88 satisfies H=CF=88 =3D =
+E=CF=88, or=20
+-(h<SUP>2</SUP>/8=CF=80<SUP>2</SUP>m)d<SUP>2</SUP>=CF=88dx<SUP>2</SUP> + =
+
+m=CF=89<SUP>2</SUP>x<SUP>2</SUP>=CF=88/2 =3D E=CF=88. This is the =
+Schr=C3=B6dinger Equation, and =CF=88(x)=20
+is the Schr=C3=B6dinger wave function. If we put u =3D x=E2=88=9A=CE=B1, =
+where =CE=B1 =3D 2=CF=80m=CF=89/h, this=20
+equation becomes</P>
+<P align=3Dcenter>d<SUP>2</SUP>=CF=88/du<SUP>2</SUP> + (2E/h=CE=BD - =
+u<SUP>2</SUP>)=CF=88 =3D 0</P>
+<P>From what we said above, we see that 2E/h=CE=BD =3D 2n + 1, and =
+=CF=88 =3D=20
+C<SUB>n</SUB>exp(-u<SUP>2</SUP>/2)H<SUB>n</SUB>(u), where C<SUB>n</SUB> =
+is=20
+chosen so that the integral of the square of =CF=88 from -=E2=88=9E to =
++=E2=88=9E is unity; this is=20
+said to <I>normalize</I> the wave function. For energy eigenstates such =
+as this,=20
+we can always choose =CF=88 real. The energy of the oscillator takes the =
+values E =3D=20
+h=CE=BD(n + 1/2). In the ground state, n=3D 0, there remains the =
+<I>zero-point</I>=20
+energy h=CE=BD/2. This unexpected and quite real result was one of the =
+triumphs of=20
+quantum mechanics.</P>
+<P>The energy eigenstates of the harmonic oscillator are by no means the =
+only or=20
+the usually observed states. They are mainly useful in expanding more =
+general=20
+states in terms of the energy eigenstates, and other theoretical =
+developments.=20
+In particular, it is impossible to realize a macroscopic energy =
+eigenstate, so=20
+we never see the nodes or the spreading in daily life. The widest =
+applications=20
+of this theory are to optics and radiation, incidentally.</P>
+<H3>References</H3>
+<OL>
+  <LI>M. Abramowitz and I. Stegun, <I>Handbook of Mathematical =
+Functions</I>=20
+  (Washington, D.C.: National Bureau of Standards, Applied Mathematics =
+Series=20
+  55, June 1964). Chapter 22.=20
+  <LI>D. Jackson, <I>Fourier Series and Orthogonal Functions</I> =
+(Mathematical=20
+  Assoc. of America, Carus Mathematical Monographs No. 6, 1941). Chapter =
+X.=20
+  <LI>L. Pauling and E. B. Wilson, <I>Introduction to Quantum =
+Mechanics</I> (New=20
+  York: McGraw-Hill, 1935). Chapter V.=20
+  <LI>P. A. M. Dirac, <I>Quantum Mechanics</I>, 4th ed. (Oxford: OUP, =
+1958). Not=20
+  an easy book, but one full of correctness. </LI></OL>
+<P>
+<HR>
+Return to <A =
+href=3D"http://mysite.du.edu/~jcalvert/math/mathom.htm">Mathematics=20
+Index</A>
+<P></P>
+<P id=3DPostscript>Composed by J. B. Calvert<BR>Created 15 November =
+2000<BR>Last=20
+revised</P></BODY></HTML>
+
+------=_NextPart_000_01B2_01CA54D5.C6280840
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://mysite.du.edu/~jcalvert/math/herm1.gif
+
+R0lGODdhsgAlAIAAAAAAAP///ywAAAAAsgAlAAAC/4yPqcvtD6OctNqLs968+w+G4kiW5ommHQAE
+rArHstS6Rj3nuvy++w8MCodEGo7iK+paSeEReVMua89fFSrN4a4RlvfrtXAbzGhWexg/1Be2ovw9
+kzlxs40xdovXYfs7ofakB7i3cUSVNocnMpjIJegAWdGYCEL5yLiHiRBIONlmOZe0mQYG+tY0IbnI
+qVp2Bxv5kYcYW+noh9Wa2wUW6EtzsxVriksnazbMe0e569xs2+m8dvuKbFuoyBxl7QnNW6y7fDv+
+5ydYB/tNzrpt7J1RtZ4rza497KZ8Sj2+OS9vD4IkJofg9TCnDhtCRKNspALWrlbALeuu9Pm0y4e+
+ZFcEsdXZiGdUrYMK5ZQcAXLByBPKVppEiCKlOYkkWiZ7CZNlQHgnPdh0h3Nn0BA/aeKcNzQpSqVM
+rSBtCjWq1KQ9nk69yomkUaxcNVTtCjas2LFky5oVWwAAOw==
+
+------=_NextPart_000_01B2_01CA54D5.C6280840
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://mysite.du.edu/~jcalvert/homstyl.css
+
+H2 {
+	FONT-SIZE: 20pt; COLOR: red; FONT-FAMILY: Serif; TEXT-ALIGN: center
+}
+H3 {
+	FONT-SIZE: 15pt; COLOR: black; FONT-STYLE: normal; FONT-FAMILY: =
+Sans-serif; TEXT-ALIGN: center
+}
+H4 {
+	FONT-SIZE: 12pt; COLOR: black; FONT-FAMILY: Serif
+}
+P {
+	FONT-SIZE: 11pt; COLOR: black; FONT-FAMILY: Times New Roman, Serif
+}
+HR {
+	COLOR: #000000; HEIGHT: 1px
+}
+#Postscript {
+	FONT-SIZE: 8pt; FONT-STYLE: oblique; TEXT-ALIGN: center
+}
+#Foreword {
+	FONT-SIZE: 8pt; FONT-STYLE: normal; TEXT-ALIGN: center
+}
+#Block {
+	MARGIN-LEFT: 1cm; MARGIN-RIGHT: 1cm; FONT-STYLE: italic
+}
+#Red {
+	COLOR: red
+}
+#Green {
+	COLOR: green
+}
+#Over {
+	TEXT-DECORATION: overline
+}
+#Under {
+	TEXT-DECORATION: underline
+}
+#Link {
+	FONT-SIZE: 13pt; FONT-FAMILY: Sans-serif
+}
+#Greek {
+	FONT-FAMILY: Symbol
+}
+A:link {
+	COLOR: green
+}
+A:visited {
+	COLOR: blue
+}
+
+------=_NextPart_000_01B2_01CA54D5.C6280840--

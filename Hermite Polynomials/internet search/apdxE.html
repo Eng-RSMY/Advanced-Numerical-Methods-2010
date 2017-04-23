@@ -1,0 +1,551 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+
+
+<title> APPENDIX E
+</title>
+</head><body bgcolor="#cccccc" link="#ff0000" text="#000000" vlink="#aa0000">
+
+<center>
+<h1> Polynomial Formulae Related to
+<br>
+Matrix Element Evaluation
+</h1>
+This appendix contains information on Hermite
+polynomials and a derivation of approximations
+to the roots thereof, together with a table of
+approximated roots of the Hermite polynomial up to order 21.
+</center>
+<a href="http://graham.main.nc.us/%7Ebhammel/FCCR/fccr.html#contents">FCCR Table of Contents</a>
+<br>
+<hr>
+<br>
+<pre>
+   Let P_n(z) be a polynomial of nth order with <u>distinct</u>
+   zeros zeta_k, with k = 0, 1, ..., n-1.
+   Then the inverse of the polynomial is a meromorphic function of z,
+   with simple poles at the zeros.
+
+                     n-1
+     [1/P_n(z)]   =  PI [ 1/(z - zeta_k ) ]
+                     k=0
+
+   Then expanding the product in partial fractions gives
+
+                     n-1
+     [1/P_n(z)]  =  SIGMA [R_k/(z - zeta_k ) ]
+                     k=0
+
+   where the residue,
+
+     R_(k)  :=  PI  [1/(zeta_(k) -  zeta_j) ]
+             j not= (k)
+
+     lim [(z - zeta_m)/P_n(z)]  =  R_m  
+     z-&gt;zeta_m
+
+   The derivative of the polynomial P_n(z) can be expressed by
+
+                         n-1      P_n(z)
+     (d/dz) P_n(z)  =   SIGMA  ------------
+                         k=0   (z - zeta_k)
+
+                                n-1        1
+                   =  P_n(z)   SIGMA  ------------
+                                k=0   (z - zeta_k)
+
+   Therefore,
+
+                                n-1        1
+     (d/dz) log( P_n(z) )  =   SIGMA  ------------
+                                k=0   (z - zeta_k)
+
+   and
+
+     d      1    d
+     -- [------- -- P_n(z)]  =
+     dz   P_n(z) dz
+
+                n-1         1
+             - SIGMA  --------------
+                k=0   (z - zeta_k)^2
+
+<a name="hermite"></a>
+   The unnormalized Hermite polynomials defined
+   by the Rodrigues formula [equation <a href="http://graham.main.nc.us/%7Ebhammel/FCCR/IX.html#%289.4%29"> (9.4) </a> and below]
+   satisfy (See, e. g., <a href="http://graham.main.nc.us/%7Ebhammel/FCCR/refs.html#morse1953"> [Morse 1953]</a>, v1, p. 786) the following:
+
+     (d/dz) H_n(z)  =  2 n H_(n-1)(z)
+
+     ( (d/dz)^2  - 2z d/dz + 2n ) H_n(z)  =  0
+
+     z H_n(z)  =  n H_(n-1)(z) + (1/2) H_(n+1)(z)
+
+     (d/dz) ( exp( -z^2 ) H_n(z) )  =  -2 exp( -z^2 ) H_(n+1)(z)
+
+                           infinity t^n
+     exp( -t^2 + 2 tz )  =  SIGMA  ---- H_n(z)
+                             n=0    n!
+
+                   2^n      +infinity
+     H_n(z)  =  ----------  INTEGRAL (z + it)^n exp( -t^2 ) dt
+                sqrt( pi )  -infinity
+
+                       n       n!
+     H_n(x - y)  =   SIGMA  --------- y^(n-j) H_j(x)
+                      j=0   j! (n-j)!
+
+                              n       n!
+               =   2^(-n/2) SIGMA  --------- H_j(x sqrt(2)) H_(n-j)(-y sqrt(2))
+                             j=0   j! (n-j)!
+
+       n
+     SIGMA binom(n k) H_k(x) H_n-k(y)  =  2^(n/2) H_n( (x+y)/sqrt(2) )
+      k=0
+
+       n
+     SIGMA binom(n k) H_k(x) (2y)^(n-k)  =   H_n( x+y )
+      k=0
+     
+
+
+     exp -(x^2 + y^2 - 2xyz)/(1 - z^2)
+     ---------------------------------
+             sqrt(1 + z^2)
+
+                                     infinity (z/2)^k
+               =  exp( -(x^2 + y^2) ) SIGMA  -------- H_k(x) H_k(y)
+                                       k=0      k!
+
+
+   From the preceding as a special case, the expansion
+   of the Fourier kernel in Hermite polynomials:
+<a name="fkernel"></a>
+
+                    exp( -(1/2)(x^2 + s^2) ) infinity
+     exp( isx )  =  ------------------------  SIGMA  i^k ~H_k(x) ~H_k(s)
+                          sqrt((2 pi))         k=0
+
+   Then also from the preceding as a special case, the expansion
+   of an origin centered Gaussian function in Hermite polynomials:
+
+                          infinity
+  (1/sqrt(2)) exp(-s^2) =  SIGMA  ~H_k(s) ~H_k(s)
+                            k=0
+
+
+                        n(n-1)              n(n-1)(n-2)(n-3)
+    H_n(z)  =  (2z)^n - ------ (2z)^(n-2) + ---------------- (2z)^(n-4)
+                          1!                       2!
+
+           - ...  .
+
+   where the last term is
+                                      n!
+                        (-1)^(n/2) --------
+                                    (n/2)!
+   if n is even and
+                                            n!
+                        (-1)^((n-1)/2)) ---------- 2z
+                                        ((n-1)/2)!
+   if n is odd.
+
+
+
+   In closed summation form
+
+                         [n/2]         2^(n-2k)  n!
+              H_n(z)  =  SIGMA  (-1)^k ------------  z^(n-2k)
+                          k=0           k! (n-2k)!
+
+
+                         [n/2]                 
+                      =  SIGMA  (-1)^k k! (n 2k) (2k k) (2z)^(n-2k)
+                          k=0
+
+   where [n/2] is the integral part of n/2.
+   The second expression uses binomial coefficients.
+<!-- WCMT Add concept of density functions for orthogonal polynomials -->
+
+   Relations between the various Weber-Hermite functions
+   <a href="http://graham.main.nc.us/%7Ebhammel/FCCR/refs.html#whittaker1927"> [Whittaker 1927]</a>:
+
+     H_n(z)  :=  (-1)^n exp( z^2 ) (d/dz)^n exp( -z^2 )
+
+     D_n(z)  :=  (-1)^n exp( (z^2)/4 ) (d/dz)^n exp( -(z^2)/2 )
+
+            =  exp( -(1/2)(z/sqrt(2))^2 )/(2^(n/2)) H_n(z/sqrt(2))
+
+     ~H_n(z)  :=  H_n(z)/sqrt((2^n n!)
+
+     ~D_n(z)  :=  D_n(z)/[ (2 pi)^(1/4) sqrt(n!) ]
+
+     ~D_n(z)  =  exp( -(1/2)(z/sqrt(2))^2 )/(2 pi)^(1/4) ~H_n(z/sqrt(2))
+
+
+
+   The orthogonality and normalization integrals for the various
+   Weber-Hermite functions:
+
+      +infinity
+      INTEGRAL exp( -z^2 ) H_n(z) H_m(z) dz  =  (2 pi n! m!)^(1/2) delta_(nm)
+      -infinity
+
+      +infinity
+      INTEGRAL D_n(z) D_m(z) dz  =  (2 pi n! m!)^(1/2) delta_(nm)
+      -infinity
+
+      +infinity
+      INTEGRAL exp( -z^2 ) ~H_n(z) ~H_m(z) dz  =  sqrt( pi ) delta_(nm)
+      -infinity
+
+      +infinity
+      INTEGRAL ~D_n(z) ~D_m(z) dz  =   delta_(nm)
+      -infinity
+
+   The D_n(z) satisfy the homogeneous integral equation
+
+            +infinity
+      lambda INTEGRAL exp( i (sx/2) ) phi(s) ds  =   phi(x)
+            -infinity
+
+   for appropriate characteristic values {lambda_n}.  In fact,
+
+       lambda_n  =  (-i)^n (n!/sqrt(2))
+
+   and the usual Fourier kernel can be expanded in D_n(z):
+
+                                        infinity
+        exp( i (sx/2) )  =  2 sqrt( pi ) SIGMA i^n ~D_n(s) ~D_n(x)
+                                          n=0
+
+   so one can write the eigenvalue equation of the Fourier transform:
+
+        +infinity
+        INTEGRAL exp( i (sx/2) ) ~D_n(x) dx  =   sqrt((4 pi)) i^n ~D_n(s)
+        -infinity
+
+<!-- WCMT Add the expressions for the first 12 Hermite polynomials and -->
+<!-- WCMT the collection of recursion relations and various -->
+<!-- WCMT "sum rules" for Hermite polynomials. -->
+<a name="approxr"></a>
+   <u>Approximating the roots of H_n(z)</u>
+
+</pre>
+<p>
+In <a href="http://graham.main.nc.us/%7Ebhammel/FCCR/IX.html"> [Section IX] </a> asymptotic formulae for
+the roots of H_n(z), together with
+a spacing rule have been found which are not very
+good approximations for low values of n.
+Using these approximations as a starting point
+and rescaling them so that the rescaled approximations
+conform to the known exact constraint
+<a href="http://graham.main.nc.us/%7Ebhammel/FCCR/IX.html#%289.17%29"> (9.17) </a> on the true roots
+of H_n(z) yields new approximation formulae that
+are remarkably good.
+The asymptotic values form [Section IX] are given by
+</p><pre>
+     h(n, k)  =  - ( pi/(2 sqrt(n)) ) (k - (1/2)(n-1))
+
+   where k = 0, 1, 2, ..., (n-1), and h(n, 0) is the maximal h(n, k).
+   From equation (9.17), we know that for the true roots q(n, k),
+
+        (n-1)
+        SIGMA q^2(n, k)  =  (n/2)(n-1)
+        k = 0
+
+   but
+
+        (n-1)
+        SIGMA h^2(n, k)  =  (n/2)(n-1) pi^2 (n+1)/(24 n)
+        k = 0
+
+   Now define rescaled h(n, k)
+
+        h'(n, k)  =  h(n, k)  pi sqrt([(n+1)/(24 n)]
+
+                  =  - sqrt((6/(n+1)) (k - (1/2)(n-1))
+
+   so that
+
+        (n-1)
+        SIGMA h'(n, k)   =  0
+        k = 0
+   and
+        (n-1)
+        SIGMA h'^2(n, k)  =  (n/2)(n-1)
+        k = 0
+
+   Where the spacing between the h(n, k) is ( pi/(2 sqrt(n)) ),
+   the spacing for the rescaled h'(n, k) is sqrt((6/(n+1))).
+   There is no n &gt; 0 for which these spacings are equal, and
+   for all n &gt; 0,
+
+            ( pi/(2 sqrt(n)) )  &gt;  sqrt((6/(n+1))).
+
+   Comparing the actually numerically calculated values of the roots
+   with the two approximations for n=6, we find
+
+	Note in update: you can get the numerical roots of H_n(x) in
+	MACSYMA (maxima under Linux) to 16 decimal places by default
+	by:
+		load("specfun"):
+		allroots( hermite(n, x) );
+	specifying the value of n.  Reset the value of the internal
+	variable fpprec to a value greater than 16 for greater precision;
+	16 is the default value.  Under Linux, the runtime maxima
+	rpm package does not require separate installation of a LISP
+	dialect when the LISP variant is GNU Common Lisp (gcl);
+	the runtime packages for other dialects require installation
+	of that LISP dialect separately and in addition.  In those
+	cases, I recommend clisp or cmucl, in that order.  allroots();
+	can give inaccurate results in case of multiple roots of a
+	given polynomial, but that will not be the case here with
+	Hermite polynomials.
+	wch - September 15, 2005
+
+   q(n, k):
+        (2.350614 1.335851 0.436078 -0.436078 -1.335851 -2.350614)
+   h'(n, k):
+        (2.31455  1.38873  0.462910 -0.462910 -1.38873  -2.31455)
+   h(n, k):
+        (1.60319  0.961911 0.320637 -0.320637 -0.961911 -1.60319)
+
+   For n=12
+
+   q(n, k):
+   (3.88973 3.0208356 2.27914395 1.597825 0.947782 0.314240435
+      -0.314240435 -0.947782 -1.597825 -2.27914395 -3.0208356 -3.88973)
+   h'(n, k):
+   (3.73651 3.05715   2.37778    1.69841  1.01905  0.339683
+      -0.339683    -1.01905  -1.69841  -2.37778    -3.05715   -3.73651)
+   h(n, k):
+   (2.49396 2.04052   1.58707    1.13362  0.680172 0.226724
+      -0.226724    -0.680172 -1.13362  -1.58707    -2.04052   -2.49396)
+
+</pre>
+<p></p>
+<p>
+The goodness of approximation is typical for the values of n from
+2 to 12, as may be easily verified from the formula for h'(n, k)
+and the table of numerically extracted roots in
+<a href="http://graham.main.nc.us/%7Ebhammel/FCCR/IX.html"> [Section IX]</a>.
+It would appear that these approximations are as good as they are
+because asymptotic linearity of
+the roots is already a dominant effect even for low values of n.
+</p>
+<pre>
+   It is always true that
+
+	sqrt(6/n) &gt; sqrt(6/(n+1)) &gt; π/(2 sqrt(n))
+
+
+   The ratio of spacings is,
+
+	sqrt(6/(n+1)) / (π / (2 sqrt(n)))  =
+
+	(2 sqrt(6n)) / (π sqrt(n+1))  =
+
+	(2/π) sqrt(6) sqrt( n/(n+1) )  =
+
+	(sqrt(24)/π) sqrt( n/(n+1) )
+
+		sqrt(24)  &lt;  5
+		(sqrt(24)/π)  =  4.898979/3.14159  =  1.559395
+
+		sqrt( n/(n+1) ) = sqrt(1 + 1/n)  →  1
+
+	So, asymptotically, the ratio of these approximations of
+	the root spacings is
+
+		(sqrt(24)/π)  =  1.559395 (approximately)
+
+        NB: While for the maximal root, both h(n, 0) and h'(n, 0)
+	appoximate the root from below,
+
+		h(n, 0) &lt; h'(n, 0) &lt; q(n, 0)
+	hence,
+		h(n, n-1) &gt; h'(n, n-1) &gt; q(n, n-1)
+
+	since q(n, n-1) = - q(n, 0).
+
+	h(n, k) always approximates
+	roots from below, while h'(n, k) for k ≠ 0 seems to obey
+
+		|h'(n, k)| &gt; |q(n, k)|
+
+	while, also for k ≠ 0,
+
+		|h(n, k)| &lt; |q(n, k)|
+
+	approximating the positive roots from above and the negative
+	roots from below.
+	
+	The maximal root is (spacing) * (n-1)/2, and its so far
+	best approximation is h'(n, 0), and its negative is also the best
+	approximation of the best approximation of the minimal root.
+
+		h'(n, 0)  =  sqrt(6/(n+1))  →  q(n, 0)
+
+	For all roots other than k = 0 (maximal), and k = n-1 (minimal),
+	the best approximation so far is by taking the average, of the
+	approximations from below and above:
+
+		h"(n, k)  :=  (1/2)( h(n, k) + h'(n, k) )  =
+
+
+	- (1/2) [ sqrt(6/(n+1)) + π/(2 sqrt(n)) ] (k - (n-1)/2)  =
+
+</pre>
+<p>
+Using this scheme the roots for n=12 through n=21 are approximately:
+</p><pre>   n=12:
+   3.81279 3.11956 2.42632 1.73308 1.03985 0.346610
+      -0.346620 -1.03986 -1.73309 -2.42632 -3.11956 -3.81280
+
+   n=13:
+   4.00206 3.33505 2.66804 2.00103 1.33402 0.667010
+       0
+      -0.667010 -1.33402 -2.00103 -2.66804 -3.33505 -4.00206
+
+   n=14:
+   4.18311 3.53956 2.89600 2.25245 1.60889 0.965330 0.321780
+      -0.321770 -0.965330 -1.60889 -2.25244 -2.89600 -3.53955 -4.18311
+
+   n=15:
+   4.35691 3.73449 3.11208 2.48966 1.86725 1.24483 0.622420
+       0
+      -0.622410 -1.24483 -1.86724 -2.48966 -3.11207 -3.73449 -4.35690
+
+   n=16:
+   4.52423 3.92100 3.31777 2.71454 2.11131 1.50808 0.904850 0.301620
+      -0.301610 -0.904840 -1.50807 -2.11130 -2.71453 -3.31776 -3.92099
+      -4.52422
+
+   n=17:
+   4.68576 4.10004 3.51432 2.92860 2.34288 1.75716 1.17144 0.585720
+       0
+      -0.585720 -1.17144 -1.75716 -2.34288 -2.92860 -3.51432 -4.10004
+      -4.68576
+
+   n=18:
+   4.84202 4.27237 3.70272 3.13307 2.56342 1.99377 1.42412 0.854470
+      0.284820 -0.284830 -0.854480 -1.42413 -1.99378 -2.56343 -3.13308
+     -3.70273 -4.27238 -4.84203
+
+   n=19:
+   4.99351 4.43867 3.88384 3.32901 2.77417 2.21934 1.66450 1.10967 0.554830
+       0
+      -0.554840 -1.10967 -1.66451 -2.21934 -2.77418 -3.32901
+      -3.88385 -4.43869 -4.99352
+
+   n=20:
+   5.14064 4.59952 4.05840 3.51728 2.97616 2.43504 1.89392 1.35280
+      0.811680 0.270560 -0.270560 -0.811680 -1.35280 -1.89392 -2.43504
+     -2.97616 -3.51728 -4.05840 -4.59952 -5.14066
+
+   n=21:
+   5.28375 4.75538 4.22700 3.69862 3.17025 2.64187
+       2.11350 1.58512 1.05675 0.528370
+       0
+      -0.528370 -1.05675 -1.58513 -2.11350 -2.64188
+      -3.17025 -3.69863 -4.22700 -4.75535 -5.28375)))
+
+   NB Writing XI!(n) Q(n) XI(n) = Qd(n) out in component form.
+      Are the resulting formulas useful, or a special case of
+      known formulas for the Hermite polynomials?
+   Result:
+
+     (n-1)
+     SIGMA (d_m d_(m-1))^(-1/2) (m/2)^(1/2) [ ~H_m(q(n, k)) ~H_(m-1)(q(n, j))
+      m=0
+                             + ~H_m(q(n, j)) ~H_(m-1)(q(n, k)) ]
+
+          =  q(n, k) delta_(kj)
+</pre>
+<p></p>
+<p>
+The following gives a specific example of
+an analytic expression in terms of a
+contour integral for the sum of values of a function at
+the zeros of another.
+</p>
+<p>
+</p><pre>   Let GAMMA be a closed contour in the complex plane that encloses the zeros
+   zeta_k, with k = 0, 1, ..., n-1, of a P_n(z) as defined before, and let
+   F(z) be some function analytic within GAMMA.  By Cauchy's theorem,
+   if lambda is within GAMMA, the value F(lambda) can be expressed by
+
+                        1                 F(z)
+     F(lambda)  =   -------- INTEGRAL ------------ dz
+                    (2 pi i)   GAMMA  (z - lambda)
+
+   In particular, let lambda be any of the zeta_k.
+   Then, summing on k,
+
+     (n-1)               (n-1)     1                   F(z)
+     SIGMA F(zeta_k)  =  SIGMA ---------- INTEGRAL ------------ dz
+      k=0                 k=0  (k 2 pi i)   GAMMA  (z - zeta_k)
+
+
+                    1                   (n-1)      1
+              =  -------- INTEGRAL F(z) SIGMA ------------  dz
+                 (2 pi i)   GAMMA        k=0  (z - zeta_k)
+
+                    1  
+              =  -------- INTEGRAL F(z) (d/dz)[log P_n(z)] dz
+                 (2 pi i)   GAMMA
+
+   If P_n(z) =  H_n(z), so H_n(zeta_k) = 0, then
+
+     (n-1)                 n                  H_(n-1)(z)
+     SIGMA F(zeta_k)  =  ------ INTEGRAL F(z) ---------- dz
+      k=0                (pi i)                 H_n(z)
+
+
+
+</pre>
+
+<br>
+<hr>
+<br>
+<a href="http://graham.main.nc.us/%7Ebhammel/FCCR/fccr.html#contents"> Go to Table of Contents
+</a>
+<br>
+<a href="http://graham.main.nc.us/%7Ebhammel/physics.html"> Go to Physics Pages
+</a>
+<br>
+<a href="http://graham.main.nc.us/%7Ebhammel/index.html"> Go to Home Page
+</a>
+<br>
+<pre>
+</pre>
+<a href="mailto:bhammel@graham.main.nc.us"> Email me, Bill Hammel at
+<br>
+bhammel@graham.main.nc.us
+</a>
+<a href="http://graham.main.nc.us/%7Ebhammel/mailinfo.html">READ WARNING BEFORE SENDING E-MAIL</a>
+<br>
+
+<hr>
+The URL for this document is:
+<br>
+http://graham.main.nc.us/~bhammel/FCCR/apdxE.html
+<br>
+Created: August 1997
+<br>
+Last Updated: May 28, 2000
+<br>
+Last Updated: December 3, 2001
+<br>
+Last Updated: February 12, 2004
+<br>
+Last Updated: June 30, 2005
+<br>
+Last Updated: July 24, 2005
+<br>
+Last Updated: September 15, 2005
+
+</body></html>

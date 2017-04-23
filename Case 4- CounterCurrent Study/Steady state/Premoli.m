@@ -1,0 +1,9 @@
+function alpha = Premoli(x,ro_l,ro_g,mu_l,v_l,D_i,sigma)
+G_l=ro_l .* v_l;
+Re_l =  G_l .* D_i ./ mu_l;
+We_l = G_l.^2 .* D_i ./ (sigma .* ro_l);
+y = x.* ro_l ./ ((1-x).*ro_g);
+f1=1.578 * Re_l.^-0.19 .* (ro_l./ro_g).^0.22;
+f2=0.0273 * We_l .* Re_l.^-0.51*(ro_l./ro_g).^-0.08;
+S=1+f1*( y./(1+y.*f2) - y.*f2).^.5;
+alpha=1./(1+(1./x-1).* S .* (ro_g./ro_l));

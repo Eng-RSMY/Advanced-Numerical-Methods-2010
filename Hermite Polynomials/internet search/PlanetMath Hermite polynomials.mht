@@ -1,0 +1,1307 @@
+From: "Saved by Windows Internet Explorer 7"
+Subject: PlanetMath: Hermite polynomials
+Date: Sat, 24 Oct 2009 18:13:29 +0330
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_01A9_01CA54D5.B05554F0"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.0.6000.16386
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_01A9_01CA54D5.B05554F0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://planetmath.org/encyclopedia/HermitePolynomials.html
+
+=EF=BB=BF<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>PlanetMath: Hermite polynomials</TITLE>
+<META http-equiv=3DContent-Type content=3D"text/html; =
+charset=3Dutf-8"><!-- favicon --><LINK=20
+href=3D"http://images.planetmath.org:8080/images/pm_favicon.ico" =
+type=3Dimage/x-icon=20
+rel=3Dicon><LINK =
+href=3D"http://images.planetmath.org:8080/images/pm_favicon.ico"=20
+type=3Dimage/x-icon rel=3D"shortcut icon"><LINK=20
+href=3D"http://planetmath.org/files/style.css" type=3Dtext/css =
+rel=3Dstylesheet><!-- meta junk -->
+<SCRIPT src=3D"http://aux.planetmath.org/jsMath/easy/load.js"></SCRIPT>
+<!-- the html -->
+<META content=3D"MSHTML 6.00.6000.16386" name=3DGENERATOR></HEAD>
+<BODY text=3D#000000 vLink=3D#0000ff aLink=3D#ff0000 =
+bgColor=3D#ffffff><!-- header -->
+<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
+  <TBODY>
+  <TR>
+    <TD><!-- logo --><A href=3D"http://planetmath.org/"><IMG =
+alt=3DPlanetMath=20
+      src=3D"" align=3Dleft border=3D0></A> </TD><!-- donate button -->
+    <TD vAlign=3Dcenter align=3Dmiddle><FONT size=3D-2><A=20
+      href=3D"http://aux.planetmath.org/doc/donate.html">(more info)</A> =
+</FONT>
+      <FORM style=3D"MARGIN-BOTTOM: 0px"=20
+      action=3Dhttps://www.paypal.com/cgi-bin/webscr =
+method=3Dpost><INPUT=20
+      type=3Dhidden value=3D_xclick name=3Dcmd> <INPUT type=3Dhidden=20
+      value=3Dpaypal@planetmath.org name=3Dbusiness> <INPUT =
+type=3Dhidden=20
+      value=3DPlanetMath.org name=3Ditem_name> <INPUT type=3Dhidden =
+value=3D1=20
+      name=3Ditem_number> <INPUT type=3Dhidden value=3D1 name=3Dno_note> =
+<INPUT=20
+      type=3Dhidden value=3DUSD name=3Dcurrency_code> <INPUT =
+type=3Dhidden value=3D0=20
+      name=3Dtax> <INPUT type=3Dimage alt=3D"PayPal donate"=20
+      src=3D"http://aux.planetmath.org/images/paypal_donate.gif" =
+border=3D0=20
+      name=3Dsubmit> </FORM></TD><!-- google ads -->
+    <TD align=3Dright>
+      <SCRIPT type=3Dtext/javascript><!--=0A=
+					google_ad_client =3D "pub-0414767667101623";=0A=
+					google_ad_width =3D 468;=0A=
+					google_ad_height =3D 60;=0A=
+					google_ad_format =3D "468x60_as";=0A=
+					google_ad_type =3D "text";=0A=
+					google_ad_channel =3D "";=0A=
+					google_color_border =3D "FFFFFF";=0A=
+					google_color_bg =3D "FFFFFF";=0A=
+					google_color_link =3D "0000FF";=0A=
+					google_color_text =3D "000000";=0A=
+					google_color_url =3D "940F04";=0A=
+					//--></SCRIPT>
+
+      <SCRIPT src=3D"" type=3Dtext/javascript>=0A=
+					</SCRIPT>
+    </TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
+  <TBODY>
+  <TR>
+    <TD colSpan=3D4>
+      <TABLE cellPadding=3D2 width=3D"100%" border=3D0>
+        <TBODY>
+        <TR>
+          <TD align=3Dleft><!-- slogan -->&nbsp;<FONT face=3Dsans-serif=20
+            color=3D#000000><I>Math for the people, by the =
+people.</I></FONT> </TD><!-- sponsor button -->
+          <TD vAlign=3Dcenter align=3Dmiddle><A=20
+            href=3D"http://aux.planetmath.org/doc/sponsor.html"><IMG=20
+            alt=3D"Sponsor PlanetMath" src=3D"" width=3D250 =
+align=3Dcenter border=3D0></A>=20
+            <BR>
+            <DIV=20
+            style=3D"MARGIN-TOP: -0.5em; FONT-SIZE: 50%; PADDING-BOTTOM: =
+0px"><A=20
+            href=3D"http://aux.planetmath.org/doc/donors.html">donor =
+list</A> - <A=20
+            href=3D"http://aux.planetmath.org/doc/sponsor.html">find out =
+how</A>=20
+            </DIV></TD>
+          <TD align=3Dright>
+            <TABLE>
+              <TBODY>
+              <TR>
+                <TD><!-- quick links --><FONT size=3D-2><A=20
+                  =
+href=3D"http://planetmath.org/encyclopedia">Encyclopedia</A> | <!--<a =
+href=3D"http://planetmath.org/?op=3Dbrowse&amp;from=3Dbooks">Books</a> |=0A=
+								<a =
+href=3D"http://planetmath.org/?op=3Dbrowse&amp;from=3Dpapers">Papers</a> =
+|=0A=
+								<a =
+href=3D"http://planetmath.org/?op=3Dbrowse&amp;from=3Dlec">Expositions</a=
+> |--><A=20
+                  =
+href=3D"http://planetmath.org/?op=3Dreqlist">Requests</A> | <A=20
+                  href=3D"http://planetmath.org/?op=3Dforums">Forums</A> =
+| <A=20
+                  href=3D"http://planetmath.org/?op=3Dsitedoc">Docs</A> =
+| <!-- APK - we should update this PURL to the below ASAP --><!--<a =
+href=3D"http://purl.oclc.org/NET/PMWiki/">Wiki</a> |--><A=20
+                  href=3D"http://wiki.planetmath.org/">Wiki</A> | <A=20
+                  =
+href=3D"http://planetmath.org/?op=3Drandomentry">Random</A> | <A=20
+                  =
+href=3D"http://aux.planetmath.org/doc/rss.html">RSS</A> &nbsp;=20
+                  </FONT></TD><!-- search box -->
+                <TD>
+                  <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D0><!-- =0A=
+	 <tr>=0A=
+	  <td align=3D"right">=0A=
+	   <font size=3D"-2" face=3D"sans-serif"> <a =
+HREF=3D"http://planetmath.org/?op=3Dadv_search">(advanced)</a> </font>=0A=
+	  </td>=0A=
+	 </tr>=0A=
+	 -->
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <FORM name=3Dsearchform accept-charset=3DUTF-8 =
+action=3D/=20
+                        method=3Dget><INPUT type=3Dhidden value=3Dsearch =
+name=3Dop>=20
+                        <INPUT class=3Dsmall maxLength=3D64 size=3D15 =
+name=3Dterm> <INPUT class=3Dsmall type=3Dsubmit value=3Dfind>=20
+                        <DIV><FONT size=3D-2><A=20
+                        =
+href=3D"http://planetmath.org/?op=3Dadvsearch">Advanced=20
+                        =
+search</A></FONT></DIV></FORM></TD></TR></TBODY></TABLE></TD></TR></TBODY=
+></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><!-- =
+content and sidebar -->
+<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%">
+  <TBODY>
+  <TR>
+    <TD vAlign=3Dtop>
+      <TABLE cellSpacing=3D2 cellPadding=3D0 width=3D125 border=3D0>
+        <TBODY>
+        <TR>
+          <TD width=3D"100%"><!-- standard box -->
+            <TABLE width=3D"100%">
+              <TBODY>
+              <TR>
+                <TD bgColor=3D#000000>
+                  <TABLE cellSpacing=3D0 cellPadding=3D1 width=3D"100%" =
+border=3D0><!-- title -->
+                    <TBODY>
+                    <TR>
+                      <TD width=3D"100%" bgColor=3D#003399><FONT=20
+                        class=3Dbox_title>Login </FONT></TD></TR><!-- =
+content -->
+                    <TR>
+                      <TD width=3D"100%" bgColor=3D#dddddd>
+                        <FORM action=3Dhttp://planetmath.org =
+method=3Dpost>
+                        <TABLE cellSpacing=3D2 cellPadding=3D2 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD align=3Dmiddle width=3D"100%" =
+colSpan=3D2><SMALL><A=20
+                              =
+href=3D"http://planetmath.org/?op=3Dnewuser">create=20
+                              new user</A> </SMALL></TD></TR>
+                          <TR>
+                            <TD align=3Dmiddle colSpan=3D2><FONT =
+color=3D#ff0000=20
+                              size=3D+1></FONT></TD></TR>
+                          <TR>
+                            <TD align=3Dright><SMALL>name: </SMALL></TD>
+                            <TD><INPUT class=3Dsmall maxLength=3D32 =
+size=3D10=20
+                              name=3Duser> </TD></TR>
+                          <TR>
+                            <TD align=3Dright><SMALL>pass: </SMALL></TD>
+                            <TD><INPUT class=3Dsmall type=3Dpassword =
+maxLength=3D32=20
+                              size=3D10 name=3Dpasswd> </TD></TR>
+                          <TR>
+                            <TD align=3Dmiddle colSpan=3D2><INPUT =
+type=3Dhidden=20
+                              =
+value=3Dfrom%3Dobjects%26amp%3Bname%3DHermitePolynomials%26amp%3Bid%3D706=
+1%26amp%3Btotal%3D0%26amp%3Boffset%3D0%26amp%3Bop%3Dgetobj=20
+                              name=3Durl> <INPUT type=3Dhidden =
+value=3Dlogin name=3Dop> <INPUT class=3Dsmall type=3Dsubmit =
+value=3Dlogin> </TD></TR>
+                          <TR>
+                            <TD align=3Dmiddle colSpan=3D2><FONT =
+size=3D-2><A=20
+                              =
+href=3D"http://planetmath.org/?op=3Dpwchangereq">forget=20
+                              your=20
+                        =
+password?</A></FONT></TD></TR></TBODY></TABLE></FORM></TD></TR></TBODY></=
+TABLE></TD></TR></TBODY></TABLE><!-- end standard box --></TD></TR>
+        <TR>
+          <TD width=3D"100%"><!-- standard box -->
+            <TABLE width=3D"100%">
+              <TBODY>
+              <TR>
+                <TD bgColor=3D#000000>
+                  <TABLE cellSpacing=3D0 cellPadding=3D1 width=3D"100%" =
+border=3D0><!-- title -->
+                    <TBODY>
+                    <TR>
+                      <TD width=3D"100%" bgColor=3D#003399><FONT=20
+                        class=3Dbox_title>Main Menu =
+</FONT></TD></TR><!-- content -->
+                    <TR>
+                      <TD width=3D"100%" bgColor=3D#dddddd>
+                        <TABLE cellSpacing=3D0 cellPadding=3D4 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <DIV class=3Dmenuitems>
+                              <CENTER><FONT=20
+                              =
+size=3D-1><I>sections</I></FONT></CENTER><A=20
+                              =
+href=3D"http://planetmath.org/encyclopedia">Encyclop=C3=A6dia</A><BR><A=20
+                              =
+href=3D"http://planetmath.org/?op=3Dbrowse&amp;from=3Dpapers">Papers</A><=
+BR><A=20
+                              =
+href=3D"http://planetmath.org/?op=3Dbrowse&amp;from=3Dbooks">Books</A><BR=
+><A=20
+                              =
+href=3D"http://planetmath.org/?op=3Dbrowse&amp;from=3Dlec">Expositions</A=
+><BR><BR>
+                              <CENTER><FONT=20
+                              size=3D-1><I>meta</I></FONT></CENTER><A=20
+                              =
+href=3D"http://planetmath.org/?op=3Dreqlist">Requests</A>=20
+                              <FONT size=3D-2>(236)</FONT><BR><A=20
+                              =
+href=3D"http://planetmath.org/?op=3Dorphanage">Orphanage</A>=20
+                              <FONT size=3D-2></FONT><BR><A=20
+                              =
+href=3D"http://planetmath.org/?op=3Dunclassified">Unclass'd</A>=20
+                              <FONT size=3D-2>(1)</FONT><BR><A=20
+                              =
+href=3D"http://planetmath.org/?op=3Dunproven">Unproven</A>=20
+                              <FONT size=3D-2>(540)</FONT><BR><A=20
+                              =
+href=3D"http://planetmath.org/?op=3Dglobalcors">Corrections</A>=20
+                              <FONT size=3D-2>(45)</FONT><BR><A=20
+                              =
+href=3D"http://planetmath.org/browse/categories/">Classification</A><BR><=
+BR>
+                              <CENTER><FONT=20
+                              =
+size=3D-1><I>talkback</I></FONT></CENTER><A=20
+                              =
+href=3D"http://planetmath.org/?op=3Dviewpolls">Polls</A><BR><A=20
+                              =
+href=3D"http://planetmath.org/?op=3Dforums">Forums</A><BR><A=20
+                              =
+href=3D"http://planetmath.org/?op=3Dfeedback">Feedback</A><BR><A=20
+                              href=3D"http://bugs.planetmath.org/">Bug=20
+                              Reports</A><BR><BR>
+                              <CENTER><FONT=20
+                              =
+size=3D-1><I>downloads</I></FONT></CENTER><A=20
+                              =
+href=3D"http://aux.planetmath.org/snapshots/">Snapshots</A><BR><A=20
+                              =
+href=3D"http://aux.planetmath.org/book/">PM=20
+                              Book</A><BR><BR>
+                              <CENTER><FONT=20
+                              =
+size=3D-1><I>information</I></FONT></CENTER><A=20
+                              =
+href=3D"http://planetmath.org/?op=3Doldnews">News</A><BR><A=20
+                              =
+href=3D"http://planetmath.org/?op=3Dsitedoc">Docs</A><BR><A=20
+                              =
+href=3D"http://purl.oclc.org/NET/PMWiki/">Wiki</A><BR><A=20
+                              =
+href=3D"http://purl.oclc.org/NET/PMWikiPage/No%c3%b6sphere">ChangeLog</A>=
+<BR><A=20
+                              =
+href=3D"http://purl.oclc.org/NET/PMWikiPage/No%c3%b6sphere">TODO=20
+                              List</A><BR><A=20
+                              =
+href=3D"http://planetmath.org/?op=3Dlicense">Copyright</A><BR><A=20
+                              =
+href=3D"http://planetmath.org/?op=3Dabout">About</A><BR></DIV></TD></TR><=
+/TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><!-- =
+end standard box --></TD></TR></TBODY></TABLE></TD>
+    <TD vAlign=3Dtop align=3Dleft width=3D"100%">
+      <TABLE cellSpacing=3D2 cellPadding=3D0 width=3D"100%">
+        <TBODY>
+        <TR>
+          <TD><!-- math box -->
+            <TABLE width=3D"100%">
+              <TBODY>
+              <TR>
+                <TD bgColor=3D#000000>
+                  <TABLE cellSpacing=3D0 cellPadding=3D1 width=3D"100%" =
+border=3D0><!-- title -->
+                    <TBODY>
+                    <TR>
+                      <TD width=3D"100%" bgColor=3D#003399><FONT =
+class=3Dbox_title>
+                        <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD=20
+                              style=3D"PADDING-RIGHT: 10px; =
+PADDING-LEFT: 10px"><TABLE=20
+                              cellSpacing=3D2 cellPadding=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD><SPAN=20
+                                title=3D"Owner confidence rating: Very =
+high"=20
+                                style=3D"CURSOR: help"><A=20
+                                =
+href=3D"http://planetmath.org/?op=3Daboutratings"><IMG=20
+                                alt=3D"Owner confidence rating: Very =
+high" src=3D""=20
+                                border=3D0></A></SPAN> </TD>
+                                <TD><SPAN=20
+                                title=3D"Entry average rating: No =
+information on entry rating"=20
+                                style=3D"CURSOR: help"><A=20
+                                =
+href=3D"http://planetmath.org/?op=3Daboutratings"><IMG=20
+                                alt=3D"Entry average rating: No =
+information on entry rating"=20
+                                src=3D"" border=3D0></A></SPAN>=20
+                              </TD></TR></TBODY></TABLE></TD>
+                            <TD style=3D"WIDTH: 100%" align=3Dleft><A=20
+                              =
+href=3D"http://planetmath.org/?op=3Dgetobj&amp;from=3Dobjects&amp;id=3D70=
+58"><IMG=20
+                              alt=3D[parent] src=3D"" border=3D0></A> =
+<FONT=20
+                              color=3D#ffffff>Hermite polynomials</FONT> =
+</TD>
+                            <TD align=3Dright><FONT color=3D#ffffff=20
+                              size=3D-2>(Definition)=20
+                        =
+</FONT></TD></TR></TBODY></TABLE></FONT></TD></TR><!-- content -->
+                    <TR>
+                      <TD align=3Dmiddle width=3D"100%" =
+bgColor=3D#ffffff>
+                        <TABLE width=3D"100%" border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <SCRIPT type=3Dtext/javascript>=0A=
+//<![CDATA[=0A=
+ jsMath.Macro( 'sijoitus', =
+'\\operatornamewithlimits{\\Big/}_{\\!\\!\\!#1}^{\\,#2}', 2) =0A=
+//]]>=0A=
+</SCRIPT>
+
+                              <P>The <A id=3Dtex2html1=20
+                              =
+href=3D"http://planetmath.org/encyclopedia/LeadingCoefficient.html"=20
+                              name=3Dtex2html1>polynomial</A> <A =
+id=3Dtex2html2=20
+                              =
+href=3D"http://planetmath.org/encyclopedia/MultipleRoot.html"=20
+                              name=3Dtex2html2>solutions</A> of the <A=20
+                              id=3Dtex2html3=20
+                              =
+href=3D"http://planetmath.org/encyclopedia/HermiteDifferentialEquation.ht=
+ml"=20
+                              name=3Dtex2html3>Hermite differential =
+equation</A>,=20
+                              with <SPAN class=3Dnolink>$n$</SPAN> a =
+non-negative=20
+                              <A id=3Dtex2html4=20
+                              =
+href=3D"http://planetmath.org/encyclopedia/RationalInteger.html"=20
+                              name=3Dtex2html4>integer</A>, are usually =
+normed so=20
+                              that the highest <A id=3Dtex2html5=20
+                              =
+href=3D"http://planetmath.org/encyclopedia/PolynomialRing.html"=20
+                              name=3Dtex2html5>degree</A> term is <SPAN=20
+                              class=3Dnolink>$(2z)^n$</SPAN> and called =
+the=20
+                              <EM>Hermite polynomials</EM> <SPAN=20
+                              class=3Dnolink>$H_n(z)$</SPAN> . The =
+Hermite=20
+                              polynomials may be defined explicitly =
+by</P>
+                              <DIV class=3Dmathdisplay align=3Dcenter>
+                              <TABLE cellPadding=3D0 width=3D"100%" =
+align=3Dcenter>
+                                <TBODY>
+                                <TR vAlign=3Dcenter>
+                                <TD noWrap align=3Dmiddle><SPAN =
+class=3DMATH><IMG=20
+                                title=3D"$\displaystyle H_n(z) :=3D =
+(-1)^ne^{z^2}\frac{d^n}{dz^n}e^{-z^2},$"=20
+                                height=3D60=20
+                                alt=3D"$\displaystyle H_n(z) :=3D =
+(-1)^ne^{z^2}\frac{d^n}{dz^n}e^{-z^2},$"=20
+                                src=3D"" width=3D225 align=3Dmiddle=20
+                                border=3D0></SPAN></TD>
+                                <TD class=3Deqno noWrap align=3Dright=20
+                                width=3D10>(<SPAN=20
+                                =
+class=3Darabic>1</SPAN>)</TD></TR></TBODY></TABLE></DIV><BR=20
+                              clear=3Dall>since this is a polynomial =
+having the=20
+                              highest degree term <SPAN=20
+                              class=3Dnolink>$(2z)^n$</SPAN> and =
+satisfying the=20
+                              Hermite equation. The first six Hermite=20
+                              polynomials are=20
+                              <P><SPAN class=3Dnolink>$H_0(z) \equiv=20
+                              1,$</SPAN><BR><SPAN class=3Dnolink>$H_1(z) =
+\equiv=20
+                              2z,$</SPAN><BR><SPAN =
+class=3Dnolink>$H_2(z) \equiv=20
+                              4z^2-2,$</SPAN><BR><SPAN =
+class=3Dnolink>$H_3(z)=20
+                              \equiv 8z^3-12z,$</SPAN><BR><SPAN=20
+                              class=3Dnolink>$H_4(z) \equiv=20
+                              16z^4-48z^2+12,$</SPAN><BR><SPAN=20
+                              class=3Dnolink>$H_5(z) \equiv=20
+                              32z^5-160z^3+120z,$</SPAN></P>
+                              <P>and the general polynomial form is</P>
+                              <P><SPAN class=3Dnolink>$H_n(z) \equiv=20
+                              (2z)^n-\frac{n(n-1)}{1!}(2z)^{n-2}=20
+                              =
++\frac{n(n-1)(n-2)(n-3)}{2!}(2z)^{n-4}-+\cdots.$</SPAN><BR></P>
+                              <P>Differentiating this termwise gives =
+<SPAN=20
+                              class=3Dnolink>$H'_n(z) =3D=20
+                              =
+2n\left[(2z)^{n-1}-\frac{(n-1)(n-2)}{1!}(2z)^{n-3}+=20
+                              =
+\frac{(n-1)(n-2)(n-3)(n-4)}{2!}(2z)^{n-5}-+\cdots\right],$</SPAN>=20
+                              i.e.</P>
+                              <DIV class=3Dmathdisplay align=3Dcenter>
+                              <TABLE cellPadding=3D0 width=3D"100%" =
+align=3Dcenter>
+                                <TBODY>
+                                <TR vAlign=3Dcenter>
+                                <TD noWrap align=3Dmiddle><SPAN =
+class=3DMATH><IMG=20
+                                title=3D"$\displaystyle H'_n(z) =3D =
+2nH_{n-1}(z).$"=20
+                                height=3D38=20
+                                alt=3D"$\displaystyle H'_n(z) =3D =
+2nH_{n-1}(z).$"=20
+                                src=3D"" width=3D170 align=3Dmiddle=20
+                                border=3D0></SPAN></TD>
+                                <TD class=3Deqno noWrap align=3Dright=20
+                                width=3D10>(<SPAN=20
+                                =
+class=3Darabic>2</SPAN>)</TD></TR></TBODY></TABLE></DIV><BR=20
+                              clear=3Dall>We shall now show that the =
+Hermite=20
+                              polynomials form an <A id=3Dtex2html6=20
+                              =
+href=3D"http://planetmath.org/encyclopedia/OrthogonalPolynomials.html"=20
+                              name=3Dtex2html6>orthogonal set</A> on the =
+<A=20
+                              id=3Dtex2html7=20
+                              =
+href=3D"http://planetmath.org/encyclopedia/Segment.html"=20
+                              name=3Dtex2html7>interval</A> <SPAN=20
+                              class=3Dnolink>$(-\infty,\,\infty)$</SPAN> =
+with the=20
+                              <A id=3Dtex2html8=20
+                              =
+href=3D"http://planetmath.org/encyclopedia/OrthogonalPolynomials.html"=20
+                              name=3Dtex2html8>weight factor</A> <SPAN=20
+                              class=3Dnolink>$e^{-x^2}$</SPAN> . Let =
+<SPAN=20
+                              class=3Dnolink>$m &lt; n$</SPAN> ; using =
+(1) and <A=20
+                              id=3Dtex2html9=20
+                              =
+href=3D"http://planetmath.org/encyclopedia/IntegrationByParts.html"=20
+                              name=3Dtex2html9>integrating by parts</A> =
+we get=20
+                              <SPAN =
+class=3Dnolink>$$(-1)^n\int_{-\infty}^\infty=20
+                              H_m(x)H_n(x)e^{-x^2}\,dx =3D =
+\int_{-\infty}^\infty=20
+                              H_m(x)\frac{d^ne^{-x^2}}{dx^n}\,dx =
+=3D$$</SPAN>=20
+                              <SPAN class=3Dnolink>$$=3D=20
+                              =
+\sijoitus{-\infty}{\quad\infty}H_m(x)\frac{d^{n-1}e^{-x^2}}{dx^{n-1}}=20
+                              -\int_{-\infty}^\infty=20
+                              H'_m(x)\frac{d^{n-1}e^{-x^2}}{dx^{n-1}}\,=20
+                              dx.$$</SPAN> The <A id=3Dtex2html10=20
+                              =
+href=3D"http://planetmath.org/encyclopedia/StringSubstitution.html"=20
+                              name=3Dtex2html10>substitution</A> portion =
+here=20
+                              equals to zero because <SPAN=20
+                              class=3Dnolink>$e^{-x^2}$</SPAN> and its =
+<A=20
+                              id=3Dtex2html11=20
+                              =
+href=3D"http://planetmath.org/encyclopedia/FrechetDerivative.html"=20
+                              name=3Dtex2html11>derivatives</A> <A =
+id=3Dtex2html12=20
+                              =
+href=3D"http://planetmath.org/encyclopedia/ZeroSet3.html"=20
+                              name=3Dtex2html12>vanish</A> at <SPAN=20
+                              class=3Dnolink>$\pm\infty$</SPAN> . Using =
+then (2)=20
+                              we obtain <SPAN=20
+                              class=3Dnolink>$$\int_{-\infty}^\infty=20
+                              H_m(x)H_n(x)e^{-x^2}\,dx =3D=20
+                              2(-1)^{1+n}m\int_{-\infty}^\infty=20
+                              =
+H_{m-1}(x)\frac{d^{n-1}e^{-x^2}}{dx^{n-1}}\,dx.$$</SPAN>=20
+                              Repeating the <A id=3Dtex2html13=20
+                              =
+href=3D"http://planetmath.org/encyclopedia/IntegrationByParts.html"=20
+                              name=3Dtex2html13>integration by parts</A> =
+gives the=20
+                              result <SPAN =
+class=3Dnolink>$$\int_{-\infty}^\infty=20
+                              H_m(x)H_n(x)e^{-x^2}\,dx =3D=20
+                              2^m(-1)^{m+n}m!\int_{-\infty}^\infty=20
+                              H_0(x)\frac{d^{n-m}e^{-x^2}}{dx^{n-m}}\,dx =
+
+                              =3D$$</SPAN> <SPAN class=3Dnolink>$$=3D=20
+                              =
+2^m(-1)^{m+n}m!\sijoitus{-\infty}{\quad\infty}\frac{d^{n-m-1}e^{-x^2}}{dx=
+^{n-m-1}}=20
+                              =3D 0,$$</SPAN> whereas in the case <SPAN=20
+                              class=3Dnolink>$m =3D n$</SPAN> the result =
+<SPAN=20
+                              class=3Dnolink>$$\int_{-\infty}^\infty=20
+                              (H_n(x))^2e^{-x^2}\,dx =3D=20
+                              2^n(-1)^{2n}n!\int_{-\infty}^\infty =
+e^{-x^2}\,dx =3D=20
+                              2^nn!\sqrt{\pi}$$</SPAN> (see the <A =
+id=3Dtex2html14=20
+                              =
+href=3D"http://planetmath.org/encyclopedia/GaussianIntegral.html"=20
+                              name=3Dtex2html14>area under Gaussian =
+curve</A>).=20
+                              The results mean that the <A =
+id=3Dtex2html15=20
+                              =
+href=3D"http://planetmath.org/encyclopedia/Surjective2.html"=20
+                              name=3Dtex2html15>functions</A> <SPAN=20
+                              class=3Dnolink>$x=20
+                              =
+\mapsto\frac{H_n(x)}{\sqrt{2^nn!\sqrt{\pi}}}e^{-\frac{x^2}{2}}$</SPAN>=20
+                              form an <A id=3Dtex2html16=20
+                              =
+href=3D"http://planetmath.org/encyclopedia/Orthonormal2.html"=20
+                              name=3Dtex2html16>orthonormal set</A> on =
+<SPAN=20
+                              class=3Dnolink>$(-\infty,\,\infty)$</SPAN> =
+.<BR>
+                              <P>The Hermite polynomials are used in the =
+quantum=20
+                              mechanical treatment of a <A =
+id=3Dtex2html17=20
+                              =
+href=3D"http://planetmath.org/encyclopedia/HarmonicOscillator.html"=20
+                              name=3Dtex2html17>harmonic oscillator</A>, =
+the <A=20
+                              id=3Dtex2html18=20
+                              =
+href=3D"http://planetmath.org/encyclopedia/WaveFunction.html"=20
+                              name=3Dtex2html18>wave functions</A> of =
+which have=20
+                              the form <SPAN class=3Dnolink>$$\xi =
+\mapsto=20
+                              \Psi_n(\xi) =3D=20
+                              =
+C_nH_n(\xi)e^{-\frac{\xi^2}{2}}.$$</SPAN></P>
+                              <P><BR></P>
+                              <HR>
+                            </TD></TR></TBODY></TABLE><BR><FONT =
+size=3D-1>"Hermite=20
+                        polynomials" is owned by <A=20
+                        =
+href=3D"http://planetmath.org/?op=3Dgetuser&amp;id=3D2872">pahio</A>.</FO=
+NT>=20
+                      =
+</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><!-- end math box =
+-->
+            <CENTER><FONT size=3D-1>(<A=20
+            =
+href=3D"http://planetmath.org/?op=3Dpreamble&amp;id=3D7061">view=20
+            preamble</A> | <A=20
+            =
+href=3D"http://planetmath.org/?op=3Dgetmd&amp;from=3Dobjects&amp;id=3D706=
+1">get=20
+            metadata</A>) </FONT></CENTER><BR>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+border=3D0>
+              <TBODY>
+              <TR>
+                <TD>
+                  <FORM name=3Dmethodform action=3D/ method=3Dget>View =
+style: <SELECT=20
+                  class=3Dsmall onchange=3Dmethodform.submit() =
+name=3Dmethod><OPTION=20
+                    value=3Djs selected>jsMath HTML</OPTION><OPTION =
+value=3Dl2h>HTML=20
+                    with images</OPTION><OPTION value=3Dpng>page=20
+                    images</OPTION><OPTION value=3Dsrc>TeX =
+source</OPTION></SELECT>=20
+                  <INPUT type=3Dhidden value=3Dobjects name=3Dfrom> =
+<INPUT type=3Dhidden=20
+                  value=3DHermitePolynomials name=3Dname> <INPUT =
+type=3Dhidden=20
+                  value=3Dgetobj name=3Dop> <INPUT class=3Dsmall =
+type=3Dsubmit value=3Dreload></FORM></TD>
+                <TD></TD></TR></TBODY></TABLE><BR>
+            <TABLE>
+              <TBODY>
+              <TR>
+                <TD style=3D"WIDTH: 100%" vAlign=3Dtop>See Also: <A=20
+                  =
+href=3D"http://planetmath.org/?op=3Dgetobj&amp;from=3Dobjects&amp;name=3D=
+SubstitutionNotation">substitution=20
+                  notation</A>, <A=20
+                  =
+href=3D"http://planetmath.org/?op=3Dgetobj&amp;from=3Dobjects&amp;name=3D=
+LaguerrePolynomial">Laguerre=20
+                  polynomial</A><BR><BR><BR>This object's <A=20
+                  =
+href=3D"http://planetmath.org/?op=3Dgetobj&amp;from=3Dobjects&amp;id=3D70=
+58">parent</A>.<BR></TD>
+                <TD style=3D"MARGIN-RIGHT: 20px">
+                  <DIV style=3D"FLOAT: right">
+                  <TABLE width=3D200>
+                    <TBODY>
+                    <TR>
+                      <TD><FONT size=3D-1><I>Log in to rate this =
+entry.</I>=20
+                        <BR>(<A=20
+                        =
+href=3D"http://planetmath.org/?op=3Dgetratingbox&amp;id=3D7061">view=20
+                        current ratings</A>)</FONT>=20
+              =
+</TD></TR></TBODY></TABLE></DIV></TD></TR></TBODY></TABLE><FONT=20
+            size=3D-1><BR>Cross-references: <A=20
+            =
+href=3D"http://planetmath.org/encyclopedia/WaveFunction.html">wave=20
+            functions</A>, <A=20
+            =
+href=3D"http://planetmath.org/encyclopedia/HarmonicOscillator.html">harmo=
+nic=20
+            oscillator</A>, <A=20
+            =
+href=3D"http://planetmath.org/encyclopedia/Orthonormal2.html">orthonormal=
+=20
+            set</A>, <A=20
+            =
+href=3D"http://planetmath.org/encyclopedia/Surjective2.html">functions</A=
+>,=20
+            <A=20
+            =
+href=3D"http://planetmath.org/encyclopedia/GaussianIntegral.html">area=20
+            under Gaussian curve</A>, <A=20
+            =
+href=3D"http://planetmath.org/encyclopedia/IntegrationByParts.html">integ=
+ration=20
+            by parts</A>, <A=20
+            =
+href=3D"http://planetmath.org/encyclopedia/ZeroSet3.html">vanish</A>,=20
+            <A=20
+            =
+href=3D"http://planetmath.org/encyclopedia/FrechetDerivative.html">deriva=
+tives</A>,=20
+            <A=20
+            =
+href=3D"http://planetmath.org/encyclopedia/StringSubstitution.html">subst=
+itution</A>,=20
+            <A=20
+            =
+href=3D"http://planetmath.org/encyclopedia/Segment.html">interval</A>,=20
+            <A=20
+            =
+href=3D"http://planetmath.org/encyclopedia/RationalInteger.html">integer<=
+/A>,=20
+            <A=20
+            =
+href=3D"http://planetmath.org/encyclopedia/HermiteDifferentialEquation.ht=
+ml">Hermite=20
+            differential equation</A>, <A=20
+            =
+href=3D"http://planetmath.org/encyclopedia/MultipleRoot.html">solutions</=
+A>,=20
+            <A=20
+            =
+href=3D"http://planetmath.org/encyclopedia/LeadingCoefficient.html">polyn=
+omial</A><BR>There=20
+            are <A title=3D"see entries that link to (mention) this =
+entry"=20
+            =
+href=3D"http://planetmath.org/?op=3Dgetrefs&amp;from=3Dobjects&amp;name=3D=
+HermitePolynomials">7=20
+            references</A> to this entry.<BR><BR>This is <A=20
+            title=3D"see past versions of this entry"=20
+            =
+href=3D"http://planetmath.org/?op=3Dvbrowser&amp;from=3Dobjects&amp;id=3D=
+7061">version=20
+            15</A> of <A title=3D"name-based permalink to this entry"=20
+            =
+href=3D"http://planetmath.org/encyclopedia/HermitePolynomials.html">Hermi=
+te=20
+            polynomials</A>, born on 2005-05-17, modified =
+2008-05-17.<BR>Object=20
+            id is <A title=3D"id-based permalink to this entry"=20
+            =
+href=3D"http://planetmath.org/?op=3Dgetobj&amp;from=3Dobjects&amp;id=3D70=
+61">7061</A>,=20
+            canonical name is <A title=3D"name-based permalink to this =
+entry"=20
+            =
+href=3D"http://planetmath.org/encyclopedia/HermitePolynomials.html">Hermi=
+tePolynomials</A>.<BR>Accessed=20
+            11266 times total.<BR></FONT><BR>Classification:<BR>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D0>
+              <TBODY>
+              <TR>
+                <TD vAlign=3Dtop><FONT size=3D-1><A=20
+                  href=3D"http://planetmath.org/?op=3Dmscbrowse"=20
+                  =
+target=3Dplanetmath_popup>AMS&nbsp;MSC</A>:&nbsp;</FONT></TD>
+                <TD><FONT size=3D-1><A=20
+                  =
+href=3D"http://planetmath.org/?op=3Dmscbrowse&amp;from=3Dobjects&amp;id=3D=
+12D99">12D99</A>=20
+                  <FONT size=3D-2>(Field theory and polynomials :: Real =
+and=20
+                  complex fields :: =
+Miscellaneous)</FONT></FONT></TD></TR>
+              <TR>
+                <TD><FONT size=3D-1>&nbsp;</FONT></TD>
+                <TD><FONT size=3D-1><A=20
+                  =
+href=3D"http://planetmath.org/?op=3Dmscbrowse&amp;from=3Dobjects&amp;id=3D=
+26A09">26A09</A>=20
+                  <FONT size=3D-2>(Real functions :: Functions of one =
+variable ::=20
+                  Elementary functions)</FONT></FONT></TD></TR>
+              <TR>
+                <TD><FONT size=3D-1>&nbsp;</FONT></TD>
+                <TD><FONT size=3D-1><A=20
+                  =
+href=3D"http://planetmath.org/?op=3Dmscbrowse&amp;from=3Dobjects&amp;id=3D=
+26C05">26C05</A>=20
+                  <FONT size=3D-2>(Real functions :: Polynomials, =
+rational=20
+                  functions :: Polynomials: analytic properties,=20
+                  etc.)</FONT></FONT></TD></TR>
+              <TR>
+                <TD><FONT size=3D-1>&nbsp;</FONT></TD>
+                <TD><FONT size=3D-1><A=20
+                  =
+href=3D"http://planetmath.org/?op=3Dmscbrowse&amp;from=3Dobjects&amp;id=3D=
+33B99">33B99</A>=20
+                  <FONT size=3D-2>(Special functions :: Elementary =
+classical=20
+                  functions :: Miscellaneous)</FONT></FONT></TD></TR>
+              <TR>
+                <TD><FONT size=3D-1>&nbsp;</FONT></TD>
+                <TD><FONT size=3D-1><A=20
+                  =
+href=3D"http://planetmath.org/?op=3Dmscbrowse&amp;from=3Dobjects&amp;id=3D=
+33E30">33E30</A>=20
+                  <FONT size=3D-2>(Special functions :: Other special =
+functions ::=20
+                  Other functions coming from differential, difference =
+and=20
+                  integral=20
+equations)</FONT></FONT></TD></TR></TBODY></TABLE><BR></TD></TR>
+        <TR>
+          <TD></TD></TR>
+        <TR>
+          <TD></TD></TR>
+        <TR>
+          <TD><!-- clear box -->
+            <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%">
+              <TBODY>
+              <TR>
+                <TD>
+                  <TABLE width=3D"100%">
+                    <TBODY>
+                    <TR>
+                      <TD bgColor=3D#000000><!-- title box -->
+                        <TABLE cellSpacing=3D0 cellPadding=3D1 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD width=3D"100%" bgColor=3D#003399><FONT=20
+                              class=3Dbox_title>Pending Errata and =
+Addenda=20
+                            =
+</FONT></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD><!-- content box -->
+                  <TABLE cellSpacing=3D2 cellPadding=3D0 width=3D"100%">
+                    <TBODY>
+                    <TR>
+                      <TD>None.
+                        <CENTER>[ <A=20
+                        =
+href=3D"http://planetmath.org/?op=3Dgetcors&amp;id=3D7061">View=20
+                        all 1</A>=20
+            =
+]</CENTER></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><!-- end =
+clear box --></TD></TR>
+        <TR>
+          <TD><!-- clear box -->
+            <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%">
+              <TBODY>
+              <TR>
+                <TD>
+                  <TABLE width=3D"100%">
+                    <TBODY>
+                    <TR>
+                      <TD bgColor=3D#000000><!-- title box -->
+                        <TABLE cellSpacing=3D0 cellPadding=3D1 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD width=3D"100%" bgColor=3D#003399><FONT=20
+                              class=3Dbox_title>Discussion=20
+                        =
+</FONT></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD><!-- content box -->
+                  <TABLE cellSpacing=3D2 cellPadding=3D0 width=3D"100%">
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD align=3Dleft>
+                              <FORM action=3D/ method=3Dget>Style: =
+<SELECT=20
+                              name=3Dmsgstyle><OPTION=20
+                                value=3Dflat>Flat</OPTION><OPTION =
+value=3Dthreaded=20
+                                selected>Threaded</OPTION></SELECT> =
+Expand:=20
+                              <SELECT name=3Dmsgexpand><OPTION=20
+                                value=3D-1>all</OPTION><OPTION=20
+                                value=3D0>none</OPTION><OPTION value=3D1 =
+
+                                selected>1</OPTION><OPTION=20
+                                value=3D2>2</OPTION><OPTION=20
+                                value=3D3>3</OPTION><OPTION=20
+                                value=3D4>4</OPTION><OPTION=20
+                                value=3D5>5</OPTION><OPTION=20
+                                value=3D6>6</OPTION><OPTION=20
+                                value=3D7>7</OPTION><OPTION=20
+                                value=3D8>8</OPTION><OPTION=20
+                              value=3D9>9</OPTION></SELECT> Order: =
+<SELECT=20
+                              name=3Dmsgorder><OPTION value=3Dasc>Oldest =
+
+                                First</OPTION><OPTION value=3Ddesc =
+selected>Newest=20
+                                first</OPTION></SELECT> <INPUT =
+type=3Dhidden=20
+                              value=3Dobjects name=3Dfrom> <INPUT =
+type=3Dhidden=20
+                              value=3D7061 name=3Did> <INPUT =
+type=3Dhidden=20
+                              value=3Dgetobj name=3Dop> <INPUT =
+type=3Dsubmit value=3Dreload> </FORM></TD>
+                            <TD align=3Dmiddle><FONT size=3D-1><B><A=20
+                              =
+href=3D"http://planetmath.org/?op=3Dgetobj&amp;from=3Dcollab&amp;id=3D55"=
+>forum=20
+                              policy</A> =
+</B></FONT></TD></TR></TBODY></TABLE>
+                        <P>No messages.=20
+            </P></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><!-- =
+end clear box --></TD></TR>
+        <TR>
+          <TD><!-- standard box -->
+            <TABLE width=3D"100%">
+              <TBODY>
+              <TR>
+                <TD bgColor=3D#000000>
+                  <TABLE cellSpacing=3D0 cellPadding=3D1 width=3D"100%" =
+border=3D0><!-- title -->
+                    <TBODY>
+                    <TR>
+                      <TD width=3D"100%" bgColor=3D#003399><FONT=20
+                        class=3Dbox_title>Interact </FONT></TD></TR><!-- =
+content -->
+                    <TR>
+                      <TD width=3D"100%" bgColor=3D#dddddd>
+                        <CENTER><A=20
+                        =
+href=3D"http://planetmath.org/?op=3Dpostmsg&amp;from=3Dobjects&amp;id=3D7=
+061">post</A>=20
+                        | <A=20
+                        =
+href=3D"http://planetmath.org/?op=3Dcorrect&amp;from=3Dobjects&amp;id=3D7=
+061">correct</A>=20
+                        | <A=20
+                        =
+href=3D"http://planetmath.org/?op=3Dupdatereq&amp;identifier=3DHermitePol=
+ynomials">update=20
+                        request</A> | <A=20
+                        =
+href=3D"http://planetmath.org/?op=3Dadden&amp;class=3Dmsc%3A12D99%2C%20ms=
+c%3A26A09%2C%20msc%3A26C05%2C%20msc%3A33B99%2C%20msc%3A33E30&amp;type=3DD=
+erivation&amp;parent=3DHermitePolynomials&amp;title=3Dderivation%20of%20H=
+ermite%20polynomials">add=20
+                        derivation</A> | <A=20
+                        =
+href=3D"http://planetmath.org/?op=3Dadden&amp;class=3Dmsc%3A12D99%2C%20ms=
+c%3A26A09%2C%20msc%3A26C05%2C%20msc%3A33B99%2C%20msc%3A33E30&amp;type=3DE=
+xample&amp;parent=3DHermitePolynomials&amp;title=3Dexample%20of%20Hermite=
+%20polynomials">add=20
+                        example</A> | <A=20
+                        =
+href=3D"http://planetmath.org/?op=3Dadden&amp;class=3Dmsc%3A12D99%2C%20ms=
+c%3A26A09%2C%20msc%3A26C05%2C%20msc%3A33B99%2C%20msc%3A33E30&amp;parent=3D=
+HermitePolynomials&amp;title=3Dsomething%20related%20to%20Hermite%20polyn=
+omials">add=20
+                        =
+(any)</A></CENTER></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><!-=
+- end standard box =
+--></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></BODY></HTML>
+
+------=_NextPart_000_01A9_01CA54D5.B05554F0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://aux.planetmath.org/images/paypal_donate.gif
+
+R0lGODlhPgAfAMQAADJXgRVBcMHN2k5uktHV2oiguLTE08jT3tfh6QAhWPb4+kRli+fs8KS3yp2w
+xOPx93CMqeHn7VZ2mHyWsef1+u7x9GiDoiRIc7u7u+np6QY0ZiI2TZSnvQAAAOr3/P///yH5BAAA
+AAAALAAAAAA+AB8AAAX/INdwZGmeaKquLFlYQ+HNdG3feK7vNlB8wKBwSCwaj8jhxfK5PZ5Qng4a
+3T0K2AJn9sksiYKAZqwJLBxJIuNCHgMmFaNAAwAEAMAK4WubXAyABg4WGhYzFIg8BgEOgQ0QdxQe
+iJIzEwAVCgMSM3pfQwtMQw2FC3UAMQOqAxAMEqp1RAgBm6cLHJpMCgAceXtMNQ8BDR8MCwMIHxUX
+ARZZEmOsA4UBEBAXEkAWCwZA085YFmYXvQgaAp2/QwcBBB8GCQloFQE/QgXyHwjxxBEBvQw0JIDg
+bcAQA2MOfHAQIIgnYDQ4XFCwcAnFA4UkXADg7sDADxE0LPCWIJkAVBE+/ygwY2FjNwYBAlCEQePh
+EBiyACTwYeAAgw8cEhhcJuBDgwQX4gipYAHphJ4/MRr84MOhuhoXfigQIOBRgAT2DnT7IGGnAgXE
+1ggFckCAgQIXEkigGKFBHAdgQQYwUFNdkJBFMZY5NvHDhLW7FgT4qS3AhQnK2NyBluxogDhNuy1K
+6YvPjAaXgV44gMBDAzwfDjiIM4uhwg9zCgQoas4AAgpzUkbgwJnZz0s1bAaBsICBq6mpNaxWcMBn
+g9EaiO2yMAcBA7gOq2WKYIABRgDGFxC06tnDgjYTakDQcIENmQUSAFCcEADBejKcaJBy3KZ/g+B+
+AUEAV1wpFQQBDjggQNZbB0yggTvmlEOgAJwFgUCCPU1IIEXkQSTFDbNkVQAAC1Ty4YnCpVEEB6eQ
+mIyKMHbm4Yk01qhDijHmqGMRNtno4499fYJEB0R2EESRQBiZ5JFEJlmkkU8m0eMOHdBQZZUzXInl
+llZ2mSWKAR6h5AdQHknmmUo+OeaaTUp5FZVdYunBlVly+eWdc4IppJhIOpmmmWcuKSiZfR4xJZCI
+ngjEBUNl4OijkEYq6aSUVmppBggYsFGmGHTq6aeghirqqKSW2ikHG7S3waqsturqq7DGKuusroYA
+ADs=
+
+------=_NextPart_000_01A9_01CA54D5.B05554F0
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://planetmath.org/files/style.css
+
+BODY {
+	FONT-FAMILY: sans-serif, arial
+}
+INS.diffadd {
+	COLOR: #007f00; TEXT-DECORATION: none
+}
+DEL.diffdel {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+SPAN.nodiff {
+=09
+}
+A:link {
+	COLOR: #0000ff; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #0000ff; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #0000ff; TEXT-DECORATION: underline
+}
+A.spell:link {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+A.spell:visited {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+A.spell:active {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+A.spell:hover {
+	COLOR: #ff0000; TEXT-DECORATION: underline
+}
+A.indicator:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.indicator:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.indicator:active {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.indicator:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+H1.pmentry {
+	FONT-SIZE: x-large
+}
+H2.pmentry {
+	FONT-SIZE: large
+}
+H3.pmentry {
+=09
+}
+H4.pmentry {
+=09
+}
+H5.pmentry {
+=09
+}
+.attachmentbox {
+	BORDER-RIGHT: 1px dashed; PADDING-RIGHT: 2px; BORDER-TOP: 1px dashed; =
+PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: 1px dashed; =
+PADDING-TOP: 2px; BORDER-BOTTOM: 1px dashed
+}
+.newsbox {
+	BORDER-RIGHT: 1px dashed; BORDER-TOP: 1px dashed; BORDER-LEFT: 1px =
+dashed; BORDER-BOTTOM: 1px dashed; BACKGROUND-COLOR: #cccccc
+}
+.menuitems {
+	LINE-HEIGHT: 100%
+}
+.code {
+	FONT-FAMILY: courier, monospace
+}
+FONT.box_title {
+	COLOR: #ffffff; FONT-FAMILY: sans-serif, arial, helvetica
+}
+.indexfont {
+	FONT-FAMILY: monospace, courier, fixed
+}
+.source {
+	FONT-FAMILY: monospace, courier, fixed
+}
+.small {
+	FONT-SIZE: 75%; FONT-FAMILY: sans-serif, arial, helvetica
+}
+.smaller {
+	FONT-SIZE: 60%; FONT-FAMILY: sans-serif,arial,helvetica
+}
+P.newstitle {
+	MARGIN-TOP: 0em; MARGIN-BOTTOM: 0em; MARGIN-LEFT: 1em; TEXT-INDENT: =
+-1em
+}
+DIV.tickeritem {
+	MARGIN-TOP: 0em; MARGIN-BOTTOM: 0em; MARGIN-LEFT: 1em; TEXT-INDENT: =
+-0.5em
+}
+P.center {
+	TEXT-ALIGN: center
+}
+SPAN.textit {
+	FONT-STYLE: italic
+}
+SPAN.textbf {
+	FONT-WEIGHT: bold
+}
+
+------=_NextPart_000_01A9_01CA54D5.B05554F0
+Content-Type: application/x-javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://aux.planetmath.org/jsMath/easy/load.js
+
+/**********************************************************************=0A=
+ *=0A=
+ *   Customize the values given below to suit your needs.=0A=
+ *   You can make additional copies of this file with=0A=
+ *   different customizated settings if you need to load=0A=
+ *   jsMath with different parameters.=0A=
+ *   =0A=
+ *   Load this page via:=0A=
+ *   =0A=
+ *   <SCRIPT SRC=3D"path-to-jsMath/easy/load.js"></SCRIPT>=0A=
+ *   =0A=
+ *   (If you are including this file into your page via Server-Side=0A=
+ *   Includes, you should remove line above.)=0A=
+ *   =0A=
+ *   You can make copies of this file with different settings=0A=
+ *   if you need to have several different configurations.=0A=
+ *   =0A=
+ **********************************************************************/=0A=
+=0A=
+if (!window.jsMath) {window.jsMath =3D {}}=0A=
+=0A=
+jsMath.Easy =3D {=0A=
+  //=0A=
+  //  The URL of the root jsMath directory on your server=0A=
+  //  (it must be in the same domain as the HTML page).=0A=
+  //  It should include "http://yoursite.com/", or should=0A=
+  //  be relative to the root of your server.  It is possible=0A=
+  //  to be a relative URL, but it will be relative to the=0A=
+  //  HTML page loading this file.=0A=
+  //  =0A=
+  //  If you leave this blank, jsMath will try to look it up from=0A=
+  //  the URL where it loaded this file, but that may not work.=0A=
+  //=0A=
+  root: "http://aux.planetmath.org/jsMath/",=0A=
+  =0A=
+  //=0A=
+  //  The default scaling factor for mathematics compared to the=0A=
+  //  surrounding text.=0A=
+  //=0A=
+  scale: 120,=0A=
+  =0A=
+  //=0A=
+  //  1 means use the autoload plug-in to decide if jsMath should be =
+loaded=0A=
+  //  0 means always load jsMath=0A=
+  //=0A=
+  autoload: 0,=0A=
+=0A=
+  //=0A=
+  //  Setting any of these will cause the tex2math plugin to be used=0A=
+  //  to add the <DIV> and <SPAN> tags that jsMath needs.  See the=0A=
+  //  documentation for the tex2math plugin for more information.=0A=
+  //=0A=
+  processSlashParens: 1,       // process \(...\) in text?=0A=
+  processSlashBrackets: 1,     // process \[...\] in text?=0A=
+  processDoubleDollars: 1,     // process $$...$$ in text?=0A=
+  processSingleDollars: 1,     // process $...$ in text?=0A=
+  processLaTeXenvironments: 1, // process \begin{xxx}...\end{xxx} =
+outside math mode?=0A=
+  fixEscapedDollars: 0,        // convert \$ to $ outside of math mode?=0A=
+  doubleDollarsAreInLine: 0,   // make $$...$$ be in-line math?=0A=
+  allowDisableTag: 1,          // allow ID=3D"tex2math_off" to disable =
+tex2math?=0A=
+  //=0A=
+  //  If you want to use your own custom delimiters for math instead=0A=
+  //  of the usual ones, then uncomment the following four lines and=0A=
+  //  insert your own delimiters within the quotes.  You may want to=0A=
+  //  turn off processing of the dollars and other delimiters above=0A=
+  //  as well, though you can use them in combination with the=0A=
+  //  custom delimiters if you wish.  See the tex2math documentation=0A=
+  //  for more details.=0A=
+  //  =0A=
+  //customDelimiters: [=0A=
+  //  '[math]','[/math]',        // to begin and end in-line math=0A=
+  //  '[display]','[/display]'   // to begin and end display math=0A=
+  //],=0A=
+=0A=
+  //=0A=
+  //  Disallow the use of the @(...) mechanism for including raw HTML=0A=
+  //  in the contents of \hbox{}?  (If used in a content-management =
+system=0A=
+  //  where users are allowed to enter mathematics, setting this to 0=0A=
+  //  would allow them to enter arbitrary HTML code within their=0A=
+  //  math formulas, and that poses a security risk.)=0A=
+  //=0A=
+  safeHBoxes: 1,=0A=
+=0A=
+  //=0A=
+  //  Show TeX source when mathematics is double-clicked?=0A=
+  //=0A=
+  allowDoubleClicks: 1,=0A=
+  =0A=
+  //=0A=
+  //  Show jsMath font warning messages?  (Disabling this prevents yours=0A=
+  //  users from finding out that they can have a better experience on =
+your=0A=
+  //  site by installing some fonts, so don't disable this).=0A=
+  //=0A=
+  showFontWarnings: 1,=0A=
+  =0A=
+  //=0A=
+  //  Use "Process" or "ProcessBeforeShowing".  See the jsMath=0A=
+  //  author's documentation for the difference between these=0A=
+  //  two routines.=0A=
+  //=0A=
+  method: "Process",=0A=
+=0A=
+  //=0A=
+  //  List of plug-ins and extensions that you want to be=0A=
+  //  loaded automatically.  E.g.=0A=
+  //      ["plugins/mimeTeX.js","extensions/AMSsymbols.js"]=0A=
+  //  =0A=
+  loadFiles: ["extensions/AMSsymbols.js", "extensions/AMSmath.js", =
+"extensions/newcommand.js", "extensions/eqn-number.js", =
+"extensions/boldsymbol.js", "extensions/HTML.js", "plugins/mimeTeX.js"],=0A=
+  =0A=
+  //=0A=
+  //  List of fonts to load automatically.  E.g.=0A=
+  //      ["cmmib10"]=0A=
+  //=0A=
+  loadFonts: [ "bbold10", "eufb10", "eurm10", "msam10" , "stmary10",=0A=
+		"cmbsy10", "eufm10", "eusb10", "lasy10", "msbm10", "wasy10",=0A=
+		"cmmib10", "eurb10", "eusm10", "lasyb10", "rsfs10", "wasyb10" ],=0A=
+  =0A=
+//bbold10  eufb10  eurm10  getAllFonts.pl  msam10  stmary10=0A=
+//cmbsy10  eufm10  eusb10  lasy10          msbm10  wasy10=0A=
+//cmmib10  eurb10  eusm10  lasyb10         rsfs10  wasyb10=0A=
+=0A=
+=0A=
+  //=0A=
+  //  List of macros to define.  These are of the form=0A=
+  //      name: value=0A=
+  //  where 'value' is the replacement text for the macro \name.=0A=
+  //  The 'value' can also be [value,n] where 'value' is the replacement=0A=
+  //  text and 'n' is the number of parameters for the macro.=0A=
+  //  Note that backslashes must be doubled in the replacement string.=0A=
+  //  E.g.,=0A=
+  //      {=0A=
+  //        RR: '{\\bf R}',=0A=
+  //        bold: ['{\\bf #1}', 1]=0A=
+  //      }=0A=
+  //=0A=
+  macros: {},=0A=
+  =0A=
+  //=0A=
+  //  Allow jsMath to enter global mode?=0A=
+  //  (Uses frames, so may not always work with complex web sites)=0A=
+  //=0A=
+  allowGlobal: 1,=0A=
+  =0A=
+  //=0A=
+  //  Disable image fonts?  (In case you don't load them on your server.)=0A=
+  //=0A=
+  noImageFonts: 0=0A=
+  =0A=
+};=0A=
+=0A=
+jsMath.Parser =3D {prototype: {macros: {=0A=
+    mathfrak: ['Macro','{\\eufm #1}',1],=0A=
+    operatorname: ['Macro','\\mathop{\\rm #1}',1],=0A=
+    implies: ['Macro','\\Rightarrow'],=0A=
+    Diamond: ['Macro','\\diamondsuit'],=0A=
+    mod: ['Macro', '\\mathop{\\rm mod}']=0A=
+//    mathbbmss: ['Macro','\\mathbbm']=0A=
+  }}};=0A=
+=0A=
+jsMath.Font =3D { =0A=
+Load: function (name) {jsMath.Setup.Script(this.URL(name),0)} =0A=
+}; =0A=
+=0A=
+=0A=
+/****************************************************************/=0A=
+/****************************************************************/=0A=
+//=0A=
+//            DO NOT MAKE CHANGES BELOW THIS=0A=
+//=0A=
+/****************************************************************/=0A=
+/****************************************************************/=0A=
+=0A=
+if (jsMath.Easy.root =3D=3D "") {=0A=
+  jsMath.Easy.root =3D document.getElementsByTagName("script");=0A=
+  jsMath.Easy.root =3D jsMath.Easy.root[jsMath.Easy.root.length-1].src=0A=
+  if (jsMath.Easy.root.match(/\/easy\/[^\/]*$/)) {=0A=
+    jsMath.Easy.root =3D jsMath.Easy.root.replace(/\/easy\/[^\/]*$/,"");=0A=
+  } else {=0A=
+    jsMath.Easy.root =3D =
+jsMath.Easy.root.replace(/\/(jsMath\/(easy\/)?)?[^\/]*$/,"/jsMath");=0A=
+  }=0A=
+}=0A=
+jsMath.Easy.root =3D jsMath.Easy.root.replace(/\/$/,""); // trim =
+trailing "/" if any=0A=
+=0A=
+document.write('<SCRIPT =
+SRC=3D"'+jsMath.Easy.root+'/jsMath-easy-load.js"><'+'/SCRIPT>');=0A=
+=0A=
+
+------=_NextPart_000_01A9_01CA54D5.B05554F0--

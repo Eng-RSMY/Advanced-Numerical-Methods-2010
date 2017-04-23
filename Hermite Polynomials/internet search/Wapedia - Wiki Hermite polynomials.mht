@@ -1,0 +1,2343 @@
+From: "Saved by Windows Internet Explorer 7"
+Subject: Wapedia - Wiki: Hermite polynomials
+Date: Sat, 24 Oct 2009 18:15:06 +0330
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_01B9_01CA54D5.E9F47600"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.0.6000.16386
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://wapedia.mobi/en/Hermite_polynomials
+
+=EF=BB=BF<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xml:lang=3D"en" =
+xmlns=3D"http://www.w3.org/1999/xhtml"><HEAD><TITLE>Wapedia - Wiki: =
+Hermite polynomials</TITLE>
+<SCRIPT src=3D"http://wapedia.mobi/nowiki/js/wapedia.js"=20
+type=3Dtext/javascript></SCRIPT>
+
+<META http-equiv=3DContent-Type content=3D"text/html; =
+charset=3Dutf-8"><LINK=20
+href=3D"/favicon.ico" rel=3D"shortcut icon"><LINK=20
+href=3D"http://wapedia.mobi/nowiki/css/wap2.css?layout=3Dmodern&amp;theme=
+=3Dwhite&amp;resdensity=3D1&amp;ci=3D33"=20
+type=3Dtext/css rel=3Dstylesheet><LINK media=3Dhandheld=20
+href=3D"http://wapedia.mobi/nowiki/css/wap2.css?layout=3Dmodern&amp;theme=
+=3Dwhite&amp;resdensity=3D1&amp;ci=3D33"=20
+type=3Dtext/css rel=3Dstylesheet>
+<META content=3D"MSHTML 6.00.6000.16386" name=3DGENERATOR></HEAD>
+<BODY>
+<TABLE cellSpacing=3D0 cellPadding=3D0>
+  <TBODY>
+  <TR>
+    <TD style=3D"BORDER-RIGHT: #aaaaaa 1px solid" =
+width=3D250>&nbsp;</TD>
+    <TD style=3D"BORDER-BOTTOM: #aaaaaa 1px solid" vAlign=3Dtop>
+      <DIV class=3Dheader>
+      <TABLE=20
+      style=3D"BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; =
+BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none"=20
+      width=3D"100%">
+        <TBODY>
+        <TR>
+          <TD style=3D"WIDTH: 90px"><A =
+href=3D"http://wapedia.mobi/en/"><IMG=20
+            style=3D"PADDING-RIGHT: 0px; PADDING-LEFT: 0px; =
+PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px"=20
+            height=3D25 alt=3DWapedia =
+src=3D"http://wapedia.mobi/pics/logo.gif"=20
+            width=3D90 border=3D0></A></TD>
+          <TD class=3Dheadmenu style=3D"TEXT-ALIGN: right" vAlign=3Dtop=20
+            align=3Dright>&lt; <A accessKey=3D0=20
+            href=3D"http://wapedia.mobi/en/">Home</A> =
+</TD></TR></TBODY></TABLE>
+      <DIV class=3Dsubheader>Wiki: Hermite polynomials=20
+      <SMALL>(1/10)</SMALL></DIV></DIV>
+      <DIV class=3Dtopmessage><B>Search Wikipedia!</B><BR>
+      <FORM=20
+      style=3D"PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: =
+0px; MARGIN: 0px; PADDING-TOP: 0px"=20
+      action=3D/en/Special:Search method=3Dget><INPUT =
+class=3Dsearchinput=20
+      value=3D"hermite polynomial" name=3Dsearch><BR><INPUT =
+type=3Dsubmit value=3DSearch name=3Dsks><INPUT=20
+      type=3Dhidden value=3Dtopbox name=3Dr></FORM></DIV>
+      <DIV class=3Dcontent>
+      <P class=3Droot>In <A=20
+      href=3D"http://wapedia.mobi/en/Mathematics">mathematics</A>, the=20
+      <STRONG>Hermite polynomials</STRONG> are a classical <A=20
+      =
+href=3D"http://wapedia.mobi/en/Orthogonal_polynomial">orthogonal</A> <A=20
+      href=3D"http://wapedia.mobi/en/Polynomial_sequence">polynomial =
+sequence</A>=20
+      that arise in <A=20
+      href=3D"http://wapedia.mobi/en/Probability">probability</A>, such =
+as the <A=20
+      href=3D"http://wapedia.mobi/en/Edgeworth_series">Edgeworth =
+series</A>; in <A=20
+      href=3D"http://wapedia.mobi/en/Combinatorics">combinatorics</A>, =
+as an=20
+      example of an <A =
+href=3D"http://wapedia.mobi/en/Appell_sequence">Appell=20
+      sequence</A>, obeying the <A=20
+      href=3D"http://wapedia.mobi/en/Umbral_calculus">umbral =
+calculus</A>; and in=20
+      <A href=3D"http://wapedia.mobi/en/Physics">physics</A>, where they =
+give rise=20
+      to the <A =
+href=3D"http://wapedia.mobi/en/Eigenstate">eigenstates</A> of the=20
+      <A =
+href=3D"http://wapedia.mobi/en/Quantum_harmonic_oscillator">quantum=20
+      harmonic oscillator</A>. They are named in honor of <A=20
+      href=3D"http://wapedia.mobi/en/Charles_Hermite">Charles =
+Hermite</A>.</P>
+      <P><STRONG>Contents:</STRONG><BR><A=20
+      href=3D"http://wapedia.mobi/en/Hermite_polynomials#1.">1.=20
+      Definition</A><BR><A=20
+      href=3D"http://wapedia.mobi/en/Hermite_polynomials?t=3D2.#2.">2.=20
+      Properties</A><BR><A=20
+      href=3D"http://wapedia.mobi/en/Hermite_polynomials?t=3D3.#3.">3. =
+Relations to=20
+      other functions</A><BR><A=20
+      href=3D"http://wapedia.mobi/en/Hermite_polynomials?t=3D3.#4.">4. =
+Differential=20
+      operator representation</A><BR><A=20
+      href=3D"http://wapedia.mobi/en/Hermite_polynomials?t=3D5.#5.">5. =
+Contour=20
+      integral representation</A><BR><A=20
+      href=3D"http://wapedia.mobi/en/Hermite_polynomials?t=3D5.#6.">6.=20
+      Generalizations</A><BR><A=20
+      href=3D"http://wapedia.mobi/en/Hermite_polynomials?t=3D7.#7.">7.=20
+      Applications</A><BR><A=20
+      href=3D"http://wapedia.mobi/en/Hermite_polynomials?t=3D8.#8.">8.=20
+      References</A><BR><A=20
+      href=3D"http://wapedia.mobi/en/Hermite_polynomials?t=3D8.#9.">9. =
+External=20
+      links</A><BR></P>
+      <H3 class=3Dhead1 id=3D1.>1. Definition</H3>
+      <P class=3Droot>The Hermite polynomials are defined either by</P>
+      <DL>
+        <DD><IMG=20
+        =
+src=3D"http://wapedia.mobi/math/SF9uKHgpPSgtMSlebiBlXnt4XjIvMn1cZnJhY3tkX=
+m59e2R4Xm59ZV57LXheMi8yfVwsXCE=3D">=20
+        </DD></DL>
+      <P class=3Droot>(the <STRONG>"probabilists' Hermite =
+polynomials"</STRONG>),=20
+      or sometimes by</P>
+      <DL>
+        <DD><IMG=20
+        =
+src=3D"http://wapedia.mobi/math/SF9uKHgpPSgtMSlebiBlXnt4XjJ9XGZyYWN7ZF5uf=
+XtkeF5ufWVeey14XjJ9XCxcIQ=3D=3D">=20
+        </DD></DL>
+      <P class=3Droot>(the <STRONG>"physicists' Hermite =
+polynomials"</STRONG>).=20
+      These two definitions are <EM>not</EM> exactly equivalent; either =
+is a=20
+      rescaling of the other, to wit</P>
+      <DL>
+        <DD><IMG=20
+        =
+src=3D"http://wapedia.mobi/math/SF9uXlxtYXRocm17cGh5c30oeCkgPSAyXntuLzJ9S=
+F9uXlxtYXRocm17cHJvYn0oXHNxcnR7Mn1cLHgpLlwsXCE=3D">=20
+        </DD></DL>
+      <P class=3Droot>These are Hermite polynomial sequences of =
+different=20
+      variances; see the material on variances below.</P>
+      <P class=3Droot>Below, we usually follow the first convention. =
+That=20
+      convention is often preferred by probabilists because</P>
+      <DL>
+        <DD><IMG=20
+        =
+src=3D"http://wapedia.mobi/math/XGZyYWN7MX17XHNxcnR7MlxwaX19ZV57LXheMi8yf=
+Q=3D=3D">=20
+        </DD></DL>
+      <P class=3Droot>is the <A=20
+      =
+href=3D"http://wapedia.mobi/en/Probability_density_function">probability =
+
+      density function</A> for the <A=20
+      href=3D"http://wapedia.mobi/en/Normal_distribution">normal =
+distribution</A>=20
+      with <A href=3D"http://wapedia.mobi/en/Expected_value">expected =
+value</A> 0=20
+      and <A href=3D"http://wapedia.mobi/en/Standard_deviation">standard =
+
+      deviation</A> 1.</P>
+      <DIV class=3Dpic_root><A class=3Dimage id=3D_href=20
+      href=3D"http://wapedia.mobi/en/File:Hermite_poly.svg" =
+name=3D_href><IMG=20
+      height=3D94=20
+      =
+src=3D"http://pic.srv104.wapedia.mobi/thumb/fcd614541/en/fixed/118/94/Her=
+mite_poly.svg?format=3Djpg,png,gif,wbmp"=20
+      width=3D118></A>=20
+      <DIV class=3Dpic_text><BR>The first five (probabilists') Hermite=20
+      polynomials.</DIV></DIV>
+      <P class=3Droot>The first eleven probabilists' Hermite polynomials =
+are:</P>
+      <DL>
+        <DD><IMG src=3D"http://wapedia.mobi/math/SF8wKHgpPTFcLA=3D=3D">=20
+        <DD><IMG src=3D"http://wapedia.mobi/math/SF8xKHgpPXhcLA=3D=3D">=20
+        <DD><IMG =
+src=3D"http://wapedia.mobi/math/SF8yKHgpPXheMi0xXCw=3D">=20
+        <DD><IMG src=3D"http://wapedia.mobi/math/SF8zKHgpPXheMy0zeFws">=20
+        <DD><IMG =
+src=3D"http://wapedia.mobi/math/SF80KHgpPXheNC02eF4yKzNcLA=3D=3D">=20
+        <DD><IMG=20
+        =
+src=3D"http://wapedia.mobi/math/SF81KHgpPXheNS0xMHheMysxNXhcLA=3D=3D">=20
+        <DD><IMG=20
+        =
+src=3D"http://wapedia.mobi/math/SF82KHgpPXheNi0xNXheNCs0NXheMi0xNVws">=20
+        <DD><IMG=20
+        =
+src=3D"http://wapedia.mobi/math/SF83KHgpPXheNy0yMXheNSsxMDV4XjMtMTA1eFws"=
+>=20
+
+        <DD><IMG=20
+        =
+src=3D"http://wapedia.mobi/math/SF84KHgpPXheOC0yOHheNisyMTB4XjQtNDIweF4yK=
+zEwNVws">=20
+
+        <DD><IMG=20
+        =
+src=3D"http://wapedia.mobi/math/SF85KHgpPXheOS0zNnheNyszNzh4XjUtMTI2MHheM=
+ys5NDV4XCw=3D">=20
+
+        <DD><IMG=20
+        =
+src=3D"http://wapedia.mobi/math/SF97MTB9KHgpPXheezEwfS00NXheOCs2MzB4XjYtM=
+zE1MHheNCs0NzI1eF4yLTk0NVws">=20
+        </DD></DL>
+      <DIV class=3Dpic_root><A class=3Dimage id=3D_href=20
+      href=3D"http://wapedia.mobi/en/File:Hermite_poly_phys.svg" =
+name=3D_href><IMG=20
+      height=3D94=20
+      =
+src=3D"http://pic.srv104.wapedia.mobi/thumb/fcd614541/en/fixed/118/94/Her=
+mite_poly_phys.svg?format=3Djpg,png,gif,wbmp"=20
+      width=3D118></A>=20
+      <DIV class=3Dpic_text><BR>The first five (physicists') Hermite=20
+      polynomials.</DIV></DIV>
+      <P class=3Droot>and the first eleven physicists' Hermite =
+polynomials=20
+are:</P>
+      <DL>
+        <DD><IMG src=3D"http://wapedia.mobi/math/SF8wKHgpPTFcLA=3D=3D">=20
+        <DD><IMG src=3D"http://wapedia.mobi/math/SF8xKHgpPTJ4XCw=3D">=20
+        <DD><IMG src=3D"http://wapedia.mobi/math/SF8yKHgpPTR4XjItMlws">=20
+        <DD><IMG =
+src=3D"http://wapedia.mobi/math/SF8zKHgpPTh4XjMtMTJ4XCw=3D">=20
+        <DD><IMG=20
+        =
+src=3D"http://wapedia.mobi/math/SF80KHgpPTE2eF40LTQ4eF4yKzEyXCw=3D">=20
+        <DD><IMG=20
+        =
+src=3D"http://wapedia.mobi/math/SF81KHgpPTMyeF41LTE2MHheMysxMjB4XCw=3D"> =
+
+        <DD><IMG=20
+        =
+src=3D"http://wapedia.mobi/math/SF82KHgpPTY0eF42LTQ4MHheNCs3MjB4XjItMTIwX=
+Cw=3D">=20
+
+        <DD><IMG=20
+        =
+src=3D"http://wapedia.mobi/math/SF83KHgpPTEyOHheNy0xMzQ0eF41KzMzNjB4XjMtM=
+TY4MHhcLA=3D=3D">=20
+
+        <DD><IMG=20
+        =
+src=3D"http://wapedia.mobi/math/SF84KHgpPTI1NnheOC0zNTg0eF42KzEzNDQweF40L=
+TEzNDQweF4yKzE2ODBcLA=3D=3D">=20
+
+        <DD><IMG=20
+        =
+src=3D"http://wapedia.mobi/math/SF85KHgpPTUxMnheOS05MjE2eF43KzQ4Mzg0eF41L=
+TgwNjQweF4zKzMwMjQweFws">=20
+
+        <DD><IMG=20
+        =
+src=3D"http://wapedia.mobi/math/SF97MTB9KHgpPTEwMjR4XnsxMH0tMjMwNDB4XjgrM=
+TYxMjgweF42LTQwMzIwMHheNCszMDI0MDB4XjItMzAyNDBcLA=3D=3D">=20
+        </DD></DL></DIV>
+      <DIV class=3Dfooter id=3Dbottom>&lt;&lt;Previous <A accessKey=3D9=20
+      =
+href=3D"http://wapedia.mobi/en/Hermite_polynomials?t=3D2.">Next&gt;&gt;</=
+A><BR><B>1</B>=20
+      <A =
+href=3D"http://wapedia.mobi/en/Hermite_polynomials?t=3D2.">2</A> <A=20
+      href=3D"http://wapedia.mobi/en/Hermite_polynomials?t=3D2.3.">3</A> =
+.. <A=20
+      href=3D"http://wapedia.mobi/en/Hermite_polynomials?t=3D8.">10</A> =
+<BR><A=20
+      accessKey=3D0 href=3D"http://wapedia.mobi/en/">Home</A> | <A=20
+      =
+href=3D"http://wapedia.mobi/en/Hermite_polynomials?p=3D9#license">License=
+</A></DIV>
+      <DIV class=3Dfoottext><A class=3Dfoottext=20
+      href=3D"http://wapedia.mobi/en/">Wapedia: For Wikipedia on mobile=20
+      phones</A></DIV></TD>
+    <TD style=3D"BORDER-LEFT: #aaaaaa 1px solid" vAlign=3Dtop =
+width=3D250>
+      <DIV=20
+      style=3D"BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 10px; =
+BORDER-TOP: black 1px solid; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; =
+MARGIN: 30px; BORDER-LEFT: black 1px solid; PADDING-TOP: 10px; =
+BORDER-BOTTOM: black 1px solid">
+      <SCRIPT type=3Dtext/javascript><!--=0A=
+google_ad_client =3D "pub-9847903488987529";=0A=
+/* Wapedia Desktop */=0A=
+google_ad_slot =3D "1214875698";=0A=
+google_ad_width =3D 120;=0A=
+google_ad_height =3D 600;=0A=
+//-->=0A=
+</SCRIPT>
+
+      <SCRIPT src=3D"" type=3Dtext/javascript>=0A=
+</SCRIPT>
+      </DIV></TD></TR></TBODY></TABLE></BODY></HTML>
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://wapedia.mobi/pics/logo.gif
+
+R0lGODlhWgAZAPcAAM0QatcPaN4Hb9oJa9gHZd8HdN4Nc94PedcQa94SbNwYadwScdwTedobedcX
+c80ha9chdtIseNsgddohetsrftI3e+YAYeIEbeMLbOoEbuoNbOMGcOMLc+QLeuwEcu0FeusKc+oM
+e+Qbb+MTbOMSdeQSe+Mce+oTdusTfOkbdOobfPAAbvQCdPIEevMLcvMMe/4DfPwIfPITe/Qde/EZ
+c+Mje+ErfekkfukqfekidfImfd8WgNsYgNIvgN8git8siNwog90yhNU9huUKg+sNguUUgOcSiOQa
+g+wSg+obg+kYifQNgvMPiP8HgvEHgvESgfUZiOQkg+YliOMqg+YqiOkhg+srhOstjOsiiusokOYx
+hOQ0i+M7iesyheszies8jeM6kOs8lfMjgfUijfQrg/Evjvgtif0jk/MzivU5md9NjtBGhNhSj997
+r+RCjuNJjOxLj+JFkuVLmepDk+xMlOxLnOdIl+RSluZUm+damutRkO1Une5YnOJYlPNFk/RBnfFL
+nfNam/BUm+5Aoe5KoOZdoexUpe9Wqe5ZovJco/ZYqOFknuZjpOZqoOtjpO1kqe9rp+loquFuqet1
+rOh3pet7s+9/uedztPNjpvRkqvFtp/NsrPpjrPloqf9tufposfFwqfR1tPB3vvJ5tPZ7ufx0s/t6
+tPh+uedquOyEreyEu++Ju+GQue6Uuu6bu/aAsPOCvPGKvPqKvvyEt/GVuv+AzPuLwv+LyvOSwfOS
+yPSay/yTxf2UzvmZxvuczfKcw++hyeylw+6k1ey61/yhyPGkx/mk1P6s1fus2vWm1vKy0/S92/20
+0v603P251fy73PGz3Pe+4f684ebF2O7B1vTD3vHK3fvC0/3C3PvK3fbL4/bO6fvD5PzK5PzL6ffD
+5f7L8vTU5PPc6fzR5f3T6/3b7PjZ5v/R8v7b8v7c+u/l5O7q6+z/9e3//PXj7frm5/3h6/Hs6fXr
+8/7j8/7j+/zr8/7s/fbp+/z/7ff28vT99fT+/f309f70/fv89f39/SH5BAAAAAAALAAAAABaABkA
+AAj+AP8JHEiwoMGD//YhHOjP30GHBCEi1KfPoD99DRFKXGhQYcJ9HiMO7FdxXzuQHQVuHNhuoEd5
+oyoZExgq0aN6Bft1DDkQo0WPEvvpdBly39CDOnkWDHnUqDUOGeoIrdJChjaCRkP6S9pSoEJ2BCty
+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
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://wapedia.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
+Z36W/F3LfiH6S1hMxyW9kXxSY+FcP2fBGz8J3jFUs/16jxVqWfZeqLQ8JwqE6CcWrHsnO4nAqC+t
+u1/XU4hy4yfBKxkWueTefEMxG9q0VUXrQ7hyMztyr9O5DqIHQRAEk5ZwunrIluv6FnNseXtDYZS7
+FAg51wclV06ZzonCQIHoQRAEb03wIvB8w5iY6HP15rnXlzH2nAcxl/xnr49QI0QPgiAI0f83lrtM
+IciX061P0dyuJTcI0YMgCIIrHTXX39dfTlfakhuE6LkRIAiCw4e55Fp+95fTbTUuG4ToQRAEwY7x
+1XEM3ybP5VvClrr+SxuKgRA9CIIgWN0Aa2nRp2eIBIJON7JZxvxjhUBZ8fY8lG2CED0IguAGRB86
+O6br2UP/jvTwoGB5x/Xx9n06rli//TyGxYAQPQiCIAheHv8CP0H+hQFY9gIAAAAldEVYdGNyZWF0
+ZS1kYXRlADIwMDktMTAtMjRUMTU6MzY6NTUrMDE6MDD/iAmdAAAAJXRFWHRtb2RpZnktZGF0ZQAy
+MDA5LTEwLTI0VDE1OjM2OjU1KzAxOjAwoDl/qQAAACJ0RVh0cHM6SGlSZXNCb3VuZGluZ0JveAAx
+NTJ4MjYrMjI5KzYyOFsyX+kAAAAldEVYdHBzOkxldmVsAEFkb2JlRm9udC0xLjE6IENNTUkxMiAx
+LjEwMAphVpbAAAAAQXRFWHRwczpTcG90Q29sb3ItMAAvdG1wLzMyMDA1X2Q5MzM5Yzg0ZTA1NTEw
+NmVlODFmZGJjZTZjOWIzMTFhLmR2aSAtZqXz2rsAAAAASUVORK5CYII=
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://wapedia.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
+AAAASUVORK5CYII=
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://wapedia.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
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://wapedia.mobi/math/XGZyYWN7MX17XHNxcnR7MlxwaX19ZV57LXheMi8yfQ==
+
+iVBORw0KGgoAAAANSUhEUgAAAGEAAAAvEAYAAACjxHj8AAAABmJLR0T///////8JWPfcAAAACXBI
+WXMAAAB4AAAAeACd9VpgAAAACXZwQWcAAABhAAAALwDEZlmbAAADhElEQVR42u2d7W3CMBCGu0JX
+YAVW6Aqs0BVYgRVYoSuwAhNUYgVWoFKjV9HZvthJDCTOw59XDd/1Pb4Pn83H4//28YGiW9b1f4H/
+2+HQ6eXS6dcXA4w2DYIMvdPTyf6tRwACujGPYAEBBBQQAAEFBEBAAQEQUEAABBQQAGHR47Hfd/rz
+Y6t8+nu/BwRA2AAIWtf5/LTXd7tOb7d5r38+AwIgrGA8YkMXGJ3e79NeVyCdTunXlecJ9XwOwQQE
+9I3jJMP8/p73/N0u9BCuoQehGSCgbxyf43Hu+HghkR3/43G4I+HxaKTFoneNdibQIxSb9q4Rg6xh
+wGGyqx4vXb9chp8fzuCHw7jPofeLPYl9nzgJ1/PckI0BR/MAhMmuJhoZpqpDvYHZx+lKqDE4tZNj
+mzvcbh6ADHwTBhs2IY5Xz/N6Ichrv1+fBE97vjyYn5NgUOgE4Mpn8rqeKb/uYMGJ1yu8HIWBRgfL
+nzb0iT2IvX98Fah0Rh8HgHJGL1dIJNMMPJoPKcJQKr7+XA+UB6y7Xa/DOYm04fJpWwao6oZmttAQ
+4zp52+sNz/++GOCiBl6G75UH5fpj197W/6EPcV72vhjikmY+Pxa26yf1Y/Fllm1f15RXqakKLVMv
+ebvfw/q2nRkVKrEwiEdocuZTtUVXwpzg9TMjIKBvrMvrSvtJMCCgAzF/+UotHgIQEuXF39915AZ+
+bF96MJn93u0my4AwCgQtnKw/lEiviHo9QXHvD7oxEKieoIDQoCdAAWFGdcVfafSaw2zIoR4ZdrCh
+qwRByaTXH5/vV0/X7QECXTgI4zxBeXOW9QzXK4aArgAE3xOkH5c3bAtOef0eBYRFeoKp1SQLgn+u
+TgjMNB1/bg/aCAhz6902dKlfN7c7r7y9uv0PkNjr3mZ2cg1AGDnTlrUc1N8Taw05LsNaT5Q45SC5
+RVGfl5aHzYNgAdDxHrqnvBXAljnrzbC2WhSfxZnzZF5VqvUNMoBQdeErf8jrszxBKQDjPEm4X+B1
+pzmgqwRByWu+Xl/bE5RuaSzNQYZDKdqnAWFUUuodBVjPE4zd01sGinKGuCxrQSg/uhDdJAgKKXQl
+PGhpviewAMRnng5rbo9w3w2avl9bLAmRAKHIQGUw/bHdtVZ204cAl2quJUOf20uip1fJ0I0tqKUX
+pvxjS1C0YRD6LYlzfzIIRVfdYoEnQAEBRReuf+/Bg4M1KtB+AAAAJXRFWHRjcmVhdGUtZGF0ZQAy
+MDA5LTEwLTI0VDE1OjM2OjU4KzAxOjAwnl9oXQAAACV0RVh0bW9kaWZ5LWRhdGUAMjAwOS0xMC0y
+NFQxNTozNjo1OCswMTowMMHuHmkAAAAhdEVYdHBzOkhpUmVzQm91bmRpbmdCb3gANTh4MjgrMjc1
+KzYyNu8mrSsAAAAidEVYdHBzOkxldmVsAEFkb2JlRm9udC0xLjE6IENNUjEyIDEuMAqtBqG+AAAA
+QXRFWHRwczpTcG90Q29sb3ItMAAvdG1wLzMyNDk3X2M3ZDBkNGJmYjQzZWMyOThlNGI5OWZmODhl
+ODE4NjMyLmR2aSAtZm5gxNgAAAAASUVORK5CYII=
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://pic.srv104.wapedia.mobi/thumb/fcd614541/en/fixed/118/94/Hermite_poly.svg?format=jpg,png,gif,wbmp
+
+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
+v3+xhE2vSXEwf7uuF1FsPxS7PGl6dGBpW3Z2mp5WRgx1ClVyKwPTGl2i4BkfTM5oP+3OWCOaKP20
+pV+iW9Jw0P+xCvZvXL8ZNC56dGB5poVGfztRTXL2We/976mrNY0cSqB3d2P3lLNRgeXE4Xf063Dg
++np4mOzv4QnRowPL6MTO6D1GGo6SlZgaMHNa8DyqnvtvVGC1jKP9JjjhJBjlPO9j0KMD2xksTqOA
+OymjHHDgwPMXLLslIBkHsPPz531nO+fxkId+vWPS9OjAUiNuX2MpsIwD1DsMjSNrDDmw38w1TBE4
+rrOx46JHB5ZOBe0IJYnOw8fObzUOYMmB/R68pgIXGeDHCidBjw4sT6Bp6yB1EW7RFQaremAax095
+07HCtbMfoitTL2X8x6ShgW2lNr980FdMG1MDluoFvU2dfKD34/GjEFMD8mfZRiF6uXggmsQcGyzd
+iAriIHksxt1fvfqGApZA0p3I4/B0J9psNgUsB5N+Sib64pfVanW8eOGU9aeoovsDFxfYl3LRaKj7
+LIxyTCQSyjXJ60bbvWEK66Arjb+zN0p9yWRJODanvGoM4/T5fLr1sa8vXzpluSn23b5x97ezPraJ
+KSQG9hXzRWYXX15eVsmoGVvMFHz0FbMw2QjB5pfNzxthMp3ALtfbp6dYczphk2vrTeFzTITB/BXa
+O6MU1mE0GrG2tjZ0fTabFcfHJ9KuVj8YK83SrT6tj3yvn/aNu7+d9fGaSdaY0WcgYEmcyXyRIkAT
+U+Rk7uzw76BFe39c5VOvb9ylvX0aBno0sPI0CrERWr6ocRAlCrPXXI0pE3SpVFLr9jj7ywzt4yKK
+YO7o9NPfiQKrrddMKzQO4nrInMrjUlCYeHtra2tsE4X1cQkbNklnJ3Hcpqen72Wk1aOJA8v9w9iY
+kuhTmeBhsX462g9REaHeMC7iOSeuh+OaKOwvlcV+pMBEgSX1WheGrW8QoqnGyaD3nrZufcrUb/sm
+DuzHJmr2zMN8+SmkB39E+tkByxn/qXPlOOhnB+zPhX4B9jOlX4D9TOn/AZEF2TypdJGeAAAAJXRF
+WHRjcmVhdGUtZGF0ZQAyMDA5LTA3LTE2VDE5OjA2OjMwKzAxOjAwk+Q+rQAAACV0RVh0bW9kaWZ5
+LWRhdGUAMjAwOS0wNy0xNlQxOTowNjozMCswMTowMMxVSJkAAABNdEVYdHNvZnR3YXJlAEltYWdl
+TWFnaWNrIDYuNS40LTIgMjAwOS0wNy0xMSBRMTYgT3Blbk1QIGh0dHA6Ly93d3cuaW1hZ2VtYWdp
+Y2sub3JnLexfhAAAABh0RVh0VGh1bWI6OkRvY3VtZW50OjpQYWdlcwAxp/+7LwAAABh0RVh0VGh1
+bWI6OkltYWdlOjpoZWlnaHQANDgw/t7gAwAAABd0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAA2MDDp
+L+3oAAAAGXRFWHRUaHVtYjo6TWltZXR5cGUAaW1hZ2UvcG5nP7JWTgAAABd0RVh0VGh1bWI6Ok1U
+aW1lADEyNDc3Njc1OTDGlZoYAAAAEnRFWHRUaHVtYjo6U2l6ZQA0MC43a2JLRtH0AAAAVnRFWHRU
+aHVtYjo6VVJJAGZpbGU6Ly8vL3Zhci93d3cvd2FwZWRpYTMvdmFyL2NhY2hlL3RodW1iL2JpZy9j
+b21tb25zL2UvZWMvSGVybWl0ZV9wb2x5LnN2Z7dN3ikAAAAASUVORK5CYII=
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://wapedia.mobi/math/SF8wKHgpPTFcLA==
+
+iVBORw0KGgoAAAANSUhEUgAAAFoAAAAXEAYAAADb/oTzAAAABmJLR0T///////8JWPfcAAAACXBI
+WXMAAAB4AAAAeACd9VpgAAAACXZwQWcAAABaAAAAFwC9RBIOAAACXklEQVR42u2b4Y2DMAyFWYEV
+ugIrsAIrdIWuwAqswApdgRVYgRU4qdFT9NLSmFwSUjB/LMFxBPzZfk7San0dVaVW7Rmsfgi1CvQp
+Xvx19L2xdZ3neU1jbNcpgIUAzSCMo7G4Mk18vWk+OxTX55nvx/m+TwvW4+GOL28gdZ2x97uCWEiG
+hkMYSDkg5ng+YfOAdLsZOwxlVIhhwLguDyL5B1zNc2ag4ZBlCbvfZuarAcQV6/gAK0P6oXLCrmtm
+oCEZxnHffW3LQKfTlBz501SmQyHV0mv53wDc8pFJQwOQ/RmWIxJn0jmSIz59JfhfhlJNfRDQaGpw
+pm3DtHP6jMnNq3ycn4Fzm2FIBrfZhbTxA8oOvK70OBhoN8O6DvfZ3NoZJV2unTmz2wrCHxyBacHl
+5/mbXQ6I9M2xAv0VkHK1s9t87vv7ugbQsvdwgd8/LRjqwH2VJb79WaDZ0em1Mz8PJdwt6X7tHQY0
+eoT3/8/jiJdRYwOtGTqLdob29M8vMjg2k/M4/AGVJvNBasTLUAr0IUDbDBs20GWRNj++plHaVKYB
+en9Aq+QoEmh5s/O56cEZafe//ULSFw5tCn0VytdMhn0fbQqTAx1HO9uVHylYcYGWT9txANhKwtr9
+/bkMpnw+mQNFp+2iA81N0dYmpG0N6WpclhruNN+24+MCLV9Y+V5it+abwxdGrr6wwns3bLPNvLjf
+eTsxFf6iPg0tbS516Vt32xW1JBw+y1H25iRdIbwY0NDukDyuBJJntDK3j+I9dPvo6YHOs1npqA3+
+0Iy6GUmBTiJp9CdYCrRatQXaPzYbrNUtDxwlAAAAJXRFWHRjcmVhdGUtZGF0ZQAyMDA5LTEwLTI0
+VDE1OjM2OjU4KzAxOjAwnl9oXQAAACV0RVh0bW9kaWZ5LWRhdGUAMjAwOS0xMC0yNFQxNTozNjo1
+OCswMTowMMHuHmkAAAAhdEVYdHBzOkhpUmVzQm91bmRpbmdCb3gANTR4MTQrMjc3KzYzNoT0ypwA
+AAAldEVYdHBzOkxldmVsAEFkb2JlRm9udC0xLjE6IENNTUkxMiAxLjEwMAphVpbAAAAAQXRFWHRw
+czpTcG90Q29sb3ItMAAvdG1wLzMyNjIyXzc5YzYxZTQyYzQxMGI0MmIyZmQ0MDRjNDEzYWRmZmQ0
+LmR2aSAtZj7yQn4AAAAASUVORK5CYII=
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://wapedia.mobi/math/SF8xKHgpPXhcLA==
+
+iVBORw0KGgoAAAANSUhEUgAAAF0AAAAXEAYAAAA5Ip+KAAAABmJLR0T///////8JWPfcAAAACXBI
+WXMAAAB4AAAAeACd9VpgAAAACXZwQWcAAABdAAAAFwCgQSK2AAAChElEQVR42u1b0a2DMAzsCqzA
+CqzACqzQFViBFViBFbpCV2CFrtAnFZ0iO+kjceOQFvPjp/BoSnw+n5308nxdl4tZs79sbSHMGtB/
+8oVfV9dtdhjKzNc0mx1HA17lQN+u63Wz07RZ3Hk86LgDEHU07t9u9PlloffbVhfg03RsgJWf34Au
+cljbUqDGMxUPlLKMuix1ZBS8f9cZEKsGOpgdI/EOo4x+v5cFVt/XAXQQxfGBZ0D/11HzDMkiex5/
+6aVwyuT6ASX7fgj4/FLNbBagrysclfZc31Og6xWDvKaoE+jINFakVlaMgiHTGTlcxDaNLpCQedID
+Klx84/MwzotsZ9MC/7wSJrx+aE6geHdFPPeDEtCHgQIVE/qODltkglLaHNIgtYYAAH1NT7tMjolT
+i2yq1euTVmX8M46c8Oj6w38O0FivZEUhi7x6tTmfT8owce/B26gggvgMkrv7lEY8cqu1rxCWuDwQ
+ECAJBJb2BQWRJNTmnzLeZ0D3F5C/x9EB+d1MDr/60pXvtxTT6Hm0OSIQI++7DBRQro15NIDUHHAy
+oKdJznyZX6jN4/vRtLhY17LMnBvoCg44mXRJk7j59j3UdzJp8TbPZYGeXozGZbR3RSoy0f58Zy9G
+9wh1TyEoAV2qzdEWwkh8OygP0OPbi7w7FJZeCFgHdN5mlNUu52kvUjw54qP+8v1N8STAUVzqwx20
+B/3DV+F+J17IP7xVBujxG0b0/3nbFONgHH4IzW+T2YaRRFq965c7PxTbGT1mYaRAr/0IAIjAjgBU
+dwTgW4AeZhD98+d2qMuALtCuXDrxVLfPhHUe00VKtmO6xugqALMfXhjQTwn40j+lM4Ab0M2aVbR/
+8uw+cRTq1nwAAAAldEVYdGNyZWF0ZS1kYXRlADIwMDktMTAtMjRUMTU6MzY6NTkrMDE6MDA4KGPp
+AAAAJXRFWHRtb2RpZnktZGF0ZQAyMDA5LTEwLTI0VDE1OjM2OjU5KzAxOjAwZ5kV3QAAACF0RVh0
+cHM6SGlSZXNCb3VuZGluZ0JveAA1NngxNCsyNzcrNjM2aM9UAwAAACV0RVh0cHM6TGV2ZWwAQWRv
+YmVGb250LTEuMTogQ01NSTEyIDEuMTAwCmFWlsAAAABBdEVYdHBzOlNwb3RDb2xvci0wAC90bXAv
+MzI2NDRfNjMyZjcyMzAzNzkyMTAyNjY5ZTFjNGRmNTdlY2Y2Y2UuZHZpIC1mlm2Z/wAAAABJRU5E
+rkJggg==
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://wapedia.mobi/math/SF8yKHgpPXheMi0xXCw=
+
+iVBORw0KGgoAAAANSUhEUgAAAIUAAAAZEAYAAABP7jFHAAAABmJLR0T///////8JWPfcAAAACXBI
+WXMAAAB4AAAAeACd9VpgAAAACXZwQWcAAACFAAAAGQDAr5F6AAADN0lEQVR42u1c7ZHqMAykBVqg
+BVqgBVqgBVqgBVqgBVqgBVqghbsZMjseKRb+iG0cvPdn3yTchdjyerWS3+bv/bPZEIlEooUcCOJv
+BfT7Z7ud8HLx4/WKz3HcSBTEYYnCJgJJGLcbx41EQRyWKPCv89l//3DA5zhuJIqIgNrvJzwe20ri
+eQATS47z+Yz59d8/nSZ8PjlulYhCDjQkHO68XvK6W4D+3PF+l79/u8n7u11dgrhcvktQ7Z9P72Ii
+iFYbxPCKAgs5JPU+/74jmraB8v3cVL7/fOcj1hhvbESn05jvj/WarqgWPhgPxJX4gJeK4vFouzAP
+h74mjqZa7Y1Bx2cvcdAmvhD3WK9u3TYiCrjLr9cy06meBJcBU5+Q8r4fCLN8qjU2QSA+La9iPK8o
+18xd+EDkevd77hetnStqT6XPiQPj0+QsM56Ph4wvC8dTcs2IQjJ2uiLwm6D1Gl/kzpJOSH7zFn8P
+1+0Gn7SJGzcF8Y+fSxm0CazngUTZJVEcj3KhY8KsTjiNUCKtvAlI+1QPBQM6z2VllccpgVSTVuaS
+/aVGbcuZbsOQ44/5c4QglUO8oiVRNCUKLIR+vQn9vNz3jHsPXQYGkcYrmNLVnzTizsdafSX+FFUT
+id0vQeyCKNKZPNWb+Czp4xXCMqKwTLDynX2jdQpKJRVqtaZiWA1RlPEmsAPgiu3yW39fviikv+1x
+1N2pywUwW4o/pYy9mtDwTPA9y+NKiUJ7E/F1aGlOhRs94nr2w9+jDlGUD+DRUo+0+f/dfocfVRT5
+nZRSAVyvaQpEN8rojtCQMkk3M+MUlWVyYiJiU6NxzczQhhSKDxJAl0SR601AouFKfjkrr/wYXx7V
+1Rk/cYHwHFFoTyVv4sYpj8p4chuHnK95IMt4Yln060Thl5q4g/Lm/PCWv96tG2Dc4a+8FwwrktyG
+K/l5XfbFdex4+hDbvMzHhquc1Mjql3DzwIW/ZJz1YUw9vnOFvrLj4G6hS8keSj16b+EGkbKFm9jp
+OuybIGwpL3f28AKzjr/3UR7koTAiiaLATmv37OcRTy/HzO1DS0QiiaLDVGaU5xOJJIrV/Fd4JAgi
+iYJIJP4Y/gMBgvUqnBiscAAAACV0RVh0Y3JlYXRlLWRhdGUAMjAwOS0xMC0yNFQxNTozNzowMCsw
+MTowMAqSQ2AAAAAldEVYdG1vZGlmeS1kYXRlADIwMDktMTAtMjRUMTU6Mzc6MDArMDE6MDBVIzVU
+AAAAIXRFWHRwczpIaVJlc0JvdW5kaW5nQm94ADgweDE1KzI2NCs2MzZbWSyrAAAAJXRFWHRwczpM
+ZXZlbABBZG9iZUZvbnQtMS4xOiBDTU1JMTIgMS4xMDAKYVaWwAAAAEF0RVh0cHM6U3BvdENvbG9y
+LTAAL3RtcC8zMjY3NV83ZTMyYTRiYThkZTFiNDA3MzNiOTVmNTFhNjA4NmI5NS5kdmkgLWYzh1Ex
+AAAAAElFTkSuQmCC
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://wapedia.mobi/math/SF8zKHgpPXheMy0zeFws
+
+iVBORw0KGgoAAAANSUhEUgAAAJMAAAAZEAYAAABlXsDoAAAABmJLR0T///////8JWPfcAAAACXBI
+WXMAAAB4AAAAeACd9VpgAAAACXZwQWcAAACTAAAAGQAVIHD8AAADeUlEQVR42u1cwZHCMAykBVqg
+hWuBFmjhWrgWaIEWaIEWaIEWaIGbIbPjkWPHsmM5TrJ89i7AkCjSWlrJOXy+r8OBSCQSe0Eagrgt
+h/6+LpcBz2eJtxvep71ITERiY2LCXz8/8jgI6vOhvUhMRGJjYnKEFM6k3m/ai8TUpeMO+Pe3TInB
+UqKNvU8nmSk9HgP+/tJOGyOm4XW9Dni/y9T5+ZTv+6k0CAHvv17y+zh+vdo66u22bMCM7UO0XICo
+Me0mY8LKE6vpdd/HCvZ4tHFU/N7x2EfgIFCWP599ZVA4cj5v+3qPR1QGEv3Eoj8/rBRY+TW7nynZ
+3iDckH5SeLmS213/PoknXqK38rs+7JEuXSVBPZ8bISaUYvd7WUDiiF1q3ZvBY+fHzKmGHZHBjxfK
+sN9tPWNCfMYJWGZQ/dilUkqsX3nChqgfkFJsXk5TyrMHRdm6BOWXLlgAqDG1jsdGxISAz2dYmWLa
+ZTJzxU5ZoztRXp4/CBr2QCDouz9rIdA2IjXul2/v2H1gCVy35EtlVvbxUKkrN+6m6bCVtgSD5He/
+YucXXoFPp3Bplhb1ZWDaNwHWognJ++fEWd+PSDA1RHHtAmofDzOJCT/Uu7aU77iS8WODeu5GTIvt
+uV3KeoFWtmDk49zzy13JOQ9mkflD/E4NpjaMh7ILtNeWwnue8D8MGnfMecQUN6A29W1FpGsv4XTd
+s+2K1H1pTO93OONZIB7aaktg5tdLl1nFuivpVN4q0K0ChqVJOLNehzZjhfYDuOFmll7rNIuH0oyn
+zABg5PSF61LH+PyUTWlkFzB7K+V0570fzc22y5YmDPl5rTZqGA9l2lKGiCXEXRzJUOfF95GxYT5D
+m2LOX3m0AZO7B2+v4rfOz2JiKyQFjldMd6PTWm7p+I9VPKiJqY62BPELR1wNm8fMrq2uMzg+l0uE
+CAy/GxQnZjk/kyt672dcIJbxSoJGZh0jJvgTB1KniSaXYMaDvq3jIUpM/oWFN+vGxS4ZaL6o5o8X
+5K942j1PpQEfLllc12K6tCmdl9rPgKV0WPgRiMZ1f8Kbwt1cE4koj6DC6M+Nje3aOh6KxwXaDtyl
+u266tnNcbO+rdGHAEYkdExOYfDwnlbvniZt4iUQSU6PHNaTnmKbHFXp57Ek/50MkkpgWr7n5oDgi
+kcTER+tyKwWRSGIiEolrxn9F47txxYRyNQAAACV0RVh0Y3JlYXRlLWRhdGUAMjAwOS0xMC0yNFQx
+NTozNzowMSswMTowMKzlSNQAAAAldEVYdG1vZGlmeS1kYXRlADIwMDktMTAtMjRUMTU6Mzc6MDEr
+MDE6MDDzVD7gAAAAIXRFWHRwczpIaVJlc0JvdW5kaW5nQm94ADg4eDE1KzI2MSs2MzaVtdUlAAAA
+JXRFWHRwczpMZXZlbABBZG9iZUZvbnQtMS4xOiBDTU1JMTIgMS4xMDAKYVaWwAAAAD90RVh0cHM6
+U3BvdENvbG9yLTAAL3RtcC8zMzBfMzZlNWJlNzhkMzk1ZGE1OTlkZWE1ZGI5ODFkMDQ5OTMuZHZp
+IC1mYL4P8wAAAABJRU5ErkJggg==
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://wapedia.mobi/math/SF80KHgpPXheNC02eF4yKzNcLA==
+
+iVBORw0KGgoAAAANSUhEUgAAALsAAAAZEAYAAAA51IPMAAAABmJLR0T///////8JWPfcAAAACXBI
+WXMAAAB4AAAAeACd9VpgAAAACXZwQWcAAAC7AAAAGQD+3/enAAAEO0lEQVR42u1d21EDMQykBVpI
+C7RAC7RAC2mBFtICLdBCWkgLtBBmyOx4pLNs+c72OefNzzIJTIIsr1YPOy/3/8fLC5FIJBKPgTQE
+cS6H/3/8/NAeI63H6+sDv77ieLng92g3EjuRqAjk/f2B9zvtMtK62MQtCf77m3YjsROJShF+fJDY
+R1wf/HQ+MyCT2Cs6FhRB+1Tv8Xh7A9HQEXvYO9iZBDHi+pzP2Bfx1z8/H3i70W6NiV2nSDLyXq/y
+9bBgktjw+u0m/z7U2PZyqF6EA8elQ7aw7+kExUdif+ZMC/xAIdRNscuIimf8RIlmVq+mltzwl8tY
+NcbTiY5ZN3BbqT8VcqpZ2V/oxD8nBOPxhY8MZFgfvU6wR76ZXJmYfn+31djaKfRRiVRmMPsHmmNs
+kGDPOHH1ywzHbFIuiVJn0PsSGwhMZ/oh8zrm+kDg2oFM2ud6bUzsSJX8XWvdFGmdakmlbhtk34VF
+CYtjXa17KnMqdFs4yMy7n30koSPwWLX2ZQbWmmj7vh941LZ/XKAsA14loixX3PEP2I7QdGozdhOX
+Nfe29tU9oOPaG5n0qDVquR54xsJ+446jnnfw8mal5p8dOXypR3sFLVOY8pQuntKHlDHeFLZT33QG
+M19JJn1QBX4CIQG/Q6DOp7Bz2lNnxLAvng+BrVRYtd4Po5RGxi7ZJJR93chhNWMs7F1bhzLw19Yl
+gQTHlxtkSSzy/fIOIjfCfCcjLT+IK+2wfqV2njNDCaXO+JQQAib82G6e9toPJPZUU9UhFOsQ5bi1
+9bXTENqgXkUU3wClU0L1pjbWBdxyrJP5WbXVQOxpotl/mmN0YvetA2q92p/774fZiN2XuS6by5uJ
+Xb7xfrX10hLOOmKHkskdda7nALON4/kUYj71JNbZZ/L3teLuvx9YiknZGb2TZQVip9o6Ik75WJWM
+/KVEXVsJ1yccHqBJEc144276HEYbLFe4+nzJOnuXCrbxArAMSKWZaJhS8WH73kF8aGXZk9usBLZ1
+6f1NQn0Ufwxir084s5VivCU7Brp1mdA2YvePF44egEdV7N7xxbS9l59zY23d/49rRyuNcJpA1jls
+efM0l7HkMot19mET0Jva955vfk47QnnahBFXgvl90mo/zEXsmBby9kLyY+ada+uhhFLmOFYXvpTY
+/eOOMhCEzEIvRJqgSwMXNsg8447aztLPbAEhSw1smvr8yh5yyGVgvffDXMQeSkVlgsc+0FhYm9KX
+fdk1NelQutivxyOtI85wiMjJqlXE7j+glLtLIz6fu77WNusBJd88tLUOvBRqrXCI+6+tqHvvh9ma
+p75egLZrw7ti+m743J0f3lSTVwoQicTjftPW009LbKtpjXIJ2LwnTolEEvvExB4/Cq0Vu7dmP9q1
+vSg98NpeIpHIb1B68i/aQPOPd5wQiUQSO78aj0gkEknsRCKROAf+Acv7G0cG1sqBAAAAJXRFWHRj
+cmVhdGUtZGF0ZQAyMDA5LTEwLTI0VDE1OjM3OjAyKzAxOjAwnQ1SSQAAACV0RVh0bW9kaWZ5LWRh
+dGUAMjAwOS0xMC0yNFQxNTozNzowMiswMTowMMK8JH0AAAAidEVYdHBzOkhpUmVzQm91bmRpbmdC
+b3gAMTEyeDE1KzI0OCs2MzZcq2RSAAAAJXRFWHRwczpMZXZlbABBZG9iZUZvbnQtMS4xOiBDTU1J
+MTIgMS4xMDAKYVaWwAAAAD90RVh0cHM6U3BvdENvbG9yLTAAL3RtcC80NzhfZmUzMzE2Yzk1NDc1
+NjcxNGM2ODk5Y2M4ZDUwODBlM2UuZHZpIC1mJOKbSgAAAABJRU5ErkJggg==
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://wapedia.mobi/math/SF81KHgpPXheNS0xMHheMysxNXhcLA==
+
+iVBORw0KGgoAAAANSUhEUgAAANoAAAAZEAYAAAAH8eyCAAAABmJLR0T///////8JWPfcAAAACXBI
+WXMAAAB4AAAAeACd9VpgAAAACXZwQWcAAADaAAAAGQA9dytYAAAE+0lEQVR42u1dbXUjMQwMhVII
+hVIIhVIIhVIohVIohVAohVAIhdx7zZvnk7xe2+tve/pnrnttupFljTzSKqfn39fpRCQSiUTiyEhD
+EOd07L+vz88Xfn298HJ54fWK67TXjOv+8SHXG9/fbvie9iKhEYmDBTYQ2e/vC/E/398vfHujvWZa
+bxDY47HvD88n7UZCIxKHIzTaY8V1f3/fJzSb8IgktCkcH9JUm5ODvfGIJeyMzB3fX6+000r7G5Lj
+/c59R0ILCBg/P1LSgcRjB27paPh/OBp+AtfzZ9ivr/MZ0lMfAfd8pkOWsC9qZZfLdm2t3foTa0qQ
+IDRIzayhkdCCAgeuhGdAslh7u9VxdPy9djUU/H0kBHTIFvbHv+ZPKGQih/16v6f5rUk8t7GfGqV8
+/7hiEp251103xYS/b7me+H3XerdvuslkMGQ+8dq0PpmVXVhk5v1ITuy6Kyk1uf1xlcAmAw78Hxje
+HCGJDAqMq1YF++PnyhOblhhbx5s+TqZaco/39/3mKiAUuvZSbiYDQjIMP2lsG7ocs2NB+nbEfu9v
+zJOIHbCk38WfUOYKeLGEhsTLr6TIjL18AikTazsOpQb2VEWoL0UintAWqaHpI3z4G9dttKUyOa2h
+j5FJU+PPffKViMC3XnNAGqEZySlWqqor4euTaDtJjIQ2FKGBKI4aCg5W7mSSWgyWUgZex64VuLTl
+2Yi3jmRUzs4k+hRCezyOEZpP+tWJB9Yf18dd99kIbXu9jsZVvZ5GutxuHjR+UYjQ9AnLVyTWWKt2
+BuKMbVbBCdRu65evax7UPfoAp1zA9hugjURY3s4ktBRCC9+vvvWR92EHWEmgxi9GW/dZCM3VlS1P
+wv6Sk/x5o8hJf7ClalnDc9szueYzRu0s3vF9G9clwciT1tHMJX2jHksw4jHXfda2MwmtB0Lzrbsd
+H0Zb9zkIDf7iLgnpx7V8knAYL2jCAxG6DyaJWnX52pnWvuUbR8bubrtOI7QdwxUqLq924mhlZxJa
+D4Tm6pKMvz8SWhlCOxbX7WYrqcTY8T5XzbVR7Qxaqb/LbLtdFF2V/gwt98YoveEooY0V2PRzlGUw
+X/NKbzW01s0keZuNXIh4FauA5Hs+si6hHT1AhDcdZSa01BvHxvA3PyS/wSKEVm7DrSY5jhrY1u5y
+DN23UFDC1y9XYOMJLY3QpMSHeO1Two7PysxFuIm1s1hHRdMDrvifT9Ez+PQDg6WaQvJoxeHP36za
+FFLbzrRrCqEhwPm7kuX6+WelbpcyXM0iuP/+H7uYg9D8k5Wk8hbepa0VP9/9ZCO0PLUzM6Eg9Eit
+a2V6ZJS3jTOw3dOXaegJFPuB1u7iiVvY+dv2W9mZhJZCaHpSiI9w7EkhrlrL9olAz+A03a08odUg
+NL+9t/erq0YGfzDxTcZnd601OH7v36iZuLA9hNgtDcgAbQLXdpt/fIYdOvEhlij0RAS50fA6erRP
++gy71YantrLzmgSmlQ3YW38+nF/5CJvl6P68OXk/+u/iOtYf8UaP7hpn3WsT2nbcNoThmskYRljH
+a377v+d63iyeHzp3BDi0v80z7PX6HXW06igmInH+hIIlhGr2HkOSsplfM3qc5MnhxEQikYRGQqvq
+CPk/pkKe/Hr5+Bg6PJFIJE5LaHU05tYf8LnukFwikUgkoWUlFBQj/e2gZaRUEhmRSCSS0IhEIpFI
+/A//AafN2OT2bmuwAAAAJXRFWHRjcmVhdGUtZGF0ZQAyMDA5LTEwLTI0VDE1OjM3OjAzKzAxOjAw
+O3pZ/QAAACV0RVh0bW9kaWZ5LWRhdGUAMjAwOS0xMC0yNFQxNTozNzowMyswMTowMGTLL8kAAAAi
+dEVYdHBzOkhpUmVzQm91bmRpbmdCb3gAMTMxeDE1KzIzOSs2MzZrDBrhAAAAJXRFWHRwczpMZXZl
+bABBZG9iZUZvbnQtMS4xOiBDTU1JMTIgMS4xMDAKYVaWwAAAAD90RVh0cHM6U3BvdENvbG9yLTAA
+L3RtcC82MTlfYTBiNjM4OWI4NWJkZmVkYTJiYmYyMWE0ZTMwZTFlNTcuZHZpIC1m0MMMUAAAAABJ
+RU5ErkJggg==
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://wapedia.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
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://wapedia.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
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://wapedia.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
+hofk52l9fqVukIdIj5FFvj70UhFvAA8CekbeSIfgfTxK6+DE3p2HwiXRyrZV2gKTh/3oQeyUjyYo
+8+2JrP6OcWHq6yuqbfzSftP3u0il9zjfa1yTkIihRSzeGmDvVar7z3tfAS1T617UU+n5/slHOxAr
+1Um8HO3PfL4+tH7PuKiqTkmdZc9lyrwVD1kXJlklIkmQcUGcugOdC/91bgwekwGbjze0AM/VGvDJ
+PVxviN264nH8lbC+SCyu8gYCd4zYYTyAQCD4Z7PxnTsyaQlj72EC8jDniUBIzx4LEgiEAQMCgUDw
+DwT0hQm3UjT+w0n5iPX4SO9szwMEAoFAIBAIXFRAtxWsVJsz7rBeqQMABAKBQCAQCISAHihgqYi8
+Xzuj1a4ABQKBQCAQCARCQAOBQCAQCAQCgZfxL18G3eS2pRbnAAAAJXRFWHRjcmVhdGUtZGF0ZQAy
+MDA5LTEwLTI0VDE1OjM3OjA3KzAxOjAwzzV97gAAACV0RVh0bW9kaWZ5LWRhdGUAMjAwOS0xMC0y
+NFQxNTozNzowNyswMTowMJCEC9oAAAAidEVYdHBzOkhpUmVzQm91bmRpbmdCb3gAMjE2eDE1KzE5
+Nis2MzYRis3UAAAAJXRFWHRwczpMZXZlbABBZG9iZUZvbnQtMS4xOiBDTU1JMTIgMS4xMDAKYVaW
+wAAAAD90RVh0cHM6U3BvdENvbG9yLTAAL3RtcC84NDRfMGI1MmNiMDIzMDIyMTQzZjIxMGU5YzFm
+MjU3OWRiYjUuZHZpIC1mnH0p2wAAAABJRU5ErkJggg==
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://wapedia.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
+ZTys+4r2v17vcO+ocV5T+NMndmTWas8b6w8vr+8tIUmBBSviDAfpiZBbNadynrylk7YdbP9dtLtF
+tKRUPwwo+3WDN8YIfy6ULLvU56c1D3Fd4q/Rjj03eK1NhN96H4MMeMW7RXpf4FVuUmCVHsqNwvF+
+sXNtv3xgb2ovr+nSHJ3ve6JnCmTJA6WU8kyETDXVGdo67TxHj/PapVJWJIvsT+97bx2W0zJN2zyS
+AgDWepb9rOEgtxxftPuF3Ve/Tao6vSHVV2ObR4a15hLcPvS+3972o8A2wr9c2mRFXMk+NMG1n4fK
+dmZVDugvhgKv9byO9w3M+1/M6RX+ZTuz+EzPlB5lP85SEfqJrO3SUnLSsaQIpG9BksDT2oUmgegz
+HK9DpN+X16XPiXjkq+zjDkX+/VqOZNw4r+2wrRcS+V9MxOdFc+TR/taEWl9iuw84UuLlDcD2vNsO
+aztCWhFhcqXc9UCNFGqcD8guyY5S5L/2ecEbpW5QWgmEJtTlYW0vWkKqnoe2v08+V/TwMXitz/Vo
+nctDvPtfrLfdZcwS7Pp7QrwbkqPs56TERAaglw7VdqEY+xzkoPwpcCAQCAcJBAKB4DXgJYS/lqqT
+Qj5WK5Xags7xfBSZW/eNvUAgHCQQCASC14AQ/hsp4Xhqh28YjhfarVJUQCAQCAQCgUDgpUt99gnu
+VDO12vWBQCAQCAQCgRD+C6aq7PZiba+HbjRAIBAIBAKBQAh/IBAIBAKBQCAQ2Bn/Ax5u8Sey+Qht
+AAAAJXRFWHRjcmVhdGUtZGF0ZQAyMDA5LTEwLTI0VDE1OjM3OjA3KzAxOjAwzzV97gAAACV0RVh0
+bW9kaWZ5LWRhdGUAMjAwOS0xMC0yNFQxNTozNzowNyswMTowMJCEC9oAAAAidEVYdHBzOkhpUmVz
+Qm91bmRpbmdCb3gAMjMweDE1KzE5MCs2MzYRqyjfAAAAJXRFWHRwczpMZXZlbABBZG9iZUZvbnQt
+MS4xOiBDTU1JMTIgMS4xMDAKYVaWwAAAAD90RVh0cHM6U3BvdENvbG9yLTAAL3RtcC85MDdfY2Y4
+NjdiNzkwY2VlMzgzZTg2MWEwNjkxZThkODg3NDMuZHZpIC1m0ZgCDgAAAABJRU5ErkJggg==
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://wapedia.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
+ZocgGloAAAAASUVORK5CYII=
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://pic.srv104.wapedia.mobi/thumb/fcd614541/en/fixed/118/94/Hermite_poly_phys.svg?format=jpg,png,gif,wbmp
+
+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
+/wDaXgY/4gty8wAAACV0RVh0Y3JlYXRlLWRhdGUAMjAwOS0wNy0yMVQyMTozNzoyNyswMTowMGTI
+WMUAAAAldEVYdG1vZGlmeS1kYXRlADIwMDktMDctMjFUMjE6Mzc6MjcrMDE6MDA7eS7xAAAATXRF
+WHRzb2Z0d2FyZQBJbWFnZU1hZ2ljayA2LjUuNC0yIDIwMDktMDctMTEgUTE2IE9wZW5NUCBodHRw
+Oi8vd3d3LmltYWdlbWFnaWNrLm9yZy3sX4QAAAAYdEVYdFRodW1iOjpEb2N1bWVudDo6UGFnZXMA
+Maf/uy8AAAAYdEVYdFRodW1iOjpJbWFnZTo6aGVpZ2h0ADQ4MP7e4AMAAAAXdEVYdFRodW1iOjpJ
+bWFnZTo6V2lkdGgANjAw6S/t6AAAABl0RVh0VGh1bWI6Ok1pbWV0eXBlAGltYWdlL3BuZz+yVk4A
+AAAXdEVYdFRodW1iOjpNVGltZQAxMjQ4MjA4NjQ3nr/LAwAAABB0RVh0VGh1bWI6OlNpemUANTVr
+Yvqw8pgAAABbdEVYdFRodW1iOjpVUkkAZmlsZTovLy8vdmFyL3d3dy93YXBlZGlhMy92YXIvY2Fj
+aGUvdGh1bWIvYmlnL2NvbW1vbnMvNS81ZC9IZXJtaXRlX3BvbHlfcGh5cy5zdmc7yZnOAAAAAElF
+TkSuQmCC
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://wapedia.mobi/math/SF8xKHgpPTJ4XCw=
+
+iVBORw0KGgoAAAANSUhEUgAAAGcAAAAXEAYAAABG8417AAAABmJLR0T///////8JWPfcAAAACXBI
+WXMAAAB4AAAAeACd9VpgAAAACXZwQWcAAABnAAAAFwAFoAZ9AAAC40lEQVR42u1b0XGDMAzNCqyQ
+FViBFVghK2QFVmAFVmCFrMAKXaG9C/eOk2wXycHGxOJHrWlCbb8nPUnm9vu+bjezZs3KrS2EWbNG
+HMGE31fbrrbv8zyvaVb7fBrwKiPOej0eqx2G1eLOzw8d3wBJgYP780w/P030/v2eljDDcC5h8z/f
+7MkRB8CmwJd7Uk68vB5/msqIeJh/21YPwPfVdXRduIPF701zceIg8mBEDgC6IK9XXqB2XRlAgeM5
+n8hlSOYwfqgimeeLE2ccIdHiPo+f0kkWGmnSEzTu/4MDOV6aXoM4j4eOYBhJn5smIs6yaD0ADcnp
+F4DnZGUCB5GwvqKB1oHmcriJigPw4PoJ+IsK6TQrjYx6gvqLIfg+jPOix2Z1jqQ+yUbXKxx5/LgL
+Oxr/fkDqbdIwtK+JiNP3dAJ4oAscv0WkypXbQAppczAA2s2JaBVx20Bt0YPmOuVJydIkHV13V9pi
+P7hDpvsJPGwEwfqrFVSchyg3t+HPi/WEsnnwsjscizzCHV1d1DmyeJuXOHC4bkTY65P5UwROLBBO
+4WB1E4hg5oe5DQWk3DN/Rhx3Afk8ziZ4HZFmX0LRyO1Kf17ezpbjHJPbgNEYCVeR6EJsDVUtwNJ6
+8gM3wIjzjzST5xwyyX5cpIzMbeT9EJqcLUsugKUhToINMKnmwdleX0devo/F7UHEie/006RuHPMS
+R18ckEXcUNEAUm7/eVYc8K3DnhLBPkj7P/tKJbYdkDi34Y2r+NAbRxx5OZpX//xSEw5gIw4vS8fl
+frWWo4EPaXUWyoWvP/C5OWb6vS5u6PP1uBSGetxBdcM9jOmvj2NC7mHOPMSRN0Dp3/ONxDg8GD+U
+6pZBrQGqqZZhRGp5VSxEtFC/Zr9/dPjJgbM7zd915AaOpb4jN5cn/rcSx++RCjjjZIc8jTjpgRWS
+jPLTzmW+VgDJYK8VGHEulYzai2xmjTgfADj3q9NGGCOOWbMV2z+tUIjF9oIsmgAAACV0RVh0Y3Jl
+YXRlLWRhdGUAMjAwOS0xMC0yNFQxNTozNzowOCswMTowMDl9DQcAAAAldEVYdG1vZGlmeS1kYXRl
+ADIwMDktMTAtMjRUMTU6Mzc6MDgrMDE6MDBmzHszAAAAIXRFWHRwczpIaVJlc0JvdW5kaW5nQm94
+ADYyeDE0KzI3NCs2MzaRo3liAAAAJXRFWHRwczpMZXZlbABBZG9iZUZvbnQtMS4xOiBDTU1JMTIg
+MS4xMDAKYVaWwAAAAD90RVh0cHM6U3BvdENvbG9yLTAAL3RtcC85NDBfNDNhNjkxZjBlNDg1OWRm
+NWIxYzE2Yzk3NWRjYmFlOGEuZHZpIC1mZ30lUwAAAABJRU5ErkJggg==
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://wapedia.mobi/math/SF8yKHgpPTR4XjItMlws
+
+iVBORw0KGgoAAAANSUhEUgAAAI8AAAAZEAYAAABYzKGOAAAABmJLR0T///////8JWPfcAAAACXBI
+WXMAAAB4AAAAeACd9VpgAAAACXZwQWcAAACPAAAAGQBhNLIcAAADlElEQVR42u1c25HCMAykhWuB
+FmiBFmiBFmiBFmiBFmiBFmiBFu5mjtnxSJbjtzFk+dm7BPJQ5JW0lrP5/f9sNkQikTgKaQgicWmA
+/H9+fl54Ptt4ueB7tBuJh0hsRDxhYpEEdL3SbiQeIrER8eCv08nev9/je7QbiSfBoXa7Fx4OY1N2
+34GJM/vJ6QR/sfcfjy98PGi3TsQjDY0UE3ueT7ndDWi7Vr7d5O+vV7l/u+1LOOfzewlv/PmJPQLJ
+4zEqgK0+4wExxFLR5d874hrrKO+vxeX9+5GUaNnrfp/rehAoj8d1PQeUllpkRyKB/8Nie+UFIPPB
+lvQBJC+0v0NJg+z3czxAEDdFyVkCVGrg0v4+i1+NydTD41za53brRDxQ+5/POtGuX8khHWaeiGkT
+cPvS8jsiKzSW8cQj/Qf+HtJ6vle7S83sJEFhi1+CVl4Iatsws8VmAXrXxlqTmjuiU3SWAx3P7X2z
+RghY0l9D+L2Za26iEPt+pWPkZyy2KN2v8UpGqnyCs8V0HA/bww1meUTMkktH1lLisZ+HK5G0yK+f
+KzPPJXuG7WPzg9GGUHYBh4M8MB5YqLNTIzKlUdoOSplcDQoO79fuchbPGTZXk5Baz3yl4FjHhl/5
+2kmePVGauYAmjwN/0ASHzCY9gycuBWqMD19CqGS+ebUdfb7S+0y7D902gAGUnmG1LiXyAkE59u5v
+SiWe3OPYxBTu1yGWSDALmVFdzdtP22m1RqaOeEIiYnvNYa2drzFtK494kDnGljYwo+kraSSI0GO1
+HTc7EZvFabVGpm8m0c6B10Y8MjOM+UE90es+k7lnN3th+0xOllbp2liltpPetyDFvXhreas1Mn2I
+p70Dr63UskX7EOoO9/zzl/otMU+TC2WilcRT3sglxabLJS9DKl8j04rx7YwvJDqDEOPno7g8wu9c
+wCwt+YiWv8YyVdcWUUk8pdqObigqn67MXSOTO52uZ99sIgSBOuLRmlSZ9sXp9FLikf7pApt8/v7v
+pX9yGj1tHKfOYqPCMQJ0XqqOPRjw/mJOuz9CN2C5xaBlBkhfI5PbQCi/rw2M7YigelGrP43LBsKa
+iBryH7+fZHkAhPp14n0pRGu2KtZIqdHQaD/jhsvXyHzGkgkMLC6ZIK6EyD6DcOrXyIRe1zFHZGeJ
+RSTxTJgJ1K+RmfO1GGFCJRJJPF8rkvFFYEQiiWc1rz4l4RBJPDQEkUgcin8VfXd3joj5XwAAACV0
+RVh0Y3JlYXRlLWRhdGUAMjAwOS0xMC0yNFQxNTozNzowOCswMTowMDl9DQcAAAAldEVYdG1vZGlm
+eS1kYXRlADIwMDktMTAtMjRUMTU6Mzc6MDgrMDE6MDBmzHszAAAAIXRFWHRwczpIaVJlc0JvdW5k
+aW5nQm94ADg2eDE1KzI2MSs2MzZ8hAY7AAAAJXRFWHRwczpMZXZlbABBZG9iZUZvbnQtMS4xOiBD
+TU1JMTIgMS4xMDAKYVaWwAAAAD90RVh0cHM6U3BvdENvbG9yLTAAL3RtcC85NThfYzFjYWIwYmE1
+MjI1NWExMzUzN2E1NzUxMzFiMzg4MDcuZHZpIC1mjZH4WwAAAABJRU5ErkJggg==
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://wapedia.mobi/math/SF8zKHgpPTh4XjMtMTJ4XCw=
+
+iVBORw0KGgoAAAANSUhEUgAAAKUAAAAZEAYAAAAAszKXAAAABmJLR0T///////8JWPfcAAAACXBI
+WXMAAAB4AAAAeACd9VpgAAAACXZwQWcAAAClAAAAGQDHA5RMAAAERklEQVR42u1d0XEqMQykBVqg
+hbRAC2khLdBCWqAFWqAFWqAFWiAzYXY80tmWfHf2Gbz52TePwHGWtJZW8mX3/P/Z7YhEIpEYRy4E
+kZgLkP+f72+Jx+MLf39feD6/cL/nupEoicRBiRL/+vrKv346cd1IlETioESZIsj9nkRJohwgAFA6
+1S+ZEHAo4eiA7+gvh4Msva9X+BHXiUSZIZjLRe6ot5t8PezEkijw+v0u34//r+d42PlTmUJbzevn
+h474XpmlJEr4UbsNl/hmGSUC3dJw8u/Hjny9ts0Izuc+Ag9NgMNhbAJCCRs2yjj2l4lLO9b3477s
+hQ0fcXw8ztt4tJ2xnkjE/J/bKVHihh6PZSJ5/dKlN2KSjrI9cW8bcKhE0nbZijBl5jjNGOX3ej4/
+215IjHC/yKzxGzah6Y3RFx/+z++UKFE6Xy5l79MLXM/xZSZ5u/XpgCCKcUo3GXh2JiYDrHUFYnW9
+21VGfU8FeInSL1XIzHK7+F3JgfwZod6BaxOE1pL6biqNo1lKuzwelnSzlXSS1yRRoYw7RzmPKLGx
+2MTXS8a+sBlRnhKXLtQ6hpyvdcQ1FHweSgOttSBwbOKTgThOCS6JD0QJnI7ZeKWTvOYJv8N14ccg
+QLzOJltdogwlfFn8pSU+LWXF7Z/Wwit3vafdah+21iZtDcyrTcXHQ0Jgyet5S0oYeNTSDfevpyCw
+vn5tOeVX0v+m/lBqN+I8olwm8aXsio0vtcFqP9KEaWeqC4mnX21SG3JekyG18Po+NJGWjx+tXVrM
+28DKsU7XG46N39AbcqqpggwxpSUGouxtbIxEmbNHWsP3NYWm8676aOpqRBk/iVBPm4yfrQ0lqvsG
+ZxEldiiry7le5vHpXVOrOZOfu9XEOV13n8bJAfHeiTJud4snLLsv/36NtUloe/d7mQF0AIWMbptM
+bf2AG5Mo4Q9eLRcZRnlF0suYic+vauH6mfJqRFRIkKUVbLNmztLukxTr7aZFvoQCYdvzm3WIslap
+MU7pvcyPgljfOmCI68aDJXXpSm+e/y+v/GZqk/4LxwdH/V3F/BlbbyZS3syxMmor85m7k44VYBDp
+5waAnSF5A4YPtWhLlF6CXBZX4Uh1/voOHmmjTeqSqTQw9BnbUo3SPx4kFzhkvvK6U6KU37N0IwAB
+jzYehDER2MfWovKOH+wWP/mT0jbxPdjEaTMepLVpbwUTmsepsSHpJ6hgU/6SPnFlEqXM4FIPv0hr
+dDLww43Eu5fl82rxgfe0gUoHzvOGSs1LLr2f8QbO46WxFSjp9fHNu77PGfL3sFNIHOLEN7VX/H1e
+1F3rcLJLxnmYfog/rKf8ISadDyJbmoWd4fIII5FIbKZRblOSTZs1yw7j9/ZQjPFO5BCJJMpqhKnP
+2CIDKx0P6e0xaygNx33MGpFIouz+YQxbPbgXGwDPFBOJJEr+KQj+KQgikURJJBKJn49/W5cpHLYl
+1iwAAAAldEVYdGNyZWF0ZS1kYXRlADIwMDktMTAtMjRUMTU6Mzc6MDkrMDE6MDCfCgazAAAAJXRF
+WHRtb2RpZnktZGF0ZQAyMDA5LTEwLTI0VDE1OjM3OjA5KzAxOjAwwLtwhwAAACF0RVh0cHM6SGlS
+ZXNCb3VuZGluZ0JveAA5OXgxNSsyNTUrNjM2oJKUoQAAACV0RVh0cHM6TGV2ZWwAQWRvYmVGb250
+LTEuMTogQ01NSTEyIDEuMTAwCmFWlsAAAAA/dEVYdHBzOlNwb3RDb2xvci0wAC90bXAvOTg1X2My
+MjBhMzIzNGI5ZTRkYTM3YjY1NGIyMzhhMWZlNDA0LmR2aSAtZhK7wxsAAAAASUVORK5CYII=
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://wapedia.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
+39QCAAAAAElFTkSuQmCC
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://wapedia.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
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://wapedia.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
+vnzkYGVKUAr37YKs23f8LlVgzjzt/72G3o2m1djaSu0VR18/TCavLrrehtlzRfSikbHWO3O9/sTi
+NStQAR4ayzvSHqRw0wR5vh0d5aFwRO/cHb1F7NaOf/Yr0Ow7OoFAIBBCDwgEhtfn3MShR+Jk5C0W
+OTt/p8NT0eulbIFAIIQeEAhcWOjth67jKQ5Z2zfH96KQK2oogEAgEAgELij0+gis/M7p1/L+QCAQ
+CAQCIfSWv4Kpz/vFT+UCgUAgEAgEQugBgUAgEAgEAhn+A161tWOJzgSHAAAAJXRFWHRjcmVhdGUt
+ZGF0ZQAyMDA5LTEwLTI0VDE1OjM3OjEwKzAxOjAwxjhD/gAAACV0RVh0bW9kaWZ5LWRhdGUAMjAw
+OS0xMC0yNFQxNTozNzoxMCswMTowMJmJNcoAAAAidEVYdHBzOkhpUmVzQm91bmRpbmdCb3gAMTkw
+eDE1KzIwOSs2MzZMYkIGAAAAJXRFWHRwczpMZXZlbABBZG9iZUZvbnQtMS4xOiBDTU1JMTIgMS4x
+MDAKYVaWwAAAAEB0RVh0cHM6U3BvdENvbG9yLTAAL3RtcC8xMDY3XzQ0NTM4NzNhY2I1NWUyNDhl
+MGM1MDYzOTNmYzk5MGU1LmR2aSAtZofMdmIAAAAASUVORK5CYII=
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://wapedia.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
+nD6xux61tn/N0qteQtYaeImuGxDy/8uDt/3qlsCPksfYZnZ5faurhbeWOBqJvJ48XsPOevvP63KU
+bWej3Yv4+rPlZxQPbCTkrbXj/f1WecQpGumJHrm6PVmKv2hSQNIzK5sS2ogD2h72ee7yhC5vRHE7
+71zevCeIbeVTS4nJvuHRrgPAMSUr/H15S03o/cUd/qMIOV8nJUAiU8K9Gcp7EvLSD94rn75uJv3y
+GNtkZ2dC+fNaBw1ZJ5feRx6vQchJjqwTWnU5yrKz+zzAIszb5g6zeaBJyOvEpWyi1BRFvT8oPXDx
+9NuIq34Uqu8FemuK6PeynSN9XgSRfx8nTvLv702cZNcAre2RthDl33nRMjhWzaru8EmDxeWktMHb
+dyRAxKPrvF4KItezRZi0khMahzCqjyhipOlHf4lJXT7JUMjxpOHQ5Fnr7xwvfbkbIa8TFq0tsF9+
+suWR35/Ur3F7tP+8dn/wu8njWe1s23v3Rp7b7ew+MbfG0xzSeTwwHCFfxZPrKzVZrySEG2R/ygYI
+BAKBaxJyIBAIvBwhz+0aQB7M8f2ceaQMpSpAIBAIQg4EAkHIl1akpda2bxyKlB9PgFtT3kAgEAgE
+AoFAEPILREpKTdrdrg8EAoFAIBAIBCFfkJiPL2Hp3X0LBAKBQCAQCAQhBwKBQCAQCAQCgcn4H2N6
+OOQ343gQAAAAJXRFWHRjcmVhdGUtZGF0ZQAyMDA5LTEwLTI0VDE1OjM3OjEwKzAxOjAwxjhD/gAA
+ACV0RVh0bW9kaWZ5LWRhdGUAMjAwOS0xMC0yNFQxNTozNzoxMCswMTowMJmJNcoAAAAidEVYdHBz
+OkhpUmVzQm91bmRpbmdCb3gAMjIyeDE1KzE5NCs2MzbVhskFAAAAJXRFWHRwczpMZXZlbABBZG9i
+ZUZvbnQtMS4xOiBDTU1JMTIgMS4xMDAKYVaWwAAAAEB0RVh0cHM6U3BvdENvbG9yLTAAL3RtcC8x
+MDgzX2U0ZjkyZTk2ZWYxMzBhMmE5OWM4ZGJjMjA5YThjYWVjLmR2aSAtZn9FCwkAAAAASUVORK5C
+YII=
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://wapedia.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
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://wapedia.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
+gMspldp+aDlI7bVvcl885o+ji+YhX3J7V+uQ8n3XSh2HvZ3L5/ZazGNeRv0A6T9qPK8VvppfbAfq
+W9/zbvyebb99tcpyXK1AkHe/tj5Hls540XsrQNze7s7vzU8OvcJWb7q1SmoRNlggEAi89gkwEAgE
+AmG/gQvwa/UTweOUAm/tkd01+tyUov2bzQCBQCAcKCAQCATCfgMhgKsIr6XY+FOzyp9r167Meb90
+nx6ICAQCgUAgEAgEAoE3FcBjhSfluJ/XbKpVyAOBQCAQCAQCgUAgEAI4IECpmHpeO/jWLphAIBAI
+BAKBQCAQCIQABgKBQCAQCAQCgUAg0MS/x9sUqmlmBuUAAAAldEVYdGNyZWF0ZS1kYXRlADIwMDkt
+MTAtMjRUMTU6Mzc6MTErMDE6MDBgT0hKAAAAJXRFWHRtb2RpZnktZGF0ZQAyMDA5LTEwLTI0VDE1
+OjM3OjExKzAxOjAwP/4+fgAAACJ0RVh0cHM6SGlSZXNCb3VuZGluZ0JveAAyODh4MTUrMTYxKzYz
+NjxYeucAAAAldEVYdHBzOkxldmVsAEFkb2JlRm9udC0xLjE6IENNTUkxMiAxLjEwMAphVpbAAAAA
+QHRFWHRwczpTcG90Q29sb3ItMAAvdG1wLzExMjZfOTNlYzZmYjc1ODZmMDY0MzdlNjQ5YTk3ZTVl
+ZDg3MGIuZHZpIC1m/zt22QAAAABJRU5ErkJggg==
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://wapedia.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
++3lcbyWX/19u0UvjwPjWeYS3me9dD+P2zlyzrhcXJ82N4+DLWsLbUSHaFldYh3RE28/RGjkrD+gT
+EsY/J3HYnhXV8OVmvnhfVBoA6uPsSw7jOFY8dTDtrXD3CG/tglbJMHRgnMf2U4t6n+MzS2hLrWrn
+ElLve8+XploOSO8seLFVyNYltSV+6dLw6+wT7NmJGreXuh1re7aF1HziVbqeP0HI+xlx9H4/EcPb
+0ufSvNDX32/dvVp4y7caW+u0V1Cw7NHbGlBqQTgHgtfy2Ns64W396+exDkBTYeA4LbsuqCC4xfCn
+ZJ+lVszx9VtXJNSvY9nRvDhp1B/Al538itWird9/62F+q+cBpfzcHskQxRPisD0FOPhyD1+23enz
+7YSXHOGxk+X7f/7T0O55Hv0VJiAIguAbAzBGE4AgCIL4FRAEwUvWyWcKb2UFXO8c+v6f7FCto6jr
+nXAMGgRBECRBAkEQBPErIAiCCG8NC3ipJLLcSpcX4MZP0/TOWrn2+axzPyAIgiAIgiAIgiAIguAm
+wtvaQuB9hxiUTi0DQRAEQRAEQRAEQRAEEd4eIMDJkMfrji1Oh/ox5B4EQRAEQRAEQRAEQRDhDQRB
+EARBEARBEARBEARfiP8BEzbtpa4iaEsAAAAldEVYdGNyZWF0ZS1kYXRlADIwMDktMTAtMjRUMTU6
+Mzc6MTErMDE6MDBgT0hKAAAAJXRFWHRtb2RpZnktZGF0ZQAyMDA5LTEwLTI0VDE1OjM3OjExKzAx
+OjAwP/4+fgAAACJ0RVh0cHM6SGlSZXNCb3VuZGluZ0JveAAzNzR4MTUrMTE3KzYyNOZ9llAAAAAl
+dEVYdHBzOkxldmVsAEFkb2JlRm9udC0xLjE6IENNTUkxMiAxLjEwMAphVpbAAAAAQHRFWHRwczpT
+cG90Q29sb3ItMAAvdG1wLzExMzhfMGI3YTEzMmU3OGY0YTE1MDNkYjU3OTI0OTg0ZjMwODMuZHZp
+IC1mIgKl2wAAAABJRU5ErkJggg==
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://wapedia.mobi/nowiki/css/wap2.css?layout=modern&theme=white&resdensity=1&ci=33
+
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: white; =
+PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: black; PADDING-TOP: 0px
+}
+DIV.header {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; =
+MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 0px; COLOR: black; PADDING-TOP: 0px; =
+FONT-FAMILY: Helvetica, sans-serif
+}
+DIV.header_start {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; FONT-WEIGHT: bold; =
+MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 1px; COLOR: black; PADDING-TOP: 1px; =
+FONT-FAMILY: Helvetica, sans-serif
+}
+DIV.content {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; =
+PADDING-TOP: 0px
+}
+DIV.content_nopad {
+	Xpadding: 0px 2px 0px 2px
+}
+.header .subheader {
+	PADDING-LEFT: 3px; BORDER-BOTTOM: #aaaaaa 1px solid
+}
+.header_noline .subheader {
+	PADDING-LEFT: 3px
+}
+.headmenu {
+	FONT-WEIGHT: bold; FONT-SIZE: small; COLOR: #909090; PADDING-TOP: 3px; =
+FONT-FAMILY: Helvetica, sans-serif
+}
+.headmenu A {
+	FONT-WEIGHT: bold; COLOR: #7e7e7e; TEXT-DECORATION: none
+}
+.content A {
+	COLOR: #16297f
+}
+A IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: =
+0px
+}
+DIV.content_nopad P.root {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px
+}
+H3.head1 {
+	MARGIN-TOP: 1em; MARGIN-BOTTOM: 0.3em; BORDER-BOTTOM: #d7106b 2px solid
+}
+H3.head2 {
+	MARGIN-TOP: 1em; MARGIN-BOTTOM: 0.3em; BORDER-BOTTOM: #ef56a9 2px solid
+}
+H3.head3 {
+	MARGIN-TOP: 1em; MARGIN-BOTTOM: 0.3em; BORDER-BOTTOM: #f290cc 2px solid
+}
+H3.head4 {
+	MARGIN-TOP: 1em; MARGIN-BOTTOM: 0.3em; BORDER-BOTTOM: #fedbf1 2px solid
+}
+H3.head5 {
+	MARGIN-TOP: 1em; MARGIN-BOTTOM: 0.3em; BORDER-BOTTOM: #ffe0f1 2px solid
+}
+H3.head6 {
+	MARGIN-TOP: 1em; MARGIN-BOTTOM: 0.3em; BORDER-BOTTOM: #ffe3f2 2px solid
+}
+DIV.pic {
+	BORDER-TOP: #aaaaaa 1px solid; MARGIN-TOP: 2px; FONT-SIZE: 90%; =
+BACKGROUND: #efefef; MARGIN-BOTTOM: 3px; PADDING-BOTTOM: 1px; COLOR: =
+black; PADDING-TOP: 0px; BORDER-BOTTOM: #aaaaaa 1px solid
+}
+DIV.pic_root {
+	BORDER-TOP: #aaaaaa 1px solid; MARGIN-TOP: 2px; FONT-SIZE: 90%; =
+BACKGROUND: #efefef; MARGIN-BOTTOM: 3px; PADDING-BOTTOM: 1px; COLOR: =
+black; PADDING-TOP: 0px; BORDER-BOTTOM: #aaaaaa 1px solid
+}
+DIV.pic_text {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; =
+PADDING-TOP: 0px
+}
+DIV.pic_float_left {
+	CLEAR: left; BORDER-RIGHT: #aaaaaa 1px solid; FONT-SIZE: 10pt; FLOAT: =
+left; BORDER-LEFT: #aaaaaa 1px solid
+}
+DIV.pic_float_right {
+	CLEAR: right; BORDER-RIGHT: #aaaaaa 1px solid; BORDER-TOP: #aaaaaa 1px =
+solid; FONT-SIZE: 8pt; FLOAT: right; BORDER-LEFT: #aaaaaa 1px solid; =
+BORDER-BOTTOM: #aaaaaa 1px solid
+}
+DIV.firstpicture {
+	MARGIN-BOTTOM: 3px
+}
+DIV.firstpicture_float {
+	CLEAR: both; FLOAT: right
+}
+A.picsearch {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; =
+PADDING-TOP: 1px
+}
+TABLE {
+	CLEAR: both; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; =
+BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.XXcuttablerow {
+	CLEAR: both; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; =
+BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.XXcuttablerow_last DIV.pic {
+	CLEAR: both; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; =
+BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+DIV.search_front {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 1px; PADDING-BOTTOM: 0px; MARGIN: 3px =
+0px 0px; PADDING-TOP: 6px
+}
+DIV.search_misc {
+	PADDING-RIGHT: 5px; BORDER-TOP: #c0cddf 1px solid; PADDING-LEFT: 6px; =
+PADDING-BOTTOM: 5px; MARGIN: 3px 0px 2px; PADDING-TOP: 6px; =
+BORDER-BOTTOM: #c0cddf 1px solid; BACKGROUND-COLOR: #e1e9f4
+}
+.search_front INPUT.searchinput {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: =
+#000000 1px solid; PADDING-LEFT: 3px; FONT-SIZE: 150%; PADDING-BOTTOM: =
+3px; BORDER-LEFT: #000000 1px solid; WIDTH: 95%; PADDING-TOP: 3px; =
+BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #ffffff
+}
+.search INPUT.searchinput {
+=09
+}
+.search_misc INPUT.searchinput {
+=09
+}
+INPUT.searchbutton {
+=09
+}
+.search_front SELECT {
+=09
+}
+.search_misc SELECT {
+=09
+}
+TABLE.ssource {
+	MARGIN-BOTTOM: 2px
+}
+TR.ssource {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: =
+none; BORDER-BOTTOM-STYLE: none
+}
+TD.ssource_empty {
+	BORDER-RIGHT: #cbcbcb 1px solid
+}
+TD.ssource {
+	BORDER-RIGHT: #cbcbcb 1px solid; PADDING-RIGHT: 5px; PADDING-LEFT: 5px; =
+PADDING-BOTTOM: 2px; COLOR: #999999; PADDING-TOP: 2px; FONT-FAMILY: =
+Helvetica, sans-serif
+}
+TD.ssource_selected {
+	BORDER-RIGHT: #cbcbcb 1px solid; PADDING-RIGHT: 5px; PADDING-LEFT: 5px; =
+PADDING-BOTTOM: 2px; COLOR: black; PADDING-TOP: 2px; FONT-FAMILY: =
+Helvetica, sans-serif
+}
+TD.ssource_space {
+	COLOR: gray
+}
+DIV.footer {
+	CLEAR: both; PADDING-RIGHT: 5px; BORDER-TOP: #c0cddf 1px solid; =
+PADDING-LEFT: 3px; PADDING-BOTTOM: 2px; MARGIN: 1px 0px 2px; =
+PADDING-TOP: 2px; BORDER-BOTTOM: #c0cddf 1px solid; FONT-FAMILY: =
+Helvetica, sans-serif; BACKGROUND-COLOR: #e1e9f4
+}
+.footer A {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+DIV.backlink {
+	FONT-SIZE: medium; MARGIN-BOTTOM: 1em
+}
+DD {
+	MARGIN-LEFT: 10px
+}
+DIV.gfdl {
+	MARGIN-TOP: 5px; FONT-SIZE: x-small; BACKGROUND: white; COLOR: #666666; =
+Xborder-top: solid 1px #aaaaaa
+}
+.gfdl UL LI A {
+	COLOR: #666666; TEXT-DECORATION: underline
+}
+.gfdl A {
+	COLOR: #666666; TEXT-DECORATION: underline
+}
+DIV.homelicense {
+	COLOR: #666666
+}
+.homelicense A {
+	COLOR: #666666
+}
+DIV.content TABLE.normal {
+	CLEAR: both; BORDER-TOP: #aaaaaa 1px solid; FONT-SIZE: 80%; BACKGROUND: =
+#eeeeee; MARGIN-BOTTOM: 2px; WORD-BREAK: normal; BORDER-BOTTOM: #aaaaaa =
+1px solid; BORDER-COLLAPSE: collapse; border-spacing: 1px
+}
+.roottable {
+=09
+}
+TABLE.roottable TH {
+=09
+}
+TABLE.roottable TD {
+=09
+}
+TD {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; =
+PADDING-TOP: 1px
+}
+TH {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; =
+PADDING-TOP: 1px
+}
+TR {
+	BORDER-BOTTOM: #aaaaaa 1px solid; BORDER-COLLAPSE: collapse
+}
+CAPTION {
+=09
+}
+DIV.cuttable {
+	MARGIN-BOTTOM: 2px; BORDER-COLLAPSE: collapse; border-spacing: 1px
+}
+.cuttablerow_last {
+	PADDING-RIGHT: 1px; BORDER-TOP: #aaaaaa 1px solid; MARGIN-TOP: 0px; =
+PADDING-LEFT: 1px; BACKGROUND: #eeeeee; MARGIN-BOTTOM: 0.5em; =
+PADDING-BOTTOM: 1px; PADDING-TOP: 1px; BORDER-BOTTOM: #aaaaaa 1px solid
+}
+.cuttablerow {
+	PADDING-RIGHT: 1px; BORDER-TOP: #aaaaaa 1px solid; PADDING-LEFT: 1px; =
+BACKGROUND: #eeeeee; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 1px; =
+PADDING-TOP: 1px
+}
+DIV.dablink {
+	PADDING-RIGHT: 1px; BORDER-TOP: #aaaaaa 1px solid; PADDING-LEFT: 1px; =
+BACKGROUND: #eeeeee; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 1px; =
+PADDING-TOP: 1px; BORDER-BOTTOM: #aaaaaa 1px solid
+}
+DIV.lyric {
+	PADDING-LEFT: 5px; BORDER-LEFT: #aaaaaa 1px solid
+}
+DIV.editsection {
+	BACKGROUND: white; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; =
+BORDER-LEFT-STYLE: none; TEXT-ALIGN: right; BORDER-BOTTOM-STYLE: none
+}
+A.new {
+	COLOR: red
+}
+TABLE.taxobox {
+	BORDER-RIGHT: green 1px solid; BORDER-TOP: green 1px solid; BACKGROUND: =
+#eeeeee; MARGIN-BOTTOM: 2px; BORDER-LEFT: green 1px solid; =
+BORDER-BOTTOM: green 1px solid
+}
+DIV.NavFrame {
+	MARGIN-TOP: 3px; BACKGROUND: #ffeeee; MARGIN-BOTTOM: 3px
+}
+DIV.NavPic {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; BACKGROUND: #ffdddd; =
+PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+}
+DIV.NavHead {
+	BACKGROUND: #ffdddd
+}
+DIV.messagebox {
+	BORDER-TOP: #aaaaaa 1px solid; BACKGROUND: #efefef; BORDER-BOTTOM: =
+#aaaaaa 1px solid
+}
+DIV.languages {
+	PADDING-RIGHT: 0px; BORDER-TOP: #c0cddf 1px solid; MARGIN-TOP: 2px; =
+PADDING-LEFT: 2px; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 0px; MARGIN-LEFT: =
+-2px; PADDING-TOP: 0px; BORDER-BOTTOM: #c0cddf 1px solid; =
+BACKGROUND-COLOR: #e1e9f4
+}
+DIV.category {
+	PADDING-RIGHT: 0px; BORDER-TOP: #c0cddf 1px solid; MARGIN-TOP: 2px; =
+PADDING-LEFT: 2px; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 0px; MARGIN-LEFT: =
+-2px; PADDING-TOP: 0px; BORDER-BOTTOM: #c0cddf 1px solid; =
+BACKGROUND-COLOR: #e1e9f4
+}
+.advert_article_top {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-WEIGHT: normal; FONT-SIZE: =
+small; PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-TOP: 2px
+}
+.advert_article_top A {
+	COLOR: black
+}
+DIV.advert_article_bottom {
+	FONT-SIZE: small; BACKGROUND: #eeeeee; MARGIN-BOTTOM: 2px
+}
+DIV.foottext {
+	MARGIN-TOP: 2px; FONT-SIZE: x-small; COLOR: #aaaaaa
+}
+A.foottext {
+	COLOR: #888888; TEXT-DECORATION: none
+}
+.topmessage {
+	BORDER-RIGHT: #aaaaaa 2px solid; PADDING-RIGHT: 2px; BORDER-TOP: =
+#aaaaaa 2px solid; PADDING-LEFT: 2px; BACKGROUND: #eeeeee; =
+PADDING-BOTTOM: 2px; MARGIN: 4px; BORDER-LEFT: #aaaaaa 2px solid; COLOR: =
+black; PADDING-TOP: 2px; BORDER-BOTTOM: #aaaaaa 2px solid
+}
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://wapedia.mobi/nowiki/css/wap2.css?layout=modern&theme=white&resdensity=1&ci=33
+
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: white; =
+PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: black; PADDING-TOP: 0px
+}
+DIV.header {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; =
+MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 0px; COLOR: black; PADDING-TOP: 0px; =
+FONT-FAMILY: Helvetica, sans-serif
+}
+DIV.header_start {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; FONT-WEIGHT: bold; =
+MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 1px; COLOR: black; PADDING-TOP: 1px; =
+FONT-FAMILY: Helvetica, sans-serif
+}
+DIV.content {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; =
+PADDING-TOP: 0px
+}
+DIV.content_nopad {
+	Xpadding: 0px 2px 0px 2px
+}
+.header .subheader {
+	PADDING-LEFT: 3px; BORDER-BOTTOM: #aaaaaa 1px solid
+}
+.header_noline .subheader {
+	PADDING-LEFT: 3px
+}
+.headmenu {
+	FONT-WEIGHT: bold; FONT-SIZE: small; COLOR: #909090; PADDING-TOP: 3px; =
+FONT-FAMILY: Helvetica, sans-serif
+}
+.headmenu A {
+	FONT-WEIGHT: bold; COLOR: #7e7e7e; TEXT-DECORATION: none
+}
+.content A {
+	COLOR: #16297f
+}
+A IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: =
+0px
+}
+DIV.content_nopad P.root {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px
+}
+H3.head1 {
+	MARGIN-TOP: 1em; MARGIN-BOTTOM: 0.3em; BORDER-BOTTOM: #d7106b 2px solid
+}
+H3.head2 {
+	MARGIN-TOP: 1em; MARGIN-BOTTOM: 0.3em; BORDER-BOTTOM: #ef56a9 2px solid
+}
+H3.head3 {
+	MARGIN-TOP: 1em; MARGIN-BOTTOM: 0.3em; BORDER-BOTTOM: #f290cc 2px solid
+}
+H3.head4 {
+	MARGIN-TOP: 1em; MARGIN-BOTTOM: 0.3em; BORDER-BOTTOM: #fedbf1 2px solid
+}
+H3.head5 {
+	MARGIN-TOP: 1em; MARGIN-BOTTOM: 0.3em; BORDER-BOTTOM: #ffe0f1 2px solid
+}
+H3.head6 {
+	MARGIN-TOP: 1em; MARGIN-BOTTOM: 0.3em; BORDER-BOTTOM: #ffe3f2 2px solid
+}
+DIV.pic {
+	BORDER-TOP: #aaaaaa 1px solid; MARGIN-TOP: 2px; FONT-SIZE: 90%; =
+BACKGROUND: #efefef; MARGIN-BOTTOM: 3px; PADDING-BOTTOM: 1px; COLOR: =
+black; PADDING-TOP: 0px; BORDER-BOTTOM: #aaaaaa 1px solid
+}
+DIV.pic_root {
+	BORDER-TOP: #aaaaaa 1px solid; MARGIN-TOP: 2px; FONT-SIZE: 90%; =
+BACKGROUND: #efefef; MARGIN-BOTTOM: 3px; PADDING-BOTTOM: 1px; COLOR: =
+black; PADDING-TOP: 0px; BORDER-BOTTOM: #aaaaaa 1px solid
+}
+DIV.pic_text {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; =
+PADDING-TOP: 0px
+}
+DIV.pic_float_left {
+	CLEAR: left; BORDER-RIGHT: #aaaaaa 1px solid; FONT-SIZE: 10pt; FLOAT: =
+left; BORDER-LEFT: #aaaaaa 1px solid
+}
+DIV.pic_float_right {
+	CLEAR: right; BORDER-RIGHT: #aaaaaa 1px solid; BORDER-TOP: #aaaaaa 1px =
+solid; FONT-SIZE: 8pt; FLOAT: right; BORDER-LEFT: #aaaaaa 1px solid; =
+BORDER-BOTTOM: #aaaaaa 1px solid
+}
+DIV.firstpicture {
+	MARGIN-BOTTOM: 3px
+}
+DIV.firstpicture_float {
+	CLEAR: both; FLOAT: right
+}
+A.picsearch {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; =
+PADDING-TOP: 1px
+}
+TABLE {
+	CLEAR: both; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; =
+BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.XXcuttablerow {
+	CLEAR: both; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; =
+BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.XXcuttablerow_last DIV.pic {
+	CLEAR: both; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; =
+BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+DIV.search_front {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 1px; PADDING-BOTTOM: 0px; MARGIN: 3px =
+0px 0px; PADDING-TOP: 6px
+}
+DIV.search_misc {
+	PADDING-RIGHT: 5px; BORDER-TOP: #c0cddf 1px solid; PADDING-LEFT: 6px; =
+PADDING-BOTTOM: 5px; MARGIN: 3px 0px 2px; PADDING-TOP: 6px; =
+BORDER-BOTTOM: #c0cddf 1px solid; BACKGROUND-COLOR: #e1e9f4
+}
+.search_front INPUT.searchinput {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: =
+#000000 1px solid; PADDING-LEFT: 3px; FONT-SIZE: 150%; PADDING-BOTTOM: =
+3px; BORDER-LEFT: #000000 1px solid; WIDTH: 95%; PADDING-TOP: 3px; =
+BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #ffffff
+}
+.search INPUT.searchinput {
+=09
+}
+.search_misc INPUT.searchinput {
+=09
+}
+INPUT.searchbutton {
+=09
+}
+.search_front SELECT {
+=09
+}
+.search_misc SELECT {
+=09
+}
+TABLE.ssource {
+	MARGIN-BOTTOM: 2px
+}
+TR.ssource {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: =
+none; BORDER-BOTTOM-STYLE: none
+}
+TD.ssource_empty {
+	BORDER-RIGHT: #cbcbcb 1px solid
+}
+TD.ssource {
+	BORDER-RIGHT: #cbcbcb 1px solid; PADDING-RIGHT: 5px; PADDING-LEFT: 5px; =
+PADDING-BOTTOM: 2px; COLOR: #999999; PADDING-TOP: 2px; FONT-FAMILY: =
+Helvetica, sans-serif
+}
+TD.ssource_selected {
+	BORDER-RIGHT: #cbcbcb 1px solid; PADDING-RIGHT: 5px; PADDING-LEFT: 5px; =
+PADDING-BOTTOM: 2px; COLOR: black; PADDING-TOP: 2px; FONT-FAMILY: =
+Helvetica, sans-serif
+}
+TD.ssource_space {
+	COLOR: gray
+}
+DIV.footer {
+	CLEAR: both; PADDING-RIGHT: 5px; BORDER-TOP: #c0cddf 1px solid; =
+PADDING-LEFT: 3px; PADDING-BOTTOM: 2px; MARGIN: 1px 0px 2px; =
+PADDING-TOP: 2px; BORDER-BOTTOM: #c0cddf 1px solid; FONT-FAMILY: =
+Helvetica, sans-serif; BACKGROUND-COLOR: #e1e9f4
+}
+.footer A {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+DIV.backlink {
+	FONT-SIZE: medium; MARGIN-BOTTOM: 1em
+}
+DD {
+	MARGIN-LEFT: 10px
+}
+DIV.gfdl {
+	MARGIN-TOP: 5px; FONT-SIZE: x-small; BACKGROUND: white; COLOR: #666666; =
+Xborder-top: solid 1px #aaaaaa
+}
+.gfdl UL LI A {
+	COLOR: #666666; TEXT-DECORATION: underline
+}
+.gfdl A {
+	COLOR: #666666; TEXT-DECORATION: underline
+}
+DIV.homelicense {
+	COLOR: #666666
+}
+.homelicense A {
+	COLOR: #666666
+}
+DIV.content TABLE.normal {
+	CLEAR: both; BORDER-TOP: #aaaaaa 1px solid; FONT-SIZE: 80%; BACKGROUND: =
+#eeeeee; MARGIN-BOTTOM: 2px; WORD-BREAK: normal; BORDER-BOTTOM: #aaaaaa =
+1px solid; BORDER-COLLAPSE: collapse; border-spacing: 1px
+}
+.roottable {
+=09
+}
+TABLE.roottable TH {
+=09
+}
+TABLE.roottable TD {
+=09
+}
+TD {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; =
+PADDING-TOP: 1px
+}
+TH {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; =
+PADDING-TOP: 1px
+}
+TR {
+	BORDER-BOTTOM: #aaaaaa 1px solid; BORDER-COLLAPSE: collapse
+}
+CAPTION {
+=09
+}
+DIV.cuttable {
+	MARGIN-BOTTOM: 2px; BORDER-COLLAPSE: collapse; border-spacing: 1px
+}
+.cuttablerow_last {
+	PADDING-RIGHT: 1px; BORDER-TOP: #aaaaaa 1px solid; MARGIN-TOP: 0px; =
+PADDING-LEFT: 1px; BACKGROUND: #eeeeee; MARGIN-BOTTOM: 0.5em; =
+PADDING-BOTTOM: 1px; PADDING-TOP: 1px; BORDER-BOTTOM: #aaaaaa 1px solid
+}
+.cuttablerow {
+	PADDING-RIGHT: 1px; BORDER-TOP: #aaaaaa 1px solid; PADDING-LEFT: 1px; =
+BACKGROUND: #eeeeee; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 1px; =
+PADDING-TOP: 1px
+}
+DIV.dablink {
+	PADDING-RIGHT: 1px; BORDER-TOP: #aaaaaa 1px solid; PADDING-LEFT: 1px; =
+BACKGROUND: #eeeeee; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 1px; =
+PADDING-TOP: 1px; BORDER-BOTTOM: #aaaaaa 1px solid
+}
+DIV.lyric {
+	PADDING-LEFT: 5px; BORDER-LEFT: #aaaaaa 1px solid
+}
+DIV.editsection {
+	BACKGROUND: white; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; =
+BORDER-LEFT-STYLE: none; TEXT-ALIGN: right; BORDER-BOTTOM-STYLE: none
+}
+A.new {
+	COLOR: red
+}
+TABLE.taxobox {
+	BORDER-RIGHT: green 1px solid; BORDER-TOP: green 1px solid; BACKGROUND: =
+#eeeeee; MARGIN-BOTTOM: 2px; BORDER-LEFT: green 1px solid; =
+BORDER-BOTTOM: green 1px solid
+}
+DIV.NavFrame {
+	MARGIN-TOP: 3px; BACKGROUND: #ffeeee; MARGIN-BOTTOM: 3px
+}
+DIV.NavPic {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; BACKGROUND: #ffdddd; =
+PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+}
+DIV.NavHead {
+	BACKGROUND: #ffdddd
+}
+DIV.messagebox {
+	BORDER-TOP: #aaaaaa 1px solid; BACKGROUND: #efefef; BORDER-BOTTOM: =
+#aaaaaa 1px solid
+}
+DIV.languages {
+	PADDING-RIGHT: 0px; BORDER-TOP: #c0cddf 1px solid; MARGIN-TOP: 2px; =
+PADDING-LEFT: 2px; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 0px; MARGIN-LEFT: =
+-2px; PADDING-TOP: 0px; BORDER-BOTTOM: #c0cddf 1px solid; =
+BACKGROUND-COLOR: #e1e9f4
+}
+DIV.category {
+	PADDING-RIGHT: 0px; BORDER-TOP: #c0cddf 1px solid; MARGIN-TOP: 2px; =
+PADDING-LEFT: 2px; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 0px; MARGIN-LEFT: =
+-2px; PADDING-TOP: 0px; BORDER-BOTTOM: #c0cddf 1px solid; =
+BACKGROUND-COLOR: #e1e9f4
+}
+.advert_article_top {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-WEIGHT: normal; FONT-SIZE: =
+small; PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-TOP: 2px
+}
+.advert_article_top A {
+	COLOR: black
+}
+DIV.advert_article_bottom {
+	FONT-SIZE: small; BACKGROUND: #eeeeee; MARGIN-BOTTOM: 2px
+}
+DIV.foottext {
+	MARGIN-TOP: 2px; FONT-SIZE: x-small; COLOR: #aaaaaa
+}
+A.foottext {
+	COLOR: #888888; TEXT-DECORATION: none
+}
+.topmessage {
+	BORDER-RIGHT: #aaaaaa 2px solid; PADDING-RIGHT: 2px; BORDER-TOP: =
+#aaaaaa 2px solid; PADDING-LEFT: 2px; BACKGROUND: #eeeeee; =
+PADDING-BOTTOM: 2px; MARGIN: 4px; BORDER-LEFT: #aaaaaa 2px solid; COLOR: =
+black; PADDING-TOP: 2px; BORDER-BOTTOM: #aaaaaa 2px solid
+}
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600
+Content-Type: application/x-javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://wapedia.mobi/nowiki/js/wapedia.js
+
+=0A=
+function wapedia_settype( type, displaytxt, pos ) {=0A=
+  =0A=
+  // $("schsubmit").value =3D displaytxt;=0A=
+  document.getElementById("search_search").value =3D displaytxt;=0A=
+  document.getElementById("searchtype").value =3D type;=0A=
+  if(pos=3D=3D0)=0A=
+    document.getElementById("search_go").style.display=3D"inline";=0A=
+  else=0A=
+    document.getElementById("search_go").style.display=3D"none";=0A=
+  if ( type =3D=3D "" ) {=0A=
+  } else {=0A=
+  }=0A=
+  for ( var i =3D 0; i < 3; i++ ) {=0A=
+    //$("ufilter" + i).className =3D "ssource";=0A=
+    document.getElementById("ufilter"+i).className=3D"ssource";=0A=
+  }=0A=
+  document.getElementById("ufilter"+pos).className=3D"ssource_selected";=0A=
+}=0A=
+=0A=
+function thumbnail_expand(thumb,newsrc,newhref,newwidth) {=0A=
+  document.getElementById(thumb.id+"_box").className=3D"pic";=0A=
+  document.getElementById(thumb.id+"_box").style.width=3D"";=0A=
+  f=3Dthumb.height/thumb.width;=0A=
+  delete(thumb.height);=0A=
+=0A=
+  thumb.width=3Dnewwidth;=0A=
+  thumb.height=3Dnewwidth*f;=0A=
+  thumb.src=3Dnewsrc;=0A=
+=0A=
+  thumb.onclick=3Dfunction() { parent.location.href=3Dnewhref };=0A=
+}=0A=
+=0A=
+
+------=_NextPart_000_01B9_01CA54D5.E9F47600--

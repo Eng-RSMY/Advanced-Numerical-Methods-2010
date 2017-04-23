@@ -1,0 +1,992 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<title>Hermite Polynomial -- from Wolfram MathWorld</title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta name="DC.Creator" content="Weisstein, Eric W.">
+<meta name="DC.Description" content="The Hermite polynomials H_n(x) are set of orthogonal polynomials over the domain (-infty,infty) with weighting function e^(-x^2), illustrated above for n=1, 2, 3, and 4. Hermite polynomials are implemented in Mathematica as HermiteH[n, x]. The Hermite polynomial H_n(z) can be defined by the contour integral  H_n(z)=(n!)/(2pii)&#8750;e^(-t^2+2tz)t^(-n-1)dt,  (1)   where the contour encloses the origin and is traversed in a counterclockwise direction (Arfken 1985, p. 416). The first few...">
+<meta name="DC.Date.Modified" scheme="W3CDTF" content="2002-02-06">
+<meta name="DC.Date.Modified" scheme="W3CDTF" content="2003-05-01">
+<meta name="DC.Date.Modified" scheme="W3CDTF" content="2004-07-04">
+<meta name="DC.Date.Modified" scheme="W3CDTF" content="2004-08-05">
+<meta name="DC.Date.Modified" scheme="W3CDTF" content="2004-11-03">
+<meta name="DC.Date.Modified" scheme="W3CDTF" content="2006-02-18">
+<meta name="DC.Date.Modified" scheme="W3CDTF" content="2008-09-14">
+<meta name="DC.Date.Modified" scheme="W3CDTF" content="2008-09-27">
+<meta name="DC.Subject" scheme="MathWorld" content="Mathematics:Calculus and Analysis:Special Functions:Orthogonal Polynomials">
+<meta name="DC.Subject" scheme="MathWorld" content="Mathematics:MathWorld Contributors:Colomer">
+<meta name="DC.Subject" scheme="MathWorld" content="Mathematics:MathWorld Contributors:Drane">
+<meta name="DC.Subject" scheme="MSC_2000" content="33C">
+<meta name="DC.Subject" scheme="MSC_2000" content="33D">
+<meta name="DC.Rights" content="Copyright 1999-2009 Wolfram Research, Inc.  See http://mathworld.wolfram.com/about/terms.html for a full terms of use statement.">
+<meta name="DC.Format" scheme="IMT" content="text/html">
+<meta name="DC.Identifier" scheme="URI" content="http://mathworld.wolfram.com/HermitePolynomial.html">
+<meta name="DC.Language" scheme="RFC3066" content="en">
+<meta name="DC.Publisher" content="Wolfram Research, Inc.">
+<meta name="DC.Relation.IsPartOf" scheme="URI" content="http://mathworld.wolfram.com/">
+<meta name="DC.Type" scheme="DCMIType" content="Text">
+<meta name="Last-Modified" content="2008-09-27">
+<link rel="alternate" type="application/rss+xml" title="MathWorld Headline News" href="http://mathworld.wolfram.com/news/rss.xml">
+<link rel="stylesheet" type="text/css" href="HermitePolynomial_files/mathworld.css">
+<link rel="shortcut icon" href="http://mathworld.wolfram.com/favicon_mathworld.png" type="image/png">
+<script language="JavaScript" type="text/javascript" src="HermitePolynomial_files/menu.js"></script>
+<script language="JavaScript" type="text/javascript" src="HermitePolynomial_files/mathworld.js"></script>
+<script language="JavaScript" type="text/javascript" src="HermitePolynomial_files/downloadNotebook.js"></script>
+</head><body>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody><tr>
+      <!-- IE Mac will fail on url('') -->
+      <td style="background-image: url(/images/topbar/header.gif); background-repeat: no-repeat;">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody><tr>
+            <td><img src="HermitePolynomial_files/spacer.gif" alt="" usemap="#TopMap" border="0" width="615" height="80"></td>
+<td width="300"><img src="HermitePolynomial_files/spacer.gif" alt="" width="50">
+<div class="formwrapper">
+<form name="NavBarSearch" action="http://mathworld.wolfram.com/search/" method="get" accept-charset="UTF-8" onsubmit=" if (checkForDefaultInput('query_1', 'SEARCH MATHWORLD')) { return false; }">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<!--
+<td valign="middle" nowrap="nowrap"><a href="/search/" style="font-size:10px;">
+Search Site</a>
+</td>
+-->
+<td>
+<table class="searchboxborder" border="0" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+  <td><input id="query_1" class="searchboxsub" name="query" value="SEARCH MATHWORLD" onfocus="initTextInput(this,'clear','SEARCH MATHWORLD')" onblur="initTextInput(this,'setDefault','SEARCH MATHWORLD')" type="text"></td>
+<!--
+  <td><input type="image" src="/common/images/search/searchbox_arrows.gif" class="searchbox" alt="Search" onclick="if (checkForDefaultInput('query_1', 'SEARCH MATHWORLD')) { return false;} else {document.NavBarSearch.submit(); }" /></td>
+-->
+  </tr>
+</tbody></table></td>
+<td valign="middle"><input src="HermitePolynomial_files/go.gif" type="image"></td>
+</tr>
+</tbody></table>
+</form>
+</div>
+            </td>
+          </tr>
+        </tbody></table>
+        <div style="padding-right: 840px;"></div>
+      </td>
+      <td width="100%"><img src="HermitePolynomial_files/header-extend.gif" alt="" width="100%" height="79"></td>
+    </tr>
+  </tbody></table>
+
+<map name="TopMap" id="TopMap">
+  <area shape="rect" coords="11,34,198,51" href="http://www.wolfram.com/products/mathematica/" target="_blank" alt="made with Mathematica technology">
+  <area shape="rect" coords="8,8,197,30" href="http://mathworld.wolfram.com/" alt="MathWorld">
+</map>
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr valign="top">
+<td>
+<!-- Sidebar -->
+
+<table border="0" cellpadding="0" cellspacing="0">
+  <tbody><tr><td align="left" valign="top" width="185" nowrap="nowrap">
+    <table border="0" cellpadding="0" cellspacing="0" width="175">
+    <tbody><tr><td>
+    <div class="leftsidebar">
+    <div class="mainindices">
+      <a href="http://mathworld.wolfram.com/topics/Algebra.html">Algebra</a><br>
+      <a href="http://mathworld.wolfram.com/topics/AppliedMathematics.html">Applied Mathematics</a><br>
+      <a href="http://mathworld.wolfram.com/topics/CalculusandAnalysis.html">Calculus and Analysis</a><br>
+      <a href="http://mathworld.wolfram.com/topics/DiscreteMathematics.html">Discrete Mathematics</a><br>
+      <a href="http://mathworld.wolfram.com/topics/FoundationsofMathematics.html">Foundations of Mathematics</a><br>
+      <a href="http://mathworld.wolfram.com/topics/Geometry.html">Geometry</a><br>
+      <a href="http://mathworld.wolfram.com/topics/HistoryandTerminology.html">History and Terminology</a><br>
+      <a href="http://mathworld.wolfram.com/topics/NumberTheory.html">Number Theory</a><br>
+      <a href="http://mathworld.wolfram.com/topics/ProbabilityandStatistics.html">Probability and Statistics</a><br>
+      <a href="http://mathworld.wolfram.com/topics/RecreationalMathematics.html">Recreational Mathematics</a><br>
+      <a href="http://mathworld.wolfram.com/topics/Topology.html">Topology</a><br>
+    </div>
+    </div>
+    </td></tr></tbody></table>
+</td></tr>
+<tr><td height="10"></td></tr>
+<tr><td align="left" valign="top" width="185" nowrap="nowrap">
+<table border="0" cellpadding="0" cellspacing="0" width="175">
+    <tbody><tr><td>
+    <div class="leftsidebar2">
+    <div class="subindices">
+    <a href="http://mathworld.wolfram.com/letters/">Alphabetical Index</a><br>
+    <a href="http://mathworld.wolfram.com/topics/InteractiveEntries.html">Interactive Entries</a><br>
+    <a href="http://mathworld.wolfram.com/cgi-bin/random.cgi">Random Entry</a><br>
+    <a href="http://mathworld.wolfram.com/whatsnew/">New in <i>MathWorld</i></a><br>
+    </div>
+    <div class="divider"></div>
+    <div class="subindices">
+      <a href="http://mathworld.wolfram.com/classroom/"><i>MathWorld</i> Classroom</a><br>
+    </div>
+    <div class="divider"></div>
+    <div class="subindices">
+       <a href="http://mathworld.wolfram.com/about/">About <i>MathWorld</i></a><br>
+       <a href="http://mathworld.wolfram.com/contact/contribute.html">Contribute to <i>MathWorld</i></a><br>
+       <a href="http://mathworld.wolfram.com/contact/">Send a Message to the Team</a><br>
+    </div>
+    <div class="divider"></div>
+    <div class="subindices">
+       <a href="http://www.amazon.com/exec/obidos/ASIN/1584883472/ref=nosim/weisstein-20" target="_blank"><i>MathWorld</i> Book</a><br>
+    </div>
+    </div>
+    <div class="leftsidebarfooter">
+      <div class="last-updated">
+      <a href="http://mathworld.wolfram.com/whatsnew/">12,964 entries</a>
+      </div>
+      <div class="last-updated">
+      <a href="http://mathworld.wolfram.com/whatsnew/">Last updated: Sun Oct  4 2009</a><br>
+      </div>
+      <br>
+      <a href="http://mathworld.wolfram.com/about/author.html" onmouseover="MM_swapImage('Image1','','/images/sidebar/created-over_01.gif',1)" onmouseout="MM_swapImgRestore()"><img src="HermitePolynomial_files/created_01.gif" name="Image1" id="Image1" title="Created, developed, and nurtured by Eric Weisstein" alt="Created, developed, and nurtured by Eric Weisstein" border="0" width="120" height="32"></a><br>
+      <a href="http://www.wolfram.com/" target="_blank" onmouseover="MM_swapImage('Image2','','/images/sidebar/created-over_02.gif',1)" onmouseout="MM_swapImgRestore()"><img src="HermitePolynomial_files/created_02.gif" name="Image2" id="Image2" title="at Wolfram Research" alt="at Wolfram Research" border="0" width="120" height="17"></a> 
+    </div>
+  </td></tr>
+  </tbody></table>
+
+  </td></tr>
+</tbody></table>
+
+<!-- End Sidebar -->
+
+</td>
+<td><img src="HermitePolynomial_files/spacer.gif" alt="" width="20" height="1"></td>
+<td>
+<div class="leftshadow">
+<div class="centertable">
+<table width="100%">
+<!-- Begin Body -->
+<tbody><tr>
+<td><img src="HermitePolynomial_files/spacer.gif" alt="" width="400" height="1"></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="100%">
+<!-- Begin Subject -->
+<div class="subjectnavbar">
+<a href="http://mathworld.wolfram.com/topics/CalculusandAnalysis.html">Calculus and Analysis</a>&nbsp;&gt;&nbsp;<a href="http://mathworld.wolfram.com/topics/SpecialFunctions.html">Special Functions</a>&nbsp;&gt;&nbsp;<a href="http://mathworld.wolfram.com/topics/OrthogonalPolynomials.html">Orthogonal
+ Polynomials</a>&nbsp;&gt;<br>
+</div>
+<div class="subjectnavbar">
+<a href="http://mathworld.wolfram.com/topics/MathWorldContributors.html">MathWorld Contributors</a>&nbsp;&gt;&nbsp;<a href="http://mathworld.wolfram.com/topics/Colomer.html">Colomer</a>&nbsp;&gt;<br>
+</div>
+<div class="subjectnavbar">
+<a href="http://mathworld.wolfram.com/topics/MathWorldContributors.html">MathWorld Contributors</a>&nbsp;&gt;&nbsp;<a href="http://mathworld.wolfram.com/topics/Drane.html">Drane</a>&nbsp;&gt;<br>
+</div>
+<div class="subjectnavbar">
+<a href="http://mathworld.wolfram.com/topics/InteractiveEntries.html">Interactive Entries</a>&nbsp;&gt;&nbsp;<a href="http://mathworld.wolfram.com/topics/InteractiveDemonstrations.html">Interactive Demonstrations</a>&nbsp;&gt;<br>
+</div>
+<!-- End Subject -->
+<br>
+<!-- Begin Title -->
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td class="title" valign="baseline"><span class="nowrap">Hermite Polynomial</span></td></tr><tr><td valign="top"><span class="nowrap"><img src="HermitePolynomial_files/underline.gif" alt="" width="100%" height="3"><img src="HermitePolynomial_files/underline.gif" alt="" width="20" height="3"></span></td><td><img src="HermitePolynomial_files/spacer.gif" alt="" height="15"></td></tr>
+</tbody></table>
+<!-- End Title -->
+</td>
+</tr>
+<tr valign="top">
+<td>
+<!-- Begin Total Content -->
+<a href="http://mathworld.wolfram.com/notebooks/SpecialFunctions/HermitePolynomial.nb" onclick="downloadNotebook('http://mathworld.wolfram.com/notebooks/SpecialFunctions/HermitePolynomial.nb');return false;"><img src="HermitePolynomial_files/dnld-nb.gif" alt="DOWNLOAD Mathematica Notebook" border="0" width="119" height="26"></a>
+<!-- Begin Content -->
+<div align="center">
+<img src="HermitePolynomial_files/HermiteH_1000.gif" alt="HermiteH" width="394" height="245">
+</div>
+<p class="Text">
+The Hermite polynomials <img src="HermitePolynomial_files/Inline1.gif" class="inlineformula" alt="H_n(x)" border="0" width="34" height="16"> are set of
+ <a href="http://mathworld.wolfram.com/OrthogonalPolynomials.html" class="Hyperlink">orthogonal polynomials</a>
+ over the domain <img src="HermitePolynomial_files/Inline2.gif" class="inlineformula" alt="(-infty,infty)" border="0" width="50" height="14"> with <a href="http://mathworld.wolfram.com/WeightingFunction.html" class="Hyperlink">weighting function</a> <img src="HermitePolynomial_files/Inline3.gif" class="inlineformula" alt="e^(-x^2)" border="0" width="24" height="20">, illustrated
+ above for <img src="HermitePolynomial_files/Inline4.gif" class="inlineformula" alt="n=1" border="0" width="31" height="14">, 2, 3, and 4. Hermite polynomials
+ are implemented in <i><a href="http://www.wolfram.com/products/mathematica/" class="Hyperlink"><i>Mathematica</i></a></i>
+ as <tt><a href="http://reference.wolfram.com/mathematica/ref/HermiteH.html" class="Hyperlink">HermiteH</a></tt>[<i>n</i>,
+ <i>x</i>].
+</p>
+<p class="Text">
+The Hermite polynomial <img src="HermitePolynomial_files/Inline5.gif" class="inlineformula" alt="H_n(z)" border="0" width="33" height="16"> can be defined
+ by the <a href="http://mathworld.wolfram.com/ContourIntegral.html" class="Hyperlink">contour integral</a>
+</p>
+<div>
+<table style="padding-left: 50px;" align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td align="left"><img src="HermitePolynomial_files/NumberedEquation1.gif" class="numberedequation" alt=" H_n(z)=(n!)/(2pii)&#8750;e^(-t^2+2tz)t^(-n-1)dt, " border="0" width="191" height="36"></td><td align="right" width="3">
+<div id="eqn1" class="eqnum">
+(1)
+</div>
+</td></tr>
+</tbody></table>
+</div>
+<p class="Text">
+where the contour encloses the origin and is traversed in a counterclockwise direction (Arfken 1985, p.&nbsp;416).
+</p>
+<p class="Text">
+The first few Hermite polynomials are
+</p>
+<table style="padding-left: 50px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline6.gif" class="displayformula" alt="H_0(x)" border="0" width="34" height="16"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline7.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline8.gif" class="displayformula" alt="1" border="0" width="7" height="14"></td><td align="right" width="10">
+<div id="eqn2" class="eqnum">
+(2)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline9.gif" class="displayformula" alt="H_1(x)" border="0" width="34" height="14"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline10.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline11.gif" class="displayformula" alt="2x" border="0" width="17" height="14"></td><td align="right" width="10">
+<div id="eqn3" class="eqnum">
+(3)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline12.gif" class="displayformula" alt="H_2(x)" border="0" width="34" height="14"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline13.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline14.gif" class="displayformula" alt="4x^2-2" border="0" width="45" height="17"></td><td align="right" width="10">
+<div id="eqn4" class="eqnum">
+(4)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline15.gif" class="displayformula" alt="H_3(x)" border="0" width="34" height="16"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline16.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline17.gif" class="displayformula" alt="8x^3-12x" border="0" width="62" height="17"></td><td align="right" width="10">
+<div id="eqn5" class="eqnum">
+(5)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline18.gif" class="displayformula" alt="H_4(x)" border="0" width="34" height="14"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline19.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline20.gif" class="displayformula" alt="16x^4-48x^2+12" border="0" width="104" height="17"></td><td align="right" width="10">
+<div id="eqn6" class="eqnum">
+(6)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline21.gif" class="displayformula" alt="H_5(x)" border="0" width="34" height="16"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline22.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline23.gif" class="displayformula" alt="32x^5-160x^3+120x" border="0" width="128" height="17"></td><td align="right" width="10">
+<div id="eqn7" class="eqnum">
+(7)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline24.gif" class="displayformula" alt="H_6(x)" border="0" width="34" height="16"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline25.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline26.gif" class="displayformula" alt="64x^6-480x^4+720x^2-120" border="0" width="170" height="17"></td><td align="right" width="10">
+<div id="eqn8" class="eqnum">
+(8)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline27.gif" class="displayformula" alt="H_7(x)" border="0" width="34" height="16"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline28.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline29.gif" class="displayformula" alt="128x^7-1344x^5+3360x^3-1680x" border="0" width="208" height="17"></td><td align="right" width="10">
+<div id="eqn9" class="eqnum">
+(9)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline30.gif" class="displayformula" alt="H_8(x)" border="0" width="34" height="16"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline31.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline32.gif" class="displayformula" alt="256x^8-3584x^6+13440x^4-13440x^2+1680" border="0" width="275" height="17"></td><td align="right" width="10">
+<div id="eqn10" class="eqnum">
+(10)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline33.gif" class="displayformula" alt="H_9(x)" border="0" width="34" height="16"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline34.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline35.gif" class="displayformula" alt="512x^9-9216x^7+48384x^5-80640x^3+30240x" border="0" width="294" height="17"></td><td align="right" width="10">
+<div id="eqn11" class="eqnum">
+(11)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline36.gif" class="displayformula" alt="H_(10)(x)" border="0" width="39" height="16"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline37.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline38.gif" class="displayformula" alt="1024x^(10)-23040x^8+161280x^6-403200x^4+302400x^2-30240." border="0" width="398" height="17"></td><td align="right" width="10">
+<div id="eqn12" class="eqnum">
+(12)
+</div>
+</td></tr>
+</tbody></table>
+<p class="Text">
+When ordered from smallest to largest powers, the triangle of nonzero
+coefficients is 1; 2; -2, 4; -12, 8; 12, -48, 16; 120, -160, 32; ...
+(Sloane's <a href="http://www.research.att.com/%7Enjas/sequences/A059343" class="Hyperlink">A059343</a>).
+</p>
+<p class="Text">
+The values <img src="HermitePolynomial_files/Inline39.gif" class="inlineformula" alt="H_n(0)" border="0" width="34" height="16"> may be called <a href="http://mathworld.wolfram.com/HermiteNumber.html" class="Hyperlink">Hermite numbers</a>.
+</p>
+<p class="Text">
+The Hermite polynomials are a <a href="http://mathworld.wolfram.com/ShefferSequence.html" class="Hyperlink">Sheffer
+sequence</a> with
+</p>
+<table style="padding-left: 50px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline40.gif" class="displayformula" alt="g(t)" border="0" width="22" height="14"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline41.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline42.gif" class="displayformula" alt="e^(t^2/4)" border="0" width="26" height="20"></td><td align="right" width="10">
+<div id="eqn13" class="eqnum">
+(13)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline43.gif" class="displayformula" alt="f(t)" border="0" width="23" height="14"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline44.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline45.gif" class="displayformula" alt="1/2t" border="0" width="17" height="23"></td><td align="right" width="10">
+<div id="eqn14" class="eqnum">
+(14)
+</div>
+</td></tr>
+</tbody></table>
+<p class="Text">
+(Roman 1984, p.&nbsp;30), giving the <a href="http://mathworld.wolfram.com/ExponentialGeneratingFunction.html" class="Hyperlink">exponential generating function</a>
+</p>
+<div>
+<table style="padding-left: 50px;" align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td align="left"><img src="HermitePolynomial_files/NumberedEquation2.gif" class="numberedequation" alt=" exp(2xt-t^2)=sum_(n=0)^infty(H_n(x)t^n)/(n!). " border="0" width="171" height="46"></td><td align="right" width="3">
+<div id="eqn15" class="eqnum">
+(15)
+</div>
+</td></tr>
+</tbody></table>
+</div>
+<p class="Text">
+Using a <a href="http://mathworld.wolfram.com/TaylorSeries.html" class="Hyperlink">Taylor series</a> shows that
+</p>
+<table style="padding-left: 50px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline46.gif" class="displayformula" alt="H_n(x)" border="0" width="34" height="16"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline47.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline48.gif" class="displayformula" alt="[(partial/(partialt))^nexp(2xt-t^2)]_(t=0)" border="0" width="145" height="37"></td><td align="right" width="10">
+<div id="eqn16" class="eqnum">
+(16)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline49.gif" class="displayformula" alt="" border="0" width="12" height="14"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline50.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline51.gif" class="displayformula" alt="[e^(x^2)(partial/(partialt))^ne^(-(x-t)^2)]_(t=0)." border="0" width="129" height="37"></td><td align="right" width="10">
+<div id="eqn17" class="eqnum">
+(17)
+</div>
+</td></tr>
+</tbody></table>
+<p class="Text">
+Since <img src="HermitePolynomial_files/Inline52.gif" class="inlineformula" alt="partialf(x-t)/partialt=-partialf(x-t)/partialx" border="0" width="176" height="14">,
+</p>
+<table style="padding-left: 50px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline53.gif" class="displayformula" alt="H_n(x)" border="0" width="34" height="16"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline54.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline55.gif" class="displayformula" alt="(-1)^ne^(x^2)[(partial/(partialx))^ne^(-(x-t)^2)]_(t=0)" border="0" width="162" height="37"></td><td align="right" width="10">
+<div id="eqn18" class="eqnum">
+(18)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline56.gif" class="displayformula" alt="" border="0" width="12" height="14"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline57.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline58.gif" class="displayformula" alt="(-1)^ne^(x^2)(d^n)/(dx^n)e^(-x^2)." border="0" width="114" height="37"></td><td align="right" width="10">
+<div id="eqn19" class="eqnum">
+(19)
+</div>
+</td></tr>
+</tbody></table>
+<p class="Text">
+Now define operators
+</p>
+<table style="padding-left: 50px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline59.gif" class="displayformula" alt="O^~_1" border="0" width="16" height="18"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline60.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline61.gif" class="displayformula" alt="-e^(x^2)d/(dx)e^(-x^2)" border="0" width="80" height="36"></td><td align="right" width="10">
+<div id="eqn20" class="eqnum">
+(20)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline62.gif" class="displayformula" alt="O^~_2" border="0" width="16" height="18"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline63.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline64.gif" class="displayformula" alt="e^(x^2/2)(x-d/(dx))e^(-x^2/2)." border="0" width="128" height="36"></td><td align="right" width="10">
+<div id="eqn21" class="eqnum">
+(21)
+</div>
+</td></tr>
+</tbody></table>
+<p class="Text">
+It follows that
+</p>
+<table style="padding-left: 50px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline65.gif" class="displayformula" alt="O^~_1f" border="0" width="27" height="18"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline66.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline67.gif" class="displayformula" alt="-e^(x^2)d/(dx)[fe^(-x^2)]" border="0" width="101" height="36"></td><td align="right" width="10">
+<div id="eqn22" class="eqnum">
+(22)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline68.gif" class="displayformula" alt="" border="0" width="12" height="14"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline69.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline70.gif" class="displayformula" alt="2xf-(df)/(dx)" border="0" width="66" height="36"></td><td align="right" width="10">
+<div id="eqn23" class="eqnum">
+(23)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline71.gif" class="displayformula" alt="O^~_2f" border="0" width="27" height="18"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline72.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline73.gif" class="displayformula" alt="e^(x^2/2)(x-d/(dx))[fe^(-x^2/2)]" border="0" width="145" height="36"></td><td align="right" width="10">
+<div id="eqn24" class="eqnum">
+(24)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline74.gif" class="displayformula" alt="" border="0" width="12" height="14"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline75.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline76.gif" class="displayformula" alt="xf+xf-(df)/(dx)" border="0" width="89" height="36"></td><td align="right" width="10">
+<div id="eqn25" class="eqnum">
+(25)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline77.gif" class="displayformula" alt="" border="0" width="12" height="14"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline78.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline79.gif" class="displayformula" alt="2xf-(df)/(dx)," border="0" width="70" height="36"></td><td align="right" width="10">
+<div id="eqn26" class="eqnum">
+(26)
+</div>
+</td></tr>
+</tbody></table>
+<p class="Text">
+so
+</p>
+<div>
+<table style="padding-left: 50px;" align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td align="left"><img src="HermitePolynomial_files/NumberedEquation3.gif" class="numberedequation" alt=" O^~_1=O^~_2, " border="0" width="53" height="18"></td><td align="right" width="3">
+<div id="eqn27" class="eqnum">
+(27)
+</div>
+</td></tr>
+</tbody></table>
+</div>
+<p class="Text">
+and
+</p>
+<div>
+<table style="padding-left: 50px;" align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td align="left"><img src="HermitePolynomial_files/NumberedEquation4.gif" class="numberedequation" alt=" -e^(x^2)d/(dx)e^(-x^2)=e^(x^2/2)(x-d/(dx))e^(-x^2/2) " border="0" width="220" height="36"></td><td align="right" width="3">
+<div id="eqn28" class="eqnum">
+(28)
+</div>
+</td></tr>
+</tbody></table>
+</div>
+<p class="Text">
+(Arfken 1985, p.&nbsp;720), which means the following definitions are equivalent:
+</p>
+<table style="padding-left: 50px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline80.gif" class="displayformula" alt="exp(2xt-t^2)" border="0" width="80" height="21"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline81.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline82.gif" class="displayformula" alt="sum_(n=0)^(infty)(H_n(x)t^n)/(n!)" border="0" width="72" height="46"></td><td align="right" width="10">
+<div id="eqn29" class="eqnum">
+(29)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline83.gif" class="displayformula" alt="H_n(x)" border="0" width="34" height="16"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline84.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline85.gif" class="displayformula" alt="(-1)^ne^(x^2)(d^n)/(dx^n)e^(-x^2)" border="0" width="110" height="37"></td><td align="right" width="10">
+<div id="eqn30" class="eqnum">
+(30)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline86.gif" class="displayformula" alt="H_n(x)" border="0" width="34" height="16"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline87.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline88.gif" class="displayformula" alt="e^(x^2/2)(x-d/(dx))^ne^(-x^2/2)" border="0" width="129" height="35"></td><td align="right" width="10">
+<div id="eqn31" class="eqnum">
+(31)
+</div>
+</td></tr>
+</tbody></table>
+<p class="Text">
+(Arfken 1985, pp.&nbsp;712-713 and 720).
+</p>
+<p class="Text">
+The Hermite polynomials may be written as
+</p>
+<table style="padding-left: 50px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline89.gif" class="displayformula" alt="H_n(z)" border="0" width="33" height="16"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline90.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline91.gif" class="displayformula" alt="(2z)^n_2F_0(-1/2n,-1/2(n-1);;-z^(-2))" border="0" width="207" height="23"></td><td align="right" width="10">
+<div id="eqn32" class="eqnum">
+(32)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline92.gif" class="displayformula" alt="" border="0" width="12" height="14"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline93.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline94.gif" class="displayformula" alt="2^nz^n(z^2)^(-n/2)U(-1/2n,1/2,z^2)" border="0" width="163" height="25"></td><td align="right" width="10">
+<div id="eqn33" class="eqnum">
+(33)
+</div>
+</td></tr>
+</tbody></table>
+<p class="Text">
+(Koekoek and Swarttouw 1998), where <img src="HermitePolynomial_files/Inline95.gif" class="inlineformula" alt="U(a,b,z)" border="0" width="58" height="14"> is a <a href="http://mathworld.wolfram.com/ConfluentHypergeometricFunctionoftheSecondKind.html" class="Hyperlink">confluent
+ hypergeometric function of the second kind</a>, which can be simplified to
+</p>
+<div>
+<table style="padding-left: 50px;" align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td align="left"><img src="HermitePolynomial_files/NumberedEquation5.gif" class="numberedequation" alt=" H_n(z)=2^nU(-1/2n,1/2,z^2) " border="0" width="155" height="23"></td><td align="right" width="3">
+<div id="eqn34" class="eqnum">
+(34)
+</div>
+</td></tr>
+</tbody></table>
+</div>
+<p class="Text">
+in the right half-plane <img src="HermitePolynomial_files/Inline96.gif" class="inlineformula" alt="R[z]&gt;0" border="0" width="51" height="14">.
+</p>
+<p class="Text">
+The Hermite polynomials are related to the derivative of the <a href="http://mathworld.wolfram.com/ErrorFunction.html" class="Hyperlink">error function</a> by
+</p>
+<div>
+<table style="padding-left: 50px;" align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td align="left"><img src="HermitePolynomial_files/NumberedEquation6.gif" class="numberedequation" alt=" H_n(z)=1/2(-1)^nsqrt(pi)e^(z^2)(d^(n+1))/(dz^(n+1))erf(z). " border="0" width="220" height="42"></td><td align="right" width="3">
+<div id="eqn35" class="eqnum">
+(35)
+</div>
+</td></tr>
+</tbody></table>
+</div>
+<p class="Text">
+They have a <a href="http://mathworld.wolfram.com/ContourIntegral.html" class="Hyperlink">contour integral</a>
+representation
+</p>
+<div>
+<table style="padding-left: 50px;" align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td align="left"><img src="HermitePolynomial_files/NumberedEquation7.gif" class="numberedequation" alt=" H_n(x)=(n!)/(2pii)&#8750;e^(-t^2+2tx)t^(-n-1)dt. " border="0" width="193" height="36"></td><td align="right" width="3">
+<div id="eqn36" class="eqnum">
+(36)
+</div>
+</td></tr>
+</tbody></table>
+</div>
+<p class="Text">
+They are orthogonal in the range <img src="HermitePolynomial_files/Inline97.gif" class="inlineformula" alt="(-infty,infty)" border="0" width="50" height="14"> with
+ respect to the <a href="http://mathworld.wolfram.com/WeightingFunction.html" class="Hyperlink">weighting function</a> <img src="HermitePolynomial_files/Inline98.gif" class="inlineformula" alt="e^(-x^2)" border="0" width="24" height="20">
+</p>
+<div>
+<table style="padding-left: 50px;" align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td align="left"><img src="HermitePolynomial_files/NumberedEquation8.gif" class="numberedequation" alt=" int_(-infty)^inftyH_m(x)H_n(x)e^(-x^2)dx=delta_(mn)2^nn!sqrt(pi). " border="0" width="244" height="35"></td><td align="right" width="3">
+<div id="eqn37" class="eqnum">
+(37)
+</div>
+</td></tr>
+</tbody></table>
+</div>
+<p class="Text">
+The Hermite polynomials satisfy the symmetry condition
+</p>
+<div>
+<table style="padding-left: 50px;" align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td align="left"><img src="HermitePolynomial_files/NumberedEquation9.gif" class="numberedequation" alt=" H_n(-x)=(-1)^nH_n(x). " border="0" width="133" height="16"></td><td align="right" width="3">
+<div id="eqn38" class="eqnum">
+(38)
+</div>
+</td></tr>
+</tbody></table>
+</div>
+<p class="Text">
+They also obey the <a href="http://mathworld.wolfram.com/RecurrenceRelation.html" class="Hyperlink">recurrence
+relations</a>
+</p>
+<div>
+<table style="padding-left: 50px;" align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td align="left"><img src="HermitePolynomial_files/NumberedEquation10.gif" class="numberedequation" alt=" H_(n+1)(x)=2xH_n(x)-2nH_(n-1)(x) " border="0" width="196" height="16"></td><td align="right" width="3">
+<div id="eqn39" class="eqnum">
+(39)
+</div>
+</td></tr>
+</tbody></table>
+</div>
+<div>
+<table style="padding-left: 50px;" align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td align="left"><img src="HermitePolynomial_files/NumberedEquation11.gif" class="numberedequation" alt=" H_n^'(x)=2nH_(n-1)(x). " border="0" width="120" height="17"></td><td align="right" width="3">
+<div id="eqn40" class="eqnum">
+(40)
+</div>
+</td></tr>
+</tbody></table>
+</div>
+<p class="Text">
+By solving the <a href="http://mathworld.wolfram.com/HermiteDifferentialEquation.html" class="Hyperlink">Hermite
+differential equation</a>, the series
+</p>
+<table style="padding-left: 50px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline99.gif" class="displayformula" alt="H_(2k)(x)" border="0" width="41" height="16"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline100.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline101.gif" class="displayformula" alt="(-1)^k2^k(2k-1)!![1+sum_(j=1)^(k)((-4k)(-4k+4)...(-4k+4j-4))/((2j)!)x^(2j)]" border="0" width="387" height="51"></td><td align="right" width="10">
+<div id="eqn41" class="eqnum">
+(41)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline102.gif" class="displayformula" alt="" border="0" width="12" height="14"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline103.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline104.gif" class="displayformula" alt="(-2)^k(2k-1)!!_1F_1(-k;1/2;x^2)" border="0" width="181" height="23"></td><td align="right" width="10">
+<div id="eqn42" class="eqnum">
+(42)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline105.gif" class="displayformula" alt="H_(2k+1)(x)" border="0" width="52" height="16"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline106.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline107.gif" class="displayformula" alt="(-1)^k2^(k+1)(2k+1)!![x+sum_(j=1)^(k)((-4k)(-4k+4)...(-4k+4j-4))/((2j+1)!)x^(2j+1)]" border="0" width="409" height="51"></td><td align="right" width="10">
+<div id="eqn43" class="eqnum">
+(43)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline108.gif" class="displayformula" alt="" border="0" width="12" height="14"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline109.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline110.gif" class="displayformula" alt="(-1)^k2^(k+1)(2k+1)!!x_1F_1(-k;3/2;x^2)" border="0" width="218" height="23"></td><td align="right" width="10">
+<div id="eqn44" class="eqnum">
+(44)
+</div>
+</td></tr>
+</tbody></table>
+<p class="Text">
+are obtained, where the products in the numerators are equal to
+</p>
+<div>
+<table style="padding-left: 50px;" align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td align="left"><img src="HermitePolynomial_files/NumberedEquation12.gif" class="numberedequation" alt=" (-4k)(-4k+4)...(-4k+4j-4)=4^j(-k)_j, " border="0" width="265" height="21"></td><td align="right" width="3">
+<div id="eqn45" class="eqnum">
+(45)
+</div>
+</td></tr>
+</tbody></table>
+</div>
+<p class="Text">
+with <img src="HermitePolynomial_files/Inline111.gif" class="inlineformula" alt="(x)_n" border="0" width="21" height="16"> the <a href="http://mathworld.wolfram.com/PochhammerSymbol.html" class="Hyperlink">Pochhammer symbol</a>.
+</p>
+<p class="Text">
+Let a set of associated functions be defined by
+</p>
+<div>
+<table style="padding-left: 50px;" align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td align="left"><img src="HermitePolynomial_files/NumberedEquation13.gif" class="numberedequation" alt=" u_n(x)=sqrt(a/(pi^(1/2)n!2^n))H_n(ax)e^(-a^2x^2/2), " border="0" width="226" height="44"></td><td align="right" width="3">
+<div id="eqn46" class="eqnum">
+(46)
+</div>
+</td></tr>
+</tbody></table>
+</div>
+<p class="Text">
+then the <img src="HermitePolynomial_files/Inline112.gif" class="inlineformula" alt="u_n" border="0" width="13" height="16"> satisfy the orthogonality conditions
+</p>
+<table style="padding-left: 50px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline113.gif" class="displayformula" alt="int_(-infty)^inftyu_n(x)(du_m)/(dx)dx" border="0" width="107" height="37"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline114.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline115.gif" class="displayformula" alt="{asqrt((n+1)/2) m=n+1; -asqrt(n/2) m=n-1; 0 otherwise" border="0" width="139" height="120"></td><td align="right" width="10">
+<div id="eqn47" class="eqnum">
+(47)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline116.gif" class="displayformula" alt="int_(-infty)^inftyu_m(x)u_n(x)dx" border="0" width="110" height="35"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline117.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline118.gif" class="displayformula" alt="delta_(mn)" border="0" width="22" height="16"></td><td align="right" width="10">
+<div id="eqn48" class="eqnum">
+(48)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline119.gif" class="displayformula" alt="int_(-infty)^inftyu_m(x)xu_n(x)dx" border="0" width="120" height="35"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline120.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline121.gif" class="displayformula" alt="{1/asqrt((n+1)/2) m=n+1; 1/asqrt(n/2) m=n-1; 0 otherwise" border="0" width="144" height="120"></td><td align="right" width="10">
+<div id="eqn49" class="eqnum">
+(49)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline122.gif" class="displayformula" alt="int_(-infty)^inftyu_m(x)x^2u_n(x)dx" border="0" width="126" height="35"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline123.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline124.gif" class="displayformula" alt="{(sqrt(n(n-1)))/(2a^2) m=n-2; (2n+1)/(2a^2) m=n; (sqrt((n+1)(n+2)))/(2a^2) m=n+2; 0 m!=n!=n+/-2" border="0" width="194" height="160"></td><td align="right" width="10">
+<div id="eqn50" class="eqnum">
+(50)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline125.gif" class="displayformula" alt="int_(-infty)^inftye^(-x^2)H_alpha(x)H_beta(x)H_gamma(x)dx" border="0" width="180" height="35"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline126.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline127.gif" class="displayformula" alt="sqrt(pi)(2^salpha!beta!gamma!)/((s-alpha)!(s-beta)!(s-gamma)!)," border="0" width="166" height="39"></td><td align="right" width="10">
+<div id="eqn51" class="eqnum">
+(51)
+</div>
+</td></tr>
+</tbody></table>
+<p class="Text">
+if <img src="HermitePolynomial_files/Inline128.gif" class="inlineformula" alt="alpha+beta+gamma=2s" border="0" width="85" height="14"> is <a href="http://mathworld.wolfram.com/EvenNumber.html" class="Hyperlink">even</a> and <img src="HermitePolynomial_files/Inline129.gif" class="inlineformula" alt="s&gt;=alpha" border="0" width="28" height="14">, <img src="HermitePolynomial_files/Inline130.gif" class="inlineformula" alt="s&gt;=beta" border="0" width="28" height="14">, and <img src="HermitePolynomial_files/Inline131.gif" class="inlineformula" alt="s&gt;=gamma" border="0" width="27" height="14">. Otherwise,
+ the last integral is 0 (Szegö 1975, p.&nbsp;390). Another integral is
+</p>
+<div>
+<table style="padding-left: 50px;" align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td align="left"><img src="HermitePolynomial_files/NumberedEquation14.gif" class="numberedequation" alt=" int_(-infty)^inftyu_n(x)x^ru_m(x)dx={0   if r-n-m is odd; (r!)/((2a)^r)sqrt((2^(m+n))/(m!n!))sum_(p=max(0,-s))^(min(m,n))(n; p)(m; p)(p!)/(2^p(s+p)!)   otherwise, " border="0" width="545" height="86"></td><td align="right" width="3">
+<div id="eqn52" class="eqnum">
+(52)
+</div>
+</td></tr>
+</tbody></table>
+</div>
+<p class="Text">
+where <img src="HermitePolynomial_files/Inline132.gif" class="inlineformula" alt="s=(r-n-m)/2" border="0" width="97" height="14"> and <img src="HermitePolynomial_files/Inline133.gif" class="inlineformula" alt="(n; k)" border="0" width="25" height="36"> is a <a href="http://mathworld.wolfram.com/BinomialCoefficient.html" class="Hyperlink">binomial coefficient</a> (T.&nbsp;Drane, pers. comm., Feb.&nbsp;14,
+ 2006).
+</p>
+<p class="Text">
+The <a href="http://mathworld.wolfram.com/PolynomialDiscriminant.html" class="Hyperlink">polynomial discriminant</a>
+is
+</p>
+<div>
+<table style="padding-left: 50px;" align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td align="left"><img src="HermitePolynomial_files/NumberedEquation15.gif" class="numberedequation" alt=" D_n=2^(3n(n-1)/2)product_(k=1)^nk^k " border="0" width="120" height="46"></td><td align="right" width="3">
+<div id="eqn53" class="eqnum">
+(53)
+</div>
+</td></tr>
+</tbody></table>
+</div>
+<p class="Text">
+(Szegö 1975, p.&nbsp;143), a normalized form of the <a href="http://mathworld.wolfram.com/Hyperfactorial.html" class="Hyperlink">hyperfactorial</a>, the first few values of which are 1, 32, 55296,
+ 7247757312, 92771293593600000, ... (Sloane's <a href="http://www.research.att.com/%7Enjas/sequences/A054374" class="Hyperlink">A054374</a>). The table of <a href="http://mathworld.wolfram.com/Resultant.html" class="Hyperlink">resultants</a>
+ is given by <img src="HermitePolynomial_files/Inline134.gif" class="inlineformula" alt="{0}" border="0" width="17" height="14">, <img src="HermitePolynomial_files/Inline135.gif" class="inlineformula" alt="{-8,0}" border="0" width="42" height="14">, <img src="HermitePolynomial_files/Inline136.gif" class="inlineformula" alt="{0,-2048,0}" border="0" width="78" height="14">, <img src="HermitePolynomial_files/Inline137.gif" class="inlineformula" alt="{192,16384,28311552,0}" border="0" width="159" height="14">, ... (Sloane's <a href="http://www.research.att.com/%7Enjas/sequences/A054373" class="Hyperlink">A054373</a>).
+</p>
+<p class="Text">
+Two interesting identities involving <img src="HermitePolynomial_files/Inline138.gif" class="inlineformula" alt="H_n(x+y)" border="0" width="56" height="16"> are given
+ by
+</p>
+<div>
+<table style="padding-left: 50px;" align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td align="left"><img src="HermitePolynomial_files/NumberedEquation16.gif" class="numberedequation" alt=" sum_(k=0)^n(n; k)H_k(x)H_(n-k)(y)=2^(n/2)H_n(2^(-1/2)(x+y)) " border="0" width="265" height="46"></td><td align="right" width="3">
+<div id="eqn54" class="eqnum">
+(54)
+</div>
+</td></tr>
+</tbody></table>
+</div>
+<p class="Text">
+and
+</p>
+<div>
+<table style="padding-left: 50px;" align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td align="left"><img src="HermitePolynomial_files/NumberedEquation17.gif" class="numberedequation" alt=" sum_(k=0)^n(n; k)H_k(x)(2y)^(n-k)=H_n(x+y) " border="0" width="200" height="46"></td><td align="right" width="3">
+<div id="eqn55" class="eqnum">
+(55)
+</div>
+</td></tr>
+</tbody></table>
+</div>
+<p class="Text">
+(G.&nbsp;Colomer, pers. comm.). A very pretty identity is
+</p>
+<div>
+<table style="padding-left: 50px;" align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td align="left"><img src="HermitePolynomial_files/NumberedEquation18.gif" class="numberedequation" alt=" H_n(x+y)=(H+2y)^n, " border="0" width="134" height="16"></td><td align="right" width="3">
+<div id="eqn56" class="eqnum">
+(56)
+</div>
+</td></tr>
+</tbody></table>
+</div>
+<p class="Text">
+where <img src="HermitePolynomial_files/Inline139.gif" class="inlineformula" alt="H^k=H_k(x)" border="0" width="68" height="19"> (T.&nbsp;Drane, pers. comm.,
+ Feb.&nbsp;14, 2006).
+</p>
+<p class="Text">
+They also obey the sum
+</p>
+<div>
+<table style="padding-left: 50px;" align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td align="left"><img src="HermitePolynomial_files/NumberedEquation19.gif" class="numberedequation" alt=" sum_(k=0)^n(-1)^(n-k)(n; k)H_n(k)=2^nn!, " border="0" width="176" height="46"></td><td align="right" width="3">
+<div id="eqn57" class="eqnum">
+(57)
+</div>
+</td></tr>
+</tbody></table>
+</div>
+<p class="Text">
+as well as the more complicated
+</p>
+<div>
+<table style="padding-left: 50px;" align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td align="left"><img src="HermitePolynomial_files/NumberedEquation20.gif" class="numberedequation" alt=" H_n(x)=H_n+sum_(m=0)^(|_n/2_|)[sum_(k=1)^(n-2m)(-1)^kS(n-2m,k)(-x)_k]×((-1)^m2^(n-2m)n!)/((n-2m)!m!),   " border="0" width="400" height="48"></td><td align="right" width="3">
+<div id="eqn58" class="eqnum">
+(58)
+</div>
+</td></tr>
+</tbody></table>
+</div>
+<p class="Text">
+where <img src="HermitePolynomial_files/Inline140.gif" class="inlineformula" alt="H_n=H_n(0)" border="0" width="67" height="16"> is a <a href="http://mathworld.wolfram.com/HermiteNumber.html" class="Hyperlink">Hermite number</a>, <img src="HermitePolynomial_files/Inline141.gif" class="inlineformula" alt="S(n,k)" border="0" width="39" height="14"> is a <a href="http://mathworld.wolfram.com/StirlingNumberoftheSecondKind.html" class="Hyperlink">Stirling number of the second kind</a>, and <img src="HermitePolynomial_files/Inline142.gif" class="inlineformula" alt="(x)_n" border="0" width="21" height="16"> is a <a href="http://mathworld.wolfram.com/PochhammerSymbol.html" class="Hyperlink">Pochhammer symbol</a> (T.&nbsp;Drane, pers. comm., Feb.&nbsp;14,
+ 2006).
+</p>
+<p class="Text">
+A class of generalized Hermite polynomials <img src="HermitePolynomial_files/Inline143.gif" class="inlineformula" alt="gamma_n^m(x)" border="0" width="33" height="17"> satisfying
+</p>
+<div>
+<table style="padding-left: 50px;" align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td align="left"><img src="HermitePolynomial_files/NumberedEquation21.gif" class="numberedequation" alt=" e^(mxt-t^m)=sum_(n=0)^inftygamma_n^m(x)t^n " border="0" width="125" height="46"></td><td align="right" width="3">
+<div id="eqn59" class="eqnum">
+(59)
+</div>
+</td></tr>
+</tbody></table>
+</div>
+<p class="Text">
+was studied by Subramanyan (1990). A class of related <a href="http://mathworld.wolfram.com/Polynomial.html" class="Hyperlink">polynomials</a> defined by
+</p>
+<div>
+<table style="padding-left: 50px;" align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td align="left"><img src="HermitePolynomial_files/NumberedEquation22.gif" class="numberedequation" alt=" h_(n,m)=gamma_n^m((2x)/m) " border="0" width="91" height="36"></td><td align="right" width="3">
+<div id="eqn60" class="eqnum">
+(60)
+</div>
+</td></tr>
+</tbody></table>
+</div>
+<p class="Text">
+and with <a href="http://mathworld.wolfram.com/GeneratingFunction.html" class="Hyperlink">generating function</a>
+</p>
+<div>
+<table style="padding-left: 50px;" align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td align="left"><img src="HermitePolynomial_files/NumberedEquation23.gif" class="numberedequation" alt=" e^(2xt-t^m)=sum_(n=0)^inftyh_(n,m)(x)t^n " border="0" width="130" height="46"></td><td align="right" width="3">
+<div id="eqn61" class="eqnum">
+(61)
+</div>
+</td></tr>
+</tbody></table>
+</div>
+<p class="Text">
+was studied by Djordjevi&#263; (1996). They satisfy
+</p>
+<div>
+<table style="padding-left: 50px;" align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td align="left"><img src="HermitePolynomial_files/NumberedEquation24.gif" class="numberedequation" alt=" H_n(x)=n!h_(n,2)(x). " border="0" width="109" height="17"></td><td align="right" width="3">
+<div id="eqn62" class="eqnum">
+(62)
+</div>
+</td></tr>
+</tbody></table>
+</div>
+<p class="Text">
+Roman (1984, pp.&nbsp;87-93) defines a generalized Hermite polynomial <img src="HermitePolynomial_files/Inline144.gif" class="inlineformula" alt="H_n^((nu))(x)" border="0" width="41" height="19"> with
+ variance <img src="HermitePolynomial_files/Inline145.gif" class="inlineformula" alt="nu" border="0" width="7" height="14">.
+</p>
+<p class="Text">
+A modified version of the Hermite polynomial is sometimes (but rarely) defined by
+</p>
+<div>
+<table style="padding-left: 50px;" align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td align="left"><img src="HermitePolynomial_files/NumberedEquation25.gif" class="numberedequation" alt=" He_n(x)=2^(-n/2)H_n(x/(sqrt(2))) " border="0" width="144" height="40"></td><td align="right" width="3">
+<div id="eqn63" class="eqnum">
+(63)
+</div>
+</td></tr>
+</tbody></table>
+</div>
+<p class="Text">
+(Jörgensen 1916; Magnus and Oberhettinger 1948; Slater 1960,
+p.&nbsp;99; Abramowitz and Stegun 1972, p.&nbsp;778). The first few of
+these polynomials are given by
+</p>
+<table style="padding-left: 50px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline146.gif" class="displayformula" alt="He_1(x)" border="0" width="40" height="14"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline147.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline148.gif" class="displayformula" alt="x" border="0" width="7" height="14"></td><td align="right" width="10">
+<div id="eqn64" class="eqnum">
+(64)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline149.gif" class="displayformula" alt="He_2(x)" border="0" width="40" height="14"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline150.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline151.gif" class="displayformula" alt="x^2-1" border="0" width="35" height="17"></td><td align="right" width="10">
+<div id="eqn65" class="eqnum">
+(65)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline152.gif" class="displayformula" alt="He_3(x)" border="0" width="40" height="16"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline153.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline154.gif" class="displayformula" alt="x^3-3x" border="0" width="45" height="17"></td><td align="right" width="10">
+<div id="eqn66" class="eqnum">
+(66)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline155.gif" class="displayformula" alt="He_4(x)" border="0" width="40" height="14"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline156.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline157.gif" class="displayformula" alt="x^4-6x^2+3" border="0" width="73" height="17"></td><td align="right" width="10">
+<div id="eqn67" class="eqnum">
+(67)
+</div>
+</td></tr><tr style=""><td align="right" width="1"><img src="HermitePolynomial_files/Inline158.gif" class="displayformula" alt="He_5(x)" border="0" width="40" height="16"></td><td align="center" width="14"><img src="HermitePolynomial_files/Inline159.gif" class="displayformula" alt="=" border="0" width="9" height="14"></td><td align="left"><img src="HermitePolynomial_files/Inline160.gif" class="displayformula" alt="x^5-10x^3+15x." border="0" width="101" height="17"></td><td align="right" width="10">
+<div id="eqn68" class="eqnum">
+(68)
+</div>
+</td></tr>
+</tbody></table>
+<p class="Text">
+When ordered from smallest to largest powers, the triangle of nonzero coefficients is 1; 1; <img src="HermitePolynomial_files/Inline161.gif" class="inlineformula" alt="-1" border="0" width="17" height="14">, 1; <img src="HermitePolynomial_files/Inline162.gif" class="inlineformula" alt="-3" border="0" width="17" height="14">, 1; 3, <img src="HermitePolynomial_files/Inline163.gif" class="inlineformula" alt="-6" border="0" width="17" height="14">, 1; 15, <img src="HermitePolynomial_files/Inline164.gif" class="inlineformula" alt="-10" border="0" width="24" height="14">, 1; ... (Sloane's <a href="http://www.research.att.com/%7Enjas/sequences/A096713" class="Hyperlink">A096713</a>). The polynomial <img src="HermitePolynomial_files/Inline165.gif" class="inlineformula" alt="He_n(x)" border="0" width="40" height="16"> is the <a href="http://mathworld.wolfram.com/IndependencePolynomial.html" class="Hyperlink">independence polynomial</a>
+ of the <a href="http://mathworld.wolfram.com/CompleteGraph.html" class="Hyperlink">complete graph</a> <img src="HermitePolynomial_files/Inline166.gif" class="inlineformula" alt="K_n" border="0" width="15" height="16">.
+</p>
+<!-- End Content -->
+<!-- Begin See Also -->
+<form name="SearchLinks" method="get" action="http://mathworld.wolfram.com/search/">
+<p class="CrossRefs">
+<span class="crosslinkheader">SEE ALSO:</span> <a href="http://mathworld.wolfram.com/HermiteNumber.html" class="Hyperlink">Hermite Number</a>, <a href="http://mathworld.wolfram.com/MehlersHermitePolynomialFormula.html" class="Hyperlink">Mehler's
+ Hermite Polynomial Formula</a>, <a href="http://mathworld.wolfram.com/MultivariateHermitePolynomial.html" class="Hyperlink">Multivariate
+ Hermite Polynomial</a>, <a href="http://mathworld.wolfram.com/WeberFunctions.html" class="Hyperlink">Weber Functions</a>
+</p>
+</form>
+<!-- End See Also -->
+<!-- Begin CrossURL -->
+<p class="CrossRefs">
+<span class="crosslinkheader">RELATED WOLFRAM SITES:</span> <a href="http://functions.wolfram.com/Polynomials/HermiteH/" class="Hyperlink">http://functions.wolfram.com/Polynomials/HermiteH/</a>, <a href="http://functions.wolfram.com/HypergeometricFunctions/HermiteHGeneral/" class="Hyperlink">http://functions.wolfram.com/HypergeometricFunctions/HermiteHGeneral/</a>
+</p>
+<!-- End CrossURL -->
+<!-- Begin Contributor -->
+<!-- End Contributor -->
+<!-- Begin References -->
+<p>
+<img src="HermitePolynomial_files/underline.gif" alt="" width="300" height="3">
+</p>
+<span class="crosslinkheader">REFERENCES:</span>
+<p class="Reference">
+Abramowitz, M. and Stegun, I.&nbsp;A. (Eds.). "Orthogonal Polynomials." Ch.&nbsp;22 in <i><a href="http://www.amazon.com/exec/obidos/ASIN/0486612724/ref=nosim/weisstein-20" class="Hyperlink">Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical
+ Tables, 9th printing.</a></i> New York: Dover, pp.&nbsp;771-802, 1972.
+</p>
+<p class="Reference">
+Andrews, G.&nbsp;E.; Askey, R.; and Roy, R. "Hermite Polynomials." §6.1 in <i><a href="http://www.amazon.com/exec/obidos/ASIN/0521623219/ref=nosim/weisstein-20" class="Hyperlink">Special Functions.</a></i> Cambridge, England: Cambridge University
+ Press, pp.&nbsp;278-282, 1999.
+</p>
+<p class="Reference">
+Arfken, G. "Hermite Functions." §13.1 in <i><a href="http://www.amazon.com/exec/obidos/ASIN/0120598760/ref=nosim/weisstein-20" class="Hyperlink">Mathematical Methods for Physicists, 3rd ed.</a></i> Orlando, FL:
+ Academic Press, pp.&nbsp;712-721, 1985.
+</p>
+<p class="Reference">
+Chebyshev, P.&nbsp;L. "Sur le développement des fonctions à une seule variable." <i>Bull. ph.-math., Acad. Imp. Sc. St. Pétersbourg</i> <b>1</b>,
+ 193-200, 1859.
+</p>
+<p class="Reference">
+Chebyshev, P.&nbsp;L. <i><a href="http://www.amazon.com/exec/obidos/ASIN/B0007DXFPC/ref=nosim/weisstein-20" class="Hyperlink">Oeuvres, Vol.&nbsp;1.</a></i> New York: Chelsea, pp.&nbsp;49-508,
+ 1987.
+</p>
+<p class="Reference">
+Djordjevi&#263;, G. "On Some Properties of Generalized Hermite Polynomials."
+<i>Fib. Quart.</i> <b>34</b>, 2-6, 1996.
+</p>
+<p class="Reference">
+Hermite, C. "Sur un nouveau développement en série de fonctions." <i>Compt. Rend. Acad. Sci. Paris</i> <b>58</b>, 93-100 and 266-273, 1864. Reprinted
+ in Hermite, C. <i><a href="http://www.amazon.co.uk/exec/obidos/ASIN/2745301527/ref=nosim/mathworld-21" class="Hyperlink">Oeuvres complètes, tome 2.</a></i> Paris, pp.&nbsp;293-308,
+ 1908.
+</p>
+<p class="Reference">
+Hermite, C. <i><a href="http://www.amazon.co.uk/exec/obidos/ASIN/2745301527/ref=nosim/mathworld-21" class="Hyperlink">Oeuvres complètes, tome 3.</a></i> Paris: Hermann, p.&nbsp;432,
+ 1912.
+</p>
+<p class="Reference">
+Iyanaga, S. and Kawada, Y. (Eds.). "Hermite Polynomials." Appendix A, Table 20.IV in <i><a href="http://www.amazon.com/exec/obidos/ASIN/0262590204/ref=nosim/weisstein-20" class="Hyperlink">Encyclopedic Dictionary of Mathematics.</a></i> Cambridge, MA:
+ MIT Press, pp.&nbsp;1479-1480, 1980.
+</p>
+<p class="Reference">
+Jeffreys, H. and Jeffreys, B.&nbsp;S. "The Parabolic Cylinder, Hermite, and Hh Functions" §23.08 in <i><a href="http://www.amazon.com/exec/obidos/ASIN/0521664020/ref=nosim/weisstein-20" class="Hyperlink">Methods of Mathematical Physics, 3rd ed.</a></i> Cambridge, England:
+ Cambridge University Press, pp.&nbsp;620-622, 1988.
+</p>
+<p class="Reference">
+Jörgensen, N.&nbsp;R. <i>Undersögler over frekvensflader og korrelation.</i>
+Copenhagen, Denmark: Busck, 1916.
+</p>
+<p class="Reference">
+Koekoek, R. and Swarttouw, R.&nbsp;F. "Hermite." §1.13 in <i>The Askey-Scheme of Hypergeometric Orthogonal Polynomials and its </i><img src="HermitePolynomial_files/Inline167.gif" class="inlineformula" alt="q" border="0" width="7" height="14"><i>-Analogue.</i>
+ Delft, Netherlands: Technische Universiteit Delft, Faculty of Technical Mathematics
+ and Informatics Report 98-17, pp.&nbsp;50-51, 1998.
+</p>
+<p class="Reference">
+Magnus, W. and Oberhettinger, F. Ch.&nbsp;5 in <i>Formeln und Sätze für die speziellen Funktionen der mathematischen Physik, 2nd ed.</i> Berlin: Springer-Verlag,
+ 1948.
+</p>
+<p class="Reference">
+Roman, S. "The Hermite Polynomials." §4.2.1 in <i><a href="http://www.amazon.com/exec/obidos/ASIN/0125943806/ref=nosim/weisstein-20" class="Hyperlink">The Umbral Calculus.</a></i> New York: Academic Press, pp.&nbsp;30
+ and 87-93, 1984.
+</p>
+<p class="Reference">Rota, G.-C.; Kahaner, D.; Odlyzko, A. "Hermite
+Polynomials." §10 in "On the Foundations of Combinatorial Theory. VIII:
+Finite Operator Calculus." <i>J. Math. Anal. Appl.</i> <b>42</b>, 684-760, 1973.
+</p>
+<p class="Reference">
+Sansone, G. "Expansions in Laguerre and Hermite Series." Ch.&nbsp;4 in <i><a href="http://www.amazon.com/exec/obidos/ASIN/0486667308/ref=nosim/weisstein-20" class="Hyperlink">Orthogonal Functions, rev. English ed.</a></i> New York: Dover,
+ pp.&nbsp;295-385, 1991.
+</p>
+<p class="Reference">
+Slater, L.&nbsp;J. <i><a href="http://www.amazon.co.uk/exec/obidos/ASIN/B0000CKIV8/ref=nosim/mathworld-21" class="Hyperlink">Confluent Hypergeometric Functions.</a></i> Cambridge, England:
+ Cambridge University Press, 1960.
+</p>
+<p class="Reference">
+Sloane, N.&nbsp;J.&nbsp;A. Sequences  <a href="http://www.research.att.com/%7Enjas/sequences/A054373" class="Hyperlink">A054373</a>, <a href="http://www.research.att.com/%7Enjas/sequences/A054374" class="Hyperlink">A054374</a>, <a href="http://www.research.att.com/%7Enjas/sequences/A059343" class="Hyperlink">A059343</a>, and <a href="http://www.research.att.com/%7Enjas/sequences/A096713" class="Hyperlink">A096713</a> in "The On-Line Encyclopedia of Integer Sequences."
+</p>
+<p class="Reference">
+Spanier, J. and Oldham, K.&nbsp;B. "The Hermite Polynomials <img src="HermitePolynomial_files/Inline168.gif" class="inlineformula" alt="H_n(x)" border="0" width="34" height="16">." Ch.&nbsp;24
+ in <i><a href="http://www.amazon.com/exec/obidos/ASIN/0387488065/ref=nosim/weisstein-20" class="Hyperlink">An Atlas of Functions.</a></i> Washington, DC: Hemisphere, pp.&nbsp;217-223,
+ 1987.
+</p>
+<p class="Reference">
+Subramanyan, P.&nbsp;R. "Springs of the Hermite Polynomials." <i>Fib. Quart.</i> <b>28</b>,
+156-161, 1990.
+</p>
+<p class="Reference">
+Szegö, G. <i><a href="http://www.amazon.com/exec/obidos/ASIN/0821810235/ref=nosim/weisstein-20" class="Hyperlink">Orthogonal Polynomials, 4th ed.</a></i> Providence, RI: Amer. Math.
+ Soc., 1975.
+</p>
+<!-- End References -->
+<!-- Begin CiteAs -->
+<div>
+<img src="HermitePolynomial_files/underline.gif" alt="" width="300" height="3"><br><br><br><span class="crosslinkheader">CITE THIS AS:</span><br>
+<p class="citation">
+<a href="http://mathworld.wolfram.com/about/author.html">Weisstein, Eric W.</a> "Hermite Polynomial."
+From <a href="http://mathworld.wolfram.com/"><i>MathWorld</i></a>--A Wolfram Web Resource. <a href="http://mathworld.wolfram.com/HermitePolynomial.html">http://mathworld.wolfram.com/HermitePolynomial.html</a>
+</p>
+</div>
+<!-- End CiteAs -->
+<!-- End Total Content -->
+</td></tr>
+<!-- End Body -->
+</tbody></table>
+</div>
+</div>
+<div class="bottomshadow">
+<img src="HermitePolynomial_files/spacer.gif" alt="" width="1" height="17">
+</div>
+<p class="footer">
+<a href="http://mathworld.wolfram.com/contact/"><img src="HermitePolynomial_files/send.gif" alt="Send" title="Send" border="0" width="16" height="17">Contact the <i>MathWorld</i> Team</a><br>
+© 1999-2009 <a href="http://www.wolfram.com/" target="_blank">Wolfram Research, Inc.</a> | <a href="http://mathworld.wolfram.com/about/terms.html">Terms of Use</a>
+</p>
+
+</td>
+<td valign="top">
+<div class="demonstrations">
+<table border="0" width="185">
+<tbody><tr valign="top"><td>
+<div class="demoheader">
+<span class="demoinsidetitle">Hermite Polynomial</span><span class="demoinsidetext">&nbsp;in&nbsp;the&nbsp;</span>
+<div>
+<img src="HermitePolynomial_files/demo_logo.jpg" alt="New! Interactive mathematics--The Wolfram Demonstrations Project" title="New! Interactive mathematics--The Wolfram Demonstrations Project" border="0" width="203" height="20">
+</div>
+</div>
+</td></tr>
+</tbody></table>
+<div class="demolowerhalf">
+<div class="leftmargin">
+<table border="0" width="185">
+<tbody><tr valign="top"><td class="demorowleftTop"><a href="http://demonstrations.wolfram.com/3DHermiteLissajousFigures/" class="demolink" target="_blank"><img src="HermitePolynomial_files/3DHermiteLissajousFigures.jpg" alt="3D Hermite Lissajous Figures" border="0" width="44" height="49"><img src="HermitePolynomial_files/play.gif" class="play" alt="3D Hermite Lissajous Figures" border="0"></a></td><td class="demorowrightTop" valign="middle"><span class="demowords"><a href="http://demonstrations.wolfram.com/3DHermiteLissajousFigures/" class="othersite" target="_blank">3D Hermite Lissajous Figures</a></span></td></tr><tr valign="top"><td class="demorowleftBottom"><a href="http://demonstrations.wolfram.com/GeneratingFunctionsAndRodriguessFormulasForSpecialFunctionsU/" class="demolink" target="_blank"><img src="HermitePolynomial_files/GeneratingFunctionsAndRodriguessFormulasForSpecialFunctionsU.jpg" alt="Generating Functions and Rodrigues's Formulas for Special Functions Used in Quantum Mechanics" border="0" width="45" height="40"><img src="HermitePolynomial_files/play.gif" class="play" alt="Generating Functions and Rodrigues's Formulas for Special Functions Used in Quantum Mechanics" border="0"></a></td><td class="demorowrightBottom" valign="middle"><span class="demowords"><a href="http://demonstrations.wolfram.com/GeneratingFunctionsAndRodriguessFormulasForSpecialFunctionsU/" class="othersite" target="_blank">Generating Functions and Rodrigues's Formulas for
+ Special Functions Used in Quantum Mechanics</a></span></td></tr>
+</tbody></table>
+</div>
+</div>
+</div>
+<div style="margin-left: 30px; margin-right: 10px; margin-top: 20px;">
+
+<a href="http://www.wolfram.com/products/mathematica/" target="_blank"><img src="HermitePolynomial_files/mathematica.gif" alt="Wolfram Mathematica 7" title="Wolfram Mathematica 7" border="0" width="211" height="308"></a><div>
+<!-- The code below handles :hover and :active for IE6 and below -->
+<!--[if lte IE 6]>
+<style type="text/css">
+div.redwebmenu {
+   behavior: url(/scripts/csshover.htc);
+   }
+ </style>
+<![endif]-->
+
+<div style="position: absolute; margin-left: -3px; margin-right: 30px; padding-top: 6px;">
+<table>
+<tbody><tr>
+<td>
+<div class="redwebmenu">
+	<div class="redwebmenuheader"><a class="aredmenuheader" href="http://www.wolfram.com/webresources.html">&nbsp;Other Wolfram Web Resources »</a>
+		<div class="redwebsubmenu">
+			<div class="redwebitem"><a href="http://www.wolfram.com/" target="_blank">Wolfram Research</a></div>
+			<div class="redwebitem"><a href="http://www.wolfram.com/products/mathematica/" target="_blank"><i>Mathematica</i> Home Page</a></div>
+			<div class="redwebitem"><a href="http://reference.wolfram.com/" target="_blank"><i>Mathematica</i> Documentation Center</a></div>
+			<div class="redwebitem"><a href="http://demonstrations.wolfram.com/" target="_blank">Wolfram Demonstrations Project</a></div>
+			<div class="redwebitem"><a href="http://integrals.wolfram.com/" target="_blank">Online Integrator</a></div>
+			<div class="redwebitem"><a href="http://functions.wolfram.com/" target="_blank">Functions Site</a></div>
+			<div class="redwebitem"><a href="http://tones.wolfram.com/" target="_blank">Wolfram Tones</a></div>
+			<div class="redwebitem"><a href="http://www.wolframscience.com/" target="_blank">Wolfram Science</a></div>
+			<div class="redwebitem"><a href="http://blog.wolfram.com/" target="_blank">Wolfram Blog</a></div>
+			<div class="redwebitem"><a href="http://www.wolfram.com/webresources.html" target="_blank">more&#8230;</a></div>
+		</div>
+	</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+
+</div>
+</td>
+</tr>
+</tbody></table>
+</body></html>
